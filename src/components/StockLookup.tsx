@@ -30,10 +30,48 @@ export default function StockLookup() {
   const allQuarters = useMemo(() => getAllQuarterKeys(data.funds), []);
   const latestQ = allQuarters[allQuarters.length - 1];
 
+  /* Build ticker↔name index for fuzzy search */
+  const tickerIndex = useMemo(() => {
+    const map = new Map<string, { ticker: string; name: string }>();
+    for (const fund of Object.values(data.funds)) {
+      const q = fund.quarters[latestQ];
+      if (!q) continue;
+      for (const h of mergeGoogleClasses(q.holdings)) {
+        if (!map.has(h.t)) map.set(h.t, { ticker: h.t, name: h.n });
+      }
+    }
+    return [...map.values()];
+  }, [latestQ]);
+
+  const resolveSearch = (input: string): string => {
+    const s = input.trim().toUpperCase();
+    if (!s) return '';
+    const exact = tickerIndex.find(x => x.ticker === s);
+    if (exact) return exact.ticker;
+    const partialTicker = tickerIndex.find(x => x.ticker.includes(s));
+    if (partialTicker) return partialTicker.ticker;
+    const nameMatch = tickerIndex.find(x => x.name.toUpperCase().includes(s));
+    if (nameMatch) return nameMatch.ticker;
+    return s;
+  };
+
+  const suggestions = useMemo(() => {
+    const s = search.trim().toUpperCase();
+    if (s.length < 2) return [];
+    return tickerIndex
+      .filter(x => x.ticker.includes(s) || x.name.toUpperCase().includes(s))
+      .slice(0, 8);
+  }, [search, tickerIndex]);
+
+  const [showSuggestions, setShowSuggestions] = useState(false);
+
   const handleSearch = (e: FormEvent) => {
     e.preventDefault();
-    const t = search.trim().toUpperCase();
-    if (t) navigate(`/stock/${encodeURIComponent(t)}`);
+    const resolved = resolveSearch(search);
+    if (resolved) {
+      setShowSuggestions(false);
+      navigate(`/stock/${encodeURIComponent(resolved)}`);
+    }
   };
 
   const fundRows = useMemo((): FundRow[] => {
@@ -74,13 +112,36 @@ export default function StockLookup() {
 
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Stock Lookup</h1>
-        <form onSubmit={handleSearch} className="flex gap-2">
-          <input
-            value={search}
-            onChange={e => setSearch(e.target.value.toUpperCase())}
-            placeholder="Enter ticker (e.g. AAPL, GOOG)…"
-            className="flex-1 max-w-xs rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-mono outline-none focus:border-blue-400 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
-          />
+        <form onSubmit={handleSearch} className="flex gap-2 relative">
+          <div className="relative flex-1 max-w-xs">
+            <input
+              value={search}
+              onChange={e => { setSearch(e.target.value.toUpperCase()); setShowSuggestions(true); }}
+              onFocus={() => setShowSuggestions(true)}
+              onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
+              placeholder="Ticker 或公司名（如 AAPL, CIRCLE）…"
+              className="w-full rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-mono outline-none focus:border-blue-400 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
+            />
+            {showSuggestions && suggestions.length > 0 && (
+              <div className="absolute z-20 mt-1 w-full rounded-lg border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-900 max-h-64 overflow-y-auto">
+                {suggestions.map(s => (
+                  <button
+                    key={s.ticker}
+                    type="button"
+                    onMouseDown={() => {
+                      setSearch(s.ticker);
+                      setShowSuggestions(false);
+                      navigate(`/stock/${encodeURIComponent(s.ticker)}`);
+                    }}
+                    className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                  >
+                    <span className="font-mono font-bold text-gray-900 dark:text-white">{s.ticker}</span>
+                    <span className="truncate text-xs text-gray-500 dark:text-gray-400">{s.name}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           <button type="submit" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition-colors">
             Search
           </button>
@@ -90,6 +151,16 @@ export default function StockLookup() {
       {ticker && fundRows.length === 0 && (
         <div className="rounded-xl border border-gray-200 bg-white p-10 text-center dark:border-gray-800 dark:bg-gray-900">
           <p className="text-lg text-gray-400">No funds hold <span className="font-mono font-bold">{ticker}</span> in {latestQ}</p>
+          {(() => {
+            const resolved = resolveSearch(ticker);
+            return resolved && resolved !== ticker ? (
+              <p className="mt-3 text-sm">
+                你是否在找{' '}
+                <button onClick={() => navigate(`/stock/${encodeURIComponent(resolved)}`)} className="text-blue-500 hover:underline font-mono font-bold">{resolved}</button>
+                ？
+              </p>
+            ) : null;
+          })()}
         </div>
       )}
 
