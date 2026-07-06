@@ -11,6 +11,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // GitHub Pages SPA: restore route from 404.html redirect
+      (function() {
+        var params = new URLSearchParams(window.location.search);
+        var path = params.get('p');
+        if (path) {
+          var url = '/13f-tracker' + path + (params.get('q') || '') + window.location.hash;
+          window.history.replaceState(null, '', url);
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
