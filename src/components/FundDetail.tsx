@@ -99,32 +99,62 @@ export default function FundDetail() {
 
   /* ── Sparkline for expanded row ──────────────── */
 
-  const Sparkline = ({ ticker }: { ticker: string }) => {
+  const Sparkline = ({ ticker, row }: { ticker: string; row: Row }) => {
     const sparkData = quarters.map(q => {
       const h = mergeGoogleClasses(fund!.quarters[q]?.holdings ?? []).find(x => x.t === ticker);
       return { q, v: h?.v ?? 0, s: h?.s ?? 0 };
     });
+    const cost = row;
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-3 px-4">
-        <div>
-          <div className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Value over Time</div>
-          <ResponsiveContainer width="100%" height={80}>
-            <AreaChart data={sparkData}>
-              <Area type="monotone" dataKey="v" stroke="#3b82f6" fill="#3b82f6" fillOpacity={0.15} strokeWidth={1.5} />
-              <XAxis dataKey="q" tick={{ fontSize: 9 }} />
-              <Tooltip formatter={(val: any) => fmtValue(Number(val))} labelFormatter={(l: any) => String(l)} />
-            </AreaChart>
-          </ResponsiveContainer>
-        </div>
-        <div>
-          <div className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Shares over Time</div>
-          <ResponsiveContainer width="100%" height={80}>
-            <AreaChart data={sparkData}>
-              <Area type="monotone" dataKey="s" stroke="#22c55e" fill="#22c55e" fillOpacity={0.15} strokeWidth={1.5} />
-              <XAxis dataKey="q" tick={{ fontSize: 9 }} />
-              <Tooltip formatter={(val: any) => fmtShares(Number(val))} labelFormatter={(l: any) => String(l)} />
-            </AreaChart>
-          </ResponsiveContainer>
+      <div className="py-3 px-4">
+        {/* Cost basis card */}
+        {cost.entryPrice != null && cost.pnlPct != null && (
+          <div className="mb-3 flex flex-wrap items-center gap-4 rounded-lg border border-gray-100 bg-gray-50/50 px-4 py-2.5 dark:border-gray-700 dark:bg-gray-800/50">
+            <div className="flex items-center gap-2">
+              <span className="text-xs text-gray-500 dark:text-gray-400">估算建仓价</span>
+              <span className="font-mono text-sm font-bold text-gray-900 dark:text-white">
+                ${cost.entryPrice < 1 ? cost.entryPrice.toFixed(4) : cost.entryPrice < 100 ? cost.entryPrice.toFixed(2) : cost.entryPrice.toFixed(0)}
+              </span>
+              <span className="text-[10px] text-gray-400">({cost.entryQuarter})</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="text-xs text-gray-500 dark:text-gray-400">现价</span>
+              <span className="font-mono text-sm font-medium text-gray-700 dark:text-gray-200">
+                ${cost.currentPrice! < 1 ? cost.currentPrice!.toFixed(4) : cost.currentPrice! < 100 ? cost.currentPrice!.toFixed(2) : cost.currentPrice!.toFixed(0)}
+              </span>
+            </div>
+            <div className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm font-bold ${
+              cost.pnlPct >= 0
+                ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300'
+                : 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300'
+            }`}>
+              {cost.pnlPct >= 0 ? '▲' : '▼'} {fmtPct(cost.pnlPct)}
+            </div>
+            <span className="text-[10px] text-gray-400 dark:text-gray-500">ℹ️ 估算值，基于首次出现在 13F 时的每股市值</span>
+          </div>
+        )}
+        {/* Charts */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <div className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Value over Time</div>
+            <ResponsiveContainer width="100%" height={80}>
+              <AreaChart data={sparkData}>
+                <Area type="monotone" dataKey="v" stroke="#3b82f6" fill="#3b82f6" fillOpacity={0.15} strokeWidth={1.5} />
+                <XAxis dataKey="q" tick={{ fontSize: 9 }} />
+                <Tooltip formatter={(val: any) => fmtValue(Number(val))} labelFormatter={(l: any) => String(l)} />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
+          <div>
+            <div className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Shares over Time</div>
+            <ResponsiveContainer width="100%" height={80}>
+              <AreaChart data={sparkData}>
+                <Area type="monotone" dataKey="s" stroke="#22c55e" fill="#22c55e" fillOpacity={0.15} strokeWidth={1.5} />
+                <XAxis dataKey="q" tick={{ fontSize: 9 }} />
+                <Tooltip formatter={(val: any) => fmtShares(Number(val))} labelFormatter={(l: any) => String(l)} />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
         </div>
       </div>
     );
@@ -261,8 +291,6 @@ export default function FundDetail() {
                   {label}<SortIcon k={k} />
                 </th>
               ))}
-              <th className="px-3 py-2.5 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 text-right">Est. Cost</th>
-              <th className="px-3 py-2.5 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 text-right">Est. P&L</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
@@ -284,26 +312,10 @@ export default function FundDetail() {
                     ) : <span className="text-gray-400">—</span>}
                   </td>
                   <td className="px-3 py-2"><ActionBadge action={r.action} change={r.change} /></td>
-                  <td className="px-3 py-2 text-right font-mono tabular-nums text-gray-500 dark:text-gray-400 text-xs">
-                    {r.entryPrice != null ? (
-                      <span title={`首次出现: ${r.entryQuarter}`}>${r.entryPrice < 1 ? r.entryPrice.toFixed(4) : r.entryPrice < 100 ? r.entryPrice.toFixed(2) : r.entryPrice.toFixed(0)}</span>
-                    ) : <span className="text-gray-300 dark:text-gray-600">—</span>}
-                  </td>
-                  <td className="px-3 py-2 text-right font-mono tabular-nums text-xs">
-                    {r.pnlPct != null ? (
-                      <span className={`inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 font-medium ${
-                        r.pnlPct >= 0
-                          ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300'
-                          : 'bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-300'
-                      }`}>
-                        {r.pnlPct >= 0 ? '▲' : '▼'} {fmtPct(r.pnlPct)}
-                      </span>
-                    ) : <span className="text-gray-300 dark:text-gray-600">—</span>}
-                  </td>
                 </tr>
                 {expanded === r.t && (
                   <tr key={r.t + '_exp'} className="bg-gray-50 dark:bg-gray-800/50">
-                    <td colSpan={9}><Sparkline ticker={r.t} /></td>
+                    <td colSpan={7}><Sparkline ticker={r.t} row={r} /></td>
                   </tr>
                 )}
               </>
@@ -353,7 +365,7 @@ export default function FundDetail() {
                 </div>
               </div>
             </div>
-            {expanded === r.t && <Sparkline ticker={r.t} />}
+            {expanded === r.t && <Sparkline ticker={r.t} row={r} />}
           </div>
         ))}
       </div>
