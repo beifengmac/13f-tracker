@@ -128,6 +128,66 @@ export function mergeGoogleClasses(holdings: Holding[]): Holding[] {
     .sort((a, b) => b.v - a.v);
 }
 
+/* ── Estimated cost basis ────────────────────────────────── */
+
+export interface CostEstimate {
+  /** Estimated entry price per share (from first appearance quarter) */
+  entryPrice: number;
+  /** Current price per share */
+  currentPrice: number;
+  /** Estimated P&L % */
+  pnlPct: number;
+  /** Quarter when the stock first appeared */
+  entryQuarter: string;
+}
+
+/**
+ * Estimate cost basis by finding the earliest quarter a ticker appears in,
+ * then using value/shares from that quarter as the proxy entry price.
+ */
+export function estimateCost(fund: Fund, ticker: string): CostEstimate | null {
+  const keys = getQuarterKeys(fund);
+  if (keys.length === 0) return null;
+
+  // Find first quarter where this ticker appears
+  let entryQ: string | null = null;
+  let entryHolding: Holding | undefined;
+  for (const q of keys) {
+    const h = findHolding(fund.quarters[q]?.holdings ?? [], ticker);
+    if (h && h.s > 0) {
+      entryQ = q;
+      entryHolding = h;
+      break;
+    }
+  }
+  if (!entryQ || !entryHolding) return null;
+
+  // Get latest quarter data
+  const latestQ = keys[keys.length - 1];
+  const latestH = findHolding(fund.quarters[latestQ]?.holdings ?? [], ticker);
+  if (!latestH || latestH.s === 0) return null;
+
+  const entryPrice = entryHolding.v / entryHolding.s;
+  const currentPrice = latestH.v / latestH.s;
+  const pnlPct = ((currentPrice - entryPrice) / entryPrice) * 100;
+
+  return { entryPrice, currentPrice, pnlPct, entryQuarter: entryQ };
+}
+
+function findHolding(holdings: Holding[], ticker: string): Holding | undefined {
+  if (ticker === 'GOOG' || ticker === 'GOOGL') {
+    const both = holdings.filter(h => h.t === 'GOOG' || h.t === 'GOOGL');
+    if (both.length === 0) return undefined;
+    return {
+      t: 'GOOG', n: 'ALPHABET INC',
+      v: both.reduce((s, h) => s + h.v, 0),
+      s: both.reduce((s, h) => s + h.s, 0),
+      w: both.reduce((s, h) => s + h.w, 0),
+    };
+  }
+  return holdings.find(h => h.t === ticker);
+}
+
 /* ── Sector inference ────────────────────────────────────────── */
 
 export function inferSector(name: string): string {

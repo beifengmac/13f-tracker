@@ -4,7 +4,7 @@ import { ResponsiveContainer, AreaChart, Area, BarChart, Bar, XAxis, YAxis, Tool
 
 import rawData from '../data.json';
 import type { Data, Holding, Action, SortKey, SortDir } from '../types';
-import { fmtValue, fmtShares, fmtPct, getQuarterKeys, getAction, getShareChange, mergeGoogleClasses, inferSector } from '../utils';
+import { fmtValue, fmtShares, fmtPct, getQuarterKeys, getAction, getShareChange, mergeGoogleClasses, inferSector, estimateCost } from '../utils';
 import ActionBadge from './ActionBadge';
 
 const data = rawData as unknown as Data;
@@ -15,6 +15,10 @@ const SECTOR_COLORS = ['#3b82f6','#22c55e','#f59e0b','#ef4444','#8b5cf6','#ec489
 interface Row extends Holding {
   action: Action;
   change: number;
+  entryPrice: number | null;
+  currentPrice: number | null;
+  pnlPct: number | null;
+  entryQuarter: string | null;
 }
 
 export default function FundDetail() {
@@ -31,11 +35,18 @@ export default function FundDetail() {
   const rows = useMemo(() => {
     if (!fund || !fund.quarters[selectedQ]) return [];
     const merged = mergeGoogleClasses(fund.quarters[selectedQ].holdings);
-    return merged.map((h): Row => ({
-      ...h,
-      action: getAction(fund, h.t, selectedQ),
-      change: getShareChange(fund, h.t, selectedQ),
-    }));
+    return merged.map((h): Row => {
+      const cost = estimateCost(fund, h.t);
+      return {
+        ...h,
+        action: getAction(fund, h.t, selectedQ),
+        change: getShareChange(fund, h.t, selectedQ),
+        entryPrice: cost?.entryPrice ?? null,
+        currentPrice: cost?.currentPrice ?? null,
+        pnlPct: cost?.pnlPct ?? null,
+        entryQuarter: cost?.entryQuarter ?? null,
+      };
+    });
   }, [fund, selectedQ]);
 
   const filtered = useMemo(() => {
@@ -250,6 +261,8 @@ export default function FundDetail() {
                   {label}<SortIcon k={k} />
                 </th>
               ))}
+              <th className="px-3 py-2.5 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 text-right">Est. Cost</th>
+              <th className="px-3 py-2.5 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 text-right">Est. P&L</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
@@ -271,10 +284,26 @@ export default function FundDetail() {
                     ) : <span className="text-gray-400">—</span>}
                   </td>
                   <td className="px-3 py-2"><ActionBadge action={r.action} change={r.change} /></td>
+                  <td className="px-3 py-2 text-right font-mono tabular-nums text-gray-500 dark:text-gray-400 text-xs">
+                    {r.entryPrice != null ? (
+                      <span title={`首次出现: ${r.entryQuarter}`}>${r.entryPrice < 1 ? r.entryPrice.toFixed(4) : r.entryPrice < 100 ? r.entryPrice.toFixed(2) : r.entryPrice.toFixed(0)}</span>
+                    ) : <span className="text-gray-300 dark:text-gray-600">—</span>}
+                  </td>
+                  <td className="px-3 py-2 text-right font-mono tabular-nums text-xs">
+                    {r.pnlPct != null ? (
+                      <span className={`inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 font-medium ${
+                        r.pnlPct >= 0
+                          ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300'
+                          : 'bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-300'
+                      }`}>
+                        {r.pnlPct >= 0 ? '▲' : '▼'} {fmtPct(r.pnlPct)}
+                      </span>
+                    ) : <span className="text-gray-300 dark:text-gray-600">—</span>}
+                  </td>
                 </tr>
                 {expanded === r.t && (
                   <tr key={r.t + '_exp'} className="bg-gray-50 dark:bg-gray-800/50">
-                    <td colSpan={7}><Sparkline ticker={r.t} /></td>
+                    <td colSpan={9}><Sparkline ticker={r.t} /></td>
                   </tr>
                 )}
               </>
@@ -298,7 +327,7 @@ export default function FundDetail() {
               </div>
               <ActionBadge action={r.action} change={r.change} />
             </div>
-            <div className="grid grid-cols-3 gap-2 text-xs">
+            <div className="grid grid-cols-2 gap-2 text-xs">
               <div>
                 <div className="text-gray-400">Value</div>
                 <div className="font-mono font-medium text-gray-900 dark:text-white">{fmtValue(r.v)}</div>
@@ -310,6 +339,18 @@ export default function FundDetail() {
               <div>
                 <div className="text-gray-400">Shares</div>
                 <div className="font-mono font-medium text-gray-900 dark:text-white">{fmtShares(r.s)}</div>
+              </div>
+              <div>
+                <div className="text-gray-400">Est. Cost → P&L</div>
+                <div className="font-mono font-medium">
+                  {r.entryPrice != null && r.pnlPct != null ? (
+                    <>
+                      <span className="text-gray-500">${r.entryPrice < 100 ? r.entryPrice.toFixed(2) : r.entryPrice.toFixed(0)}</span>
+                      {' '}
+                      <span className={r.pnlPct >= 0 ? 'text-emerald-600' : 'text-red-600'}>{fmtPct(r.pnlPct)}</span>
+                    </>
+                  ) : <span className="text-gray-400">—</span>}
+                </div>
               </div>
             </div>
             {expanded === r.t && <Sparkline ticker={r.t} />}
