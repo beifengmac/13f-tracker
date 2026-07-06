@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-accent-green: #22c55e;
+  --color-accent-red: #ef4444;
+  --color-accent-blue: #3b82f6;
+  --color-accent-amber: #f59e0b;
+  --color-accent-purple: #8b5cf6;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    font-feature-settings: "tnum";
+  }
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Ticker tape scroll animation */
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
