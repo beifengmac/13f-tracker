@@ -4,6 +4,7 @@ import rawData from '../data.json';
 import type { Data, Fund } from '../types';
 import { fmtValue, fmtPct, getAllQuarterKeys, getAction, getShareChange, mergeGoogleClasses } from '../utils';
 import ActionBadge from './ActionBadge';
+import MarketInsights from './MarketInsights';
 
 const data = rawData as unknown as Data;
 
@@ -190,6 +191,8 @@ export default function Dashboard() {
 
       {renderGroup(GLOBAL_IDS, '🌍 Global Legends')}
       {renderGroup(CN_IDS, '🐉 Chinese Value Masters')}
+
+      <MarketInsights />
     </div>
   );
 }
