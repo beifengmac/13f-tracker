@@ -112,6 +112,12 @@ FUNDS = {
         'description': '中国私募教父，长期主义践行者',
         'cik': '0002046333', 'max_holdings': None,
     },
+    'duquesne': {
+        'name_en': 'Duquesne Family Office', 'name_cn': '杜肯家族办公室',
+        'manager': '德鲁肯米勒', 'manager_en': 'Stanley Druckenmiller',
+        'description': '索罗斯前首席操盘手，宏观交易传奇，30年无亏损年',
+        'cik': '0001536411', 'max_holdings': 50,
+    },
 }
 
 # ─── CUSIP → Ticker ──────────────────────────────────────────────
@@ -147,6 +153,23 @@ TICKER_MAP = {
     '11135F101': 'HOOD', '87918A105': 'TEM', '75886F107': 'RKLB',
     '45687V106': 'IONQ', '44107P100': 'HIMS', '76954A103': 'ROKU',
     '90353T100': 'UBER', '85208M102': 'SE',
+    # Duquesne Family Office holdings
+    '632307104': 'NTRA', '457669307': 'INSM', '874039100': 'TSM',
+    '984245100': 'YPF', '464286400': 'EEM', 'G0896C103': 'TBBB',
+    '013872106': 'AA', 'N62509109': 'NAMS', '81141R100': 'SE',
+    '861012102': 'STM', '980745103': 'WWD', '881624209': 'TEVA',
+    '77543R102': 'ROKU', '22266T109': 'CPNG', '68404L201': 'OPCH',
+    'G25508105': 'CRH', '349381103': 'FGRE', '37950E259': 'GXC',
+    '142152107': 'CRIS', '76131D103': 'QSR', '76155X100': 'RVMD',
+    '518415104': 'LSCC', '80004C200': 'SNDK', '910047109': 'UAL',
+    '444859102': 'HUM', '929740108': 'WAB', '90138F102': 'TWLO',
+    '466313103': 'JBL', '84265V105': 'SCCO', '46428R107': 'GSG',
+    '548661107': 'LIN', '000899104': 'ADMA', '009158106': 'ABNB',
+    '896945201': 'TT', '125896100': 'CME',
+    '87612E106': 'TXRH', '268150109': 'DXCM', '902104108': 'UBER',
+    '48203R104': 'JNPR', '683712104': 'ORLY', '42824C109': 'HRMY',
+    '05967A107': 'BNTX', '91529Y106': 'UTHR',
+    'G0750C108': 'ASML', 'G38327101': 'FRGE', '88160R101': 'TSLA',
 }
 
 
@@ -206,6 +229,7 @@ def find_infotable_url(cik_num, adsh, adsh_formatted):
     html = html.decode('utf-8', errors='replace')
 
     matches = re.findall(r'href="([^"]*\.xml)"', html)
+    candidates = []
     for m in matches:
         basename = m.split('/')[-1].lower()
         if 'primary' in basename or 'xsl' in m.lower():
@@ -213,12 +237,19 @@ def find_infotable_url(cik_num, adsh, adsh_formatted):
         if any(kw in basename for kw in ('infotable', '13f', 'holdings', 'ohif')):
             fname = m.split('/')[-1]
             return f"https://www.sec.gov/Archives/edgar/data/{cik_num}/{adsh}/{fname}"
+        candidates.append(m)
+
+    # Fallback: pick the first non-primary XML (e.g. numeric filenames like 53405.xml)
+    if candidates:
+        fname = candidates[0].split('/')[-1]
+        return f"https://www.sec.gov/Archives/edgar/data/{cik_num}/{adsh}/{fname}"
 
     return None
 
 
 def parse_13f_xml(xml_data, max_holdings=None):
-    """Parse 13F XML into holdings dict. Returns (limited, all)."""
+    """Parse 13F XML into holdings dict. Returns (limited, all).
+    Auto-detects if values are in thousands (some filers) and normalizes to full USD."""
     try:
         root = ET.fromstring(xml_data)
     except ET.ParseError as e:
@@ -257,6 +288,19 @@ def parse_13f_xml(xml_data, max_holdings=None):
                     'name': name, 'cusip': cusip,
                     'value': value, 'shares': shares,
                 }
+
+    # Auto-detect if values are in thousands:
+    # Calculate median implied price; if < $1 for most holdings, values are in thousands
+    implied_prices = []
+    for h in holdings.values():
+        if h['shares'] > 0 and h['value'] > 0:
+            implied_prices.append(h['value'] / h['shares'])
+    if implied_prices:
+        implied_prices.sort()
+        median_price = implied_prices[len(implied_prices) // 2]
+        if median_price < 1.0:  # Values are in thousands, normalize to full USD
+            for h in holdings.values():
+                h['value'] *= 1000
 
     sorted_h = dict(sorted(holdings.items(), key=lambda x: x[1]['value'], reverse=True))
     all_holdings = sorted_h
