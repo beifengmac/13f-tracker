@@ -103,7 +103,7 @@
               "w": 1.09
             },
             {
-              "t": "DELTA AI",
+              "t": "DAL",
               "n": "DELTA AIR LINES INC",
               "v": 2646532635,
               "s": 39809456,
@@ -117,7 +117,7 @@
               "w": 0.85
             },
             {
-              "t": "CAPITAL",
+              "t": "COF",
               "n": "CAPITAL ONE FINL CORP",
               "v": 1304374500,
               "s": 7150000,
@@ -340,7 +340,7 @@
               "w": 0.65
             },
             {
-              "t": "CAPITAL",
+              "t": "COF",
               "n": "CAPITAL ONE FINL CORP",
               "v": 1732874000,
               "s": 7150000,
@@ -438,7 +438,7 @@
               "w": 0.12
             },
             {
-              "t": "LIBERTY",
+              "t": "LSXMA",
               "n": "LIBERTY MEDIA CORP DEL",
               "v": 297357853,
               "s": 3018555,
@@ -654,7 +654,7 @@
               "w": 0.65
             },
             {
-              "t": "CAPITAL",
+              "t": "COF",
               "n": "CAPITAL ONE FINL CORP",
               "v": 1519947000,
               "s": 7150000,
@@ -893,14 +893,14 @@
               "w": 2.56
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "BROADCOM INC",
               "v": 568068464,
               "s": 1835380,
               "w": 2.54
             },
             {
-              "t": "MICRON T",
+              "t": "MU",
               "n": "MICRON TECHNOLOGY INC",
               "v": 498551839,
               "s": 1475704,
@@ -914,7 +914,7 @@
               "w": 1.79
             },
             {
-              "t": "GE VERNO",
+              "t": "GEV",
               "n": "GE VERNOVA INC",
               "v": 379621591,
               "s": 434897,
@@ -1005,7 +1005,7 @@
               "w": 0.71
             },
             {
-              "t": "CELESTIC",
+              "t": "CLS",
               "n": "CELESTICA INC",
               "v": 148056923,
               "s": 525621,
@@ -1040,7 +1040,7 @@
               "w": 0.58
             },
             {
-              "t": "SEAGATE",
+              "t": "STX",
               "n": "SEAGATE TECHNOLOGY HLDNGS PL",
               "v": 128934876,
               "s": 329117,
@@ -1159,7 +1159,7 @@
               "w": 0.4
             },
             {
-              "t": "ARM HOLD",
+              "t": "ARM",
               "n": "ARM HOLDINGS PLC",
               "v": 89763652,
               "s": 593361,
@@ -1277,7 +1277,7 @@
               "w": 1.63
             },
             {
-              "t": "GE VERNO",
+              "t": "GEV",
               "n": "GE VERNOVA INC",
               "v": 435275659,
               "s": 665997,
@@ -1291,7 +1291,7 @@
               "w": 1.57
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "BROADCOM INC",
               "v": 403462614,
               "s": 1165740,
@@ -1319,7 +1319,7 @@
               "w": 0.99
             },
             {
-              "t": "MICRON T",
+              "t": "MU",
               "n": "MICRON TECHNOLOGY INC",
               "v": 253912152,
               "s": 889640,
@@ -1501,7 +1501,7 @@
               "w": 0.38
             },
             {
-              "t": "CELESTIC",
+              "t": "CLS",
               "n": "CELESTICA INC",
               "v": 101031812,
               "s": 341774,
@@ -1633,7 +1633,7 @@
               "w": 1.64
             },
             {
-              "t": "GE VERNO",
+              "t": "GEV",
               "n": "GE VERNOVA INC",
               "v": 400356471,
               "s": 651092,
@@ -1675,7 +1675,7 @@
               "w": 1.12
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "BROADCOM INC",
               "v": 278902945,
               "s": 845391,
@@ -1989,7 +1989,7 @@
               "w": 1.78
             },
             {
-              "t": "GE VERNO",
+              "t": "GEV",
               "n": "GE VERNOVA INC",
               "v": 411817866,
               "s": 778263,
@@ -2024,7 +2024,7 @@
               "w": 1.35
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "BROADCOM INC",
               "v": 317826380,
               "s": 1153007,
@@ -2129,7 +2129,7 @@
               "w": 0.72
             },
             {
-              "t": "DOORDASH",
+              "t": "DASH",
               "n": "DOORDASH INC",
               "v": 177014394,
               "s": 718082,
@@ -2150,7 +2150,7 @@
               "w": 0.64
             },
             {
-              "t": "VISTRA C",
+              "t": "VST",
               "n": "VISTRA CORP",
               "v": 158461769,
               "s": 817614,
@@ -2327,7 +2327,7 @@
               "w": 2.26
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "BROADCOM INC",
               "v": 119453766785,
               "s": 385944774,
@@ -2362,7 +2362,7 @@
               "w": 1.07
             },
             {
-              "t": "ELI LILL",
+              "t": "LLY",
               "n": "ELI LILLY & CO",
               "v": 61055106883,
               "s": 66380842,
@@ -2411,7 +2411,7 @@
               "w": 0.72
             },
             {
-              "t": "MICRON T",
+              "t": "MU",
               "n": "MICRON TECHNOLOGY INC",
               "v": 34847380573,
               "s": 103147586,
@@ -2543,7 +2543,7 @@
               "w": 2.35
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "BROADCOM INC",
               "v": 131481641522,
               "s": 379894948,
@@ -2571,7 +2571,7 @@
               "w": 1.6
             },
             {
-              "t": "ELI LILL",
+              "t": "LLY",
               "n": "ELI LILLY & CO",
               "v": 71780953971,
               "s": 66792863,
@@ -2690,7 +2690,7 @@
               "w": 0.49
             },
             {
-              "t": "MICRON T",
+              "t": "MU",
               "n": "MICRON TECHNOLOGY INC",
               "v": 28741227294,
               "s": 100701543,
@@ -2752,7 +2752,7 @@
               "w": 2.79
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "BROADCOM INC",
               "v": 124682207288,
               "s": 377927942,
@@ -2801,7 +2801,7 @@
               "w": 1.02
             },
             {
-              "t": "ELI LILL",
+              "t": "LLY",
               "n": "ELI LILLY & CO",
               "v": 50212850031,
               "s": 65809763,
@@ -2975,7 +2975,7 @@
               "w": 2.35
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "BROADCOM INC",
               "v": 103814572929,
               "s": 376617351,
@@ -3017,7 +3017,7 @@
               "w": 1.06
             },
             {
-              "t": "ELI LILL",
+              "t": "LLY",
               "n": "ELI LILLY & CO",
               "v": 51419094484,
               "s": 65961661,
@@ -3250,7 +3250,7 @@
               "w": 2.59
             },
             {
-              "t": "TWIST BI",
+              "t": "TWST",
               "n": "Twist Bioscience Corp",
               "v": 301406681,
               "s": 6342733,
@@ -3369,7 +3369,7 @@
               "w": 1.12
             },
             {
-              "t": "ILLUMINA",
+              "t": "ILMN",
               "n": "Illumina Inc",
               "v": 139217163,
               "s": 1129459,
@@ -3390,14 +3390,14 @@
               "w": 1.05
             },
             {
-              "t": "BWX TECH",
+              "t": "BWXT",
               "n": "BWX Technologies Inc",
               "v": 127304432,
               "s": 622546,
               "w": 0.99
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "Broadcom Inc",
               "v": 126219107,
               "s": 407803,
@@ -3474,21 +3474,21 @@
               "w": 0.47
             },
             {
-              "t": "DOORDASH",
+              "t": "DASH",
               "n": "DoorDash Inc",
               "v": 51973972,
               "s": 346147,
               "w": 0.4
             },
             {
-              "t": "ELBIT SY",
+              "t": "ESLT",
               "n": "Elbit Systems Ltd",
               "v": 51183994,
               "s": 60281,
               "w": 0.4
             },
             {
-              "t": "JOBY AVI",
+              "t": "JOBY",
               "n": "Joby Aviation Inc",
               "v": 50996777,
               "s": 6173944,
@@ -3641,7 +3641,7 @@
               "w": 1.7
             },
             {
-              "t": "TWIST BI",
+              "t": "TWST",
               "n": "Twist Bioscience Corp",
               "v": 239787194,
               "s": 7559495,
@@ -3676,7 +3676,7 @@
               "w": 1.37
             },
             {
-              "t": "ILLUMINA",
+              "t": "ILMN",
               "n": "Illumina Inc",
               "v": 202032394,
               "s": 1540351,
@@ -3781,7 +3781,7 @@
               "w": 0.85
             },
             {
-              "t": "BWX TECH",
+              "t": "BWXT",
               "n": "BWX Technologies Inc",
               "v": 115369490,
               "s": 667493,
@@ -3865,7 +3865,7 @@
               "w": 0.46
             },
             {
-              "t": "DOORDASH",
+              "t": "DASH",
               "n": "DoorDash Inc",
               "v": 69379657,
               "s": 306339,
@@ -4046,7 +4046,7 @@
               "w": 1.15
             },
             {
-              "t": "TWIST BI",
+              "t": "TWST",
               "n": "Twist Bioscience Corp",
               "v": 189292386,
               "s": 6726808,
@@ -4109,7 +4109,7 @@
               "w": 0.86
             },
             {
-              "t": "ILLUMINA",
+              "t": "ILMN",
               "n": "Illumina Inc",
               "v": 139404511,
               "s": 1467879,
@@ -4151,7 +4151,7 @@
               "w": 0.75
             },
             {
-              "t": "BWX TECH",
+              "t": "BWXT",
               "n": "BWX Technologies Inc",
               "v": 125555233,
               "s": 680996,
@@ -4332,7 +4332,7 @@
               "w": 1.74
             },
             {
-              "t": "TWIST BI",
+              "t": "TWST",
               "n": "Twist Bioscience Corp",
               "v": 235472218,
               "s": 6400441,
@@ -4465,7 +4465,7 @@
               "w": 0.84
             },
             {
-              "t": "ILLUMINA",
+              "t": "ILMN",
               "n": "Illumina Inc",
               "v": 111446333,
               "s": 1168078,
@@ -4493,7 +4493,7 @@
               "w": 0.75
             },
             {
-              "t": "BWX TECH",
+              "t": "BWXT",
               "n": "BWX Technologies Inc",
               "v": 92349519,
               "s": 641049,
@@ -4528,7 +4528,7 @@
               "w": 0.59
             },
             {
-              "t": "MERCADOL",
+              "t": "MELI",
               "n": "MercadoLibre Inc",
               "v": 66088248,
               "s": 25286,
@@ -4810,7 +4810,7 @@
               "w": 0.06
             },
             {
-              "t": "COHERENT",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "v": 1018348,
               "s": 4275,
@@ -6417,7 +6417,7 @@
               "w": 2.26
             },
             {
-              "t": "MICRON T",
+              "t": "MU",
               "n": "MICRON TECHNOLOGY INC",
               "v": 24672455,
               "s": 73030,
@@ -6611,7 +6611,7 @@
               "w": 0.75
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "BROADCOM INC",
               "v": 9567719,
               "s": 29001,
@@ -6836,7 +6836,7 @@
               "w": 2.42
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "Broadcom Inc",
               "v": 60650000,
               "s": 195955,
@@ -6962,35 +6962,35 @@
               "w": 0.71
             },
             {
-              "t": "LINDE PL",
+              "t": "LIN",
               "n": "Linde Plc",
               "v": 20425000,
               "s": 41200,
               "w": 0.7
             },
             {
-              "t": "SEAGATE",
+              "t": "STX",
               "n": "Seagate Technology Hldngs Pl",
               "v": 19862000,
               "s": 50700,
               "w": 0.68
             },
             {
-              "t": "CLEVELAN",
+              "t": "CLF",
               "n": "Cleveland-Cliffs Inc New",
               "v": 19549000,
               "s": 2313455,
               "w": 0.67
             },
             {
-              "t": "NUVATION",
+              "t": "NUVB",
               "n": "Nuvation Bio Inc",
               "v": 19476000,
               "s": 4539800,
               "w": 0.66
             },
             {
-              "t": "BLOOM EN",
+              "t": "BE",
               "n": "Bloom Energy Corp",
               "v": 18470000,
               "s": 136320,
@@ -7004,42 +7004,42 @@
               "w": 0.62
             },
             {
-              "t": "BELITE B",
+              "t": "BLTE",
               "n": "Belite Bio Inc Sponsored",
               "v": 16917000,
               "s": 106100,
               "w": 0.58
             },
             {
-              "t": "PROTAGON",
+              "t": "PTGX",
               "n": "Protagonist Therapeutics Inc",
               "v": 16832000,
               "s": 159700,
               "w": 0.57
             },
             {
-              "t": "UNITY SO",
+              "t": "U",
               "n": "Unity Software Inc",
               "v": 16209000,
               "s": 738785,
               "w": 0.55
             },
             {
-              "t": "ARM HOLD",
+              "t": "ARM",
               "n": "Arm Holdings Plc",
               "v": 16142000,
               "s": 106700,
               "w": 0.55
             },
             {
-              "t": "OLEMA PH",
+              "t": "OLMA",
               "n": "Olema Pharmaceuticals Inc",
               "v": 14714000,
               "s": 986827,
               "w": 0.5
             },
             {
-              "t": "QNITY EL",
+              "t": "QNTY",
               "n": "Qnity Electronics Inc",
               "v": 14498000,
               "s": 125655,
@@ -7053,42 +7053,42 @@
               "w": 0.47
             },
             {
-              "t": "XENON PH",
+              "t": "XEN",
               "n": "Xenon Pharmaceuticals Inc",
               "v": 13875000,
               "s": 238600,
               "w": 0.47
             },
             {
-              "t": "JBS N.V.",
+              "t": "JBSAY",
               "n": "Jbs N.V.",
               "v": 11780000,
               "s": 655900,
               "w": 0.4
             },
             {
-              "t": "DAKTRONI",
+              "t": "DAKT",
               "n": "Daktronics Inc",
               "v": 11000000,
               "s": 562637,
               "w": 0.37
             },
             {
-              "t": "CLOUDFLA",
+              "t": "NET",
               "n": "Cloudflare Inc",
               "v": 10840000,
               "s": 52535,
               "w": 0.37
             },
             {
-              "t": "LYONDELL",
+              "t": "LYB",
               "n": "Lyondellbasell Industries Nv",
               "v": 10588000,
               "s": 131435,
               "w": 0.36
             },
             {
-              "t": "VISTA EN",
+              "t": "VIST",
               "n": "Vista Energy S.A.B. De C.V.",
               "v": 10166000,
               "s": 134700,
@@ -7108,7 +7108,7 @@
               "w": 13.63
             },
             {
-              "t": "SELECT S",
+              "t": "XLF",
               "n": "Select Sector Spdr Tr",
               "v": 300994000,
               "s": 5495600,
@@ -7122,7 +7122,7 @@
               "w": 6.11
             },
             {
-              "t": "INVESCO",
+              "t": "XLK",
               "n": "Invesco Exchange Traded Fd T",
               "v": 224877000,
               "s": 1173925,
@@ -7192,7 +7192,7 @@
               "w": 2.55
             },
             {
-              "t": "MERCADOL",
+              "t": "MELI",
               "n": "Mercadolibre Inc",
               "v": 94970000,
               "s": 47149,
@@ -7213,7 +7213,7 @@
               "w": 1.95
             },
             {
-              "t": "COGENT B",
+              "t": "COGT",
               "n": "Cogent Biosciences Inc",
               "v": 78658000,
               "s": 2214470,
@@ -7227,14 +7227,14 @@
               "w": 1.73
             },
             {
-              "t": "ENTEGRIS",
+              "t": "ENTG",
               "n": "Entegris Inc",
               "v": 71120000,
               "s": 844160,
               "w": 1.69
             },
             {
-              "t": "DOCUSIGN",
+              "t": "DOCU",
               "n": "Docusign Inc",
               "v": 69705000,
               "s": 1019085,
@@ -7248,7 +7248,7 @@
               "w": 1.61
             },
             {
-              "t": "BLOOM EN",
+              "t": "BE",
               "n": "Bloom Energy Corp",
               "v": 64346000,
               "s": 740545,
@@ -7290,14 +7290,14 @@
               "w": 1.32
             },
             {
-              "t": "ISHARES",
+              "t": "IBIT",
               "n": "Ishares Tr",
               "v": 49376000,
               "s": 902500,
               "w": 1.17
             },
             {
-              "t": "DELTA AI",
+              "t": "DAL",
               "n": "Delta Air Lines Inc Del",
               "v": 45173000,
               "s": 650910,
@@ -7311,49 +7311,49 @@
               "w": 0.92
             },
             {
-              "t": "STUBHUB",
+              "t": "STUB",
               "n": "Stubhub Hldgs Inc",
               "v": 31197000,
               "s": 2305751,
               "w": 0.74
             },
             {
-              "t": "ON SEMIC",
+              "t": "ON",
               "n": "On Semiconductor Corp",
               "v": 29038000,
               "s": 536260,
               "w": 0.69
             },
             {
-              "t": "FLUTTER",
+              "t": "FLUT",
               "n": "Flutter Entmt Plc",
               "v": 24782000,
               "s": 115245,
               "w": 0.59
             },
             {
-              "t": "PURECYCL",
+              "t": "PCT",
               "n": "Purecycle Technologies Inc",
               "v": 24726000,
               "s": 2878434,
               "w": 0.59
             },
             {
-              "t": "AEVA TEC",
+              "t": "AEVA",
               "n": "Aeva Technologies Inc",
               "v": 24234000,
               "s": 1824862,
               "w": 0.57
             },
             {
-              "t": "GOLDMAN",
+              "t": "GS",
               "n": "Goldman Sachs Group Inc",
               "v": 24173000,
               "s": 27500,
               "w": 0.57
             },
             {
-              "t": "CLEVELAN",
+              "t": "CLF",
               "n": "Cleveland-Cliffs Inc New",
               "v": 23182000,
               "s": 1745655,
@@ -7374,7 +7374,7 @@
               "w": 0.48
             },
             {
-              "t": "UNITY SO",
+              "t": "U",
               "n": "Unity Software Inc",
               "v": 18111000,
               "s": 410020,
@@ -7388,7 +7388,7 @@
               "w": 0.41
             },
             {
-              "t": "DAKTRONI",
+              "t": "DAKT",
               "n": "Daktronics Inc",
               "v": 16863000,
               "s": 852960,
@@ -7402,49 +7402,49 @@
               "w": 0.37
             },
             {
-              "t": "CHIPOTLE",
+              "t": "CMG",
               "n": "Chipotle Mexican Grill Inc",
               "v": 14501000,
               "s": 391930,
               "w": 0.34
             },
             {
-              "t": "PROTAGON",
+              "t": "PTGX",
               "n": "Protagonist Therapeutics Inc",
               "v": 13948000,
               "s": 159700,
               "w": 0.33
             },
             {
-              "t": "ZILLOW G",
+              "t": "Z",
               "n": "Zillow Group Inc",
               "v": 13142000,
               "s": 192640,
               "w": 0.31
             },
             {
-              "t": "CIDARA T",
+              "t": "CDTX",
               "n": "Cidara Therapeutics Inc",
               "v": 10933000,
               "s": 49495,
               "w": 0.26
             },
             {
-              "t": "PHILIP M",
+              "t": "PM",
               "n": "Philip Morris Intl Inc",
               "v": 10811000,
               "s": 67400,
               "w": 0.26
             },
             {
-              "t": "AMERICAN",
+              "t": "AAL",
               "n": "American Airls Group Inc",
               "v": 9808000,
               "s": 639785,
               "w": 0.23
             },
             {
-              "t": "ARGAN IN",
+              "t": "AGX",
               "n": "Argan Inc",
               "v": 9400000,
               "s": 30000,
@@ -7499,28 +7499,28 @@
               "w": 3.79
             },
             {
-              "t": "MERCADOL",
+              "t": "MELI",
               "n": "Mercadolibre Inc",
               "v": 136346000,
               "s": 58344,
               "w": 3.47
             },
             {
-              "t": "DOCUSIGN",
+              "t": "DOCU",
               "n": "Docusign Inc",
               "v": 121540000,
               "s": 1685950,
               "w": 3.09
             },
             {
-              "t": "VERONA P",
+              "t": "VRNA",
               "n": "Verona Pharma Plc",
               "v": 106932000,
               "s": 1002080,
               "w": 2.72
             },
             {
-              "t": "ISHARES",
+              "t": "IBIT",
               "n": "Ishares Tr",
               "v": 101460000,
               "s": 1900000,
@@ -7555,7 +7555,7 @@
               "w": 1.85
             },
             {
-              "t": "STUBHUB",
+              "t": "STUB",
               "n": "Stubhub Hldgs Inc",
               "v": 71730000,
               "s": 4259516,
@@ -7583,7 +7583,7 @@
               "w": 1.39
             },
             {
-              "t": "CARPENTE",
+              "t": "CRS",
               "n": "Carpenter Technology Corp",
               "v": 54027000,
               "s": 220035,
@@ -7618,14 +7618,14 @@
               "w": 1.25
             },
             {
-              "t": "EQT CORP",
+              "t": "EQT",
               "n": "Eqt Corp",
               "v": 48712000,
               "s": 894950,
               "w": 1.24
             },
             {
-              "t": "GE VERNO",
+              "t": "GEV",
               "n": "Ge Vernova Inc",
               "v": 47544000,
               "s": 77320,
@@ -7639,14 +7639,14 @@
               "w": 1.2
             },
             {
-              "t": "VISTRA C",
+              "t": "VST",
               "n": "Vistra Corp",
               "v": 45842000,
               "s": 233985,
               "w": 1.17
             },
             {
-              "t": "UNITY SO",
+              "t": "U",
               "n": "Unity Software Inc",
               "v": 35335000,
               "s": 882500,
@@ -7667,7 +7667,7 @@
               "w": 0.88
             },
             {
-              "t": "CLEVELAN",
+              "t": "CLF",
               "n": "Cleveland-Cliffs Inc New",
               "v": 33123000,
               "s": 2715035,
@@ -7681,42 +7681,42 @@
               "w": 0.81
             },
             {
-              "t": "PURECYCL",
+              "t": "PCT",
               "n": "Purecycle Technologies Inc",
               "v": 30286000,
               "s": 2303084,
               "w": 0.77
             },
             {
-              "t": "LIBERTY",
+              "t": "LSXMA",
               "n": "Liberty Media Corp Del",
               "v": 30123000,
               "s": 288400,
               "w": 0.77
             },
             {
-              "t": "DAKTRONI",
+              "t": "DAKT",
               "n": "Daktronics Inc",
               "v": 30061000,
               "s": 1436936,
               "w": 0.76
             },
             {
-              "t": "DICKS SP",
+              "t": "DKS",
               "n": "Dicks Sporting Goods Inc",
               "v": 29427000,
               "s": 132425,
               "w": 0.75
             },
             {
-              "t": "FLUTTER",
+              "t": "FLUT",
               "n": "Flutter Entmt Plc",
               "v": 29272000,
               "s": 115245,
               "w": 0.74
             },
             {
-              "t": "SPDR SER",
+              "t": "SPDR",
               "n": "Spdr Series Trust",
               "v": 28646000,
               "s": 482095,
@@ -7730,14 +7730,14 @@
               "w": 0.69
             },
             {
-              "t": "AEVA TEC",
+              "t": "AEVA",
               "n": "Aeva Technologies Inc",
               "v": 26670000,
               "s": 1839314,
               "w": 0.68
             },
             {
-              "t": "PG&E COR",
+              "t": "PCG",
               "n": "Pg&E Corp",
               "v": 24871000,
               "s": 1649300,
@@ -7751,49 +7751,49 @@
               "w": 0.63
             },
             {
-              "t": "ARM HOLD",
+              "t": "ARM",
               "n": "Arm Holdings Plc",
               "v": 23756000,
               "s": 167900,
               "w": 0.6
             },
             {
-              "t": "NU HLDGS",
+              "t": "NU",
               "n": "Nu Hldgs Ltd",
               "v": 23281000,
               "s": 1454180,
               "w": 0.59
             },
             {
-              "t": "SEMTECH",
+              "t": "SMTC",
               "n": "Semtech Corp",
               "v": 21543000,
               "s": 301515,
               "w": 0.55
             },
             {
-              "t": "SEAGATE",
+              "t": "STX",
               "n": "Seagate Technology Hldngs Pl",
               "v": 20278000,
               "s": 85900,
               "w": 0.52
             },
             {
-              "t": "GENUINE",
+              "t": "GPC",
               "n": "Genuine Parts Co",
               "v": 19984000,
               "s": 144185,
               "w": 0.51
             },
             {
-              "t": "ENLIVEN",
+              "t": "ELVN",
               "n": "Enliven Therapeutics Inc",
               "v": 19393000,
               "s": 947405,
               "w": 0.49
             },
             {
-              "t": "POST HLD",
+              "t": "POST",
               "n": "Post Hldgs Inc",
               "v": 18959000,
               "s": 176400,
@@ -7848,21 +7848,21 @@
               "w": 4.43
             },
             {
-              "t": "PHILIP M",
+              "t": "PM",
               "n": "Philip Morris Intl Inc",
               "v": 148614000,
               "s": 815975,
               "w": 3.8
             },
             {
-              "t": "MERCADOL",
+              "t": "MELI",
               "n": "Mercadolibre Inc",
               "v": 140417000,
               "s": 53725,
               "w": 3.59
             },
             {
-              "t": "ENTEGRIS",
+              "t": "ENTG",
               "n": "Entegris Inc",
               "v": 132741000,
               "s": 1645885,
@@ -7876,21 +7876,21 @@
               "w": 3.14
             },
             {
-              "t": "FLUTTER",
+              "t": "FLUT",
               "n": "Flutter Entmt Plc",
               "v": 115771000,
               "s": 405320,
               "w": 2.96
             },
             {
-              "t": "COHERENT",
+              "t": "COHR",
               "n": "Coherent Corp",
               "v": 103291000,
               "s": 1157840,
               "w": 2.64
             },
             {
-              "t": "DOCUSIGN",
+              "t": "DOCU",
               "n": "Docusign Inc",
               "v": 100512000,
               "s": 1290440,
@@ -7911,28 +7911,28 @@
               "w": 2.47
             },
             {
-              "t": "VERONA P",
+              "t": "VRNA",
               "n": "Verona Pharma Plc",
               "v": 94777000,
               "s": 1002080,
               "w": 2.42
             },
             {
-              "t": "ELI LILL",
+              "t": "LLY",
               "n": "Eli Lilly & Co",
               "v": 78479000,
               "s": 100675,
               "w": 2.01
             },
             {
-              "t": "WARNER B",
+              "t": "WBD",
               "n": "Warner Bros Discovery Inc",
               "v": 74916000,
               "s": 6537160,
               "w": 1.91
             },
             {
-              "t": "EQT CORP",
+              "t": "EQT",
               "n": "Eqt Corp",
               "v": 73057000,
               "s": 1252700,
@@ -7946,7 +7946,7 @@
               "w": 1.45
             },
             {
-              "t": "SELECT S",
+              "t": "XLF",
               "n": "Select Sector Spdr Tr",
               "v": 51600000,
               "s": 985300,
@@ -7967,35 +7967,35 @@
               "w": 1.27
             },
             {
-              "t": "NU HLDGS",
+              "t": "NU",
               "n": "Nu Hldgs Ltd",
               "v": 46859000,
               "s": 3415365,
               "w": 1.2
             },
             {
-              "t": "DAKTRONI",
+              "t": "DAKT",
               "n": "Daktronics Inc",
               "v": 46513000,
               "s": 3076224,
               "w": 1.19
             },
             {
-              "t": "UNITY SO",
+              "t": "U",
               "n": "Unity Software Inc",
               "v": 42932000,
               "s": 1774050,
               "w": 1.1
             },
             {
-              "t": "CAESARS",
+              "t": "CZR",
               "n": "Caesars Entertainment Inc Ne",
               "v": 39629000,
               "s": 1395875,
               "w": 1.01
             },
             {
-              "t": "DELTA AI",
+              "t": "DAL",
               "n": "Delta Air Lines Inc Del",
               "v": 39025000,
               "s": 793510,
@@ -8009,7 +8009,7 @@
               "w": 0.91
             },
             {
-              "t": "CARPENTE",
+              "t": "CRS",
               "n": "Carpenter Technology Corp",
               "v": 34999000,
               "s": 126635,
@@ -8023,21 +8023,21 @@
               "w": 0.84
             },
             {
-              "t": "PURECYCL",
+              "t": "PCT",
               "n": "Purecycle Technologies Inc",
               "v": 31552000,
               "s": 2303084,
               "w": 0.81
             },
             {
-              "t": "KINDER M",
+              "t": "KMI",
               "n": "Kinder Morgan Inc Del",
               "v": 31507000,
               "s": 1071665,
               "w": 0.8
             },
             {
-              "t": "APPLOVIN",
+              "t": "APP",
               "n": "Applovin Corp",
               "v": 31317000,
               "s": 89458,
@@ -8051,28 +8051,28 @@
               "w": 0.77
             },
             {
-              "t": "GOLDMAN",
+              "t": "GS",
               "n": "Goldman Sachs Group Inc",
               "v": 29726000,
               "s": 42000,
               "w": 0.76
             },
             {
-              "t": "BARCLAYS",
+              "t": "BCS",
               "n": "Barclays Plc",
               "v": 28814000,
               "s": 1549950,
               "w": 0.74
             },
             {
-              "t": "ILLUMINA",
+              "t": "ILMN",
               "n": "Illumina Inc",
               "v": 28682000,
               "s": 300615,
               "w": 0.73
             },
             {
-              "t": "SEAGATE",
+              "t": "STX",
               "n": "Seagate Technology Hldngs Pl",
               "v": 28504000,
               "s": 197490,
@@ -8086,7 +8086,7 @@
               "w": 0.64
             },
             {
-              "t": "HOOD",
+              "t": "AVGO",
               "n": "Broadcom Inc",
               "v": 23744000,
               "s": 86140,
@@ -8114,7 +8114,7 @@
               "w": 0.54
             },
             {
-              "t": "HASBRO I",
+              "t": "HAS",
               "n": "Hasbro Inc",
               "v": 20751000,
               "s": 281100,
@@ -8128,7 +8128,7 @@
               "w": 0.53
             },
             {
-              "t": "XPO INC",
+              "t": "XPO",
               "n": "Xpo Inc",
               "v": 20598000,
               "s": 163100,
@@ -8142,14 +8142,14 @@
               "w": 0.41
             },
             {
-              "t": "CHIME FI",
+              "t": "CHME",
               "n": "Chime Finl Inc",
               "v": 16110000,
               "s": 466825,
               "w": 0.41
             },
             {
-              "t": "BANCO MA",
+              "t": "BMA",
               "n": "Banco Macro Sa",
               "v": 15509000,
               "s": 220900,
