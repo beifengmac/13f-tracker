@@ -6343,6 +6343,103 @@
       "description": "中国私募教父，长期主义践行者",
       "cik": "0002046333",
       "quarters": {
+        "Q2 2026": {
+          "total": 1649592644,
+          "holdings": [
+            {
+              "t": "GOOGL",
+              "n": "ALPHABET INC",
+              "v": 370873894,
+              "s": 1049653,
+              "w": 22.48
+            },
+            {
+              "t": "INTC",
+              "n": "INTEL CORP",
+              "v": 258230325,
+              "s": 1849390,
+              "w": 15.65
+            },
+            {
+              "t": "NVDA",
+              "n": "NVIDIA CORPORATION",
+              "v": 216862944,
+              "s": 1083827,
+              "w": 13.15
+            },
+            {
+              "t": "SNDK",
+              "n": "SANDISK CORP",
+              "v": 175704759,
+              "s": 77276,
+              "w": 10.65
+            },
+            {
+              "t": "MU",
+              "n": "MICRON TECHNOLOGY INC",
+              "v": 170358198,
+              "s": 147587,
+              "w": 10.33
+            },
+            {
+              "t": "ADVANCED",
+              "n": "ADVANCED MICRO DEVICES INC",
+              "v": 146062267,
+              "s": 251437,
+              "w": 8.85
+            },
+            {
+              "t": "MARVELL",
+              "n": "MARVELL TECHNOLOGY INC",
+              "v": 130809158,
+              "s": 439119,
+              "w": 7.93
+            },
+            {
+              "t": "TSM",
+              "n": "TAIWAN SEMICONDUCTOR MANUFAC",
+              "v": 65565107,
+              "s": 137289,
+              "w": 3.97
+            },
+            {
+              "t": "ARM",
+              "n": "ARM HOLDINGS PLC",
+              "v": 53388668,
+              "s": 150573,
+              "w": 3.24
+            },
+            {
+              "t": "AVGO",
+              "n": "BROADCOM INC",
+              "v": 24911479,
+              "s": 65947,
+              "w": 1.51
+            },
+            {
+              "t": "LUMU",
+              "n": "LUMENTUM HLDGS INC",
+              "v": 22414243,
+              "s": 26122,
+              "w": 1.36
+            },
+            {
+              "t": "AMZN",
+              "n": "AMAZON COM INC",
+              "v": 14275850,
+              "s": 59897,
+              "w": 0.87
+            },
+            {
+              "t": "META",
+              "n": "META PLATFORMS INC",
+              "v": 135752,
+              "s": 241,
+              "w": 0.01
+            }
+          ],
+          "total_positions": 13
+        },
         "Q1 2026": {
           "total": 1133091137,
           "holdings": [
@@ -6509,102 +6606,130 @@
           ],
           "total_positions": 10
         },
-        "Q2 2025": {
-          "total": 1127005007,
+        "Q3 2025": {
+          "total": 1291825487,
           "holdings": [
             {
               "t": "NVDA",
               "n": "NVIDIA CORPORATION",
-              "v": 200276181,
-              "s": 1267651,
-              "w": 17.77
+              "v": 236221661,
+              "s": 1266061,
+              "w": 18.29
             },
             {
               "t": "GOOGL",
               "n": "ALPHABET INC",
-              "v": 163461692,
-              "s": 921482,
-              "w": 14.5
+              "v": 224141744,
+              "s": 920311,
+              "w": 17.35
             },
             {
               "t": "BANK MON",
               "n": "BANK MONTREAL QUE",
-              "v": 129477929,
-              "s": 5202006,
-              "w": 11.49
+              "v": 144631850,
+              "s": 4959940,
+              "w": 11.2
             },
             {
               "t": "PROSHARE",
               "n": "PROSHARES TR",
-              "v": 104587802,
-              "s": 1260094,
-              "w": 9.28
+              "v": 124164788,
+              "s": 1200820,
+              "w": 9.61
             },
             {
               "t": "META",
               "n": "META PLATFORMS INC",
-              "v": 100075409,
-              "s": 135587,
-              "w": 8.88
+              "v": 99446067,
+              "s": 135415,
+              "w": 7.7
             },
             {
               "t": "MSFT",
               "n": "MICROSOFT CORP",
-              "v": 95355487,
-              "s": 191704,
-              "w": 8.46
-            },
-            {
-              "t": "AMZN",
-              "n": "AMAZON COM INC",
-              "v": 78797209,
-              "s": 359165,
-              "w": 6.99
-            },
-            {
-              "t": "AAPL",
-              "n": "APPLE INC",
-              "v": 69436093,
-              "s": 338432,
-              "w": 6.16
+              "v": 99167225,
+              "s": 191461,
+              "w": 7.68
             },
             {
               "t": "TSLA",
               "n": "TESLA INC",
-              "v": 62957671,
-              "s": 198192,
-              "w": 5.59
+              "v": 88028766,
+              "s": 197942,
+              "w": 6.81
             },
             {
-              "t": "NETFLIX",
-              "n": "NETFLIX INC",
-              "v": 57261199,
-              "s": 42760,
-              "w": 5.08
+              "t": "AAPL",
+              "n": "APPLE INC",
+              "v": 86065449,
+              "s": 338002,
+              "w": 6.66
             },
             {
               "t": "COINBASE",
               "n": "COINBASE GLOBAL INC",
-              "v": 54979614,
-              "s": 156865,
-              "w": 4.88
+              "v": 52873545,
+              "s": 156667,
+              "w": 4.09
             },
             {
-              "t": "GRANITES",
-              "n": "GRANITESHARES ETF TR",
-              "v": 8541523,
-              "s": 121294,
-              "w": 0.76
+              "t": "BABA",
+              "n": "ALIBABA GROUP HLDG LTD",
+              "v": 39499866,
+              "s": 221003,
+              "w": 3.06
+            },
+            {
+              "t": "AMZN",
+              "n": "AMAZON COM INC",
+              "v": 39380977,
+              "s": 179355,
+              "w": 3.05
+            },
+            {
+              "t": "NETFLIX",
+              "n": "NETFLIX INC",
+              "v": 14607641,
+              "s": 12184,
+              "w": 1.13
+            },
+            {
+              "t": "ASTERA L",
+              "n": "ASTERA LABS INC",
+              "v": 12626358,
+              "s": 64486,
+              "w": 0.98
+            },
+            {
+              "t": "BITMINE",
+              "n": "BITMINE IMMERSION TECNOLOGIE",
+              "v": 9652177,
+              "s": 185869,
+              "w": 0.75
+            },
+            {
+              "t": "AVGO",
+              "n": "BROADCOM INC",
+              "v": 9567719,
+              "s": 29001,
+              "w": 0.74
+            },
+            {
+              "t": "DIREXION",
+              "n": "DIREXION SHS ETF TR",
+              "v": 9536281,
+              "s": 151010,
+              "w": 0.74
             },
             {
               "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MFG LTD",
-              "v": 1797198,
-              "s": 7935,
-              "w": 0.16
+              "v": 2213373,
+              "s": 7925,
+              "w": 0.17
             }
           ],
-          "total_positions": 13
+          "total_positions": 17
         }
       }
     },
@@ -8043,6 +8168,6 @@
       }
     }
   },
-  "generated": "2026-08-10",
+  "generated": "2026-08-11",
   "source": "SEC EDGAR 13F-HR"
 }
