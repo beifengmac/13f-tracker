@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import rawData from '../data.json';
 import type { Data, Action } from '../types';
-import { fmtValue, getAllQuarterKeys, getAction, mergeGoogleClasses } from '../utils';
+import { fmtValue, getAllQuarterKeys, getPreviousQuarter, getAction, mergeGoogleClasses } from '../utils';
 import ActionBadge from './ActionBadge';
 
 const data = rawData as unknown as Data;
@@ -19,6 +19,7 @@ interface MatrixRow {
   name: string;
   cells: (MatrixCell | null)[];
   totalValue: number;
+  sortValue: number;
   consensus: 'buy' | 'sell' | 'mixed' | 'neutral';
 }
 
@@ -39,25 +40,38 @@ export default function CompareView() {
     if (selected.length < 2) return [];
 
     // Collect all tickers across selected funds
-    const tickerMap = new Map<string, { name: string; totalValue: number }>();
+    const tickerMap = new Map<string, { name: string; totalValue: number; sortValue: number }>();
     for (const fid of selected) {
       const fund = data.funds[fid];
       const q = fund.quarters[quarter];
       if (!q) continue;
       const holdings = mergeGoogleClasses(q.holdings);
+      const prevQ = getPreviousQuarter(fund, quarter);
+      const previous = prevQ ? mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? []) : [];
+      const currentTickers = new Set(holdings.map(h => h.t));
       for (const h of holdings) {
         const existing = tickerMap.get(h.t);
         if (existing) {
           existing.totalValue += h.v;
+          existing.sortValue += h.v;
         } else {
-          tickerMap.set(h.t, { name: h.n, totalValue: h.v });
+          tickerMap.set(h.t, { name: h.n, totalValue: h.v, sortValue: h.v });
+        }
+      }
+      for (const h of previous) {
+        if (currentTickers.has(h.t) || getAction(fund, h.t, quarter) !== 'cleared') continue;
+        const existing = tickerMap.get(h.t);
+        if (existing) {
+          existing.sortValue += h.v;
+        } else {
+          tickerMap.set(h.t, { name: h.n, totalValue: 0, sortValue: h.v });
         }
       }
     }
 
     // Sort by total value and take top 25
     const sorted = [...tickerMap.entries()]
-      .sort((a, b) => b[1].totalValue - a[1].totalValue)
+      .sort((a, b) => b[1].sortValue - a[1].sortValue)
       .slice(0, 25);
 
     return sorted.map(([ticker, info]): MatrixRow => {
@@ -66,11 +80,13 @@ export default function CompareView() {
         const q = fund.quarters[quarter];
         if (!q) return null;
         const holdings = mergeGoogleClasses(q.holdings);
+        const prevQ = getPreviousQuarter(fund, quarter);
+        const prevHolding = prevQ ? mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? []).find(x => x.t === ticker) : undefined;
         const h = holdings.find(x => x.t === ticker);
-        if (!h) return null;
+        if (!h && !prevHolding) return null;
         return {
-          weight: h.w,
-          value: h.v,
+          weight: h?.w ?? 0,
+          value: h?.v ?? 0,
           action: getAction(fund, ticker, quarter),
         };
       });
@@ -84,7 +100,7 @@ export default function CompareView() {
       else if (buyCount > 0) consensus = 'buy';
       else if (sellCount > 0) consensus = 'sell';
 
-      return { ticker, name: info.name, cells, totalValue: info.totalValue, consensus };
+      return { ticker, name: info.name, cells, totalValue: info.totalValue, sortValue: info.sortValue, consensus };
     });
   }, [selected, quarter]);
 

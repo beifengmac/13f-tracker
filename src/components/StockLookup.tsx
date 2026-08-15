@@ -4,7 +4,7 @@ import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Cell } from 
 
 import rawData from '../data.json';
 import type { Data, Action } from '../types';
-import { fmtValue, fmtShares, getAllQuarterKeys, getAction, getShareChange, mergeGoogleClasses } from '../utils';
+import { fmtValue, fmtShares, getAllQuarterKeys, getPreviousQuarter, getAction, getShareChange, mergeGoogleClasses } from '../utils';
 import ActionBadge from './ActionBadge';
 
 const data = rawData as unknown as Data;
@@ -38,6 +38,12 @@ export default function StockLookup() {
       if (!q) continue;
       for (const h of mergeGoogleClasses(q.holdings)) {
         if (!map.has(h.t)) map.set(h.t, { ticker: h.t, name: h.n });
+      }
+      const prevQ = getPreviousQuarter(fund, latestQ);
+      if (prevQ) {
+        for (const h of mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? [])) {
+          if (!map.has(h.t)) map.set(h.t, { ticker: h.t, name: h.n });
+        }
       }
     }
     return [...map.values()];
@@ -81,16 +87,19 @@ export default function StockLookup() {
       const q = fund.quarters[latestQ];
       if (!q) continue;
       const holdings = mergeGoogleClasses(q.holdings);
+      const prevQ = getPreviousQuarter(fund, latestQ);
+      const prevHolding = prevQ ? mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? []).find(x => x.t === ticker) : undefined;
       const h = holdings.find(x => x.t === ticker);
-      if (!h) continue;
+      if (!h && !prevHolding) continue;
+      const action = getAction(fund, ticker, latestQ);
       rows.push({
         fundId,
         fundName: fund.name_cn,
-        weight: h.w,
-        shares: h.s,
-        value: h.v,
-        action: getAction(fund, ticker, latestQ),
-        change: getShareChange(fund, ticker, latestQ),
+        weight: h?.w ?? 0,
+        shares: h?.s ?? 0,
+        value: h?.v ?? 0,
+        action,
+        change: action === 'cleared' ? -100 : getShareChange(fund, ticker, latestQ),
       });
     }
     return rows.sort((a, b) => b.weight - a.weight);
