@@ -4,7 +4,7 @@ import { ResponsiveContainer, AreaChart, Area, BarChart, Bar, XAxis, YAxis, Tool
 
 import rawData from '../data.json';
 import type { Data, Holding, Action, SortKey, SortDir } from '../types';
-import { fmtValue, fmtShares, fmtPct, getQuarterKeys, getAction, getShareChange, mergeGoogleClasses, inferSector, estimateCost } from '../utils';
+import { fmtValue, fmtShares, fmtPct, getQuarterKeys, getPreviousQuarter, getAction, getShareChange, mergeGoogleClasses, inferSector, estimateCost } from '../utils';
 import ActionBadge from './ActionBadge';
 
 const data = rawData as unknown as Data;
@@ -34,13 +34,21 @@ export default function FundDetail() {
 
   const rows = useMemo(() => {
     if (!fund || !fund.quarters[selectedQ]) return [];
-    const merged = mergeGoogleClasses(fund.quarters[selectedQ].holdings);
-    return merged.map((h): Row => {
+    const current = mergeGoogleClasses(fund.quarters[selectedQ].holdings);
+    const prevQ = getPreviousQuarter(fund, selectedQ);
+    const previous = prevQ ? mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? []) : [];
+    const currentTickers = new Set(current.map(h => h.t));
+    const cleared = previous
+      .filter(h => !currentTickers.has(h.t))
+      .map(h => ({ ...h, v: 0, s: 0, w: 0 }));
+
+    return [...current, ...cleared].map((h): Row => {
       const cost = estimateCost(fund, h.t);
+      const action = getAction(fund, h.t, selectedQ);
       return {
         ...h,
-        action: getAction(fund, h.t, selectedQ),
-        change: getShareChange(fund, h.t, selectedQ),
+        action,
+        change: action === 'cleared' ? -100 : getShareChange(fund, h.t, selectedQ),
         entryPrice: cost?.entryPrice ?? null,
         currentPrice: cost?.currentPrice ?? null,
         pnlPct: cost?.pnlPct ?? null,

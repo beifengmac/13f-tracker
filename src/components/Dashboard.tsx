@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import rawData from '../data.json';
 import type { Data, Fund } from '../types';
-import { fmtValue, fmtPct, getAllQuarterKeys, getAction, getShareChange, mergeGoogleClasses } from '../utils';
+import { fmtValue, fmtPct, getAllQuarterKeys, getQuarterKeys, getAction, getShareChange, mergeGoogleClasses } from '../utils';
 import ActionBadge from './ActionBadge';
 import MarketInsights from './MarketInsights';
 
@@ -29,7 +29,7 @@ function buildCard(id: string, fund: Fund, quarter: string): CardInfo | null {
   if (!q) return null;
 
   const holdings = mergeGoogleClasses(q.holdings);
-  const allQkeys = Object.keys(fund.quarters).sort();
+  const allQkeys = getQuarterKeys(fund);
   const qi = allQkeys.indexOf(quarter);
   const prevQ = qi > 0 ? allQkeys[qi - 1] : null;
   const prevTotal = prevQ ? fund.quarters[prevQ]?.total ?? null : null;
@@ -43,6 +43,17 @@ function buildCard(id: string, fund: Fund, quarter: string): CardInfo | null {
     const chg = getShareChange(fund, h.t, quarter);
     if (act === 'new' || act === 'increased') { buys.push({ ticker: h.t, action: act, change: chg }); changed++; }
     else if (act === 'decreased' || act === 'cleared') { sells.push({ ticker: h.t, action: act, change: chg }); changed++; }
+  }
+
+  if (prevQ) {
+    const currentTickers = new Set(holdings.map(h => h.t));
+    const prevHoldings = mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? []);
+    for (const h of prevHoldings) {
+      if (!currentTickers.has(h.t) && getAction(fund, h.t, quarter) === 'cleared') {
+        sells.push({ ticker: h.t, action: 'cleared', change: -100 });
+        changed++;
+      }
+    }
   }
 
   buys.sort((a, b) => (a.action === 'new' ? -1 : 0) - (b.action === 'new' ? -1 : 0) || Math.abs(b.change) - Math.abs(a.change));
@@ -65,9 +76,18 @@ function buildTickerTape(quarter: string): string[] {
       const act = getAction(fund, h.t, quarter);
       const chg = getShareChange(fund, h.t, quarter);
       if (act === 'new')       items.push(`🔵 ${fund.name_cn}新建${h.t}`);
-      else if (act === 'cleared') items.push(`🟠 ${fund.name_cn}清仓${h.t}`);
       else if (act === 'increased' && Math.abs(chg) > 30) items.push(`🟢 ${fund.name_cn}加仓${h.t} ${fmtPct(chg)}`);
       else if (act === 'decreased' && Math.abs(chg) > 30) items.push(`🔴 ${fund.name_cn}减仓${h.t} ${fmtPct(chg)}`);
+    }
+    const qKeys = getQuarterKeys(fund);
+    const prevQ = qKeys[qKeys.indexOf(quarter) - 1];
+    if (prevQ) {
+      const currentTickers = new Set(q.holdings.map(h => h.t));
+      for (const h of fund.quarters[prevQ]?.holdings ?? []) {
+        if (!currentTickers.has(h.t) && getAction(fund, h.t, quarter) === 'cleared') {
+          items.push(`🟠 ${fund.name_cn}清仓${h.t}`);
+        }
+      }
     }
   }
   return items.slice(0, 20);
