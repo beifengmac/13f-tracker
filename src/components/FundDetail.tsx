@@ -97,6 +97,12 @@ export default function FundDetail() {
     <span className="ml-0.5 text-[10px] text-gray-400">{sortKey === k ? (sortDir === 'asc' ? '▲' : '▼') : '⇅'}</span>
   );
 
+  const actionCounts = useMemo(() => {
+    const m: Record<string, number> = { all: rows.length };
+    for (const r of rows) m[r.action] = (m[r.action] ?? 0) + 1;
+    return m;
+  }, [rows]);
+
   /* ── Sparkline for expanded row ──────────────── */
 
   const Sparkline = ({ ticker, row }: { ticker: string; row: Row }) => {
@@ -176,12 +182,6 @@ export default function FundDetail() {
   const totalPositions = q?.total_positions ?? rows.length;
 
   /* ── Action filter tabs ──────────────────────── */
-
-  const actionCounts = useMemo(() => {
-    const m: Record<string, number> = { all: rows.length };
-    for (const r of rows) m[r.action] = (m[r.action] ?? 0) + 1;
-    return m;
-  }, [rows]);
 
   const TABS: { key: 'all' | Action; label: string }[] = [
     { key: 'all', label: 'All' },
