@@ -170,6 +170,58 @@ TICKER_MAP = {
     '48203R104': 'JNPR', '683712104': 'ORLY', '42824C109': 'HRMY',
     '05967A107': 'BNTX', '91529Y106': 'UTHR',
     'G0750C108': 'ASML', 'G38327101': 'FRGE', '88160R101': 'TSLA',
+
+    # Common large-cap and tracked-fund holdings
+    '025816109': 'AXP', '191216100': 'KO', 'H1467J104': 'CB',
+    '500754106': 'KHC', '23918K108': 'DVA', '829933100': 'SIRI',
+    '92343E102': 'VRSN', '501044101': 'KR', '02005N100': 'ALLY',
+    '530909308': 'LLYVA', '530909100': 'LLYVK', '650111107': 'NYT',
+    '546347105': 'LPX', '670346105': 'NUE', '55616P104': 'M',
+    '62944T105': 'NVR', '526057302': 'LEN.B', '47233W109': 'JEF',
+    '007903107': 'AMD', '512807306': 'LRCX', '651639106': 'NEM',
+    '038222105': 'AMAT', '68389X105': 'ORCL', '478160104': 'JNJ',
+    '907818108': 'UNP', '02209S103': 'MO', '032095101': 'APH',
+    '06849F108': 'B', '693718108': 'PCAR', '958102105': 'WDC',
+    '126408103': 'CSX', '71654V408': 'PBR', '482480100': 'KLAC',
+    '199908104': 'FIX', 'N6596X109': 'NXPI', '949746101': 'WFC',
+    '281020107': 'EIX', '56585A102': 'MPC', '858119100': 'STLD',
+    '30040W108': 'ES', 'G87052109': 'TEL', '032654105': 'ADI',
+    '149123101': 'CAT', '931142103': 'WMT', '00287Y109': 'ABBV',
+    '227046109': 'CROX', '88034P109': 'TME',
+    '464286772': 'EWY', '922042858': 'VWO', '464288588': 'MBB',
+    '464287242': 'LQD', '46434G103': 'IEMG', '46434G764': 'EMXC',
+    'N07059210': 'ASML',
+
+    # Innovation and growth holdings
+    '88023B103': 'TEM', '770700102': 'HOOD', 'H17182108': 'CRSP',
+    '82509L107': 'SHOP', '88025U109': 'TXG', '69608A108': 'PLTR',
+    '19260Q107': 'COIN', '771049103': 'RBLX', '07373V105': 'BEAM',
+    '45826J105': 'NTLA', '172573107': 'CRCL', '21873S108': 'CRWV',
+    '244199105': 'DE', '852234103': 'XYZ', '50077B207': 'KTOS',
+    '773121108': 'RKLB', '75629V104': 'RXRX', '03945R102': 'ACHR',
+    '00091E109': 'ABSI', '92337F107': 'VCYT', '040919102': 'ARKB',
+    '502431109': 'LHX', '09175A206': 'BMNR', '71535D106': 'PSNL',
+    '81663L200': 'WGS', '008073108': 'AVAV', '40131M109': 'GH',
+    '896239100': 'TRMB', '83406F102': 'SOFI', 'G25457105': 'CRDO',
+    '254687106': 'DIS', '457642205': 'INOD', 'G16910120': 'BLSH',
+    '98386P102': 'XE', '84615Q103': 'SPCX', '15675D103': 'CBRS',
+
+    # China, biotech, and special-situation holdings
+    '52490G102': 'LEGN', '36118L106': 'FUTU', '573874104': 'MRVL',
+    '92763W103': 'VIPS', '482497104': 'BEKE', '23285D109': 'CTKB',
+    '010911105': 'ALMS', '67613T104': 'ODTX', '44975P103': 'NBP',
+    '985194208': 'YSG', '21217B100': 'CTNM', '578784100': 'MAZE',
+    '90114C107': 'TUYA', 'G9572D103': 'BULL', '69404D108': 'PACB',
+    '608012308': 'MOGU', '38341P102': 'GOSS', '29446Y502': 'EQX',
+    '01626L204': 'ALGS', '786700104': 'SGMT', '64110W102': 'NTES',
+    '98980L101': 'ZM', 'G2124G203': 'RDGT',
+
+    # Duquesne Q2 2026 holdings
+    '35137L105': 'FOXA', '35137L204': 'FOX', '12514G108': 'CDW',
+    'G11448100': 'BTDR', '343412102': 'FLR', '697435105': 'PANW',
+    '44812J104': 'HUT', '149568107': 'CVCO', '44916Y106': 'PURR',
+    '750917106': 'RMBS',
+    '76243J105': 'RYTM', '830830105': 'SKY', '767292105': 'RIOT',
     # Broadcom fix (was incorrectly mapped to HOOD)
     '11135F101': 'AVGO',
     # Additional Duquesne + cross-fund mappings
@@ -382,7 +434,9 @@ def process_fund(fund_id, fund_info, num_quarters=4):
 
         quarter_holdings = []
         for cusip, h in limited.items():
-            ticker = TICKER_MAP.get(cusip, h['name'][:8].upper().strip())
+            # Never invent pseudo-tickers from issuer names. If a CUSIP is not
+            # mapped yet, keep the stable CUSIP visible so it can be audited.
+            ticker = TICKER_MAP.get(cusip, cusip)
             pct = round(h['value'] / total * 100, 2) if total > 0 else 0
             quarter_holdings.append({
                 't': ticker, 'n': h['name'],

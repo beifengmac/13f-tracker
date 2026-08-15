@@ -19,14 +19,14 @@
               "w": 22.04
             },
             {
-              "t": "AMERICAN",
+              "t": "AXP",
               "n": "AMERICAN EXPRESS CO",
               "v": 51282319275,
               "s": 151610700,
               "w": 17.14
             },
             {
-              "t": "COCA COL",
+              "t": "KO",
               "n": "COCA COLA CO",
               "v": 32508000000,
               "s": 400000000,
@@ -61,7 +61,7 @@
               "w": 4.3
             },
             {
-              "t": "CHUBB LI",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "v": 11670066615,
               "s": 34249183,
@@ -82,14 +82,14 @@
               "w": 3.21
             },
             {
-              "t": "KRAFT HE",
+              "t": "KHC",
               "n": "KRAFT HEINZ CO",
               "v": 7691494401,
               "s": 325634818,
               "w": 2.57
             },
             {
-              "t": "DAVITA I",
+              "t": "DVA",
               "n": "DAVITA INC",
               "v": 6425268898,
               "s": 28880209,
@@ -103,28 +103,28 @@
               "w": 1.79
             },
             {
-              "t": "SIRIUSXM",
+              "t": "SIRI",
               "n": "SIRIUSXM HOLDINGS INC",
               "v": 3686802237,
               "s": 124807117,
               "w": 1.23
             },
             {
-              "t": "VERISIGN",
+              "t": "VRSN",
               "n": "VERISIGN INC",
               "v": 2261494212,
               "s": 8989880,
               "w": 0.76
             },
             {
-              "t": "KROGER C",
+              "t": "KR",
               "n": "KROGER CO",
               "v": 2165670000,
               "s": 39000000,
               "w": 0.72
             },
             {
-              "t": "ALLY FIN",
+              "t": "ALLY",
               "n": "ALLY FINL INC",
               "v": 1240650000,
               "s": 27000000,
@@ -138,14 +138,14 @@
               "w": 0.4
             },
             {
-              "t": "LIBERTY",
+              "t": "LLYVA",
               "n": "LIBERTY LIVE HOLDINGS INC",
               "v": 1118425787,
               "s": 10587143,
               "w": 0.37
             },
             {
-              "t": "NEW YORK",
+              "t": "NYT",
               "n": "NEW YORK TIMES CO MTN BE",
               "v": 1098686000,
               "s": 15700000,
@@ -159,49 +159,49 @@
               "w": 0.2
             },
             {
-              "t": "LIBERTY",
+              "t": "LLYVK",
               "n": "LIBERTY LIVE HOLDINGS INC",
               "v": 504941901,
               "s": 4986588,
               "w": 0.17
             },
             {
-              "t": "LOUISIAN",
+              "t": "LPX",
               "n": "LOUISIANA PAC CORP",
               "v": 445592617,
               "s": 5664793,
               "w": 0.15
             },
             {
-              "t": "NUCOR CO",
+              "t": "NUE",
               "n": "NUCOR CORP",
               "v": 413814258,
               "s": 1857752,
               "w": 0.14
             },
             {
-              "t": "MACYS IN",
+              "t": "M",
               "n": "MACYS INC",
               "v": 173031882,
               "s": 7347426,
               "w": 0.06
             },
             {
-              "t": "NVR INC",
+              "t": "NVR",
               "n": "NVR INC",
               "v": 75710501,
               "s": 11112,
               "w": 0.03
             },
             {
-              "t": "LENNAR C",
+              "t": "LEN.B",
               "n": "LENNAR CORP",
               "v": 26445959,
               "s": 298117,
               "w": 0.01
             },
             {
-              "t": "JEFFERIE",
+              "t": "JEF",
               "n": "JEFFERIES FINANCIAL GROUP IN",
               "v": 21669229,
               "s": 433558,
@@ -228,14 +228,14 @@
               "w": 21.99
             },
             {
-              "t": "AMERICAN",
+              "t": "AXP",
               "n": "AMERICAN EXPRESS CO",
               "v": 45859204536,
               "s": 151610700,
               "w": 17.43
             },
             {
-              "t": "COCA COL",
+              "t": "KO",
               "n": "COCA COLA CO",
               "v": 30420000000,
               "s": 400000000,
@@ -270,7 +270,7 @@
               "w": 5.93
             },
             {
-              "t": "CHUBB LT",
+              "t": "CB",
               "n": "CHUBB LTD SWITZ",
               "v": 11162836215,
               "s": 34249183,
@@ -284,28 +284,28 @@
               "w": 4.09
             },
             {
-              "t": "KRAFT HE",
+              "t": "KHC",
               "n": "KRAFT HEINZ CO",
               "v": 7323527057,
               "s": 325634818,
               "w": 2.78
             },
             {
-              "t": "DAVITA I",
+              "t": "DVA",
               "n": "DAVITA INC",
               "v": 4626158909,
               "s": 30100585,
               "w": 1.76
             },
             {
-              "t": "KROGER C",
+              "t": "KR",
               "n": "KROGER CO",
               "v": 3618000000,
               "s": 50000000,
               "w": 1.38
             },
             {
-              "t": "SIRIUSXM",
+              "t": "SIRI",
               "n": "SIRIUSXM HOLDINGS INC",
               "v": 2880548260,
               "s": 124807117,
@@ -319,7 +319,7 @@
               "w": 1.01
             },
             {
-              "t": "VERISIGN",
+              "t": "VRSN",
               "n": "VERISIGN INC",
               "v": 2232726597,
               "s": 8989880,
@@ -333,14 +333,14 @@
               "w": 0.5
             },
             {
-              "t": "NEW YORK",
+              "t": "NYT",
               "n": "NEW YORK TIMES CO MTN BE",
               "v": 1268219376,
               "s": 15146535,
               "w": 0.48
             },
             {
-              "t": "ALLY FIN",
+              "t": "ALLY",
               "n": "ALLY FINL INC",
               "v": 1137670000,
               "s": 29000000,
@@ -354,7 +354,7 @@
               "w": 0.39
             },
             {
-              "t": "LIBERTY",
+              "t": "LLYVA",
               "n": "LIBERTY LIVE HOLDINGS INC",
               "v": 996356028,
               "s": 10587143,
@@ -368,56 +368,56 @@
               "w": 0.33
             },
             {
-              "t": "NUCOR CO",
+              "t": "NUE",
               "n": "NUCOR CORP",
               "v": 660686383,
               "s": 3907075,
               "w": 0.25
             },
             {
-              "t": "LIBERTY",
+              "t": "LLYVK",
               "n": "LIBERTY LIVE HOLDINGS INC",
               "v": 456970925,
               "s": 4986588,
               "w": 0.17
             },
             {
-              "t": "LOUISIAN",
+              "t": "LPX",
               "n": "LOUISIANA PAC CORP",
               "v": 412113691,
               "s": 5664793,
               "w": 0.16
             },
             {
-              "t": "CONSTELL",
+              "t": "21036P108",
               "n": "CONSTELLATION BRANDS INC",
               "v": 94933500,
               "s": 632890,
               "w": 0.04
             },
             {
-              "t": "NVR INC",
+              "t": "NVR",
               "n": "NVR INC",
               "v": 73226191,
               "s": 11112,
               "w": 0.03
             },
             {
-              "t": "MACYS IN",
+              "t": "M",
               "n": "MACYS INC",
               "v": 54963842,
               "s": 3038355,
               "w": 0.02
             },
             {
-              "t": "LENNAR C",
+              "t": "LEN.B",
               "n": "LENNAR CORP",
               "v": 19995576,
               "s": 237703,
               "w": 0.01
             },
             {
-              "t": "JEFFERIE",
+              "t": "JEF",
               "n": "JEFFERIES FINANCIAL GROUP IN",
               "v": 17892939,
               "s": 433558,
@@ -437,7 +437,7 @@
               "w": 22.6
             },
             {
-              "t": "AMERICAN",
+              "t": "AXP",
               "n": "AMERICAN EXPRESS CO",
               "v": 56088378465,
               "s": 151610700,
@@ -451,7 +451,7 @@
               "w": 10.38
             },
             {
-              "t": "COCA COL",
+              "t": "KO",
               "n": "COCA COLA CO",
               "v": 27964000000,
               "s": 400000000,
@@ -479,14 +479,14 @@
               "w": 3.97
             },
             {
-              "t": "CHUBB LI",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "v": 10689854998,
               "s": 34249183,
               "w": 3.9
             },
             {
-              "t": "KRAFT HE",
+              "t": "KHC",
               "n": "KRAFT HEINZ CO",
               "v": 7896644337,
               "s": 325634818,
@@ -500,14 +500,14 @@
               "w": 2.04
             },
             {
-              "t": "DAVITA I",
+              "t": "DVA",
               "n": "DAVITA INC",
               "v": 3608147375,
               "s": 31759065,
               "w": 1.32
             },
             {
-              "t": "KROGER C",
+              "t": "KR",
               "n": "KROGER CO",
               "v": 3124000000,
               "s": 50000000,
@@ -521,7 +521,7 @@
               "w": 1.06
             },
             {
-              "t": "SIRIUS X",
+              "t": "SIRI",
               "n": "SIRIUS XM HOLDINGS INC",
               "v": 2495518305,
               "s": 124807117,
@@ -535,14 +535,14 @@
               "w": 0.83
             },
             {
-              "t": "VERISIGN",
+              "t": "VRSN",
               "n": "VERISIGN INC",
               "v": 2184091346,
               "s": 8989880,
               "w": 0.8
             },
             {
-              "t": "CONSTELL",
+              "t": "21036P108",
               "n": "CONSTELLATION BRANDS INC",
               "v": 1793480000,
               "s": 13000000,
@@ -563,35 +563,35 @@
               "w": 0.61
             },
             {
-              "t": "DOMINOS",
+              "t": "25754A201",
               "n": "DOMINOS PIZZA INC",
               "v": 1396347000,
               "s": 3350000,
               "w": 0.51
             },
             {
-              "t": "ALLY FIN",
+              "t": "ALLY",
               "n": "ALLY FINL INC",
               "v": 1313410001,
               "s": 29000000,
               "w": 0.48
             },
             {
-              "t": "AON PLC",
+              "t": "G0403H108",
               "n": "AON PLC",
               "v": 1271424876,
               "s": 3602995,
               "w": 0.46
             },
             {
-              "t": "NUCOR CO",
+              "t": "NUE",
               "n": "NUCOR CORP",
               "v": 1045167939,
               "s": 6407749,
               "w": 0.38
             },
             {
-              "t": "LIBERTY",
+              "t": "LLYVA",
               "n": "LIBERTY LIVE HOLDINGS INC",
               "v": 907912688,
               "s": 10917661,
@@ -605,7 +605,7 @@
               "w": 0.26
             },
             {
-              "t": "POOL COR",
+              "t": "73278L105",
               "n": "POOL CORP",
               "v": 702007444,
               "s": 3068885,
@@ -619,28 +619,28 @@
               "w": 0.19
             },
             {
-              "t": "LOUISIAN",
+              "t": "LPX",
               "n": "LOUISIANA PAC CORP",
               "v": 457488683,
               "s": 5664793,
               "w": 0.17
             },
             {
-              "t": "LIBERTY",
+              "t": "LLYVK",
               "n": "LIBERTY LIVE HOLDINGS INC",
               "v": 406406923,
               "s": 4986588,
               "w": 0.15
             },
             {
-              "t": "NEW YORK",
+              "t": "NYT",
               "n": "NEW YORK TIMES CO",
               "v": 351663948,
               "s": 5065744,
               "w": 0.13
             },
             {
-              "t": "HEICO CO",
+              "t": "422806208",
               "n": "HEICO CORP NEW",
               "v": 326798907,
               "s": 1294612,
@@ -654,70 +654,70 @@
               "w": 0.11
             },
             {
-              "t": "CHARTER",
+              "t": "16119P108",
               "n": "CHARTER COMMUNICATIONS INC N",
               "v": 221459118,
               "s": 1060882,
               "w": 0.08
             },
             {
-              "t": "LAMAR AD",
+              "t": "512816109",
               "n": "LAMAR ADVERTISING CO NEW",
               "v": 152201058,
               "s": 1202410,
               "w": 0.06
             },
             {
-              "t": "ALLEGION",
+              "t": "G0176J109",
               "n": "ALLEGION PLC",
               "v": 124212776,
               "s": 780133,
               "w": 0.05
             },
             {
-              "t": "NVR INC",
+              "t": "NVR",
               "n": "NVR INC",
               "v": 81037260,
               "s": 11112,
               "w": 0.03
             },
             {
-              "t": "JEFFERIE",
+              "t": "JEF",
               "n": "JEFFERIES FINL GROUP INC",
               "v": 26867589,
               "s": 433558,
               "w": 0.01
             },
             {
-              "t": "DIAGEO P",
+              "t": "25243Q205",
               "n": "DIAGEO PLC",
               "v": 19647993,
               "s": 227750,
               "w": 0.01
             },
             {
-              "t": "LIBERTY",
+              "t": "G9001E102",
               "n": "LIBERTY LATIN AMERICA LTD",
               "v": 17711354,
               "s": 2396665,
               "w": 0.01
             },
             {
-              "t": "LENNAR C",
+              "t": "LEN.B",
               "n": "LENNAR CORP",
               "v": 17214818,
               "s": 180980,
               "w": 0.01
             },
             {
-              "t": "LIBERTY",
+              "t": "G9001E128",
               "n": "LIBERTY LATIN AMERICA LTD",
               "v": 9578789,
               "s": 1284020,
               "w": 0.0
             },
             {
-              "t": "ATLANTA",
+              "t": "047726302",
               "n": "ATLANTA BRAVES HLDGS INC",
               "v": 4553634,
               "s": 115428,
@@ -737,7 +737,7 @@
               "w": 22.69
             },
             {
-              "t": "AMERICAN",
+              "t": "AXP",
               "n": "AMERICAN EXPRESS CO",
               "v": 50359010112,
               "s": 151610700,
@@ -751,7 +751,7 @@
               "w": 10.96
             },
             {
-              "t": "COCA COL",
+              "t": "KO",
               "n": "COCA COLA CO",
               "v": 26528000000,
               "s": 400000000,
@@ -779,14 +779,14 @@
               "w": 4.4
             },
             {
-              "t": "CHUBB LI",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "v": 8843709614,
               "s": 31332895,
               "w": 3.31
             },
             {
-              "t": "KRAFT HE",
+              "t": "KHC",
               "n": "KRAFT HEINZ CO",
               "v": 8479530661,
               "s": 325634818,
@@ -800,21 +800,21 @@
               "w": 1.62
             },
             {
-              "t": "DAVITA I",
+              "t": "DVA",
               "n": "DAVITA INC",
               "v": 4273176132,
               "s": 32160579,
               "w": 1.6
             },
             {
-              "t": "KROGER C",
+              "t": "KR",
               "n": "KROGER CO",
               "v": 3370500001,
               "s": 50000000,
               "w": 1.26
             },
             {
-              "t": "SIRIUS X",
+              "t": "SIRI",
               "n": "SIRIUS XM HOLDINGS INC",
               "v": 2904885649,
               "s": 124807117,
@@ -828,7 +828,7 @@
               "w": 1.06
             },
             {
-              "t": "VERISIGN",
+              "t": "VRSN",
               "n": "VERISIGN INC",
               "v": 2513300752,
               "s": 8989880,
@@ -849,7 +849,7 @@
               "w": 0.82
             },
             {
-              "t": "CONSTELL",
+              "t": "21036P108",
               "n": "CONSTELLATION BRANDS INC",
               "v": 1804578000,
               "s": 13400000,
@@ -870,35 +870,35 @@
               "w": 0.57
             },
             {
-              "t": "AON PLC",
+              "t": "G0403H108",
               "n": "AON PLC",
               "v": 1461978000,
               "s": 4100000,
               "w": 0.55
             },
             {
-              "t": "DOMINOS",
+              "t": "25754A201",
               "n": "DOMINOS PIZZA INC",
               "v": 1287335476,
               "s": 2981945,
               "w": 0.48
             },
             {
-              "t": "ALLY FIN",
+              "t": "ALLY",
               "n": "ALLY FINL INC",
               "v": 1136800000,
               "s": 29000000,
               "w": 0.43
             },
             {
-              "t": "POOL COR",
+              "t": "73278L105",
               "n": "POOL CORP",
               "v": 1072496472,
               "s": 3458885,
               "w": 0.4
             },
             {
-              "t": "LIBERTY",
+              "t": "531229722",
               "n": "LIBERTY MEDIA CORP DEL",
               "v": 1058685587,
               "s": 10917661,
@@ -912,105 +912,105 @@
               "w": 0.33
             },
             {
-              "t": "NUCOR CO",
+              "t": "NUE",
               "n": "NUCOR CORP",
               "v": 867801447,
               "s": 6407749,
               "w": 0.32
             },
             {
-              "t": "LOUISIAN",
+              "t": "LPX",
               "n": "LOUISIANA PAC CORP",
               "v": 503260211,
               "s": 5664793,
               "w": 0.19
             },
             {
-              "t": "LIBERTY",
+              "t": "531229748",
               "n": "LIBERTY MEDIA CORP DEL",
               "v": 470235248,
               "s": 4986588,
               "w": 0.18
             },
             {
-              "t": "HEICO CO",
+              "t": "422806208",
               "n": "HEICO CORP NEW",
               "v": 328947963,
               "s": 1294612,
               "w": 0.12
             },
             {
-              "t": "LIBERTY",
+              "t": "531229854",
               "n": "LIBERTY MEDIA CORP DEL",
               "v": 315288070,
               "s": 3018555,
               "w": 0.12
             },
             {
-              "t": "CHARTER",
+              "t": "16119P108",
               "n": "CHARTER COMMUNICATIONS INC N",
               "v": 291853943,
               "s": 1060882,
               "w": 0.11
             },
             {
-              "t": "LAMAR AD",
+              "t": "512816109",
               "n": "LAMAR ADVERTISING CO NEW",
               "v": 147162306,
               "s": 1202110,
               "w": 0.06
             },
             {
-              "t": "ALLEGION",
+              "t": "G0176J109",
               "n": "ALLEGION PLC",
               "v": 138356588,
               "s": 780133,
               "w": 0.05
             },
             {
-              "t": "NVR INC",
+              "t": "NVR",
               "n": "NVR INC",
               "v": 89281142,
               "s": 11112,
               "w": 0.03
             },
             {
-              "t": "JEFFERIE",
+              "t": "JEF",
               "n": "JEFFERIES FINL GROUP INC",
               "v": 28363364,
               "s": 433558,
               "w": 0.01
             },
             {
-              "t": "LIBERTY",
+              "t": "G9001E102",
               "n": "LIBERTY LATIN AMERICA LTD",
               "v": 21809266,
               "s": 2630792,
               "w": 0.01
             },
             {
-              "t": "DIAGEO P",
+              "t": "25243Q205",
               "n": "DIAGEO P L C",
               "v": 21734183,
               "s": 227750,
               "w": 0.01
             },
             {
-              "t": "LENNAR C",
+              "t": "LEN.B",
               "n": "LENNAR CORP",
               "v": 21715790,
               "s": 180980,
               "w": 0.01
             },
             {
-              "t": "LIBERTY",
+              "t": "G9001E128",
               "n": "LIBERTY LATIN AMERICA LTD",
               "v": 10837129,
               "s": 1284020,
               "w": 0.0
             },
             {
-              "t": "ATLANTA",
+              "t": "047726302",
               "n": "ATLANTA BRAVES HLDGS INC",
               "v": 9301396,
               "s": 223645,
@@ -1075,7 +1075,7 @@
               "w": 1.94
             },
             {
-              "t": "LAM RESE",
+              "t": "LRCX",
               "n": "LAM RESEARCH CORP",
               "v": 406560606,
               "s": 938224,
@@ -1089,14 +1089,14 @@
               "w": 1.29
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "ADVANCED MICRO DEVICES INC",
               "v": 312896715,
               "s": 538632,
               "w": 1.28
             },
             {
-              "t": "ISHARES",
+              "t": "EWY",
               "n": "ISHARES INC",
               "v": 279585467,
               "s": 1384772,
@@ -1110,21 +1110,21 @@
               "w": 1.09
             },
             {
-              "t": "NEWMONT",
+              "t": "NEM",
               "n": "NEWMONT CORP",
               "v": 251728878,
               "s": 2695170,
               "w": 1.03
             },
             {
-              "t": "APPLIED",
+              "t": "AMAT",
               "n": "APPLIED MATLS INC",
               "v": 210700998,
               "s": 291426,
               "w": 0.86
             },
             {
-              "t": "ORACLE C",
+              "t": "ORCL",
               "n": "ORACLE CORP",
               "v": 210001314,
               "s": 1432967,
@@ -1138,14 +1138,14 @@
               "w": 0.79
             },
             {
-              "t": "JOHNSON",
+              "t": "JNJ",
               "n": "JOHNSON & JOHNSON",
               "v": 169940216,
               "s": 669135,
               "w": 0.7
             },
             {
-              "t": "VANGUARD",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "v": 163957626,
               "s": 2746819,
@@ -1159,7 +1159,7 @@
               "w": 0.59
             },
             {
-              "t": "UNION PA",
+              "t": "UNP",
               "n": "UNION PAC CORP",
               "v": 139880352,
               "s": 514266,
@@ -1173,35 +1173,35 @@
               "w": 0.55
             },
             {
-              "t": "ISHARES",
+              "t": "MBB",
               "n": "ISHARES TR",
               "v": 131080336,
               "s": 1386800,
               "w": 0.54
             },
             {
-              "t": "ALTRIA G",
+              "t": "MO",
               "n": "ALTRIA GROUP INC",
               "v": 124273191,
               "s": 1727216,
               "w": 0.51
             },
             {
-              "t": "AMPHENOL",
+              "t": "APH",
               "n": "AMPHENOL CORP",
               "v": 123002948,
               "s": 697612,
               "w": 0.5
             },
             {
-              "t": "ASML HLD",
+              "t": "ASML",
               "n": "ASML HLDG NV",
               "v": 122698712,
               "s": 61675,
               "w": 0.5
             },
             {
-              "t": "BARRICK",
+              "t": "B",
               "n": "BARRICK MNG CORP",
               "v": 121387233,
               "s": 3304836,
@@ -1236,49 +1236,49 @@
               "w": 0.47
             },
             {
-              "t": "ISHARES",
+              "t": "LQD",
               "n": "ISHARES TR",
               "v": 114578035,
               "s": 1050500,
               "w": 0.47
             },
             {
-              "t": "NUCOR CO",
+              "t": "NUE",
               "n": "NUCOR CORP",
               "v": 114364973,
               "s": 513423,
               "w": 0.47
             },
             {
-              "t": "PACCAR I",
+              "t": "PCAR",
               "n": "PACCAR INC",
               "v": 113646373,
               "s": 946107,
               "w": 0.47
             },
             {
-              "t": "WESTERN",
+              "t": "WDC",
               "n": "WESTERN DIGITAL CORP",
               "v": 110124909,
               "s": 172415,
               "w": 0.45
             },
             {
-              "t": "ISHARES",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "v": 110034384,
               "s": 1328276,
               "w": 0.45
             },
             {
-              "t": "CSX CORP",
+              "t": "CSX",
               "n": "CSX CORP",
               "v": 105990236,
               "s": 2229965,
               "w": 0.43
             },
             {
-              "t": "PETROLEO",
+              "t": "PBR",
               "n": "PETROLEO BRASILEIRO S A",
               "v": 105436776,
               "s": 6524553,
@@ -1306,77 +1306,77 @@
               "w": 0.41
             },
             {
-              "t": "KLA CORP",
+              "t": "KLAC",
               "n": "KLA CORP",
               "v": 98982000,
               "s": 328070,
               "w": 0.41
             },
             {
-              "t": "COMFORT",
+              "t": "FIX",
               "n": "COMFORT SYS USA INC",
               "v": 96136467,
               "s": 48506,
               "w": 0.39
             },
             {
-              "t": "NXP SEMI",
+              "t": "NXPI",
               "n": "NXP SEMICONDUCTORS N V",
               "v": 94820927,
               "s": 337405,
               "w": 0.39
             },
             {
-              "t": "WELLS FA",
+              "t": "WFC",
               "n": "WELLS FARGO & CO",
               "v": 94693375,
               "s": 1145854,
               "w": 0.39
             },
             {
-              "t": "EDISON I",
+              "t": "EIX",
               "n": "EDISON INTL",
               "v": 91917012,
               "s": 1234614,
               "w": 0.38
             },
             {
-              "t": "ISHARES",
+              "t": "EMXC",
               "n": "ISHARES INC",
               "v": 90076787,
               "s": 880516,
               "w": 0.37
             },
             {
-              "t": "MARATHON",
+              "t": "MPC",
               "n": "MARATHON PETE CORP",
               "v": 89286100,
               "s": 349224,
               "w": 0.37
             },
             {
-              "t": "STEEL DY",
+              "t": "STLD",
               "n": "STEEL DYNAMICS INC",
               "v": 86848315,
               "s": 378490,
               "w": 0.36
             },
             {
-              "t": "EVERSOUR",
+              "t": "ES",
               "n": "EVERSOURCE ENERGY",
               "v": 86372768,
               "s": 1195140,
               "w": 0.35
             },
             {
-              "t": "TE CONNE",
+              "t": "TEL",
               "n": "TE CONNECTIVITY PLC",
               "v": 86030616,
               "s": 426718,
               "w": 0.35
             },
             {
-              "t": "ANALOG D",
+              "t": "ADI",
               "n": "ANALOG DEVICES INC",
               "v": 80708121,
               "s": 203208,
@@ -1459,56 +1459,56 @@
               "w": 1.62
             },
             {
-              "t": "LAM RESE",
+              "t": "LRCX",
               "n": "LAM RESEARCH CORP",
               "v": 335708788,
               "s": 1571229,
               "w": 1.5
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "ADVANCED MICRO DEVICES INC",
               "v": 262987591,
               "s": 1292767,
               "w": 1.17
             },
             {
-              "t": "NEWMONT",
+              "t": "NEM",
               "n": "NEWMONT CORP",
               "v": 250776388,
               "s": 2316641,
               "w": 1.12
             },
             {
-              "t": "ORACLE C",
+              "t": "ORCL",
               "n": "ORACLE CORP",
               "v": 234209271,
               "s": 1592069,
               "w": 1.05
             },
             {
-              "t": "ISHARES",
+              "t": "EWY",
               "n": "ISHARES INC",
               "v": 217268135,
               "s": 1766264,
               "w": 0.97
             },
             {
-              "t": "MARVELL",
+              "t": "MRVL",
               "n": "MARVELL TECHNOLOGY INC",
               "v": 193043200,
               "s": 1948947,
               "w": 0.86
             },
             {
-              "t": "APPLIED",
+              "t": "AMAT",
               "n": "APPLIED MATLS INC",
               "v": 191374373,
               "s": 559918,
               "w": 0.85
             },
             {
-              "t": "JOHNSON",
+              "t": "JNJ",
               "n": "JOHNSON & JOHNSON",
               "v": 170346325,
               "s": 696884,
@@ -1522,14 +1522,14 @@
               "w": 0.74
             },
             {
-              "t": "ARISTA N",
+              "t": "040413205",
               "n": "ARISTA NETWORKS INC",
               "v": 163308573,
               "s": 1330091,
               "w": 0.73
             },
             {
-              "t": "KLA CORP",
+              "t": "KLAC",
               "n": "KLA CORP",
               "v": 160012684,
               "s": 108674,
@@ -1543,7 +1543,7 @@
               "w": 0.66
             },
             {
-              "t": "VANGUARD",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "v": 147110047,
               "s": 2721740,
@@ -1557,14 +1557,14 @@
               "w": 0.64
             },
             {
-              "t": "UNION PA",
+              "t": "UNP",
               "n": "UNION PAC CORP",
               "v": 129280067,
               "s": 532850,
               "w": 0.58
             },
             {
-              "t": "ISHARES",
+              "t": "MBB",
               "n": "ISHARES TR",
               "v": 129132000,
               "s": 1360000,
@@ -1578,35 +1578,35 @@
               "w": 0.58
             },
             {
-              "t": "BARRICK",
+              "t": "B",
               "n": "BARRICK MNG CORP",
               "v": 125599704,
               "s": 3079243,
               "w": 0.56
             },
             {
-              "t": "ASML HLD",
+              "t": "ASML",
               "n": "ASML HLDG NV",
               "v": 121775243,
               "s": 92196,
               "w": 0.54
             },
             {
-              "t": "COMFORT",
+              "t": "FIX",
               "n": "COMFORT SYS USA INC",
               "v": 119230233,
               "s": 86462,
               "w": 0.53
             },
             {
-              "t": "ALTRIA G",
+              "t": "MO",
               "n": "ALTRIA GROUP INC",
               "v": 112546671,
               "s": 1705511,
               "w": 0.5
             },
             {
-              "t": "ISHARES",
+              "t": "LQD",
               "n": "ISHARES TR",
               "v": 111355083,
               "s": 1021700,
@@ -1627,21 +1627,21 @@
               "w": 0.49
             },
             {
-              "t": "AMPHENOL",
+              "t": "APH",
               "n": "AMPHENOL CORP",
               "v": 109046115,
               "s": 863048,
               "w": 0.49
             },
             {
-              "t": "VERTIV H",
+              "t": "92537N108",
               "n": "VERTIV HOLDINGS CO",
               "v": 107690764,
               "s": 429766,
               "w": 0.48
             },
             {
-              "t": "NUCOR CO",
+              "t": "NUE",
               "n": "NUCOR CORP",
               "v": 104593085,
               "s": 618528,
@@ -1655,14 +1655,14 @@
               "w": 0.45
             },
             {
-              "t": "CSX CORP",
+              "t": "CSX",
               "n": "CSX CORP",
               "v": 97503109,
               "s": 2375228,
               "w": 0.44
             },
             {
-              "t": "CREDO TE",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "v": 96517322,
               "s": 1028202,
@@ -1676,7 +1676,7 @@
               "w": 0.42
             },
             {
-              "t": "ISHARES",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "v": 93670344,
               "s": 1342944,
@@ -1697,35 +1697,35 @@
               "w": 0.4
             },
             {
-              "t": "PACCAR I",
+              "t": "PCAR",
               "n": "PACCAR INC",
               "v": 89751816,
               "s": 777072,
               "w": 0.4
             },
             {
-              "t": "NRG ENER",
+              "t": "629377508",
               "n": "NRG ENERGY INC",
               "v": 86003682,
               "s": 588502,
               "w": 0.38
             },
             {
-              "t": "TALEN EN",
+              "t": "87422Q109",
               "n": "TALEN ENERGY CORP",
               "v": 84946784,
               "s": 266099,
               "w": 0.38
             },
             {
-              "t": "BAKER HU",
+              "t": "05722G100",
               "n": "BAKER HUGHES COMPANY",
               "v": 84349427,
               "s": 1381645,
               "w": 0.38
             },
             {
-              "t": "ISHARES",
+              "t": "EMXC",
               "n": "ISHARES INC",
               "v": 84345545,
               "s": 1072280,
@@ -1766,14 +1766,14 @@
               "w": 2.63
             },
             {
-              "t": "LAM RESE",
+              "t": "LRCX",
               "n": "LAM RESEARCH CORP",
               "v": 520671530,
               "s": 3041661,
               "w": 1.9
             },
             {
-              "t": "SALESFOR",
+              "t": "79466L302",
               "n": "SALESFORCE INC",
               "v": 511823604,
               "s": 1932066,
@@ -1801,7 +1801,7 @@
               "w": 1.64
             },
             {
-              "t": "ADOBE IN",
+              "t": "00724F101",
               "n": "ADOBE INC",
               "v": 446256499,
               "s": 1275055,
@@ -1815,7 +1815,7 @@
               "w": 1.59
             },
             {
-              "t": "BOOKING",
+              "t": "09857L108",
               "n": "BOOKING HOLDINGS INC",
               "v": 431254014,
               "s": 80528,
@@ -1829,21 +1829,21 @@
               "w": 1.47
             },
             {
-              "t": "ORACLE C",
+              "t": "ORCL",
               "n": "ORACLE CORP",
               "v": 365160182,
               "s": 1873481,
               "w": 1.33
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "ADVANCED MICRO DEVICES INC",
               "v": 354761822,
               "s": 1656527,
               "w": 1.29
             },
             {
-              "t": "JOHNSON",
+              "t": "JNJ",
               "n": "JOHNSON & JOHNSON",
               "v": 271923608,
               "s": 1313958,
@@ -1864,28 +1864,28 @@
               "w": 0.85
             },
             {
-              "t": "NEWMONT",
+              "t": "NEM",
               "n": "NEWMONT CORP",
               "v": 230544564,
               "s": 2308909,
               "w": 0.84
             },
             {
-              "t": "WORKDAY",
+              "t": "98138H101",
               "n": "WORKDAY INC",
               "v": 207287829,
               "s": 965117,
               "w": 0.76
             },
             {
-              "t": "SERVICEN",
+              "t": "81762P102",
               "n": "SERVICENOW INC",
               "v": 205103793,
               "s": 1338885,
               "w": 0.75
             },
             {
-              "t": "ISHARES",
+              "t": "EWY",
               "n": "ISHARES INC",
               "v": 201474645,
               "s": 2072358,
@@ -1899,14 +1899,14 @@
               "w": 0.71
             },
             {
-              "t": "PAYPAL H",
+              "t": "70450Y103",
               "n": "PAYPAL HLDGS INC",
               "v": 194365176,
               "s": 3329311,
               "w": 0.71
             },
             {
-              "t": "ALTRIA G",
+              "t": "MO",
               "n": "ALTRIA GROUP INC",
               "v": 188937463,
               "s": 3276751,
@@ -1920,35 +1920,35 @@
               "w": 0.69
             },
             {
-              "t": "REDDIT I",
+              "t": "75734B100",
               "n": "REDDIT INC",
               "v": 176497864,
               "s": 767816,
               "w": 0.64
             },
             {
-              "t": "EXPEDIA",
+              "t": "30212P303",
               "n": "EXPEDIA GROUP INC",
               "v": 176440652,
               "s": 622783,
               "w": 0.64
             },
             {
-              "t": "ARISTA N",
+              "t": "040413205",
               "n": "ARISTA NETWORKS INC",
               "v": 174196785,
               "s": 1329442,
               "w": 0.64
             },
             {
-              "t": "BRITISH",
+              "t": "110448107",
               "n": "BRITISH AMERN TOB PLC",
               "v": 167146656,
               "s": 2952078,
               "w": 0.61
             },
             {
-              "t": "HCA HEAL",
+              "t": "40412C101",
               "n": "HCA HEALTHCARE INC",
               "v": 153740266,
               "s": 329307,
@@ -1962,56 +1962,56 @@
               "w": 0.54
             },
             {
-              "t": "VANGUARD",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "v": 140052111,
               "s": 2605136,
               "w": 0.51
             },
             {
-              "t": "ISHARES",
+              "t": "MBB",
               "n": "ISHARES TR",
               "v": 130965588,
               "s": 1375400,
               "w": 0.48
             },
             {
-              "t": "APPLIED",
+              "t": "AMAT",
               "n": "APPLIED MATLS INC",
               "v": 122732513,
               "s": 477577,
               "w": 0.45
             },
             {
-              "t": "PINTERES",
+              "t": "72352L106",
               "n": "PINTEREST INC",
               "v": 111790586,
               "s": 4317906,
               "w": 0.41
             },
             {
-              "t": "ISHARES",
+              "t": "LQD",
               "n": "ISHARES TR",
               "v": 110123886,
               "s": 999400,
               "w": 0.4
             },
             {
-              "t": "BARRICK",
+              "t": "B",
               "n": "BARRICK MNG CORP",
               "v": 108291092,
               "s": 2486509,
               "w": 0.39
             },
             {
-              "t": "AMPHENOL",
+              "t": "APH",
               "n": "AMPHENOL CORP NEW",
               "v": 107890911,
               "s": 798364,
               "w": 0.39
             },
             {
-              "t": "WELLS FA",
+              "t": "WFC",
               "n": "WELLS FARGO CO NEW",
               "v": 106391528,
               "s": 1141540,
@@ -2039,56 +2039,56 @@
               "w": 0.37
             },
             {
-              "t": "TE CONNE",
+              "t": "TEL",
               "n": "TE CONNECTIVITY PLC",
               "v": 100286636,
               "s": 440801,
               "w": 0.37
             },
             {
-              "t": "TALEN EN",
+              "t": "87422Q109",
               "n": "TALEN ENERGY CORP",
               "v": 99424061,
               "s": 265244,
               "w": 0.36
             },
             {
-              "t": "KLA CORP",
+              "t": "KLAC",
               "n": "KLA CORP",
               "v": 95222174,
               "s": 78367,
               "w": 0.35
             },
             {
-              "t": "THE CIGN",
+              "t": "125523100",
               "n": "THE CIGNA GROUP",
               "v": 94803524,
               "s": 344452,
               "w": 0.35
             },
             {
-              "t": "MANULIFE",
+              "t": "56501R106",
               "n": "MANULIFE FINL CORP",
               "v": 93010584,
               "s": 2558071,
               "w": 0.34
             },
             {
-              "t": "ASML HOL",
+              "t": "ASML",
               "n": "ASML HOLDING N V",
               "v": 92103178,
               "s": 86089,
               "w": 0.34
             },
             {
-              "t": "BLOCK IN",
+              "t": "XYZ",
               "n": "BLOCK INC",
               "v": 86579659,
               "s": 1330153,
               "w": 0.32
             },
             {
-              "t": "ISHARES",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "v": 85478767,
               "s": 1271627,
@@ -2129,7 +2129,7 @@
               "w": 2.23
             },
             {
-              "t": "SALESFOR",
+              "t": "79466L302",
               "n": "SALESFORCE INC",
               "v": 475665399,
               "s": 2007027,
@@ -2143,21 +2143,21 @@
               "w": 1.83
             },
             {
-              "t": "LAM RESE",
+              "t": "LRCX",
               "n": "LAM RESEARCH CORP",
               "v": 463826922,
               "s": 3463980,
               "w": 1.82
             },
             {
-              "t": "ADOBE IN",
+              "t": "00724F101",
               "n": "ADOBE INC",
               "v": 445416014,
               "s": 1262696,
               "w": 1.74
             },
             {
-              "t": "BOOKING",
+              "t": "09857L108",
               "n": "BOOKING HOLDINGS INC",
               "v": 419690656,
               "s": 77731,
@@ -2178,7 +2178,7 @@
               "w": 1.38
             },
             {
-              "t": "JOHNSON",
+              "t": "JNJ",
               "n": "JOHNSON & JOHNSON",
               "v": 318139371,
               "s": 1715777,
@@ -2192,7 +2192,7 @@
               "w": 1.2
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "ADVANCED MICRO DEVICES INC",
               "v": 290380854,
               "s": 1794801,
@@ -2213,14 +2213,14 @@
               "w": 1.09
             },
             {
-              "t": "SERVICEN",
+              "t": "81762P102",
               "n": "SERVICENOW INC",
               "v": 277918118,
               "s": 301993,
               "w": 1.09
             },
             {
-              "t": "WORKDAY",
+              "t": "98138H101",
               "n": "WORKDAY INC",
               "v": 250463918,
               "s": 1040435,
@@ -2234,7 +2234,7 @@
               "w": 0.97
             },
             {
-              "t": "ALTRIA G",
+              "t": "MO",
               "n": "ALTRIA GROUP INC",
               "v": 244131732,
               "s": 3695606,
@@ -2255,7 +2255,7 @@
               "w": 0.84
             },
             {
-              "t": "WELLS FA",
+              "t": "WFC",
               "n": "WELLS FARGO CO NEW",
               "v": 212501218,
               "s": 2535209,
@@ -2269,77 +2269,77 @@
               "w": 0.82
             },
             {
-              "t": "FISERV I",
+              "t": "337738108",
               "n": "FISERV INC",
               "v": 205405732,
               "s": 1593157,
               "w": 0.8
             },
             {
-              "t": "BRITISH",
+              "t": "110448107",
               "n": "BRITISH AMERN TOB PLC",
               "v": 198663578,
               "s": 3742720,
               "w": 0.78
             },
             {
-              "t": "PAYPAL H",
+              "t": "70450Y103",
               "n": "PAYPAL HLDGS INC",
               "v": 189265517,
               "s": 2822331,
               "w": 0.74
             },
             {
-              "t": "THE CIGN",
+              "t": "125523100",
               "n": "THE CIGNA GROUP",
               "v": 173854817,
               "s": 603139,
               "w": 0.68
             },
             {
-              "t": "ISHARES",
+              "t": "EWY",
               "n": "ISHARES INC",
               "v": 163012792,
               "s": 2035116,
               "w": 0.64
             },
             {
-              "t": "EXPEDIA",
+              "t": "30212P303",
               "n": "EXPEDIA GROUP INC",
               "v": 156425670,
               "s": 731816,
               "w": 0.61
             },
             {
-              "t": "HCA HEAL",
+              "t": "40412C101",
               "n": "HCA HEALTHCARE INC",
               "v": 145145393,
               "s": 340557,
               "w": 0.57
             },
             {
-              "t": "REDDIT I",
+              "t": "75734B100",
               "n": "REDDIT INC",
               "v": 141951668,
               "s": 617208,
               "w": 0.56
             },
             {
-              "t": "METLIFE",
+              "t": "59156R108",
               "n": "METLIFE INC",
               "v": 136572672,
               "s": 1658039,
               "w": 0.53
             },
             {
-              "t": "VANGUARD",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "v": 134128496,
               "s": 2475609,
               "w": 0.53
             },
             {
-              "t": "PINTERES",
+              "t": "72352L106",
               "n": "PINTEREST INC",
               "v": 132745194,
               "s": 4126366,
@@ -2353,7 +2353,7 @@
               "w": 0.52
             },
             {
-              "t": "ISHARES",
+              "t": "MBB",
               "n": "ISHARES TR",
               "v": 128937765,
               "s": 1355100,
@@ -2374,77 +2374,77 @@
               "w": 0.48
             },
             {
-              "t": "KLA CORP",
+              "t": "KLAC",
               "n": "KLA CORP",
               "v": 121601364,
               "s": 112740,
               "w": 0.48
             },
             {
-              "t": "NXP SEMI",
+              "t": "NXPI",
               "n": "NXP SEMICONDUCTORS N V",
               "v": 119315262,
               "s": 523933,
               "w": 0.47
             },
             {
-              "t": "ROBINHOO",
+              "t": "HOOD",
               "n": "ROBINHOOD MKTS INC",
               "v": 115619855,
               "s": 807514,
               "w": 0.45
             },
             {
-              "t": "ORACLE C",
+              "t": "ORCL",
               "n": "ORACLE CORP",
               "v": 114261906,
               "s": 406279,
               "w": 0.45
             },
             {
-              "t": "ISHARES",
+              "t": "LQD",
               "n": "ISHARES TR",
               "v": 107289875,
               "s": 962500,
               "w": 0.42
             },
             {
-              "t": "GLOBAL P",
+              "t": "37940X102",
               "n": "GLOBAL PMTS INC",
               "v": 103649528,
               "s": 1247587,
               "w": 0.41
             },
             {
-              "t": "ARISTA N",
+              "t": "040413205",
               "n": "ARISTA NETWORKS INC",
               "v": 99136130,
               "s": 680366,
               "w": 0.39
             },
             {
-              "t": "EBAY INC",
+              "t": "278642103",
               "n": "EBAY INC.",
               "v": 96866207,
               "s": 1065049,
               "w": 0.38
             },
             {
-              "t": "APPLIED",
+              "t": "AMAT",
               "n": "APPLIED MATLS INC",
               "v": 94897604,
               "s": 463503,
               "w": 0.37
             },
             {
-              "t": "MANULIFE",
+              "t": "56501R106",
               "n": "MANULIFE FINL CORP",
               "v": 93197231,
               "s": 2990651,
               "w": 0.37
             },
             {
-              "t": "GRAB HOL",
+              "t": "G4124C109",
               "n": "GRAB HOLDINGS LIMITED",
               "v": 91365817,
               "s": 15177046,
@@ -2537,7 +2537,7 @@
               "w": 1.34
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "ADVANCED MICRO DEVICES INC",
               "v": 87311650335,
               "s": 150301510,
@@ -2579,21 +2579,21 @@
               "w": 0.89
             },
             {
-              "t": "APPLIED",
+              "t": "AMAT",
               "n": "APPLIED MATLS INC",
               "v": 57993650239,
               "s": 80212518,
               "w": 0.86
             },
             {
-              "t": "LAM RESE",
+              "t": "LRCX",
               "n": "LAM RESEARCH CORP",
               "v": 57514926951,
               "s": 132727776,
               "w": 0.86
             },
             {
-              "t": "JOHNSON",
+              "t": "JNJ",
               "n": "JOHNSON & JOHNSON",
               "v": 53866596264,
               "s": 212098264,
@@ -2621,28 +2621,28 @@
               "w": 0.63
             },
             {
-              "t": "CATERPIL",
+              "t": "CAT",
               "n": "CATERPILLAR INC",
               "v": 40457153173,
               "s": 37991505,
               "w": 0.6
             },
             {
-              "t": "WALMART",
+              "t": "WMT",
               "n": "WALMART INC",
               "v": 40116262545,
               "s": 354196208,
               "w": 0.6
             },
             {
-              "t": "KLA CORP",
+              "t": "KLAC",
               "n": "KLA CORP",
               "v": 38075395547,
               "s": 126198653,
               "w": 0.57
             },
             {
-              "t": "ABBVIE I",
+              "t": "ABBV",
               "n": "ABBVIE INC",
               "v": 37617263993,
               "s": 149488412,
@@ -2781,14 +2781,14 @@
               "w": 0.96
             },
             {
-              "t": "JOHNSON",
+              "t": "JNJ",
               "n": "JOHNSON & JOHNSON",
               "v": 52159962657,
               "s": 213385546,
               "w": 0.92
             },
             {
-              "t": "WALMART",
+              "t": "WMT",
               "n": "WALMART INC",
               "v": 43881484430,
               "s": 353085648,
@@ -2823,14 +2823,14 @@
               "w": 0.59
             },
             {
-              "t": "NETFLIX",
+              "t": "64110L106",
               "n": "NETFLIX INC.",
               "v": 33291738391,
               "s": 346247929,
               "w": 0.58
             },
             {
-              "t": "ABBVIE I",
+              "t": "ABBV",
               "n": "ABBVIE INC",
               "v": 32775334997,
               "s": 150698125,
@@ -2844,14 +2844,14 @@
               "w": 0.53
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "ADVANCED MICRO DEVICES INC",
               "v": 29614176633,
               "s": 145574284,
               "w": 0.52
             },
             {
-              "t": "LAM RESE",
+              "t": "LRCX",
               "n": "LAM RESEARCH CORP",
               "v": 28385226577,
               "s": 132852320,
@@ -2865,14 +2865,14 @@
               "w": 0.5
             },
             {
-              "t": "PALANTIR",
+              "t": "PLTR",
               "n": "PALANTIR TECHNOLOGIES INC",
               "v": 27645599240,
               "s": 188990971,
               "w": 0.49
             },
             {
-              "t": "MERCK &",
+              "t": "58933Y105",
               "n": "MERCK & CO INC",
               "v": 27165130301,
               "s": 225830330,
@@ -2886,7 +2886,7 @@
               "w": 0.47
             },
             {
-              "t": "APPLIED",
+              "t": "AMAT",
               "n": "APPLIED MATLS INC",
               "v": 26992808267,
               "s": 78974833,
@@ -2997,7 +2997,7 @@
               "w": 0.84
             },
             {
-              "t": "JOHNSON",
+              "t": "JNJ",
               "n": "JOHNSON & JOHNSON",
               "v": 43207260821,
               "s": 208781159,
@@ -3011,7 +3011,7 @@
               "w": 0.66
             },
             {
-              "t": "WALMART",
+              "t": "WMT",
               "n": "WALMART INC",
               "v": 38944838562,
               "s": 349563222,
@@ -3025,28 +3025,28 @@
               "w": 0.64
             },
             {
-              "t": "ABBVIE I",
+              "t": "ABBV",
               "n": "ABBVIE INC",
               "v": 34541871411,
               "s": 151174543,
               "w": 0.59
             },
             {
-              "t": "PALANTIR",
+              "t": "PLTR",
               "n": "PALANTIR TECHNOLOGIES INC",
               "v": 34363960808,
               "s": 193327487,
               "w": 0.58
             },
             {
-              "t": "NETFLIX",
+              "t": "64110L106",
               "n": "NETFLIX INC",
               "v": 32642142416,
               "s": 348145717,
               "w": 0.55
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "ADVANCED MICRO DEVICES INC",
               "v": 31594769466,
               "s": 147528808,
@@ -3074,7 +3074,7 @@
               "w": 0.5
             },
             {
-              "t": "ORACLE C",
+              "t": "ORCL",
               "n": "ORACLE CORP",
               "v": 28819129334,
               "s": 147858649,
@@ -3213,7 +3213,7 @@
               "w": 0.84
             },
             {
-              "t": "NETFLIX",
+              "t": "64110L106",
               "n": "NETFLIX INC",
               "v": 41654319347,
               "s": 34743202,
@@ -3227,21 +3227,21 @@
               "w": 0.7
             },
             {
-              "t": "ORACLE C",
+              "t": "ORCL",
               "n": "ORACLE CORP",
               "v": 39296580083,
               "s": 139726142,
               "w": 0.69
             },
             {
-              "t": "JOHNSON",
+              "t": "JNJ",
               "n": "JOHNSON & JOHNSON",
               "v": 38430338382,
               "s": 207261021,
               "w": 0.68
             },
             {
-              "t": "WALMART",
+              "t": "WMT",
               "n": "WALMART INC",
               "v": 35623759982,
               "s": 345660392,
@@ -3255,14 +3255,14 @@
               "w": 0.62
             },
             {
-              "t": "PALANTIR",
+              "t": "PLTR",
               "n": "PALANTIR TECHNOLOGIES INC",
               "v": 34387256725,
               "s": 188505957,
               "w": 0.61
             },
             {
-              "t": "ABBVIE I",
+              "t": "ABBV",
               "n": "ABBVIE INC",
               "v": 33799535063,
               "s": 145977089,
@@ -3318,7 +3318,7 @@
               "w": 0.45
             },
             {
-              "t": "ISHARES",
+              "t": "46432F834",
               "n": "ISHARES TR",
               "v": 24299985598,
               "s": 294259937,
@@ -3348,42 +3348,42 @@
               "w": 7.54
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "Advanced Micro Devices Inc",
               "v": 822826048,
               "s": 1416443,
               "w": 5.34
             },
             {
-              "t": "SPACE EX",
+              "t": "SPCX",
               "n": "Space Exploration Technologies Corp",
               "v": 765113281,
               "s": 4478013,
               "w": 4.97
             },
             {
-              "t": "TEMPUS A",
+              "t": "TEM",
               "n": "Tempus AI Inc",
               "v": 580611200,
               "s": 10022634,
               "w": 3.77
             },
             {
-              "t": "ROBINHOO",
+              "t": "HOOD",
               "n": "Robinhood Markets Inc",
               "v": 525069168,
               "s": 5236031,
               "w": 3.41
             },
             {
-              "t": "CRISPR T",
+              "t": "CRSP",
               "n": "CRISPR Therapeutics AG",
               "v": 515999631,
               "s": 9460939,
               "w": 3.35
             },
             {
-              "t": "SHOPIFY",
+              "t": "SHOP",
               "n": "Shopify Inc",
               "v": 474523465,
               "s": 4155925,
@@ -3397,7 +3397,7 @@
               "w": 3.04
             },
             {
-              "t": "10X GENO",
+              "t": "TXG",
               "n": "10X Genomics Inc",
               "v": 383517223,
               "s": 10003057,
@@ -3411,7 +3411,7 @@
               "w": 2.46
             },
             {
-              "t": "PALANTIR",
+              "t": "PLTR",
               "n": "Palantir Technologies Inc",
               "v": 374777381,
               "s": 3212286,
@@ -3425,21 +3425,21 @@
               "w": 2.39
             },
             {
-              "t": "COINBASE",
+              "t": "COIN",
               "n": "Coinbase Global Inc",
               "v": 367129713,
               "s": 2511319,
               "w": 2.38
             },
             {
-              "t": "ROBLOX C",
+              "t": "RBLX",
               "n": "ROBLOX Corp",
               "v": 351615103,
               "s": 6465890,
               "w": 2.28
             },
             {
-              "t": "BEAM THE",
+              "t": "BEAM",
               "n": "Beam Therapeutics Inc",
               "v": 351260447,
               "s": 10234862,
@@ -3453,14 +3453,14 @@
               "w": 2.03
             },
             {
-              "t": "INTELLIA",
+              "t": "NTLA",
               "n": "Intellia Therapeutics Inc",
               "v": 285536575,
               "s": 16875684,
               "w": 1.85
             },
             {
-              "t": "CIRCLE I",
+              "t": "CRCL",
               "n": "Circle Internet Group Inc",
               "v": 285477674,
               "s": 4558162,
@@ -3474,28 +3474,28 @@
               "w": 1.79
             },
             {
-              "t": "COREWEAV",
+              "t": "CRWV",
               "n": "CoreWeave Inc",
               "v": 264496911,
               "s": 2657192,
               "w": 1.72
             },
             {
-              "t": "DEERE &",
+              "t": "DE",
               "n": "Deere & Co",
               "v": 249307586,
               "s": 393025,
               "w": 1.62
             },
             {
-              "t": "BLOCK IN",
+              "t": "XYZ",
               "n": "Block Inc",
               "v": 235445950,
               "s": 3097973,
               "w": 1.53
             },
             {
-              "t": "KRATOS D",
+              "t": "KTOS",
               "n": "Kratos Defense & Security Solutions Inc.",
               "v": 232974116,
               "s": 4672566,
@@ -3523,21 +3523,21 @@
               "w": 1.19
             },
             {
-              "t": "CEREBRAS",
+              "t": "CBRS",
               "n": "Cerebras Systems Inc",
               "v": 168979473,
               "s": 764613,
               "w": 1.1
             },
             {
-              "t": "ROCKET L",
+              "t": "RKLB",
               "n": "Rocket Lab Corp",
               "v": 165812192,
               "s": 1631207,
               "w": 1.08
             },
             {
-              "t": "BULLISH",
+              "t": "BLSH",
               "n": "Bullish",
               "v": 158063147,
               "s": 6746186,
@@ -3551,28 +3551,28 @@
               "w": 1.0
             },
             {
-              "t": "RECURSIO",
+              "t": "RXRX",
               "n": "Recursion Pharmaceuticals Inc",
               "v": 151709111,
               "s": 41337632,
               "w": 0.98
             },
             {
-              "t": "ARCHER A",
+              "t": "ACHR",
               "n": "Archer Aviation Inc",
               "v": 151189352,
               "s": 31963922,
               "w": 0.98
             },
             {
-              "t": "ABSCI CO",
+              "t": "ABSI",
               "n": "Absci Corp",
               "v": 149803896,
               "s": 12925271,
               "w": 0.97
             },
             {
-              "t": "VERACYTE",
+              "t": "VCYT",
               "n": "Veracyte Inc",
               "v": 134841222,
               "s": 2295951,
@@ -3586,35 +3586,35 @@
               "w": 0.87
             },
             {
-              "t": "ARK 21SH",
+              "t": "ARKB",
               "n": "ARK 21Shares Bitcoin ETF",
               "v": 125605835,
               "s": 6454565,
               "w": 0.82
             },
             {
-              "t": "L3HARRIS",
+              "t": "LHX",
               "n": "L3Harris Technologies Inc",
               "v": 125296306,
               "s": 431179,
               "w": 0.81
             },
             {
-              "t": "BITMINE",
+              "t": "BMNR",
               "n": "BitMine Immersion Technologies",
               "v": 117282236,
               "s": 8811588,
               "w": 0.76
             },
             {
-              "t": "PERSONAL",
+              "t": "PSNL",
               "n": "Personalis Inc",
               "v": 110835941,
               "s": 8271339,
               "w": 0.72
             },
             {
-              "t": "GENEDX H",
+              "t": "WGS",
               "n": "GeneDx Holdings Corp",
               "v": 110539494,
               "s": 1610189,
@@ -3628,14 +3628,14 @@
               "w": 0.69
             },
             {
-              "t": "AEROVIRO",
+              "t": "AVAV",
               "n": "AeroVironment Inc",
               "v": 100280355,
               "s": 607502,
               "w": 0.65
             },
             {
-              "t": "X-ENERGY",
+              "t": "XE",
               "n": "X-Energy Inc",
               "v": 99361493,
               "s": 5411846,
@@ -3656,7 +3656,7 @@
               "w": 0.53
             },
             {
-              "t": "GUARDANT",
+              "t": "GH",
               "n": "Guardant Health Inc",
               "v": 75977634,
               "s": 506416,
@@ -3677,14 +3677,14 @@
               "w": 0.45
             },
             {
-              "t": "TRIMBLE",
+              "t": "TRMB",
               "n": "Trimble Inc",
               "v": 68155382,
               "s": 1331680,
               "w": 0.44
             },
             {
-              "t": "SOFI TEC",
+              "t": "SOFI",
               "n": "SoFi Technologies Inc",
               "v": 67102642,
               "s": 3742479,
@@ -3704,56 +3704,56 @@
               "w": 8.19
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "Advanced Micro Devices Inc",
               "v": 551875889,
               "s": 2712854,
               "w": 4.29
             },
             {
-              "t": "CRISPR T",
+              "t": "CRSP",
               "n": "CRISPR Therapeutics AG",
               "v": 538189027,
               "s": 11313623,
               "w": 4.19
             },
             {
-              "t": "SHOPIFY",
+              "t": "SHOP",
               "n": "Shopify Inc",
               "v": 495553074,
               "s": 4177652,
               "w": 3.85
             },
             {
-              "t": "PALANTIR",
+              "t": "PLTR",
               "n": "Palantir Technologies Inc",
               "v": 454913400,
               "s": 3109881,
               "w": 3.54
             },
             {
-              "t": "TEMPUS A",
+              "t": "TEM",
               "n": "Tempus AI Inc",
               "v": 434462230,
               "s": 9607745,
               "w": 3.38
             },
             {
-              "t": "CIRCLE I",
+              "t": "CRCL",
               "n": "Circle Internet Group Inc",
               "v": 430249668,
               "s": 4509482,
               "w": 3.35
             },
             {
-              "t": "ROBINHOO",
+              "t": "HOOD",
               "n": "Robinhood Markets Inc",
               "v": 416012113,
               "s": 6003061,
               "w": 3.24
             },
             {
-              "t": "COINBASE",
+              "t": "COIN",
               "n": "Coinbase Global Inc",
               "v": 414329300,
               "s": 2372884,
@@ -3774,7 +3774,7 @@
               "w": 2.81
             },
             {
-              "t": "ROBLOX C",
+              "t": "RBLX",
               "n": "ROBLOX Corp",
               "v": 333483744,
               "s": 5896106,
@@ -3788,7 +3788,7 @@
               "w": 2.34
             },
             {
-              "t": "BEAM THE",
+              "t": "BEAM",
               "n": "Beam Therapeutics Inc",
               "v": 289139697,
               "s": 12133433,
@@ -3802,28 +3802,28 @@
               "w": 2.2
             },
             {
-              "t": "10X GENO",
+              "t": "TXG",
               "n": "10X Genomics Inc",
               "v": 248758647,
               "s": 11717317,
               "w": 1.93
             },
             {
-              "t": "KRATOS D",
+              "t": "KTOS",
               "n": "Kratos Defense & Security Solutions Inc.",
               "v": 246164080,
               "s": 3491194,
               "w": 1.91
             },
             {
-              "t": "BULLISH",
+              "t": "BLSH",
               "n": "Bullish",
               "v": 234461649,
               "s": 6562039,
               "w": 1.82
             },
             {
-              "t": "DEERE &",
+              "t": "DE",
               "n": "Deere & Co",
               "v": 224798576,
               "s": 399074,
@@ -3844,35 +3844,35 @@
               "w": 1.61
             },
             {
-              "t": "COREWEAV",
+              "t": "CRWV",
               "n": "CoreWeave Inc",
               "v": 196628508,
               "s": 2538125,
               "w": 1.53
             },
             {
-              "t": "ARCHER A",
+              "t": "ACHR",
               "n": "Archer Aviation Inc",
               "v": 193549613,
               "s": 37437062,
               "w": 1.51
             },
             {
-              "t": "BITMINE",
+              "t": "BMNR",
               "n": "BitMine Immersion Technologies",
               "v": 191849484,
               "s": 9699165,
               "w": 1.49
             },
             {
-              "t": "BLOCK IN",
+              "t": "XYZ",
               "n": "Block Inc",
               "v": 186193070,
               "s": 3093936,
               "w": 1.45
             },
             {
-              "t": "INTELLIA",
+              "t": "NTLA",
               "n": "Intellia Therapeutics Inc",
               "v": 186008545,
               "s": 14509247,
@@ -3886,14 +3886,14 @@
               "w": 1.4
             },
             {
-              "t": "ARK 21SH",
+              "t": "ARKB",
               "n": "ARK 21Shares Bitcoin ETF",
               "v": 150642653,
               "s": 6698206,
               "w": 1.17
             },
             {
-              "t": "ROCKET L",
+              "t": "RKLB",
               "n": "Rocket Lab Corp",
               "v": 144087588,
               "s": 2243656,
@@ -3914,7 +3914,7 @@
               "w": 1.06
             },
             {
-              "t": "L3HARRIS",
+              "t": "LHX",
               "n": "L3Harris Technologies Inc",
               "v": 134502884,
               "s": 389694,
@@ -3935,28 +3935,28 @@
               "w": 0.98
             },
             {
-              "t": "BAIDU IN",
+              "t": "056752108",
               "n": "Baidu Inc",
               "v": 124827258,
               "s": 1120331,
               "w": 0.97
             },
             {
-              "t": "RECURSIO",
+              "t": "RXRX",
               "n": "Recursion Pharmaceuticals Inc",
               "v": 123453202,
               "s": 40212769,
               "w": 0.96
             },
             {
-              "t": "AEROVIRO",
+              "t": "AVAV",
               "n": "AeroVironment Inc",
               "v": 102371445,
               "s": 559254,
               "w": 0.8
             },
             {
-              "t": "VERACYTE",
+              "t": "VCYT",
               "n": "Veracyte Inc",
               "v": 98363488,
               "s": 3053818,
@@ -3977,28 +3977,28 @@
               "w": 0.69
             },
             {
-              "t": "GENEDX H",
+              "t": "WGS",
               "n": "GeneDx Holdings Corp",
               "v": 85064722,
               "s": 1324583,
               "w": 0.66
             },
             {
-              "t": "TRIMBLE",
+              "t": "TRMB",
               "n": "Trimble Inc",
               "v": 81402148,
               "s": 1247925,
               "w": 0.63
             },
             {
-              "t": "FIGMA IN",
+              "t": "316841105",
               "n": "Figma Inc",
               "v": 71725251,
               "s": 3392869,
               "w": 0.56
             },
             {
-              "t": "SOFI TEC",
+              "t": "SOFI",
               "n": "SoFi Technologies Inc",
               "v": 60915722,
               "s": 3836003,
@@ -4026,21 +4026,21 @@
               "w": 0.4
             },
             {
-              "t": "PERSONAL",
+              "t": "PSNL",
               "n": "Personalis Inc",
               "v": 50603993,
               "s": 7944112,
               "w": 0.39
             },
             {
-              "t": "INTUITIV",
+              "t": "46125A100",
               "n": "Intuitive Machines Inc",
               "v": 49305215,
               "s": 2656531,
               "w": 0.38
             },
             {
-              "t": "TOAST IN",
+              "t": "888787108",
               "n": "Toast Inc",
               "v": 48003089,
               "s": 1810754,
@@ -4060,7 +4060,7 @@
               "w": 8.7
             },
             {
-              "t": "SHOPIFY",
+              "t": "SHOP",
               "n": "Shopify Inc",
               "v": 640483134,
               "s": 3978898,
@@ -4074,35 +4074,35 @@
               "w": 4.24
             },
             {
-              "t": "COINBASE",
+              "t": "COIN",
               "n": "Coinbase Global Inc",
               "v": 574831688,
               "s": 2541928,
               "w": 3.82
             },
             {
-              "t": "PALANTIR",
+              "t": "PLTR",
               "n": "Palantir Technologies Inc",
               "v": 574470332,
               "s": 3231901,
               "w": 3.81
             },
             {
-              "t": "CRISPR T",
+              "t": "CRSP",
               "n": "CRISPR Therapeutics AG",
               "v": 551776677,
               "s": 10522057,
               "w": 3.66
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "Advanced Micro Devices Inc",
               "v": 551414664,
               "s": 2574779,
               "w": 3.66
             },
             {
-              "t": "ROBINHOO",
+              "t": "HOOD",
               "n": "Robinhood Markets Inc",
               "v": 543582454,
               "s": 4806211,
@@ -4116,28 +4116,28 @@
               "w": 3.03
             },
             {
-              "t": "TEMPUS A",
+              "t": "TEM",
               "n": "Tempus AI Inc",
               "v": 446275249,
               "s": 7557583,
               "w": 2.96
             },
             {
-              "t": "ROBLOX C",
+              "t": "RBLX",
               "n": "ROBLOX Corp",
               "v": 391726313,
               "s": 4834337,
               "w": 2.6
             },
             {
-              "t": "BEAM THE",
+              "t": "BEAM",
               "n": "Beam Therapeutics Inc",
               "v": 345590488,
               "s": 12467189,
               "w": 2.29
             },
             {
-              "t": "CIRCLE I",
+              "t": "CRCL",
               "n": "Circle Internet Group Inc",
               "v": 328431132,
               "s": 4141628,
@@ -4151,21 +4151,21 @@
               "w": 1.86
             },
             {
-              "t": "ARCHER A",
+              "t": "ACHR",
               "n": "Archer Aviation Inc",
               "v": 264483673,
               "s": 35170701,
               "w": 1.76
             },
             {
-              "t": "KRATOS D",
+              "t": "KTOS",
               "n": "Kratos Defense & Security Solutions Inc.",
               "v": 262202448,
               "s": 3454123,
               "w": 1.74
             },
             {
-              "t": "BITMINE",
+              "t": "BMNR",
               "n": "BitMine Immersion Technologies",
               "v": 256766510,
               "s": 9457330,
@@ -4193,14 +4193,14 @@
               "w": 1.51
             },
             {
-              "t": "BLOCK IN",
+              "t": "XYZ",
               "n": "Block Inc",
               "v": 219448082,
               "s": 3371456,
               "w": 1.46
             },
             {
-              "t": "10X GENO",
+              "t": "TXG",
               "n": "10X Genomics Inc",
               "v": 206604788,
               "s": 12667369,
@@ -4214,7 +4214,7 @@
               "w": 1.34
             },
             {
-              "t": "ARK 21SH",
+              "t": "ARKB",
               "n": "ARK 21Shares Bitcoin ETF",
               "v": 199548505,
               "s": 6871505,
@@ -4228,14 +4228,14 @@
               "w": 1.31
             },
             {
-              "t": "DEERE &",
+              "t": "DE",
               "n": "Deere & Co",
               "v": 196427428,
               "s": 421907,
               "w": 1.3
             },
             {
-              "t": "BULLISH",
+              "t": "BLSH",
               "n": "Bullish",
               "v": 182597765,
               "s": 4821700,
@@ -4256,56 +4256,56 @@
               "w": 1.11
             },
             {
-              "t": "VERACYTE",
+              "t": "VCYT",
               "n": "Veracyte Inc",
               "v": 163665726,
               "s": 3887547,
               "w": 1.09
             },
             {
-              "t": "DRAFTKIN",
+              "t": "26142V105",
               "n": "DraftKings Inc",
               "v": 156474781,
               "s": 4540766,
               "w": 1.04
             },
             {
-              "t": "ROCKET L",
+              "t": "RKLB",
               "n": "Rocket Lab Corp",
               "v": 155931738,
               "s": 2235260,
               "w": 1.03
             },
             {
-              "t": "RECURSIO",
+              "t": "RXRX",
               "n": "Recursion Pharmaceuticals Inc",
               "v": 152625940,
               "s": 37316856,
               "w": 1.01
             },
             {
-              "t": "BAIDU IN",
+              "t": "056752108",
               "n": "Baidu Inc",
               "v": 151288286,
               "s": 1157878,
               "w": 1.0
             },
             {
-              "t": "COREWEAV",
+              "t": "CRWV",
               "n": "CoreWeave Inc",
               "v": 137795948,
               "s": 1924256,
               "w": 0.91
             },
             {
-              "t": "AIRBNB I",
+              "t": "009066101",
               "n": "Airbnb Inc",
               "v": 133014036,
               "s": 980062,
               "w": 0.88
             },
             {
-              "t": "INTELLIA",
+              "t": "NTLA",
               "n": "Intellia Therapeutics Inc",
               "v": 127723840,
               "s": 14207324,
@@ -4319,7 +4319,7 @@
               "w": 0.77
             },
             {
-              "t": "THE TRAD",
+              "t": "88339J105",
               "n": "The Trade Desk Inc",
               "v": 111129371,
               "s": 2927539,
@@ -4333,14 +4333,14 @@
               "w": 0.72
             },
             {
-              "t": "SOFI TEC",
+              "t": "SOFI",
               "n": "SoFi Technologies Inc",
               "v": 107496642,
               "s": 4106060,
               "w": 0.71
             },
             {
-              "t": "AEROVIRO",
+              "t": "AVAV",
               "n": "AeroVironment Inc",
               "v": 104769574,
               "s": 433129,
@@ -4354,42 +4354,42 @@
               "w": 0.62
             },
             {
-              "t": "L3HARRIS",
+              "t": "LHX",
               "n": "L3Harris Technologies Inc",
               "v": 90925381,
               "s": 309723,
               "w": 0.6
             },
             {
-              "t": "TRIMBLE",
+              "t": "TRMB",
               "n": "Trimble Inc",
               "v": 80003028,
               "s": 1021098,
               "w": 0.53
             },
             {
-              "t": "GENEDX H",
+              "t": "WGS",
               "n": "GeneDx Holdings Corp",
               "v": 78629240,
               "s": 604561,
               "w": 0.52
             },
             {
-              "t": "GUARDANT",
+              "t": "GH",
               "n": "Guardant Health Inc",
               "v": 70644847,
               "s": 691647,
               "w": 0.47
             },
             {
-              "t": "TOAST IN",
+              "t": "888787108",
               "n": "Toast Inc",
               "v": 69825657,
               "s": 1966366,
               "w": 0.46
             },
             {
-              "t": "PACIFIC",
+              "t": "PACB",
               "n": "Pacific Biosciences of California, Inc.",
               "v": 69684106,
               "s": 37264228,
@@ -4416,7 +4416,7 @@
               "w": 9.5
             },
             {
-              "t": "COINBASE",
+              "t": "COIN",
               "n": "Coinbase Global Inc",
               "v": 808470676,
               "s": 2395540,
@@ -4430,63 +4430,63 @@
               "w": 4.38
             },
             {
-              "t": "PALANTIR",
+              "t": "PLTR",
               "n": "Palantir Technologies Inc",
               "v": 736081749,
               "s": 4035093,
               "w": 4.38
             },
             {
-              "t": "ROBLOX C",
+              "t": "RBLX",
               "n": "ROBLOX Corp",
               "v": 735932022,
               "s": 5312821,
               "w": 4.38
             },
             {
-              "t": "ROBINHOO",
+              "t": "HOOD",
               "n": "Robinhood Markets Inc",
               "v": 718340386,
               "s": 5017044,
               "w": 4.28
             },
             {
-              "t": "SHOPIFY",
+              "t": "SHOP",
               "n": "Shopify Inc",
               "v": 715680956,
               "s": 4815833,
               "w": 4.26
             },
             {
-              "t": "CRISPR T",
+              "t": "CRSP",
               "n": "CRISPR Therapeutics AG",
               "v": 634293721,
               "s": 9786973,
               "w": 3.78
             },
             {
-              "t": "TEMPUS A",
+              "t": "TEM",
               "n": "Tempus AI Inc",
               "v": 579156155,
               "s": 7175767,
               "w": 3.45
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "Advanced Micro Devices Inc",
               "v": 494739497,
               "s": 3057911,
               "w": 2.94
             },
             {
-              "t": "CIRCLE I",
+              "t": "CRCL",
               "n": "Circle Internet Group Inc",
               "v": 393356905,
               "s": 2966940,
               "w": 2.34
             },
             {
-              "t": "BITMINE",
+              "t": "BMNR",
               "n": "BitMine Immersion Technologies",
               "v": 387907389,
               "s": 7469813,
@@ -4500,21 +4500,21 @@
               "w": 2.23
             },
             {
-              "t": "KRATOS D",
+              "t": "KTOS",
               "n": "Kratos Defense & Security Solu",
               "v": 329327448,
               "s": 3604328,
               "w": 1.96
             },
             {
-              "t": "ARCHER A",
+              "t": "ACHR",
               "n": "Archer Aviation Inc",
               "v": 299867886,
               "s": 31301449,
               "w": 1.78
             },
             {
-              "t": "BEAM THE",
+              "t": "BEAM",
               "n": "Beam Therapeutics Inc",
               "v": 267912511,
               "s": 11038834,
@@ -4528,7 +4528,7 @@
               "w": 1.59
             },
             {
-              "t": "ARK 21SH",
+              "t": "ARKB",
               "n": "ARK 21Shares Bitcoin ETF",
               "v": 240389662,
               "s": 6322716,
@@ -4542,7 +4542,7 @@
               "w": 1.3
             },
             {
-              "t": "BRERA HO",
+              "t": "G13311116",
               "n": "Brera Holdings PLC",
               "v": 218388600,
               "s": 7279620,
@@ -4563,14 +4563,14 @@
               "w": 1.23
             },
             {
-              "t": "INTELLIA",
+              "t": "NTLA",
               "n": "Intellia Therapeutics Inc",
               "v": 205844200,
               "s": 11919178,
               "w": 1.23
             },
             {
-              "t": "BLOCK IN",
+              "t": "XYZ",
               "n": "Block Inc",
               "v": 193207725,
               "s": 2673415,
@@ -4584,42 +4584,42 @@
               "w": 1.13
             },
             {
-              "t": "BULLISH",
+              "t": "BLSH",
               "n": "Bullish",
               "v": 163904460,
               "s": 2576709,
               "w": 0.98
             },
             {
-              "t": "RECURSIO",
+              "t": "RXRX",
               "n": "Recursion Pharmaceuticals Inc",
               "v": 163702036,
               "s": 33545499,
               "w": 0.97
             },
             {
-              "t": "GITLAB I",
+              "t": "37637K108",
               "n": "Gitlab Inc",
               "v": 154967759,
               "s": 3437617,
               "w": 0.92
             },
             {
-              "t": "PINTERES",
+              "t": "72352L106",
               "n": "Pinterest Inc",
               "v": 153481110,
               "s": 4770939,
               "w": 0.91
             },
             {
-              "t": "VERACYTE",
+              "t": "VCYT",
               "n": "Veracyte Inc",
               "v": 153310050,
               "s": 4465775,
               "w": 0.91
             },
             {
-              "t": "DEERE &",
+              "t": "DE",
               "n": "Deere & Co",
               "v": 150530221,
               "s": 329201,
@@ -4647,35 +4647,35 @@
               "w": 0.83
             },
             {
-              "t": "10X GENO",
+              "t": "TXG",
               "n": "10X Genomics Inc",
               "v": 138963656,
               "s": 11887396,
               "w": 0.83
             },
             {
-              "t": "SOFI TEC",
+              "t": "SOFI",
               "n": "SoFi Technologies Inc",
               "v": 130653416,
               "s": 4945247,
               "w": 0.78
             },
             {
-              "t": "DRAFTKIN",
+              "t": "26142V105",
               "n": "DraftKings Inc",
               "v": 128615475,
               "s": 3438916,
               "w": 0.77
             },
             {
-              "t": "AEROVIRO",
+              "t": "AVAV",
               "n": "AeroVironment Inc",
               "v": 126099905,
               "s": 400457,
               "w": 0.75
             },
             {
-              "t": "AIRBNB I",
+              "t": "009066101",
               "n": "Airbnb Inc",
               "v": 125770178,
               "s": 1035828,
@@ -4689,28 +4689,28 @@
               "w": 0.75
             },
             {
-              "t": "EXACT SC",
+              "t": "30063P105",
               "n": "Exact Sciences Corp",
               "v": 119605233,
               "s": 2186168,
               "w": 0.71
             },
             {
-              "t": "ROCKET L",
+              "t": "RKLB",
               "n": "Rocket Lab Corp",
               "v": 119142349,
               "s": 2486795,
               "w": 0.71
             },
             {
-              "t": "IRIDIUM",
+              "t": "46269C102",
               "n": "Iridium Communications Inc",
               "v": 113317286,
               "s": 6490108,
               "w": 0.67
             },
             {
-              "t": "TRADE DE",
+              "t": "88339J105",
               "n": "Trade Desk Inc/The",
               "v": 113050929,
               "s": 2306691,
@@ -4724,35 +4724,35 @@
               "w": 0.49
             },
             {
-              "t": "TOAST IN",
+              "t": "888787108",
               "n": "Toast Inc",
               "v": 75336779,
               "s": 2063456,
               "w": 0.45
             },
             {
-              "t": "TRIMBLE",
+              "t": "TRMB",
               "n": "Trimble Inc",
               "v": 74990463,
               "s": 918438,
               "w": 0.45
             },
             {
-              "t": "BAIDU IN",
+              "t": "056752108",
               "n": "Baidu Inc",
               "v": 66990287,
               "s": 508388,
               "w": 0.4
             },
             {
-              "t": "L3HARRIS",
+              "t": "LHX",
               "n": "L3Harris Technologies Inc",
               "v": 66974581,
               "s": 219294,
               "w": 0.4
             },
             {
-              "t": "COREWEAV",
+              "t": "CRWV",
               "n": "CoreWeave Inc",
               "v": 64039915,
               "s": 467957,
@@ -4775,14 +4775,14 @@
           "total": 832072843,
           "holdings": [
             {
-              "t": "LEGEND B",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "v": 172833804,
               "s": 5984550,
               "w": 20.77
             },
             {
-              "t": "FUTU HLD",
+              "t": "FUTU",
               "n": "FUTU HLDGS LTD",
               "v": 165758848,
               "s": 1768283,
@@ -4796,14 +4796,14 @@
               "w": 16.4
             },
             {
-              "t": "MARVELL",
+              "t": "MRVL",
               "n": "MARVELL TECHNOLOGY INC",
               "v": 48536111,
               "s": 162933,
               "w": 5.83
             },
             {
-              "t": "VIPSHOP",
+              "t": "VIPS",
               "n": "VIPSHOP HLDGS LTD",
               "v": 46017504,
               "s": 3470400,
@@ -4817,21 +4817,21 @@
               "w": 4.58
             },
             {
-              "t": "KE HLDGS",
+              "t": "BEKE",
               "n": "KE HLDGS INC",
               "v": 32233018,
               "s": 2218377,
               "w": 3.87
             },
             {
-              "t": "CYTEK BI",
+              "t": "CTKB",
               "n": "CYTEK BIOSCIENCES INC",
               "v": 29490643,
               "s": 6657030,
               "w": 3.54
             },
             {
-              "t": "ALAMAR B",
+              "t": "ALMS",
               "n": "ALAMAR BIOSCIENCES INC",
               "v": 25910556,
               "s": 956462,
@@ -4845,35 +4845,35 @@
               "w": 2.12
             },
             {
-              "t": "ODYSSEY",
+              "t": "ODTX",
               "n": "ODYSSEY THERAPEUTICS INC",
               "v": 15560284,
               "s": 831656,
               "w": 1.87
             },
             {
-              "t": "YATSEN H",
+              "t": "YSG",
               "n": "YATSEN HLDG LTD",
               "v": 15488217,
               "s": 4885873,
               "w": 1.86
             },
             {
-              "t": "NOVABRID",
+              "t": "NBP",
               "n": "NOVABRIDGE BIOSCIENCES",
               "v": 11662108,
               "s": 5980568,
               "w": 1.4
             },
             {
-              "t": "CONTINEU",
+              "t": "CTNM",
               "n": "CONTINEUM THERAPEUTICS INC",
               "v": 10970433,
               "s": 669337,
               "w": 1.32
             },
             {
-              "t": "MAZE THE",
+              "t": "MAZE",
               "n": "MAZE THERAPEUTICS INC",
               "v": 10922276,
               "s": 366028,
@@ -4894,14 +4894,14 @@
               "w": 0.89
             },
             {
-              "t": "SAGIMET",
+              "t": "SGMT",
               "n": "SAGIMET BIOSCIENCES INC",
               "v": 5602704,
               "s": 724800,
               "w": 0.67
             },
             {
-              "t": "NETEASE",
+              "t": "NTES",
               "n": "NETEASE COM INC",
               "v": 4484772,
               "s": 34999,
@@ -4929,7 +4929,7 @@
               "w": 0.34
             },
             {
-              "t": "TUYA INC",
+              "t": "TUYA",
               "n": "TUYA INC",
               "v": 2753344,
               "s": 1564400,
@@ -4950,7 +4950,7 @@
               "w": 0.3
             },
             {
-              "t": "WEBULL C",
+              "t": "BULL",
               "n": "WEBULL CORP",
               "v": 2020268,
               "s": 309857,
@@ -4964,7 +4964,7 @@
               "w": 0.24
             },
             {
-              "t": "PACIFIC",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "v": 1543739,
               "s": 918892,
@@ -4978,42 +4978,42 @@
               "w": 0.17
             },
             {
-              "t": "MOGU INC",
+              "t": "MOGU",
               "n": "MOGU INC",
               "v": 1415342,
               "s": 847510,
               "w": 0.17
             },
             {
-              "t": "GOSSAMER",
+              "t": "GOSS",
               "n": "GOSSAMER BIO INC",
               "v": 818727,
               "s": 4974041,
               "w": 0.1
             },
             {
-              "t": "EQUINOX",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "v": 782460,
               "s": 80500,
               "w": 0.09
             },
             {
-              "t": "ZOOM COM",
+              "t": "ZM",
               "n": "ZOOM COMMUNICATIONS INC",
               "v": 777653,
               "s": 9010,
               "w": 0.09
             },
             {
-              "t": "ALIGOS T",
+              "t": "ALGS",
               "n": "ALIGOS THERAPEUTICS INC",
               "v": 439945,
               "s": 76247,
               "w": 0.05
             },
             {
-              "t": "RIDGETEC",
+              "t": "RDGT",
               "n": "RIDGETECH INC",
               "v": 204,
               "s": 136,
@@ -5040,21 +5040,21 @@
               "w": 18.4
             },
             {
-              "t": "BEONE ME",
+              "t": "07725L102",
               "n": "BEONE MEDICINES LTD",
               "v": 307157853,
               "s": 1034306,
               "w": 18.36
             },
             {
-              "t": "FUTU HLD",
+              "t": "FUTU",
               "n": "FUTU HLDGS LTD",
               "v": 194128495,
               "s": 1419483,
               "w": 11.6
             },
             {
-              "t": "LEGEND B",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "v": 108260510,
               "s": 5984550,
@@ -5068,56 +5068,56 @@
               "w": 5.42
             },
             {
-              "t": "KE HLDGS",
+              "t": "BEKE",
               "n": "KE HLDGS INC",
               "v": 63417082,
               "s": 4236278,
               "w": 3.79
             },
             {
-              "t": "CLEARWAT",
+              "t": "185123106",
               "n": "CLEARWATER ANALYTICS HLDGS I",
               "v": 32305214,
               "s": 1365971,
               "w": 1.93
             },
             {
-              "t": "CYTEK BI",
+              "t": "CTKB",
               "n": "CYTEK BIOSCIENCES INC",
               "v": 29091221,
               "s": 6657030,
               "w": 1.74
             },
             {
-              "t": "MARVELL",
+              "t": "MRVL",
               "n": "MARVELL TECHNOLOGY INC",
               "v": 16940819,
               "s": 171033,
               "w": 1.01
             },
             {
-              "t": "YATSEN H",
+              "t": "YSG",
               "n": "YATSEN HLDG LTD",
               "v": 15048489,
               "s": 4885873,
               "w": 0.9
             },
             {
-              "t": "NOVABRID",
+              "t": "NBP",
               "n": "NOVABRIDGE BIOSCIENCES",
               "v": 14712197,
               "s": 5980568,
               "w": 0.88
             },
             {
-              "t": "MAZE THE",
+              "t": "MAZE",
               "n": "MAZE THERAPEUTICS INC",
               "v": 10925936,
               "s": 366028,
               "w": 0.65
             },
             {
-              "t": "CONTINEU",
+              "t": "CTNM",
               "n": "CONTINEUM THERAPEUTICS INC",
               "v": 8741541,
               "s": 669337,
@@ -5131,7 +5131,7 @@
               "w": 0.44
             },
             {
-              "t": "WEBULL C",
+              "t": "BULL",
               "n": "WEBULL CORP",
               "v": 7200000,
               "s": 1500000,
@@ -5145,14 +5145,14 @@
               "w": 0.31
             },
             {
-              "t": "SAGIMET",
+              "t": "SGMT",
               "n": "SAGIMET BIOSCIENCES INC",
               "v": 3787080,
               "s": 724800,
               "w": 0.23
             },
             {
-              "t": "TUYA INC",
+              "t": "TUYA",
               "n": "TUYA INC",
               "v": 3613764,
               "s": 1564400,
@@ -5166,21 +5166,21 @@
               "w": 0.17
             },
             {
-              "t": "VIPSHOP",
+              "t": "VIPS",
               "n": "VIPSHOP HLDGS LTD",
               "v": 1960284,
               "s": 124700,
               "w": 0.12
             },
             {
-              "t": "MOGU INC",
+              "t": "MOGU",
               "n": "MOGU INC",
               "v": 1889947,
               "s": 847510,
               "w": 0.11
             },
             {
-              "t": "GOSSAMER",
+              "t": "GOSS",
               "n": "GOSSAMER BIO INC",
               "v": 1633972,
               "s": 4974041,
@@ -5194,14 +5194,14 @@
               "w": 0.08
             },
             {
-              "t": "PACIFIC",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "v": 1212937,
               "s": 918892,
               "w": 0.07
             },
             {
-              "t": "EQUINOX",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "v": 1164030,
               "s": 80500,
@@ -5229,7 +5229,7 @@
               "w": 0.06
             },
             {
-              "t": "BARRICK",
+              "t": "B",
               "n": "BARRICK MNG CORP",
               "v": 1036066,
               "s": 25400,
@@ -5243,49 +5243,49 @@
               "w": 0.06
             },
             {
-              "t": "DINGDONG",
+              "t": "25445D101",
               "n": "DINGDONG CAYMAN LTD",
               "v": 911065,
               "s": 354500,
               "w": 0.05
             },
             {
-              "t": "CENTRAIS",
+              "t": "15234Q207",
               "n": "CENTRAIS ELET BRAS SA",
               "v": 711768,
               "s": 63100,
               "w": 0.04
             },
             {
-              "t": "ISHARES",
+              "t": "464286822",
               "n": "ISHARES INC",
               "v": 662024,
               "s": 8800,
               "w": 0.04
             },
             {
-              "t": "ALIGOS T",
+              "t": "ALGS",
               "n": "ALIGOS THERAPEUTICS INC",
               "v": 566515,
               "s": 76247,
               "w": 0.03
             },
             {
-              "t": "VNET GRO",
+              "t": "90138A103",
               "n": "VNET GROUP INC",
               "v": 546189,
               "s": 65100,
               "w": 0.03
             },
             {
-              "t": "UXIN LTD",
+              "t": "91818X306",
               "n": "UXIN LTD",
               "v": 58809,
               "s": 19156,
               "w": 0.0
             },
             {
-              "t": "RIDGETEC",
+              "t": "G2124G120",
               "n": "RIDGETECH INC",
               "v": 657,
               "s": 20167,
@@ -5312,21 +5312,21 @@
               "w": 25.65
             },
             {
-              "t": "BEONE ME",
+              "t": "07725L102",
               "n": "BEONE MEDICINES LTD",
               "v": 314232506,
               "s": 1034306,
               "w": 10.12
             },
             {
-              "t": "FUTU HLD",
+              "t": "FUTU",
               "n": "FUTU HLDGS LTD",
               "v": 267703188,
               "s": 1630249,
               "w": 8.63
             },
             {
-              "t": "LEGEND B",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "v": 130104117,
               "s": 5984550,
@@ -5340,56 +5340,56 @@
               "w": 2.55
             },
             {
-              "t": "KE HLDGS",
+              "t": "BEKE",
               "n": "KE HLDGS INC",
               "v": 66763741,
               "s": 4236278,
               "w": 2.15
             },
             {
-              "t": "WEBULL C",
+              "t": "BULL",
               "n": "WEBULL CORP",
               "v": 46422673,
               "s": 5974604,
               "w": 1.5
             },
             {
-              "t": "CYTEK BI",
+              "t": "CTKB",
               "n": "CYTEK BIOSCIENCES INC",
               "v": 33618002,
               "s": 6657030,
               "w": 1.08
             },
             {
-              "t": "CLEARWAT",
+              "t": "185123106",
               "n": "CLEARWATER ANALYTICS HLDGS I",
               "v": 32947221,
               "s": 1365971,
               "w": 1.06
             },
             {
-              "t": "NOVABRID",
+              "t": "NBP",
               "n": "NOVABRIDGE BIOSCIENCES",
               "v": 23802661,
               "s": 5980568,
               "w": 0.77
             },
             {
-              "t": "YATSEN H",
+              "t": "YSG",
               "n": "YATSEN HLDG LTD",
               "v": 19006046,
               "s": 4885873,
               "w": 0.61
             },
             {
-              "t": "MAZE THE",
+              "t": "MAZE",
               "n": "MAZE THERAPEUTICS INC",
               "v": 18955675,
               "s": 457535,
               "w": 0.61
             },
             {
-              "t": "GOSSAMER",
+              "t": "GOSS",
               "n": "GOSSAMER BIO INC",
               "v": 15419527,
               "s": 4974041,
@@ -5403,14 +5403,14 @@
               "w": 0.28
             },
             {
-              "t": "CONTINEU",
+              "t": "CTNM",
               "n": "CONTINEUM THERAPEUTICS INC",
               "v": 7650522,
               "s": 669337,
               "w": 0.25
             },
             {
-              "t": "SAGIMET",
+              "t": "SGMT",
               "n": "SAGIMET BIOSCIENCES INC",
               "v": 4290816,
               "s": 724800,
@@ -5424,7 +5424,7 @@
               "w": 0.11
             },
             {
-              "t": "TUYA INC",
+              "t": "TUYA",
               "n": "TUYA INC",
               "v": 3300884,
               "s": 1564400,
@@ -5445,21 +5445,21 @@
               "w": 0.07
             },
             {
-              "t": "MOGU INC",
+              "t": "MOGU",
               "n": "MOGU INC",
               "v": 1805196,
               "s": 847510,
               "w": 0.06
             },
             {
-              "t": "ISHARES",
+              "t": "46438F101",
               "n": "ISHARES BITCOIN TRUST ETF",
               "v": 1752645,
               "s": 35300,
               "w": 0.06
             },
             {
-              "t": "PACIFIC",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "v": 1718328,
               "s": 918892,
@@ -5473,56 +5473,56 @@
               "w": 0.05
             },
             {
-              "t": "EQUINOX",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "v": 1130220,
               "s": 80500,
               "w": 0.04
             },
             {
-              "t": "BARRICK",
+              "t": "B",
               "n": "BARRICK MNG CORP",
               "v": 1106170,
               "s": 25400,
               "w": 0.04
             },
             {
-              "t": "CENTRAIS",
+              "t": "15234Q207",
               "n": "CENTRAIS ELET BRAS SA",
               "v": 884856,
               "s": 96600,
               "w": 0.03
             },
             {
-              "t": "ALIGOS T",
+              "t": "ALGS",
               "n": "ALIGOS THERAPEUTICS INC",
               "v": 710622,
               "s": 76247,
               "w": 0.02
             },
             {
-              "t": "VNET GRO",
+              "t": "90138A103",
               "n": "VNET GROUP INC",
               "v": 449226,
               "s": 53100,
               "w": 0.01
             },
             {
-              "t": "CENTRAIS",
+              "t": "15236F100",
               "n": "CENTRAIS ELET BRAS SA",
               "v": 218862,
               "s": 25390,
               "w": 0.01
             },
             {
-              "t": "UXIN LTD",
+              "t": "91818X306",
               "n": "UXIN LTD",
               "v": 64556,
               "s": 19156,
               "w": 0.0
             },
             {
-              "t": "RIDGETEC",
+              "t": "G2124G120",
               "n": "RIDGETECH INC",
               "v": 57476,
               "s": 20167,
@@ -5549,42 +5549,42 @@
               "w": 14.37
             },
             {
-              "t": "FUTU HLD",
+              "t": "FUTU",
               "n": "FUTU HLDGS LTD",
               "v": 563151710,
               "s": 3238179,
               "w": 13.77
             },
             {
-              "t": "WEBULL C",
+              "t": "BULL",
               "n": "WEBULL CORP",
               "v": 489265712,
               "s": 33080846,
               "w": 11.96
             },
             {
-              "t": "BEONE ME",
+              "t": "07725L102",
               "n": "BEONE MEDICINES LTD",
               "v": 352388054,
               "s": 1034306,
               "w": 8.61
             },
             {
-              "t": "BAIDU IN",
+              "t": "056752108",
               "n": "BAIDU INC",
               "v": 216234570,
               "s": 1641000,
               "w": 5.29
             },
             {
-              "t": "LEGEND B",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "v": 195156176,
               "s": 5984550,
               "w": 4.77
             },
             {
-              "t": "NETEASE",
+              "t": "NTES",
               "n": "NETEASE INC",
               "v": 120194756,
               "s": 790807,
@@ -5598,21 +5598,21 @@
               "w": 2.02
             },
             {
-              "t": "KE HLDGS",
+              "t": "BEKE",
               "n": "KE HLDGS INC",
               "v": 80489282,
               "s": 4236278,
               "w": 1.97
             },
             {
-              "t": "FULL TRU",
+              "t": "35969L108",
               "n": "FULL TRUCK ALLIANCE CO LTD",
               "v": 52743192,
               "s": 4066553,
               "w": 1.29
             },
             {
-              "t": "YATSEN H",
+              "t": "YSG",
               "n": "YATSEN HLDG LTD",
               "v": 44266009,
               "s": 4885873,
@@ -5626,35 +5626,35 @@
               "w": 0.79
             },
             {
-              "t": "CLEARWAT",
+              "t": "185123106",
               "n": "CLEARWATER ANALYTICS HLDGS I",
               "v": 24614797,
               "s": 1365971,
               "w": 0.6
             },
             {
-              "t": "CYTEK BI",
+              "t": "CTKB",
               "n": "CYTEK BIOSCIENCES INC",
               "v": 23099894,
               "s": 6657030,
               "w": 0.56
             },
             {
-              "t": "I MAB",
+              "t": "NBP",
               "n": "I MAB",
               "v": 22606547,
               "s": 5980568,
               "w": 0.55
             },
             {
-              "t": "GOSSAMER",
+              "t": "GOSS",
               "n": "GOSSAMER BIO INC",
               "v": 13081728,
               "s": 4974041,
               "w": 0.32
             },
             {
-              "t": "MAZE THE",
+              "t": "MAZE",
               "n": "MAZE THERAPEUTICS INC",
               "v": 11863883,
               "s": 457535,
@@ -5668,28 +5668,28 @@
               "w": 0.2
             },
             {
-              "t": "CONTINEU",
+              "t": "CTNM",
               "n": "CONTINEUM THERAPEUTICS INC",
               "v": 7864710,
               "s": 669337,
               "w": 0.19
             },
             {
-              "t": "SMART SH",
+              "t": "83193E102",
               "n": "SMART SH GLOBAL LTD",
               "v": 5332095,
               "s": 3949700,
               "w": 0.13
             },
             {
-              "t": "SAGIMET",
+              "t": "SGMT",
               "n": "SAGIMET BIOSCIENCES INC",
               "v": 4972128,
               "s": 724800,
               "w": 0.12
             },
             {
-              "t": "TUYA INC",
+              "t": "TUYA",
               "n": "TUYA INC",
               "v": 3864068,
               "s": 1564400,
@@ -5703,14 +5703,14 @@
               "w": 0.07
             },
             {
-              "t": "MOGU INC",
+              "t": "MOGU",
               "n": "MOGU INC",
               "v": 2906959,
               "s": 847510,
               "w": 0.07
             },
             {
-              "t": "BRIGHT S",
+              "t": "109199208",
               "n": "BRIGHT SCHOLAR ED HLDGS LTD",
               "v": 1926879,
               "s": 988143,
@@ -5724,42 +5724,42 @@
               "w": 0.03
             },
             {
-              "t": "PACIFIC",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "v": 1176182,
               "s": 918892,
               "w": 0.03
             },
             {
-              "t": "EQUINOX",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "v": 902808,
               "s": 80500,
               "w": 0.02
             },
             {
-              "t": "BARRICK",
+              "t": "B",
               "n": "BARRICK MNG CORP",
               "v": 832358,
               "s": 25400,
               "w": 0.02
             },
             {
-              "t": "ALIGOS T",
+              "t": "ALGS",
               "n": "ALIGOS THERAPEUTICS INC",
               "v": 747221,
               "s": 76247,
               "w": 0.02
             },
             {
-              "t": "UXIN LTD",
+              "t": "91818X306",
               "n": "UXIN LTD",
               "v": 66280,
               "s": 19156,
               "w": 0.0
             },
             {
-              "t": "RIDGETEC",
+              "t": "G2124G120",
               "n": "RIDGETECH INC",
               "v": 24604,
               "s": 20167,
@@ -5907,7 +5907,7 @@
               "w": 1.91
             },
             {
-              "t": "SPGI",
+              "t": "78409V104",
               "n": "S&P GLOBAL INC",
               "v": 51663072,
               "s": 121463,
@@ -6073,7 +6073,7 @@
               "w": 0.87
             },
             {
-              "t": "SABLE OF",
+              "t": "78574H104",
               "n": "SABLE OFFSHORE CORP",
               "v": 23448780,
               "s": 1343000,
@@ -6152,7 +6152,7 @@
               "w": 1.47
             },
             {
-              "t": "CREDO TE",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "v": 190691340,
               "s": 701200,
@@ -6166,7 +6166,7 @@
               "w": 0.87
             },
             {
-              "t": "DISNEY W",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "v": 164260250,
               "s": 1706600,
@@ -6180,14 +6180,14 @@
               "w": 0.15
             },
             {
-              "t": "CIRCLE I",
+              "t": "CRCL",
               "n": "CIRCLE INTERNET GROUP INC",
               "v": 12526000,
               "s": 200000,
               "w": 0.07
             },
             {
-              "t": "PALANTIR",
+              "t": "PLTR",
               "n": "PALANTIR TECHNOLOGIES INC",
               "v": 7000200,
               "s": 60000,
@@ -6208,14 +6208,14 @@
               "w": 0.01
             },
             {
-              "t": "TEMPUS A",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "v": 1158600,
               "s": 20000,
               "w": 0.01
             },
             {
-              "t": "INNODATA",
+              "t": "INOD",
               "n": "INNODATA INC",
               "v": 755800,
               "s": 10000,
@@ -6291,14 +6291,14 @@
               "w": 0.81
             },
             {
-              "t": "DISNEY W",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "v": 145707284,
               "s": 1511800,
               "w": 0.73
             },
             {
-              "t": "CREDO TE",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "v": 70515144,
               "s": 751200,
@@ -6312,14 +6312,14 @@
               "w": 0.26
             },
             {
-              "t": "CIRCLE I",
+              "t": "CRCL",
               "n": "CIRCLE INTERNET GROUP INC",
               "v": 19082000,
               "s": 200000,
               "w": 0.1
             },
             {
-              "t": "PALANTIR",
+              "t": "PLTR",
               "n": "PALANTIR TECHNOLOGIES INC",
               "v": 8776800,
               "s": 60000,
@@ -6347,14 +6347,14 @@
               "w": 0.01
             },
             {
-              "t": "TEMPUS A",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "v": 904400,
               "s": 20000,
               "w": 0.0
             },
             {
-              "t": "INNODATA",
+              "t": "INOD",
               "n": "INNODATA INC",
               "v": 386200,
               "s": 10000,
@@ -6430,35 +6430,35 @@
               "w": 2.13
             },
             {
-              "t": "DISNEY W",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "v": 81004240,
               "s": 712000,
               "w": 0.46
             },
             {
-              "t": "COREWEAV",
+              "t": "CRWV",
               "n": "COREWEAVE INC",
               "v": 21475839,
               "s": 299900,
               "w": 0.12
             },
             {
-              "t": "CREDO TE",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "v": 20331657,
               "s": 141300,
               "w": 0.12
             },
             {
-              "t": "ASML HOL",
+              "t": "ASML",
               "n": "ASML HOLDING N V",
               "v": 10591614,
               "s": 9900,
               "w": 0.06
             },
             {
-              "t": "TEMPUS A",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "v": 6495500,
               "s": 110000,
@@ -6527,14 +6527,14 @@
               "w": 0.76
             },
             {
-              "t": "DISNEY W",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "v": 82783500,
               "s": 723000,
               "w": 0.56
             },
             {
-              "t": "ASML HOL",
+              "t": "ASML",
               "n": "ASML HOLDING N V",
               "v": 77447200,
               "s": 80000,
@@ -6599,14 +6599,14 @@
               "w": 10.33
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "ADVANCED MICRO DEVICES INC",
               "v": 146062267,
               "s": 251437,
               "w": 8.85
             },
             {
-              "t": "MARVELL",
+              "t": "MRVL",
               "n": "MARVELL TECHNOLOGY INC",
               "v": 130809158,
               "s": 439119,
@@ -6682,7 +6682,7 @@
               "w": 7.71
             },
             {
-              "t": "PROSHARE",
+              "t": "74347X831",
               "n": "PROSHARES TR",
               "v": 81762155,
               "s": 1961664,
@@ -6724,7 +6724,7 @@
               "w": 3.34
             },
             {
-              "t": "DIREXION",
+              "t": "25461A841",
               "n": "DIREXION SHS ETF TR",
               "v": 25646995,
               "s": 328597,
@@ -6738,7 +6738,7 @@
               "w": 2.18
             },
             {
-              "t": "CIRCLE I",
+              "t": "CRCL",
               "n": "CIRCLE INTERNET GROUP INC",
               "v": 3025832,
               "s": 31714,
@@ -6765,14 +6765,14 @@
               "w": 18.02
             },
             {
-              "t": "PROSHARE",
+              "t": "74347X831",
               "n": "PROSHARES TR",
               "v": 126614460,
               "s": 2401640,
               "w": 9.62
             },
             {
-              "t": "BANK MON",
+              "t": "063679385",
               "n": "BANK MONTREAL QUE",
               "v": 105923768,
               "s": 4193340,
@@ -6814,7 +6814,7 @@
               "w": 3.22
             },
             {
-              "t": "DIREXION",
+              "t": "25461A841",
               "n": "DIREXION SHS ETF TR",
               "v": 31834477,
               "s": 328597,
@@ -6841,14 +6841,14 @@
               "w": 17.35
             },
             {
-              "t": "BANK MON",
+              "t": "063679385",
               "n": "BANK MONTREAL QUE",
               "v": 144631850,
               "s": 4959940,
               "w": 11.2
             },
             {
-              "t": "PROSHARE",
+              "t": "74347X831",
               "n": "PROSHARES TR",
               "v": 124164788,
               "s": 1200820,
@@ -6883,7 +6883,7 @@
               "w": 6.66
             },
             {
-              "t": "COINBASE",
+              "t": "COIN",
               "n": "COINBASE GLOBAL INC",
               "v": 52873545,
               "s": 156667,
@@ -6904,21 +6904,21 @@
               "w": 3.05
             },
             {
-              "t": "NETFLIX",
+              "t": "64110L106",
               "n": "NETFLIX INC",
               "v": 14607641,
               "s": 12184,
               "w": 1.13
             },
             {
-              "t": "ASTERA L",
+              "t": "04626A103",
               "n": "ASTERA LABS INC",
               "v": 12626358,
               "s": 64486,
               "w": 0.98
             },
             {
-              "t": "BITMINE",
+              "t": "BMNR",
               "n": "BITMINE IMMERSION TECNOLOGIE",
               "v": 9652177,
               "s": 185869,
@@ -6932,7 +6932,7 @@
               "w": 0.74
             },
             {
-              "t": "DIREXION",
+              "t": "25461A841",
               "n": "DIREXION SHS ETF TR",
               "v": 9536281,
               "s": 151010,
@@ -7032,7 +7032,7 @@
               "w": 2.7
             },
             {
-              "t": "FOX CORP",
+              "t": "FOXA",
               "n": "Fox Corp",
               "v": 114992000,
               "s": 2204600,
@@ -7053,7 +7053,7 @@
               "w": 2.42
             },
             {
-              "t": "CDW CORP",
+              "t": "CDW",
               "n": "Cdw Corp",
               "v": 104629000,
               "s": 743950,
@@ -7081,7 +7081,7 @@
               "w": 1.72
             },
             {
-              "t": "BITDEER",
+              "t": "BTDR",
               "n": "Bitdeer Technologies Group",
               "v": 64670000,
               "s": 4074993,
@@ -7102,7 +7102,7 @@
               "w": 1.3
             },
             {
-              "t": "FLUOR CO",
+              "t": "FLR",
               "n": "Fluor Corp",
               "v": 51457000,
               "s": 982200,
@@ -7123,14 +7123,14 @@
               "w": 1.06
             },
             {
-              "t": "ADVANCED",
+              "t": "AMD",
               "n": "Advanced Micro Devices Inc",
               "v": 42348000,
               "s": 72900,
               "w": 0.97
             },
             {
-              "t": "PALO ALT",
+              "t": "PANW",
               "n": "Palo Alto Networks Inc",
               "v": 39780000,
               "s": 116650,
@@ -7144,7 +7144,7 @@
               "w": 0.91
             },
             {
-              "t": "HUT 8 CO",
+              "t": "HUT",
               "n": "Hut 8 Corp",
               "v": 36267000,
               "s": 314150,
@@ -7165,7 +7165,7 @@
               "w": 0.69
             },
             {
-              "t": "FOX CORP",
+              "t": "FOX",
               "n": "Fox Corp",
               "v": 29631000,
               "s": 632600,
@@ -7200,7 +7200,7 @@
               "w": 0.58
             },
             {
-              "t": "CAVCO IN",
+              "t": "CVCO",
               "n": "Cavco Inds Inc Del",
               "v": 24268000,
               "s": 39500,
@@ -7214,28 +7214,28 @@
               "w": 0.54
             },
             {
-              "t": "HYPERLIQ",
+              "t": "PURR",
               "n": "Hyperliquid Strategies Inc",
               "v": 23150000,
               "s": 2941500,
               "w": 0.53
             },
             {
-              "t": "RAMBUS I",
+              "t": "RMBS",
               "n": "Rambus Inc Del",
               "v": 22964000,
               "s": 173000,
               "w": 0.53
             },
             {
-              "t": "RHYTHM P",
+              "t": "RYTM",
               "n": "Rhythm Pharmaceuticals Inc",
               "v": 22608000,
               "s": 203618,
               "w": 0.52
             },
             {
-              "t": "CHAMPION",
+              "t": "SKY",
               "n": "Champion Homes Inc",
               "v": 22418000,
               "s": 254400,
@@ -7298,7 +7298,7 @@
               "w": 0.48
             },
             {
-              "t": "RIOT PLA",
+              "t": "RIOT",
               "n": "Riot Platforms Inc",
               "v": 20666000,
               "s": 754800,
