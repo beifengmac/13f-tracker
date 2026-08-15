@@ -4,6 +4,7 @@ export interface Holding {
   v: number;  // value in USD
   s: number;  // shares
   w: number;  // weight %
+  o?: 'CALL' | 'PUT';  // option type, when the 13F row is an option
 }
 
 export interface Quarter {

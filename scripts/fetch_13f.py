@@ -354,8 +354,7 @@ def parse_13f_xml(xml_data, max_holdings=None):
 
             cusip = record.get('cusip', '')
             name = record.get('nameOfIssuer', '')
-            if record.get('putCall', ''):
-                continue  # Skip options
+            put_call = record.get('putCall', '').upper()
 
             try:
                 value = int(record.get('value', '0'))
@@ -366,13 +365,14 @@ def parse_13f_xml(xml_data, max_holdings=None):
             except ValueError:
                 shares = 0
 
-            if cusip in holdings:
-                holdings[cusip]['value'] += value
-                holdings[cusip]['shares'] += shares
+            key = f"{cusip}:{put_call}" if put_call else cusip
+            if key in holdings:
+                holdings[key]['value'] += value
+                holdings[key]['shares'] += shares
             else:
-                holdings[cusip] = {
+                holdings[key] = {
                     'name': name, 'cusip': cusip,
-                    'value': value, 'shares': shares,
+                    'value': value, 'shares': shares, 'put_call': put_call,
                 }
 
     # Auto-detect if values are in thousands:
@@ -433,15 +433,21 @@ def process_fund(fund_id, fund_info, num_quarters=4):
         total = sum(h['value'] for h in all_h.values())
 
         quarter_holdings = []
-        for cusip, h in limited.items():
+        for _, h in limited.items():
+            cusip = h['cusip']
             # Never invent pseudo-tickers from issuer names. If a CUSIP is not
             # mapped yet, keep the stable CUSIP visible so it can be audited.
-            ticker = TICKER_MAP.get(cusip, cusip)
+            base_ticker = TICKER_MAP.get(cusip, cusip)
+            put_call = h.get('put_call')
+            ticker = f"{base_ticker} {put_call}" if put_call else base_ticker
             pct = round(h['value'] / total * 100, 2) if total > 0 else 0
-            quarter_holdings.append({
+            holding = {
                 't': ticker, 'n': h['name'],
                 'v': h['value'], 's': h['shares'], 'w': pct,
-            })
+            }
+            if put_call:
+                holding['o'] = put_call
+            quarter_holdings.append(holding)
 
         fund_data['quarters'][label] = {
             'total': total,
