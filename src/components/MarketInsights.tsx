@@ -1,11 +1,9 @@
 import { useMemo } from 'react';
 import rawData from '../data.json';
-import type { Data } from '../types';
-import { fmtValue, fmtPct, getAllQuarterKeys, getAction, getShareChange, mergeGoogleClasses } from '../utils';
+import type { Data, Fund, Holding } from '../types';
+import { fmtValue, fmtPct, fmtShares, getAllQuarterKeys, getQuarterKeys, getAction, getShareChange, mergeGoogleClasses } from '../utils';
 
 const data = rawData as unknown as Data;
-
-/* ── Types ───────────────────────────────────────────────────── */
 
 interface Insight {
   id: string;
@@ -18,327 +16,218 @@ interface Insight {
   signal: 'bullish' | 'bearish' | 'neutral' | 'divergent';
 }
 
-/* ── Fund display helpers ────────────────────────────────────── */
-
 const FUND_LABELS: Record<string, string> = {
-  berkshire: '巴菲特', bridgewater: '达利欧', blackrock: '贝莱德',
-  ark: '木头姐', hhlr: '高瓴/张磊', himalaya: '李录',
-  hh: '段永平', danbin: '但斌',
+  berkshire: '巴菲特',
+  bridgewater: '桥水',
+  blackrock: '贝莱德',
+  ark: 'ARK',
+  hhlr: '高瓴',
+  himalaya: '李录',
+  hh: '段永平',
+  danbin: '但斌',
+  duquesne: '杜肯',
 };
 
-/* ── Build insights from actual data ─────────────────────────── */
+function getHolding(fund: Fund, quarter: string, ticker: string): Holding | undefined {
+  return mergeGoogleClasses(fund.quarters[quarter]?.holdings ?? []).find(h => h.t === ticker);
+}
+
+function positionLine(fundId: string, ticker: string, quarter: string): string | null {
+  const fund = data.funds[fundId];
+  const holding = getHolding(fund, quarter, ticker);
+  if (!holding) return null;
+  const action = getAction(fund, ticker, quarter);
+  const change = getShareChange(fund, ticker, quarter);
+  const actionText =
+    action === 'new' ? '新建仓'
+      : action === 'cleared' ? '清仓'
+        : action === 'increased' ? `加仓 ${fmtPct(change)}`
+          : action === 'decreased' ? `减仓 ${fmtPct(change)}`
+            : '持股不变';
+
+  return `${FUND_LABELS[fundId]}：${ticker} ${holding.w.toFixed(1)}%，${actionText}，${fmtShares(holding.s)} 股`;
+}
+
+function topMoves(fundId: string, quarter: string, type: 'new' | 'increased' | 'decreased' | 'cleared', limit = 4): string {
+  const fund = data.funds[fundId];
+  const quarterKeys = getQuarterKeys(fund);
+  const prevQ = quarterKeys[quarterKeys.indexOf(quarter) - 1];
+  const current = mergeGoogleClasses(fund.quarters[quarter]?.holdings ?? []);
+  const rows = type === 'cleared'
+    ? mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? [])
+    : current;
+
+  const moves = rows
+    .map(h => ({
+      ticker: h.t,
+      weight: h.w,
+      action: getAction(fund, h.t, quarter),
+      change: getShareChange(fund, h.t, quarter),
+    }))
+    .filter(h => h.action === type)
+    .sort((a, b) => type === 'new' || type === 'cleared' ? b.weight - a.weight : Math.abs(b.change) - Math.abs(a.change))
+    .slice(0, limit)
+    .map(h => type === 'new' || type === 'cleared' ? h.ticker : `${h.ticker} ${fmtPct(h.change)}`);
+
+  return moves.length > 0 ? moves.join('、') : '无';
+}
+
+function fundAumChange(fund: Fund, latestQ: string, prevQ: string): number {
+  const latest = fund.quarters[latestQ]?.total ?? 0;
+  const prev = fund.quarters[prevQ]?.total ?? 0;
+  return prev > 0 ? ((latest - prev) / prev) * 100 : 0;
+}
 
 function generateInsights(): Insight[] {
   const allQs = getAllQuarterKeys(data.funds);
   const latestQ = allQs[allQs.length - 1];
-  const earliestQ = allQs[0];
-  const insights: Insight[] = [];
+  const prevQ = allQs[allQs.length - 2];
+  if (!latestQ || !prevQ) return [];
 
-  // 1. Gather cross-fund stock data
-  interface StockSignal {
-    ticker: string;
-    name: string;
-    holders: { fundId: string; weight: number; action: string; change: number }[];
-  }
+  const brk = data.funds.berkshire;
+  const hhlr = data.funds.hhlr;
+  const danbin = data.funds.danbin;
+  const hh = data.funds.hh;
+  const himalaya = data.funds.himalaya;
+  const ark = data.funds.ark;
+  const bridgewater = data.funds.bridgewater;
+  const blackrock = data.funds.blackrock;
+  const duquesne = data.funds.duquesne;
 
-  const stockMap = new Map<string, StockSignal>();
+  const brkGoog = getHolding(brk, latestQ, 'GOOG');
+  const brkBacChange = getShareChange(brk, 'BAC', latestQ);
+  const hhlrPddChange = getShareChange(hhlr, 'PDD', latestQ);
+  const hhlrBabaChange = getShareChange(hhlr, 'BABA', latestQ);
+  const hhNvdaChange = getShareChange(hh, 'NVDA', latestQ);
+  const hhPddChange = getShareChange(hh, 'PDD', latestQ);
+  const liLuPddChange = getShareChange(himalaya, 'PDD', latestQ);
+  const danbinMuChange = getShareChange(danbin, 'MU', latestQ);
+  const arkTsla = getHolding(ark, latestQ, 'TSLA');
+  const duqAum = fundAumChange(duquesne, latestQ, prevQ);
 
-  for (const [fundId, fund] of Object.entries(data.funds)) {
-    const q = fund.quarters[latestQ];
-    if (!q) continue;
-    const holdings = mergeGoogleClasses(q.holdings);
-    for (const h of holdings) {
-      const act = getAction(fund, h.t, latestQ);
-      const chg = getShareChange(fund, h.t, latestQ);
-      if (!stockMap.has(h.t)) {
-        stockMap.set(h.t, { ticker: h.t, name: h.n, holders: [] });
-      }
-      stockMap.get(h.t)!.holders.push({ fundId, weight: h.w, action: act, change: chg });
-    }
-    // Also check cleared positions
-    const prevQ = allQs[allQs.indexOf(latestQ) - 1];
-    if (prevQ && fund.quarters[prevQ]) {
-      const prevHoldings = mergeGoogleClasses(fund.quarters[prevQ].holdings);
-      for (const h of prevHoldings) {
-        const act = getAction(fund, h.t, latestQ);
-        if (act === 'cleared') {
-          if (!stockMap.has(h.t)) {
-            stockMap.set(h.t, { ticker: h.t, name: h.n, holders: [] });
-          }
-          const existing = stockMap.get(h.t)!.holders;
-          if (!existing.find(e => e.fundId === fundId)) {
-            existing.push({ fundId, weight: 0, action: 'cleared', change: -100 });
-          }
-        }
-      }
-    }
-  }
-
-  // === INSIGHT: AAPL — Buffett's conviction vs Duan Yongping ===
-  const aapl = stockMap.get('AAPL');
-  if (aapl) {
-    const buffett = aapl.holders.find(h => h.fundId === 'berkshire');
-    const duan = aapl.holders.find(h => h.fundId === 'hh');
-    if (buffett && duan) {
-      // Get YoY change for Berkshire AAPL
-      const brkFund = data.funds['berkshire'];
-      const brkEarliest = brkFund.quarters[earliestQ];
-      const brkLatest = brkFund.quarters[latestQ];
-      const brkAaplEarly = brkEarliest?.holdings.find(h => h.t === 'AAPL');
-      const brkAaplLate = brkLatest?.holdings.find(h => h.t === 'AAPL');
-      const brkChange = brkAaplEarly && brkAaplLate
-        ? ((brkAaplLate.s - brkAaplEarly.s) / brkAaplEarly.s * 100) : 0;
-
-      const hhFund = data.funds['hh'];
-      const hhEarliest = hhFund.quarters[earliestQ];
-      const hhLatest = hhFund.quarters[latestQ];
-      const hhAaplEarly = hhEarliest?.holdings.find(h => h.t === 'AAPL');
-      const hhAaplLate = hhLatest?.holdings.find(h => h.t === 'AAPL');
-      const hhChange = hhAaplEarly && hhAaplLate
-        ? ((hhAaplLate.s - hhAaplEarly.s) / hhAaplEarly.s * 100) : 0;
-
-      insights.push({
-        id: 'aapl',
-        icon: '🍎',
-        tag: 'AAPL',
-        tagColor: 'bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200',
-        title: '苹果：两大重仓者的微妙分歧',
-        signal: 'neutral',
-        body: `苹果仍然是巴菲特（${buffett.weight.toFixed(1)}%）和段永平（${duan.weight.toFixed(1)}%）的第一大持仓，但两人都在年内小幅减持。巴菲特连续减持表明他认为当前估值已经充分反映了价值——这不是看空，而是组合再平衡。段永平减持苹果的资金大部分流向了英伟达和拼多多。`,
-        details: [
-          `巴菲特：占比 ${buffett.weight.toFixed(1)}%，年内持股变化 ${fmtPct(brkChange)}`,
-          `段永平：占比 ${duan.weight.toFixed(1)}%，年内持股变化 ${fmtPct(hhChange)}`,
-          '巴菲特已连续多个季度减持苹果，但仍是绝对第一大重仓，说明核心信仰不变',
-          '个人投资者启示：苹果仍是顶级公司，但估值已高，不宜追涨，适合持有',
-        ],
-      });
-    }
-  }
-
-  // === INSIGHT: PDD — Chinese investor consensus ===
-  const pdd = stockMap.get('PDD');
-  if (pdd) {
-    const cnHolders = pdd.holders.filter(h => ['hhlr', 'himalaya', 'hh', 'danbin'].includes(h.fundId));
-    if (cnHolders.length >= 3) {
-      const holderDetails = cnHolders.map(h => {
-        const label = FUND_LABELS[h.fundId];
-        return `${label}（${h.weight.toFixed(1)}%，${h.action === 'new' ? '新建仓' : h.change > 0 ? `加仓${fmtPct(h.change)}` : h.change < 0 ? `减仓${fmtPct(h.change)}` : '持平'}）`;
-      });
-
-      // Get YoY data for Duan Yongping PDD
-      const hhFund = data.funds['hh'];
-      const hhPddEarly = hhFund.quarters[earliestQ]?.holdings.find(h => h.t === 'PDD');
-      const hhPddLate = hhFund.quarters[latestQ]?.holdings.find(h => h.t === 'PDD');
-      const hhPddYoY = hhPddEarly && hhPddLate
-        ? ((hhPddLate.s - hhPddEarly.s) / hhPddEarly.s * 100) : 0;
-
-      insights.push({
-        id: 'pdd',
-        icon: '🛒',
-        tag: 'PDD',
-        tagColor: 'bg-orange-100 text-orange-800 dark:bg-orange-900/40 dark:text-orange-300',
-        title: '拼多多：华人投资人最大共识',
-        signal: 'bullish',
-        body: `四位华人价值投资人中有 ${cnHolders.length} 位重仓拼多多，这是最强的共识信号。段永平年内加仓 ${fmtPct(hhPddYoY)}（从 775 万股到近 2000 万股），李录更是在 Q2 2025 一次性建仓 460 万股后持股不动——典型的"看准了一把到位"风格。当多个独立判断的顶级投资人同时重仓同一标的，个人投资者应该认真研究其投资逻辑。`,
-        details: [
-          ...holderDetails,
-          '核心逻辑：Temu 海外扩张 + 中国农业电商深耕，双引擎增长',
-          '风险提示：海外监管风险、与 SHEIN 竞争、中美地缘政治',
-          '个人投资者启示：多位顶级投资人的共识降低了判断错误的概率，但仍需独立研究基本面',
-        ],
-      });
-    }
-  }
-
-  // === INSIGHT: BABA — Being abandoned ===
-  const baba = stockMap.get('BABA');
-  if (baba) {
-    const clearers = baba.holders.filter(h => h.action === 'cleared');
-    const reducers = baba.holders.filter(h => h.action === 'decreased');
-    if (clearers.length + reducers.length >= 2) {
-      insights.push({
-        id: 'baba',
-        icon: '📦',
-        tag: 'BABA',
-        tagColor: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300',
-        title: '阿里巴巴：被系统性抛弃',
-        signal: 'bearish',
-        body: `段永平清仓阿里（原持仓 4.4%）、高瓴减持 55%，李录从未持有。这不是个别投资人的判断，而是对阿里竞争力的系统性重新评估。当最了解中国互联网的投资人们集体用脚投票选择拼多多而非阿里，个人投资者应该高度警惕。`,
-        details: [
-          ...clearers.map(h => `${FUND_LABELS[h.fundId]}：清仓`),
-          ...reducers.map(h => `${FUND_LABELS[h.fundId]}：减仓 ${fmtPct(h.change)}`),
-          '核心问题：组织效率低下、国内电商份额被拼多多蚕食、云业务增长放缓',
-          '对比信号：同一批投资人在加仓拼多多的同时减仓阿里，说明他们不是看空中概整体，而是看空阿里个体',
-          '个人投资者启示：便宜不等于有价值，"深度价值陷阱"是最大风险',
-        ],
-      });
-    }
-  }
-
-  // === INSIGHT: NVDA — Duan Yongping all-in AI ===
-  const nvda = stockMap.get('NVDA');
-  if (nvda) {
-    const duan = nvda.holders.find(h => h.fundId === 'hh');
-    if (duan) {
-      // Year-over-year
-      const hhFund = data.funds['hh'];
-      const hhNvdaEarly = hhFund.quarters[earliestQ]?.holdings.find(h => h.t === 'NVDA');
-      const hhNvdaLate = hhFund.quarters[latestQ]?.holdings.find(h => h.t === 'NVDA');
-      const yoyChg = hhNvdaEarly && hhNvdaLate
-        ? ((hhNvdaLate.s - hhNvdaEarly.s) / hhNvdaEarly.s * 100) : 0;
-
-      const allNvdaHolders = nvda.holders.filter(h => h.weight > 0.5);
-
-      insights.push({
-        id: 'nvda',
-        icon: '🤖',
-        tag: 'NVDA',
-        tagColor: 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300',
-        title: `英伟达：段永平年内加仓 ${fmtPct(yoyChg)}，AI 信仰最强信号`,
-        signal: 'bullish',
-        body: `段永平在一年内将英伟达持仓从 64.5 万股暴增至 1384 万股，加仓幅度超过 20 倍。这是一个以"只买看得懂的公司"著称的投资人对 AI 赛道的全面拥抱。同时他还新建仓了 Credo Technology（AI 数据中心光互联，加仓 432%）和 Palantir，形成了完整的 AI 基础设施投资矩阵。`,
-        details: [
-          ...allNvdaHolders.map(h => `${FUND_LABELS[h.fundId]}：${h.weight.toFixed(1)}%`),
-          '段永平 AI 布局：NVDA（GPU）+ CRDO（光互联）+ MSFT（云平台）+ PLTR（数据分析）',
-          '高瓴也在小仓位试水光通信链：MRVL + Coherent + Lumentum + Corning',
-          '个人投资者启示：AI 基础设施是当前最大的投资主题，但需注意估值已高，优先关注产业链上游',
-        ],
-      });
-    }
-  }
-
-  // === INSIGHT: TSLA — ARK + Duan Yongping convergence ===
-  const tsla = stockMap.get('TSLA');
-  if (tsla) {
-    const arkHolder = tsla.holders.find(h => h.fundId === 'ark');
-    const duanHolder = tsla.holders.find(h => h.fundId === 'hh');
-    if (arkHolder && duanHolder) {
-      insights.push({
-        id: 'tsla',
-        icon: '⚡',
-        tag: 'TSLA',
-        tagColor: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300',
-        title: '特斯拉：成长派与价值派的罕见交汇',
-        signal: 'bullish',
-        body: `木头姐的 ARK 一直是特斯拉最坚定的多头，但更令人意外的是，以价值投资著称的段永平也在本季度新建仓特斯拉（直接成为第 5 大持仓，占比 ${duanHolder.weight.toFixed(1)}%）。当成长派和价值派同时看好一家公司，这个信号的权重远大于任何单一投资人的判断。`,
-        details: [
-          `木头姐 ARK：${arkHolder.weight.toFixed(1)}%`,
-          `段永平：${duanHolder.weight.toFixed(1)}%（🆕 新建仓）`,
-          '段永平此前公开表示过不看好特斯拉，态度 180° 转变说明 FSD/Robotaxi 可能已到拐点',
-          '个人投资者启示：关注特斯拉 FSD 的商业化进展和 Robotaxi 落地时间表',
-        ],
-      });
-    }
-  }
-
-  // === INSIGHT: Google — Li Lu's massive conviction ===
-  const goog = stockMap.get('GOOG');
-  if (goog) {
-    const liLu = goog.holders.find(h => h.fundId === 'himalaya');
-    if (liLu && liLu.weight > 30) {
-      insights.push({
-        id: 'goog',
-        icon: '🔍',
-        tag: 'GOOG',
-        tagColor: 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300',
-        title: `Google：李录 ${liLu.weight.toFixed(0)}% 重仓不动，AI 时代最强信仰`,
-        signal: 'bullish',
-        body: `李录将近一半的投资组合放在 Google 上（GOOGL + GOOG 合计 ${liLu.weight.toFixed(1)}%），而且四个季度一股没动。作为查理·芒格生前唯一委托管理资金的华人基金经理，李录的投资风格是"极度集中 + 极度长期"。他对 Google 在 AI 时代的竞争力有着超越市场的信心。段永平也在年内加仓 Google 234%，进一步验证了这一判断。`,
-        details: [
-          '李录对 Google 的信念：搜索垄断 + YouTube + Cloud + Gemini AI，护城河极深',
-          '段永平 GOOG 年内加仓 234%（111万→371万股），从另一个角度验证',
-          '高瓴反向操作：清仓了 Google（但高瓴持仓极小，不具代表性）',
-          '个人投资者启示：Google 是 AI 时代的核心基础设施之一，当前估值相对合理',
-        ],
-      });
-    }
-  }
-
-  // === INSIGHT: Financial data infrastructure ===
-  const spgi = stockMap.get('SPGI');
-  const mco = stockMap.get('MCO');
-  const msci = stockMap.get('MSCI');
-  if (spgi || mco || msci) {
-    const liLuFinData = [spgi, mco, msci].filter(Boolean).flatMap(s =>
-      s!.holders.filter(h => h.fundId === 'himalaya')
-    );
-    if (liLuFinData.length >= 2) {
-      insights.push({
-        id: 'fin-data',
-        icon: '📊',
-        tag: '金融数据',
-        tagColor: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900/40 dark:text-indigo-300',
-        title: '李录新主题：全球金融基础设施三巨头',
-        signal: 'bullish',
-        body: `李录在本季度同时新建仓 S&P Global、Moody's 和 MSCI——这三家公司构成了全球金融数据和评级的基础设施。这不是简单的行业配置，而是一个完整的主题投资：全球资本市场越发展，对标准化数据、信用评级和指数的需求就越大。这些公司拥有极深的护城河和定价权。`,
-        details: [
-          ...liLuFinData.map((h, i) => {
-            return `${['SPGI', 'MCO', 'MSCI'][i] ?? ''}: 占比 ${h.weight.toFixed(1)}%（🆕 新建仓）`;
-          }),
-          '商业模式：数据+评级+指数 = 三重订阅收入，高壁垒、高毛利、低周期性',
-          '个人投资者启示：金融基础设施是"卖铲人"逻辑——不管谁赚钱，数据和评级永远有需求',
-        ],
-      });
-    }
-  }
-
-  // === INSIGHT: Berkshire's massive cash / defensive moves ===
-  const berkshire = data.funds['berkshire'];
-  if (berkshire) {
-    const latestBrk = berkshire.quarters[latestQ];
-    const earliestBrk = berkshire.quarters[earliestQ];
-    if (latestBrk && earliestBrk) {
-      const aumChange = ((latestBrk.total - earliestBrk.total) / earliestBrk.total) * 100;
-      const latestCount = latestBrk.holdings.length;
-      const earliestCount = earliestBrk.holdings.length;
-
-      if (latestCount < earliestCount) {
-        insights.push({
-          id: 'brk-defensive',
-          icon: '🛡️',
-          tag: '巴菲特',
-          tagColor: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300',
-          title: `巴菲特持续收缩：持仓从 ${earliestCount} 只减至 ${latestCount} 只`,
-          signal: 'bearish',
-          body: `巴菲特在过去一年将持仓数量从 ${earliestCount} 只收缩到 ${latestCount} 只，同时持续减持苹果。结合伯克希尔创纪录的现金储备（超过 3000 亿美元），巴菲特正在用行动表达他对当前市场估值的看法——"当别人贪婪时恐惧"。这是一个值得所有投资者关注的宏观信号。`,
-          details: [
-            `13F 持仓市值变化：${fmtValue(earliestBrk.total)} → ${fmtValue(latestBrk.total)}（${fmtPct(aumChange)}）`,
-            '现金储备创历史新高：暗示巴菲特认为当前市场缺乏足够吸引力的大型投资机会',
-            '策略含义：不是看空经济，而是认为优质资产价格已经被充分定价',
-            '个人投资者启示：在市场狂热时保持一定现金比例是审慎的做法',
-          ],
-        });
-      }
-    }
-  }
-
-  // === INSIGHT: High-conviction new position (CRDO) ===
-  const crdo = stockMap.get('CRDO');
-  if (crdo) {
-    const duanCrdo = crdo.holders.find(h => h.fundId === 'hh');
-    if (duanCrdo && duanCrdo.action === 'new') {
-      insights.push({
-        id: 'crdo',
-        icon: '🔌',
-        tag: 'AI 基础设施',
-        tagColor: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900/40 dark:text-cyan-300',
-        title: '段永平的 AI "隐藏下注"：Credo Technology',
-        signal: 'bullish',
-        body: `在大家关注段永平加仓英伟达时，他还悄悄建仓了 Credo Technology（CRDO），并在一个季度内加仓 432%。Credo 是 AI 数据中心高速以太网连接芯片的核心供应商，直接受益于 AI 算力扩张。高瓴也在布局相关的光通信产业链（Marvell、Coherent、Lumentum）。当两个独立的投资人同时布局 AI 连接层，这条产业链值得重点关注。`,
-        details: [
-          '段永平：Credo Technology 新建仓后加仓 432%',
-          '高瓴：新建仓 Marvell、Coherent、Lumentum、Corning（光通信全产业链）',
-          '投资逻辑：GPU 算力越多 → 数据中心间连接需求越大 → 高速以太网/光互联是瓶颈',
-          '个人投资者启示：AI 投资不只有英伟达，"连接层"公司可能提供更好的风险回报比',
-        ],
-      });
-    }
-  }
-
-  return insights;
+  return [
+    {
+      id: 'q2-regime',
+      icon: '📌',
+      tag: latestQ,
+      tagColor: 'bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200',
+      title: `${latestQ} 主线：不是单边看多，而是“指数资金扩张 + 主动资金分化”`,
+      signal: 'divergent',
+      body: `这次 9 家机构全部刷新到 ${latestQ}。表面上多数 13F 市值上升，但拆开看并不是同一种信号：贝莱德这类大资管更像被动跟随美股大盘扩张，桥水在 ETF 和因子之间轮动，真正值得读的是巴菲特、段永平、高瓴、李录、但斌、杜肯这些主动组合的方向变化。`,
+      details: [
+        `贝莱德 13F 市值 ${fmtValue(blackrock.quarters[latestQ].total)}，环比 ${fmtPct(fundAumChange(blackrock, latestQ, prevQ))}，更偏市场 Beta 信号`,
+        `桥水 13F 市值 ${fmtValue(bridgewater.quarters[latestQ].total)}，环比 ${fmtPct(fundAumChange(bridgewater, latestQ, prevQ))}，但个股层面大幅换仓`,
+        `高瓴 13F 市值 ${fmtValue(hhlr.quarters[latestQ].total)}，环比 ${fmtPct(fundAumChange(hhlr, latestQ, prevQ))}，是本轮最明显的收缩信号`,
+        `杜肯 13F 市值 ${fmtValue(duquesne.quarters[latestQ].total)}，环比 ${fmtPct(duqAum)}，是主动资金里最明显的进攻信号`,
+      ],
+    },
+    {
+      id: 'berkshire-q2',
+      icon: '🧭',
+      tag: '巴菲特',
+      tagColor: 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300',
+      title: `伯克希尔新增 ${latestQ}：核心不是“躺平”，而是加 Google、减金融风险`,
+      signal: 'neutral',
+      body: `伯克希尔 ${latestQ} 持仓市值升至 ${fmtValue(brk.quarters[latestQ].total)}，29 个持仓数量没变。最重要的变化是 Alphabet 合并后权重约 ${brkGoog?.w.toFixed(1)}%，环比持股加仓 ${fmtPct(getShareChange(brk, 'GOOG', latestQ))}；同时继续减 BAC、COF、Kroger、Nucor。这更像在保留消费和金融核心仓的同时，把组合向更确定的现金流科技倾斜。`,
+      details: [
+        positionLine('berkshire', 'GOOG', latestQ) ?? 'Alphabet：Q2 明显加仓',
+        positionLine('berkshire', 'BAC', latestQ) ?? `BAC：减仓 ${fmtPct(brkBacChange)}`,
+        positionLine('berkshire', 'COF', latestQ) ?? 'COF：大幅减仓',
+        '新进入/重新映射的边际持仓：DHI；Chubb 名称变化来自 SEC issuer name，不改变核心判断',
+      ],
+    },
+    {
+      id: 'china-internet',
+      icon: '🛒',
+      tag: '中概',
+      tagColor: 'bg-orange-100 text-orange-800 dark:bg-orange-900/40 dark:text-orange-300',
+      title: '拼多多共识还在，但高瓴明显撤退，不能再写成“无脑一致看多”',
+      signal: 'divergent',
+      body: `PDD 在李录和段永平组合里继续增强：李录加仓 ${fmtPct(liLuPddChange)}，段永平加仓 ${fmtPct(hhPddChange)}。但高瓴 Q2 同时大幅减 PDD 和 BABA，说明华人投资人对中概的共识已经从“板块机会”收窄成“只买少数最强公司”。`,
+      details: [
+        positionLine('himalaya', 'PDD', latestQ) ?? '李录：PDD 继续加仓',
+        positionLine('hh', 'PDD', latestQ) ?? '段永平：PDD 继续加仓',
+        `高瓴：PDD 减仓 ${fmtPct(hhlrPddChange)}，BABA 减仓 ${fmtPct(hhlrBabaChange)}`,
+        positionLine('hh', 'BABA', latestQ) ?? '段永平：BABA 只是很小的新仓，不能解读成强看多',
+      ],
+    },
+    {
+      id: 'ai-semiconductors',
+      icon: '🔌',
+      tag: 'AI 硬件',
+      tagColor: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900/40 dark:text-cyan-300',
+      title: 'AI 交易进入分层：但斌转向半导体组合，段永平反而降低高波动暴露',
+      signal: 'divergent',
+      body: `但斌 Q2 的变化最激进：清掉上一季度的大额 GOOG/AAPL/TSLA 暴露，重新建立 GOOGL、INTC、SNDK、AMD、MRVL、ARM、AVGO，并把 MU 加仓 ${fmtPct(danbinMuChange)}。段永平则相反，NVDA 减仓 ${fmtPct(hhNvdaChange)}，CRDO 也小幅减仓。这说明 AI 主线还在，但资金正在从“单一龙头叙事”分化到存储、网络、CPU/GPU 周边。`,
+      details: [
+        `但斌新建：${topMoves('danbin', latestQ, 'new', 8)}`,
+        `但斌加仓：${topMoves('danbin', latestQ, 'increased', 3)}`,
+        positionLine('hh', 'NVDA', latestQ) ?? '段永平：NVDA Q2 减仓',
+        positionLine('hhlr', 'NVDA', latestQ) ?? '高瓴：NVDA 小仓位加仓',
+      ],
+    },
+    {
+      id: 'li-lu-quality',
+      icon: '🔍',
+      tag: '李录',
+      tagColor: 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300',
+      title: '李录组合更集中：清掉金融数据/能源长尾，加码 Alphabet + PDD + BRK.B',
+      signal: 'bullish',
+      body: `喜马拉雅 Q2 从 14 个持仓收缩到 8 个，市值环比上升 ${fmtPct(fundAumChange(himalaya, latestQ, prevQ))}。他清掉 BAC、OXY、SPGI、HRB、MCO、MSCI，但加仓 PDD 和 BRK.B，Alphabet 合并后仍接近半仓。这是典型的“少数高确定性资产”组合，而不是分散试错。`,
+      details: [
+        positionLine('himalaya', 'GOOG', latestQ) ?? 'Alphabet：仍是第一大集中仓',
+        positionLine('himalaya', 'PDD', latestQ) ?? 'PDD：Q2 大幅加仓',
+        positionLine('himalaya', 'BRK.B', latestQ) ?? 'BRK.B：Q2 加仓',
+        `清仓：${topMoves('himalaya', latestQ, 'cleared', 8)}`,
+      ],
+    },
+    {
+      id: 'high-beta',
+      icon: '⚡',
+      tag: '高波动成长',
+      tagColor: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300',
+      title: '高波动成长股：ARK 继续拥抱，段永平开始降速',
+      signal: 'divergent',
+      body: `ARK 的 TSLA 仍是第一大仓，权重 ${arkTsla?.w.toFixed(1)}%，同时新建 SpaceX、Cerebras 等非传统成长资产；但段永平在 TSLA、NVDA、GOOGL、MSFT、UNH 上都减仓。这个分歧说明成长风格并没有退潮，但价值投资人已经开始控制高估值资产的仓位弹性。`,
+      details: [
+        positionLine('ark', 'TSLA', latestQ) ?? 'ARK：TSLA 仍是核心仓',
+        `ARK 新建：${topMoves('ark', latestQ, 'new', 6)}`,
+        `ARK 减仓：${topMoves('ark', latestQ, 'decreased', 6)}`,
+        `段永平减仓：${topMoves('hh', latestQ, 'decreased', 7)}`,
+      ],
+    },
+    {
+      id: 'duquesne-risk-on',
+      icon: '📈',
+      tag: '杜肯',
+      tagColor: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300',
+      title: `杜肯 Q2 明显进攻：市值环比 ${fmtPct(duqAum)}，持仓从 65 只扩到 86 只`,
+      signal: 'bullish',
+      body: `杜肯是这轮主动资金里最明显的风险偏好提升信号：新建 AMZN、GOOG、FOX、CDW、Bitdeer、DAL、DHI，同时大幅加 UAL、STX、DAKT、CLF。它不是单押科技，而是科技、航空、周期、加密算力一起扩张。`,
+      details: [
+        `杜肯新建：${topMoves('duquesne', latestQ, 'new', 8)}`,
+        `杜肯加仓：${topMoves('duquesne', latestQ, 'increased', 8)}`,
+        `杜肯清仓：${topMoves('duquesne', latestQ, 'cleared', 6)}`,
+        '投资含义：如果只看巴菲特会偏防守，但看杜肯会发现宏观交易资金已经在重新押风险资产',
+      ],
+    },
+    {
+      id: 'bridgewater-factor',
+      icon: '⚖️',
+      tag: '桥水',
+      tagColor: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900/40 dark:text-indigo-300',
+      title: '桥水不是简单看空科技，而是在从个股半导体切回 ETF/指数暴露',
+      signal: 'neutral',
+      body: `桥水 Q2 市值环比 ${fmtPct(fundAumChange(bridgewater, latestQ, prevQ))}，但动作很像因子轮动：加 SPY、VWO、KLA，减 MU、GEV、AMD、AMZN、GOOG，并清掉 TSM、MRVL、META、ARISTA、CRDO 等上一轮强势科技链。`,
+      details: [
+        `桥水加仓：${topMoves('bridgewater', latestQ, 'increased', 7)}`,
+        `桥水减仓：${topMoves('bridgewater', latestQ, 'decreased', 7)}`,
+        `桥水清仓：${topMoves('bridgewater', latestQ, 'cleared', 7)}`,
+        '投资含义：这是降低单股拥挤度、提高指数和地域分散的动作，不应被简单解读为全面看空美股',
+      ],
+    },
+  ];
 }
-
-/* ── Signal badge ────────────────────────────────────────────── */
 
 function SignalBadge({ signal }: { signal: Insight['signal'] }) {
   const config = {
@@ -355,8 +244,6 @@ function SignalBadge({ signal }: { signal: Insight['signal'] }) {
   );
 }
 
-/* ── Main component ──────────────────────────────────────────── */
-
 export default function MarketInsights() {
   const insights = useMemo(() => generateInsights(), []);
 
@@ -364,23 +251,20 @@ export default function MarketInsights() {
 
   return (
     <section className="mt-12 mb-8">
-      {/* Section header */}
       <div className="mb-6 flex items-center gap-3">
         <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 text-lg">
           💡
         </div>
         <div>
           <h2 className="text-xl font-bold text-gray-900 dark:text-white">持仓变动深度解读</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400">基于 8 位顶级投资人的持仓变化，分析背后的市场逻辑与投资信号</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">基于 9 位顶级投资人的最新 13F 变化，提炼组合动作背后的市场信号</p>
         </div>
       </div>
 
-      {/* Disclaimer */}
       <div className="mb-6 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-xs text-amber-800 dark:border-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
         ⚠️ 以下分析仅基于 13F 公开持仓数据的变化趋势，不构成投资建议。13F 有 45 天延迟，且不反映空头、衍生品和非美股资产。投资者应独立研究、审慎决策。
       </div>
 
-      {/* Insight cards */}
       <div className="space-y-4">
         {insights.map(insight => (
           <details
@@ -388,10 +272,8 @@ export default function MarketInsights() {
             className="group rounded-xl border border-gray-200 bg-white shadow-sm transition-all open:shadow-md dark:border-gray-800 dark:bg-gray-900"
           >
             <summary className="flex cursor-pointer items-start gap-4 px-5 py-4 select-none list-none [&::-webkit-details-marker]:hidden">
-              {/* Icon */}
               <span className="mt-0.5 text-2xl shrink-0">{insight.icon}</span>
 
-              {/* Content */}
               <div className="flex-1 min-w-0">
                 <div className="mb-1 flex flex-wrap items-center gap-2">
                   <span className={`rounded-full px-2 py-0.5 text-xs font-bold ${insight.tagColor}`}>{insight.tag}</span>
@@ -401,13 +283,11 @@ export default function MarketInsights() {
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{insight.body}</p>
               </div>
 
-              {/* Expand arrow */}
               <span className="mt-2 shrink-0 text-gray-400 transition-transform group-open:rotate-180">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </span>
             </summary>
 
-            {/* Detail content */}
             <div className="border-t border-gray-100 px-5 py-4 dark:border-gray-800">
               <ul className="space-y-2">
                 {insight.details.map((d, i) => (
