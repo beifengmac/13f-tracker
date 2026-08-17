@@ -22,6 +22,8 @@ export interface FundAnalysis {
   signal: Insight['signal'];
 }
 
+type MoveRow = { holding: Holding; action: Action; change: number; weight: number };
+
 const TAG_COLORS = [
   'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300',
   'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300',
@@ -146,24 +148,93 @@ function actionMeaning(action: Action): string {
   return '核心判断暂时稳定';
 }
 
-function themeSummary(rows: Array<{ holding: Holding; action: Action; change: number; weight: number }>, limit = 2): string {
+function themeSummary(rows: MoveRow[], limit = 2): string {
   const themes = themeList(rows, limit);
   return themes.length > 0 ? themes.join('、') : '无明显方向';
 }
 
-function themeList(rows: Array<{ holding: Holding; action: Action; change: number; weight: number }>, limit = 2): string[] {
-  const themes = new Map<string, { score: number; count: number }>();
+function themeScores(rows: MoveRow[]): Array<[string, { score: number; count: number; rows: MoveRow[] }]> {
+  const themes = new Map<string, { score: number; count: number; rows: MoveRow[] }>();
   for (const row of rows) {
     const theme = holdingTheme(row.holding);
-    const current = themes.get(theme) ?? { score: 0, count: 0 };
-    themes.set(theme, { score: current.score + row.weight + 0.75, count: current.count + 1 });
+    const current = themes.get(theme) ?? { score: 0, count: 0, rows: [] };
+    const actionBonus = row.action === 'cleared' || row.action === 'new' ? 1.25 : 0.75;
+    themes.set(theme, {
+      score: current.score + row.weight + actionBonus,
+      count: current.count + 1,
+      rows: [...current.rows, row],
+    });
   }
   const entries = [...themes];
   const focused = entries.filter(([theme]) => theme !== '其他/未分类');
   return (focused.length > 0 ? focused : entries)
-    .sort((a, b) => b[1].score - a[1].score)
+    .sort((a, b) => b[1].score - a[1].score);
+}
+
+function themeList(rows: MoveRow[], limit = 2): string[] {
+  return themeScores(rows)
     .slice(0, limit)
     .map(([theme]) => theme);
+}
+
+function rowsForTheme(rows: MoveRow[], theme: string, limit = 4): MoveRow[] {
+  return rows
+    .filter(row => holdingTheme(row.holding) === theme)
+    .sort((a, b) => b.holding.v - a.holding.v)
+    .slice(0, limit);
+}
+
+function tickerList(rows: MoveRow[], limit = 4): string {
+  return rows.slice(0, limit).map(row => holdingLabel(row.holding)).join('、');
+}
+
+function primaryClearedCluster(fund: Fund, quarter: string): [string, MoveRow[]] | null {
+  const grouped = moveRows(fund, quarter, 'cleared')
+    .reduce((groups, row) => {
+      const theme = holdingTheme(row.holding);
+      groups.set(theme, [...(groups.get(theme) ?? []), row]);
+      return groups;
+    }, new Map<string, MoveRow[]>());
+  const entries = [...grouped.entries()];
+  const focused = entries.filter(([theme]) => theme !== '其他/未分类');
+  return (focused.length > 0 ? focused : entries)
+    .filter(([, group]) => group.length >= 3)
+    .sort((a, b) => b[1].reduce((sum, row) => sum + row.weight, 0) - a[1].reduce((sum, row) => sum + row.weight, 0))[0] ?? null;
+}
+
+function flowProfile(fund: Fund, quarter: string) {
+  const buyRows = strongestRows(fund, quarter, ['new', 'increased'], 12);
+  const sellRows = strongestRows(fund, quarter, ['cleared', 'decreased'], 12);
+  const clearCluster = primaryClearedCluster(fund, quarter);
+  const buyThemes = themeList(buyRows, 3);
+  const sellThemes = themeList(sellRows, 3);
+  const overlappingThemes = buyThemes.filter(theme => sellThemes.includes(theme));
+  const distinctBuyThemes = buyThemes.filter(theme => !sellThemes.includes(theme));
+  const distinctSellThemes = sellThemes.filter(theme => !buyThemes.includes(theme));
+  const primaryBuyTheme = buyThemes[0] ?? null;
+  const primarySellTheme = sellThemes[0] ?? null;
+  const primaryOverlapTheme = overlappingThemes[0] ?? null;
+  const buyThemeText = buyThemes.slice(0, 2).join('、') || '无明显方向';
+  const sellThemeText = sellThemes.slice(0, 2).join('、') || '无明显方向';
+  const distinctSellThemeText = distinctSellThemes.slice(0, 2).join('、') || sellThemeText;
+
+  return {
+    buyRows,
+    sellRows,
+    buyThemes,
+    sellThemes,
+    overlappingThemes,
+    distinctBuyThemes,
+    distinctSellThemes,
+    primaryBuyTheme,
+    primarySellTheme,
+    primaryClearTheme: clearCluster?.[0] ?? null,
+    primaryClearRows: clearCluster?.[1] ?? [],
+    primaryOverlapTheme,
+    buyThemeText,
+    sellThemeText,
+    distinctSellThemeText,
+  };
 }
 
 function topHoldingsLine(fund: Fund, quarter: string, prevQ: string): string {
@@ -225,14 +296,14 @@ function sectorLabel(sector: string): string {
   return labels[sector] ?? sector;
 }
 
-function strongestRows(fund: Fund, quarter: string, types: Action[], limit = 4): Array<{ holding: Holding; action: Action; change: number; weight: number }> {
+function strongestRows(fund: Fund, quarter: string, types: Action[], limit = 4): MoveRow[] {
   return types
     .flatMap(type => moveRows(fund, quarter, type))
     .sort((a, b) => b.holding.v - a.holding.v)
     .slice(0, limit);
 }
 
-function movePhrase(row: { holding: Holding; action: Action; change: number; weight: number }): string {
+function movePhrase(row: MoveRow): string {
   const action = row.action === 'new'
     ? '新建'
     : row.action === 'cleared'
@@ -244,56 +315,60 @@ function movePhrase(row: { holding: Holding; action: Action; change: number; wei
 }
 
 function buyActionLine(fund: Fund, quarter: string): string {
-  const rows = strongestRows(fund, quarter, ['new', 'increased'], 4);
+  const flow = flowProfile(fund, quarter);
+  const rows = flow.buyRows;
   if (rows.length === 0) return '二、最干净的买入动作：本季没有显著新建或加仓，不能硬解读成新的进攻方向。';
 
-  const [lead, ...rest] = rows;
-  const restText = rest.length > 0 ? `；同时还可以看 ${rest.map(movePhrase).join('；')}` : '';
-  return `二、最干净的买入动作：最值得看的买入不是数量最多的股票，而是 ${movePhrase(lead)}。这说明组合在主动押注 ${holdingTheme(lead.holding)}${restText}。`;
+  const primaryTheme = flow.primaryBuyTheme ?? flow.buyThemes[0];
+  const themeRows = primaryTheme ? rowsForTheme(rows, primaryTheme, 4) : rows.slice(0, 4);
+  const [lead] = themeRows;
+  const directActionRows = themeRows.filter(row => row.action === 'new' || row.action === 'increased');
+  const actionText = directActionRows.length > 1
+    ? `${tickerList(directActionRows, 4)} 同时${directActionRows.some(row => row.action === 'new') ? '新建/加仓' : '加仓'}`
+    : movePhrase(lead);
+  const extraThemes = flow.buyThemes.filter(theme => theme !== primaryTheme).slice(0, 2);
+  const extraText = extraThemes.length > 0
+    ? `；同时，${extraThemes.join('、')} 也有资金进入，但信号强度低于主线`
+    : '';
+  return `二、真正值得看的买入动作：买入端最有信息量的是 ${actionText}。它重要的不是单笔交易本身，而是把资金明确压到 ${primaryTheme}；这说明组合在主动寻找新的收益来源${extraText}。`;
 }
 
 function sellActionLine(fund: Fund, quarter: string): string {
-  const rows = strongestRows(fund, quarter, ['cleared', 'decreased'], 4);
+  const flow = flowProfile(fund, quarter);
+  const rows = flow.sellRows;
   const allCleared = moveRows(fund, quarter, 'cleared');
   if (rows.length === 0 && allCleared.length === 0) return '三、最明确的卖出/清仓信号：本季没有显著减仓或清仓，负面信息不强。';
 
-  const cleared = rows.filter(row => row.action === 'cleared');
-  const decreased = rows.filter(row => row.action === 'decreased');
   const sellThemes = themeSummary([...rows, ...allCleared], 2);
-  const thematicClears = allCleared
-    .reduce((groups, row) => {
-      const theme = holdingTheme(row.holding);
-      groups.set(theme, [...(groups.get(theme) ?? []), row]);
-      return groups;
-    }, new Map<string, Array<{ holding: Holding; action: Action; change: number; weight: number }>>());
-  const clusterEntries = [...thematicClears.entries()];
-  const focusedClusters = clusterEntries.filter(([theme]) => theme !== '其他/未分类');
-  const clearestCluster = (focusedClusters.length > 0 ? focusedClusters : clusterEntries)
-    .filter(([, group]) => group.length >= 3)
-    .sort((a, b) => b[1].reduce((sum, row) => sum + row.weight, 0) - a[1].reduce((sum, row) => sum + row.weight, 0))[0];
-  const clearedRows = clearestCluster
-    ? clearestCluster[1].sort((a, b) => b.weight - a.weight).slice(0, 8)
-    : cleared;
+  const clearedRows = flow.primaryClearRows.length > 0
+    ? flow.primaryClearRows.sort((a, b) => b.weight - a.weight).slice(0, 8)
+    : rows.filter(row => row.action === 'cleared');
+  const decreased = rows.filter(row => row.action === 'decreased').slice(0, 4);
   const clearedText = clearedRows.length > 0 ? `清仓 ${clearedRows.map(row => holdingLabel(row.holding)).join('、')}` : '';
   const decreasedText = decreased.length > 0 ? `大幅减仓 ${decreased.map(row => `${holdingLabel(row.holding)} ${fmtPct(row.change)}`).join('、')}` : '';
   const joined = [clearedText, decreasedText].filter(Boolean).join('，');
-  return `三、最明确的卖出/清仓信号：卖出端更有信息量，${joined}，代表他在退出或降低 ${sellThemes}。如果你持有同类资产，要重点复查业绩兑现、估值位置、周期拐点和竞争格局，不要只看他还买了什么。`;
+  const clusterTheme = flow.primaryClearTheme ?? flow.primarySellTheme ?? sellThemes;
+  return `三、最明确的卖出/清仓信号：卖出端更值得重视，${joined}。这不是普通调仓噪音，而是代表他在退出或降低 ${clusterTheme}。如果你持有同类资产，要优先复查业绩兑现、估值位置、周期拐点和竞争格局，不要只看他同时买了什么。`;
 }
 
 function actionReadLine(fund: Fund, quarter: string, counts: Record<Action, number>): string {
   const buySide = counts.new + counts.increased;
   const sellSide = counts.decreased + counts.cleared;
+  const flow = flowProfile(fund, quarter);
 
   if (buySide === 0 && sellSide === 0) {
     return '四、组合意图判断：这是一次核心仓维护，交易不多，重点是确认第一大仓和前几大仓是否继续稳定。';
   }
 
-  const buyThemes = themeSummary(strongestRows(fund, quarter, ['new', 'increased'], 8), 2);
-  const sellThemes = themeSummary(strongestRows(fund, quarter, ['cleared', 'decreased'], 8), 2);
+  if (flow.primaryOverlapTheme && flow.overlappingThemes.length >= Math.min(flow.buyThemes.length, flow.sellThemes.length)) {
+    const bought = tickerList(rowsForTheme(flow.buyRows, flow.primaryOverlapTheme, 3), 3);
+    const sold = tickerList(rowsForTheme(flow.sellRows, flow.primaryOverlapTheme, 3), 3);
+    return `四、组合意图判断：这是一次主题内换股。他没有简单退出 ${flow.primaryOverlapTheme}，而是在同一条主线里从 ${sold || '旧持仓'} 换到 ${bought || '新持仓'}，重点应放在强弱切换，而不是机械解读成看多或看空整个行业。`;
+  }
 
-  if (buySide > sellSide * 1.3) return `四、组合意图判断：这是一次进攻型扩仓，买入端强于卖出端，资金主要流向 ${buyThemes}，说明风险偏好上升。`;
-  if (sellSide > buySide * 1.3) return `四、组合意图判断：这是一次防守型收缩，清仓和减仓更重要，资金主要从 ${sellThemes} 撤出，说明经理人在降低不确定性暴露。`;
-  return `四、组合意图判断：这是一次结构性换仓，不是简单看多或看空，而是从 ${sellThemes} 切到 ${buyThemes}。`;
+  if (buySide > sellSide * 1.3) return `四、组合意图判断：这是一次进攻型扩仓，买入端强于卖出端，资金主要流向 ${flow.buyThemeText}，说明风险偏好上升，后续要看这些新增权重能否连续两个季度维持。`;
+  if (sellSide > buySide * 1.3) return `四、组合意图判断：这是一次防守型收缩，清仓和减仓比买入更重要，资金主要从 ${flow.sellThemeText} 撤出，说明经理人在降低不确定性暴露。`;
+  return `四、组合意图判断：这是一次结构性换仓，不是简单看多或看空，而是从 ${flow.sellThemeText} 切到 ${flow.buyThemeText}。真正的信号在资金迁移方向，而不在单只股票的涨跌解释。`;
 }
 
 function guidanceLine(signal: Insight['signal'], latestPositions: number, prevPositions: number): string {
@@ -320,31 +395,35 @@ function analysisBody(fund: Fund, latestQ: string, prevQ: string, aumChange: num
   const label = signalText(signal);
   const positionDelta = latestPositions - prevPositions;
   const activity = counts.new + counts.increased + counts.decreased + counts.cleared;
+  const holdings = mergeGoogleClasses(fund.quarters[latestQ]?.holdings ?? []);
+  const top3Weight = holdings.slice(0, 3).reduce((sum, holding) => sum + holding.w, 0);
+  const flow = flowProfile(fund, latestQ);
   const style = activity >= 40
-    ? '操作非常密集'
+    ? '快进快出'
     : activity >= 20
-      ? '调仓力度不低'
+      ? '调仓积极'
       : activity >= 8
-        ? '有明确动作但不算激进'
-        : '整体动作克制';
+        ? '有明确换仓'
+        : '动作克制';
+  const concentration = top3Weight >= 45
+    ? '高集中'
+    : top3Weight >= 25
+      ? '核心仓驱动'
+      : '相对分散';
   const positionText = positionDelta > 0
     ? `持仓扩张 ${positionDelta} 只`
     : positionDelta < 0
       ? `持仓收缩 ${Math.abs(positionDelta)} 只`
       : '持仓数量持平';
-  const buyThemes = themeList(strongestRows(fund, latestQ, ['new', 'increased'], 8), 2);
-  const sellThemes = themeList(strongestRows(fund, latestQ, ['cleared', 'decreased'], 8), 2);
-  const distinctSellThemes = sellThemes.filter(theme => !buyThemes.includes(theme));
-  const overlappingThemes = sellThemes.filter(theme => buyThemes.includes(theme));
-  const buyThemeText = buyThemes.join('、') || '无明显方向';
-  const sellThemeText = distinctSellThemes.join('、') || sellThemes.join('、') || '无明显方向';
-  const flowText = buyThemes.length > 0 || sellThemes.length > 0
-    ? overlappingThemes.length > 0 && distinctSellThemes.length === 0
-      ? `这一季最重要的变化不是单只股票，而是在 ${overlappingThemes.join('、')} 内部做强弱切换。`
-      : `这一季最重要的变化不是单只股票，而是资金从 ${sellThemeText} 转向 ${buyThemeText}${overlappingThemes.length > 0 ? `，同时在 ${overlappingThemes.join('、')} 内部换股` : ''}。`
+  const sectorText = topSectorLine(fund, latestQ).replace(/^行业线索：/, '');
+  const sellFocus = flow.primaryClearTheme ?? flow.sellThemeText;
+  const flowText = flow.buyThemes.length > 0 || flow.sellThemes.length > 0
+    ? flow.primaryOverlapTheme && flow.distinctSellThemes.length === 0
+      ? `真正重要的不是买了多少股票，而是在 ${flow.primaryOverlapTheme} 内部做强弱切换。`
+      : `真正重要的不是买了多少股票，而是卖出端集中在 ${sellFocus}，买入端集中在 ${flow.buyThemeText}${flow.overlappingThemes.length > 0 ? `；其中 ${flow.overlappingThemes.join('、')} 不能简单理解成退出，而是主题内部换股` : ''}。`
     : '这一季没有足够清晰的资金迁移线索，重点看核心仓是否保持稳定。';
 
-  return `${fund.manager} 的 ${fund.name_cn} 最新 13F 显示，${prevQ} → ${latestQ} 组合市值环比 ${fmtPct(aumChange)}，持仓 ${prevPositions} → ${latestPositions} 只，${positionText}。整体风格是：${label}、${style}、主线偏向 ${buyThemeText}。${flowText}`;
+  return `${fund.manager} 的 ${fund.name_cn} 最新 13F 显示，${prevQ} → ${latestQ} 组合市值环比 ${fmtPct(aumChange)}，持仓 ${prevPositions} → ${latestPositions} 只，${positionText}。这一季的组合风格可以概括为：${concentration}、${style}、${label}；${sectorText}${flowText}`;
 }
 
 function fundSignal(aumChange: number, counts: Record<Action, number>, latestPositions: number, prevPositions: number): Insight['signal'] {
@@ -363,15 +442,14 @@ function signalText(signal: Insight['signal']): string {
 }
 
 function mainThemeTitle(fund: Fund, quarter: string, signal: Insight['signal']): string {
-  const buyThemes = themeList(strongestRows(fund, quarter, ['new', 'increased'], 8), 2);
-  const sellThemes = themeList(strongestRows(fund, quarter, ['cleared', 'decreased'], 8), 2);
-  const distinctSellThemes = sellThemes.filter(theme => !buyThemes.includes(theme));
-  const overlappingThemes = sellThemes.filter(theme => buyThemes.includes(theme));
-  if (signal === 'divergent' && buyThemes.length > 0 && sellThemes.length > 0) return `卖 ${distinctSellThemes.join('、') || sellThemes.join('、')}，买 ${buyThemes.join('、')}`;
-  if (signal === 'bullish' && buyThemes.length > 0 && overlappingThemes.length > 0) return `加码 ${buyThemes.join('、')}，同时清理部分 ${overlappingThemes.join('、')}`;
-  if (signal === 'bullish' && buyThemes.length > 0) return `加码 ${buyThemes.join('、')}`;
-  if (signal === 'bearish' && sellThemes.length > 0) return `降低 ${sellThemes.join('、')} 暴露`;
-  if (buyThemes.length > 0) return `围绕 ${buyThemes.join('、')} 做结构调整`;
+  const flow = flowProfile(fund, quarter);
+  if (flow.primaryOverlapTheme && flow.distinctSellThemes.length === 0 && flow.buyThemes.length > 0) return `${flow.primaryOverlapTheme} 内部换股`;
+  if (flow.primaryClearTheme && flow.buyThemes.length > 0) return `清理 ${flow.primaryClearTheme}，加码 ${flow.buyThemeText}`;
+  if (signal === 'divergent' && flow.buyThemes.length > 0 && flow.sellThemes.length > 0) return `卖 ${flow.sellThemeText}，买 ${flow.buyThemeText}`;
+  if (signal === 'bullish' && flow.buyThemes.length > 0 && flow.overlappingThemes.length > 0) return `加码 ${flow.buyThemeText}，同时清理部分 ${flow.overlappingThemes.join('、')}`;
+  if (signal === 'bullish' && flow.buyThemes.length > 0) return `加码 ${flow.buyThemeText}`;
+  if (signal === 'bearish' && flow.sellThemes.length > 0) return `降低 ${flow.sellThemeText} 暴露`;
+  if (flow.buyThemes.length > 0) return `围绕 ${flow.buyThemeText} 做结构调整`;
   return signalText(signal);
 }
 
@@ -397,7 +475,6 @@ export function generateFundAnalysis(fund: Fund): FundAnalysis | null {
     body: analysisBody(fund, latestQ, prevQ, aumChange, counts, latestPositions, prevPositions, signal),
     details: [
       topHoldingsLine(fund, latestQ, prevQ),
-      topSectorLine(fund, latestQ),
       buyActionLine(fund, latestQ),
       sellActionLine(fund, latestQ),
       actionReadLine(fund, latestQ, counts),
