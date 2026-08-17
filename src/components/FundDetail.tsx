@@ -237,7 +237,7 @@ export default function FundDetail() {
   const q = fund.quarters[selectedQ];
   const currentHoldingCount = rows.filter(r => r.action !== 'cleared').length;
   const concentration = rows.slice(0, 10).reduce((s, r) => s + r.w, 0);
-  const totalPositions = q?.total_positions ?? rows.length;
+  const totalPositions = currentHoldingCount;
   const isAumUp = quarterSummary.aumDelta >= 0;
   const isNetBuy = quarterSummary.netValue >= 0;
 

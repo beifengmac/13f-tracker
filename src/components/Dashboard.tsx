@@ -59,7 +59,7 @@ function buildCard(id: string, fund: Fund, quarter: string): CardInfo | null {
   buys.sort((a, b) => (a.action === 'new' ? -1 : 0) - (b.action === 'new' ? -1 : 0) || Math.abs(b.change) - Math.abs(a.change));
   sells.sort((a, b) => (a.action === 'cleared' ? -1 : 0) - (b.action === 'cleared' ? -1 : 0) || Math.abs(b.change) - Math.abs(a.change));
 
-  const totalPositions = q.total_positions ?? holdings.length;
+  const totalPositions = holdings.length;
   const turnover = totalPositions > 0 ? (changed / totalPositions) * 100 : 0;
 
   return { id, fund, quarter, total: q.total, prevTotal, count: holdings.length, totalPositions, buys: buys.slice(0, 3), sells: sells.slice(0, 3), turnover };
@@ -72,7 +72,8 @@ function buildTickerTape(quarter: string): string[] {
   for (const [, fund] of Object.entries(data.funds)) {
     const q = fund.quarters[quarter];
     if (!q) continue;
-    for (const h of q.holdings) {
+    const holdings = mergeGoogleClasses(q.holdings);
+    for (const h of holdings) {
       const act = getAction(fund, h.t, quarter);
       const chg = getShareChange(fund, h.t, quarter);
       if (act === 'new')       items.push(`🔵 ${fund.name_cn}新建${h.t}`);
@@ -82,8 +83,8 @@ function buildTickerTape(quarter: string): string[] {
     const qKeys = getQuarterKeys(fund);
     const prevQ = qKeys[qKeys.indexOf(quarter) - 1];
     if (prevQ) {
-      const currentTickers = new Set(q.holdings.map(h => h.t));
-      for (const h of fund.quarters[prevQ]?.holdings ?? []) {
+      const currentTickers = new Set(holdings.map(h => h.t));
+      for (const h of mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? [])) {
         if (!currentTickers.has(h.t) && getAction(fund, h.t, quarter) === 'cleared') {
           items.push(`🟠 ${fund.name_cn}清仓${h.t}`);
         }

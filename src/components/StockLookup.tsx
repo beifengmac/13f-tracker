@@ -62,10 +62,10 @@ export default function StockLookup() {
   };
 
   const suggestions = useMemo(() => {
-    const s = search.trim().toUpperCase();
+    const s = normalizeTicker(search.trim().toUpperCase());
     if (s.length < 2) return [];
     return tickerIndex
-      .filter(x => x.ticker.includes(s) || x.name.toUpperCase().includes(s))
+      .filter(x => normalizeTicker(x.ticker).includes(s) || x.name.toUpperCase().includes(s))
       .slice(0, 8);
   }, [search, tickerIndex]);
 

@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
+import { normalizeTicker } from '../utils';
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -9,7 +10,7 @@ export default function Navbar() {
 
   const handleSearch = (e: FormEvent) => {
     e.preventDefault();
-    const t = search.trim().toUpperCase();
+    const t = normalizeTicker(search.trim().toUpperCase());
     if (t) {
       navigate(`/stock/${encodeURIComponent(t)}`);
       setSearch('');
