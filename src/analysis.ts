@@ -1,5 +1,5 @@
 import type { Action, Data, Fund, Holding } from './types';
-import { fmtPct, fmtShares, fmtValue, getAction, getAllQuarterKeys, getQuarterKeys, getShareChange, mergeGoogleClasses } from './utils';
+import { fmtPct, fmtShares, getAction, getAllQuarterKeys, getQuarterKeys, getShareChange, inferSector, mergeGoogleClasses } from './utils';
 
 export interface Insight {
   id: string;
@@ -106,10 +106,164 @@ function countActions(fund: Fund, quarter: string): Record<Action, number> {
   return counts;
 }
 
-function topHoldingLine(fund: Fund, quarter: string): string {
-  const top = mergeGoogleClasses(fund.quarters[quarter]?.holdings ?? [])[0];
-  if (!top) return '第一大仓：无';
-  return `第一大仓：${top.t}，权重 ${top.w.toFixed(1)}%，市值 ${fmtValue(top.v)}`;
+function holdingLabel(holding: Holding): string {
+  const ticker = /^\d/.test(holding.t) ? holding.n : holding.t;
+  const option = holding.o && !ticker.endsWith(` ${holding.o}`) ? ` ${holding.o}` : '';
+  return `${ticker}${option}`;
+}
+
+function topHoldingsLine(fund: Fund, quarter: string): string {
+  const holdings = mergeGoogleClasses(fund.quarters[quarter]?.holdings ?? []);
+  const top = holdings.slice(0, 3);
+  if (top.length === 0) return '一、核心仓位：暂无持仓数据。';
+
+  const top3Weight = top.reduce((sum, h) => sum + h.w, 0);
+  const concentration = top3Weight >= 50
+    ? '组合高度集中，胜负主要由少数核心仓决定'
+    : top3Weight >= 30
+      ? '核心仓集中度较高，主要方向已经比较清晰'
+      : '组合相对分散，更像在多条主线里做权重调整';
+  const names = top.map(h => `${holdingLabel(h)} ${h.w.toFixed(1)}%`).join('、');
+  return `一、核心仓位：${names}；Top 3 合计 ${top3Weight.toFixed(1)}%。${concentration}。`;
+}
+
+function topSectorLine(fund: Fund, quarter: string): string {
+  const holdings = mergeGoogleClasses(fund.quarters[quarter]?.holdings ?? []);
+  if (holdings.length === 0) return '行业线索：暂无足够数据。';
+
+  const sectors = new Map<string, number>();
+  for (const holding of holdings) {
+    const sector = inferSector(holding.n);
+    sectors.set(sector, (sectors.get(sector) ?? 0) + holding.w);
+  }
+
+  const top = [...sectors.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([sector, weight]) => `${sectorLabel(sector)} ${weight.toFixed(1)}%`)
+    .join('、');
+
+  return `行业线索：主要暴露在 ${top}。`;
+}
+
+function sectorLabel(sector: string): string {
+  const labels: Record<string, string> = {
+    'ETF/Index': 'ETF/指数',
+    Tech: '科技硬件/软件',
+    'Tech/Internet': '互联网/平台',
+    Finance: '金融',
+    Healthcare: '医疗健康',
+    Energy: '能源',
+    Consumer: '消费',
+    'Media/Telecom': '媒体/通信',
+    Crypto: '加密资产链',
+    'Defense/Aero': '国防/航空',
+    Other: '其他/未分类',
+  };
+  return labels[sector] ?? sector;
+}
+
+function rankedMoves(fund: Fund, quarter: string, type: Action, limit = 4): string {
+  const rows = moveRows(fund, quarter, type)
+    .sort((a, b) => b.holding.v - a.holding.v)
+    .slice(0, limit);
+
+  if (rows.length === 0) return '无';
+
+  return rows.map(row => {
+    const label = holdingLabel(row.holding);
+    if (type === 'increased' || type === 'decreased') {
+      return `${label} ${fmtPct(row.change)}（${row.holding.w.toFixed(1)}%）`;
+    }
+    return `${label}（${row.holding.w.toFixed(1)}%）`;
+  }).join('、');
+}
+
+function actionReadLine(fund: Fund, quarter: string, counts: Record<Action, number>): string {
+  const buySide = counts.new + counts.increased;
+  const sellSide = counts.decreased + counts.cleared;
+
+  if (buySide === 0 && sellSide === 0) {
+    return '二、交易动作：本季几乎没有明显调仓，重点不是追动作，而是观察核心仓是否继续稳定。';
+  }
+
+  const buyText = sideText([
+    ['新建仓看', rankedMoves(fund, quarter, 'new', 3)],
+    ['加仓端看', rankedMoves(fund, quarter, 'increased', 3)],
+  ]);
+  const sellText = sideText([
+    ['减仓端看', rankedMoves(fund, quarter, 'decreased', 3)],
+    ['清仓看', rankedMoves(fund, quarter, 'cleared', 3)],
+  ]);
+
+  if (buySide > sellSide * 1.3) return `二、最干净的动作：本季买入端更强，${buyText}。这类变化通常代表经理人在主动提高风险暴露。`;
+  if (sellSide > buySide * 1.3) return `二、最干净的动作：本季卖出端更强，${sellText}。这类变化更像是在降风险或从旧主线撤退。`;
+  return `二、最干净的动作：本季是双向换仓，${buyText}；${sellText}。重点看资金从哪些旧仓位挪到哪些新仓位。`;
+}
+
+function sideText(parts: Array<[string, string]>): string {
+  const present = parts.filter(([, value]) => value !== '无');
+  return present.length > 0 ? present.map(([label, value]) => `${label} ${value}`).join('；') : '无明显动作';
+}
+
+function riskControlLine(fund: Fund, quarter: string, signal: Insight['signal']): string {
+  const decreased = rankedMoves(fund, quarter, 'decreased', 4);
+  const cleared = rankedMoves(fund, quarter, 'cleared', 4);
+  const sellText = sideText([
+    ['减仓', decreased],
+    ['清仓', cleared],
+  ]);
+
+  if (signal === 'bullish') {
+    return `三、风险控制：虽然整体偏进攻，仍要看${sellText}，确认这不是单纯扩大组合，而是有选择地换到更强方向。`;
+  }
+  if (signal === 'bearish') {
+    return `三、风险控制：${sellText} 是本季重点。跟踪时先问：这是个股问题、行业问题，还是组合层面的防守。`;
+  }
+  if (signal === 'divergent') {
+    return `三、风险控制：新旧仓切换明显，${sellText} 要和新建仓放在一起读，别只看买入清单。`;
+  }
+  return `三、风险控制：${sellText}。中性季度里，卖出动作往往比买入动作更能暴露经理人的真实担忧。`;
+}
+
+function guidanceLine(signal: Insight['signal'], latestPositions: number, prevPositions: number): string {
+  const positionDelta = latestPositions - prevPositions;
+  const expansionText = positionDelta > 0
+    ? `持仓数量增加 ${positionDelta} 只`
+    : positionDelta < 0
+      ? `持仓数量减少 ${Math.abs(positionDelta)} 只`
+      : '持仓数量不变';
+
+  if (signal === 'bullish') {
+    return `四、参考意见：${expansionText}，可以优先研究“加仓后仍有较高权重”的标的；只小额新建、权重很低的股票先当观察名单，不急着下结论。`;
+  }
+  if (signal === 'bearish') {
+    return `四、参考意见：${expansionText}，先尊重减仓和清仓信号；如果你持有同方向资产，应该复查基本面和估值，而不是只因为名人仍有持仓就继续硬扛。`;
+  }
+  if (signal === 'divergent') {
+    return `四、参考意见：${expansionText}，这类季度最适合拆成两张表：新增/加仓代表正在押注的方向，减仓/清仓代表不再值得占用资金的方向。`;
+  }
+  return `四、参考意见：${expansionText}，不用过度解读小幅调整；更值得跟踪的是核心仓连续多个季度的方向，而不是单季噪音。`;
+}
+
+function analysisBody(fund: Fund, aumChange: number, counts: Record<Action, number>, latestPositions: number, prevPositions: number, signal: Insight['signal']): string {
+  const label = signalText(signal);
+  const positionDelta = latestPositions - prevPositions;
+  const activity = counts.new + counts.increased + counts.decreased + counts.cleared;
+  const style = activity >= 40
+    ? '操作非常密集'
+    : activity >= 20
+      ? '调仓力度不低'
+      : activity >= 8
+        ? '有明确动作但不算激进'
+        : '整体动作克制';
+  const positionText = positionDelta > 0
+    ? `持仓扩张 ${positionDelta} 只`
+    : positionDelta < 0
+      ? `持仓收缩 ${Math.abs(positionDelta)} 只`
+      : '持仓数量持平';
+
+  return `${fund.manager} 最新 13F 显示，组合市值环比 ${fmtPct(aumChange)}，${positionText}，新建 ${counts.new} 只、加仓 ${counts.increased} 只、减仓 ${counts.decreased} 只、清仓 ${counts.cleared} 只。整体判断是“${label}”：${style}，适合按“核心仓是否稳定、资金流向哪里、退出了什么”三步来读。`;
 }
 
 function fundSignal(aumChange: number, counts: Record<Action, number>, latestPositions: number, prevPositions: number): Insight['signal'] {
@@ -146,13 +300,14 @@ export function generateFundAnalysis(fund: Fund): FundAnalysis | null {
     title: `${fund.name_cn} ${latestQ}：${label}，持仓 ${prevPositions} → ${latestPositions} 只`,
     signal,
     counts,
-    body: `13F 市值环比 ${fmtPct(aumChange)}，新建 ${counts.new} 只、加仓 ${counts.increased} 只、减仓 ${counts.decreased} 只、清仓 ${counts.cleared} 只。这个判断完全来自 ${prevQ} 到 ${latestQ} 的持股数变化，避免把股价波动误当成买卖动作。`,
+    body: analysisBody(fund, aumChange, counts, latestPositions, prevPositions, signal),
     details: [
-      topHoldingLine(fund, latestQ),
-      `新建仓：${topMoves(fund, latestQ, 'new', 8)}`,
-      `加仓：${topMoves(fund, latestQ, 'increased', 8)}`,
-      `减仓：${topMoves(fund, latestQ, 'decreased', 8)}`,
-      `清仓：${topMoves(fund, latestQ, 'cleared', 8)}`,
+      topHoldingsLine(fund, latestQ),
+      topSectorLine(fund, latestQ),
+      actionReadLine(fund, latestQ, counts),
+      riskControlLine(fund, latestQ, signal),
+      guidanceLine(signal, latestPositions, prevPositions),
+      `数据口径：以上只基于 ${prevQ} → ${latestQ} 的持股数变化生成，不把股价涨跌误判成买卖动作。`,
     ],
   };
 }
