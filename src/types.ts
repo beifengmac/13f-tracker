@@ -31,5 +31,5 @@ export interface Data {
 
 export type Action = 'new' | 'increased' | 'decreased' | 'cleared' | 'unchanged';
 
-export type SortKey = 't' | 'n' | 'v' | 'w' | 's' | 'change' | 'action';
+export type SortKey = 't' | 'n' | 'sector' | 'v' | 'w' | 's' | 'change' | 'action';
 export type SortDir = 'asc' | 'desc';

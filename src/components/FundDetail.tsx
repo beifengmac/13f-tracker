@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { Fragment, useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ResponsiveContainer, AreaChart, Area, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Cell } from 'recharts';
 
@@ -13,6 +13,7 @@ const ACTION_ORDER: Record<Action, number> = { new: 0, increased: 1, unchanged: 
 const SECTOR_COLORS = ['#3b82f6','#22c55e','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#6366f1','#64748b'];
 
 interface Row extends Holding {
+  sector: string;
   action: Action;
   change: number;
   entryPrice: number | null;
@@ -47,6 +48,7 @@ export default function FundDetail() {
       const action = getAction(fund, h.t, selectedQ);
       return {
         ...h,
+        sector: inferSector(h.n),
         action,
         change: action === 'cleared' ? -100 : getShareChange(fund, h.t, selectedQ),
         entryPrice: cost?.entryPrice ?? null,
@@ -58,12 +60,14 @@ export default function FundDetail() {
   }, [fund, selectedQ]);
 
   const filtered = useMemo(() => {
-    let list = filterAction === 'all' ? rows : rows.filter(r => r.action === filterAction);
+    const currentRows = rows.filter(r => r.action !== 'cleared');
+    let list = filterAction === 'all' ? currentRows : rows.filter(r => r.action === filterAction);
     list = [...list].sort((a, b) => {
       let cmp = 0;
       switch (sortKey) {
         case 't': cmp = a.t.localeCompare(b.t); break;
         case 'n': cmp = a.n.localeCompare(b.n); break;
+        case 'sector': cmp = a.sector.localeCompare(b.sector); break;
         case 'v': cmp = a.v - b.v; break;
         case 'w': cmp = a.w - b.w; break;
         case 's': cmp = a.s - b.s; break;
@@ -84,9 +88,8 @@ export default function FundDetail() {
 
   const sectorData = useMemo(() => {
     const map = new Map<string, number>();
-    for (const r of rows) {
-      const sec = inferSector(r.n);
-      map.set(sec, (map.get(sec) ?? 0) + r.w);
+    for (const r of rows.filter(row => row.action !== 'cleared')) {
+      map.set(r.sector, (map.get(r.sector) ?? 0) + r.w);
     }
     return [...map.entries()]
       .map(([name, weight]) => ({ name, weight: +weight.toFixed(2) }))
@@ -94,11 +97,57 @@ export default function FundDetail() {
       .slice(0, 8);
   }, [rows]);
 
+  const quarterSummary = useMemo(() => {
+    if (!fund || !fund.quarters[selectedQ]) {
+      return { prevQ: null, prevTotal: null, aumDelta: 0, aumChange: null, buyValue: 0, sellValue: 0, netValue: 0 };
+    }
+
+    const prevQ = getPreviousQuarter(fund, selectedQ);
+    if (!prevQ) {
+      return { prevQ: null, prevTotal: null, aumDelta: 0, aumChange: null, buyValue: 0, sellValue: 0, netValue: 0 };
+    }
+
+    const curr = mergeGoogleClasses(fund.quarters[selectedQ]?.holdings ?? []);
+    const prev = mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? []);
+    const currByTicker = new Map(curr.map(h => [h.t, h]));
+    const prevByTicker = new Map(prev.map(h => [h.t, h]));
+    const tickers = new Set([...currByTicker.keys(), ...prevByTicker.keys()]);
+    let buyValue = 0;
+    let sellValue = 0;
+
+    for (const ticker of tickers) {
+      const currHolding = currByTicker.get(ticker);
+      const prevHolding = prevByTicker.get(ticker);
+      const currShares = currHolding?.s ?? 0;
+      const prevShares = prevHolding?.s ?? 0;
+      const shareDelta = currShares - prevShares;
+
+      if (shareDelta > 0 && currHolding && currShares > 0) {
+        buyValue += shareDelta * (currHolding.v / currShares);
+      }
+
+      if (shareDelta < 0) {
+        const priceSource = prevHolding && prevShares > 0 ? prevHolding : currHolding;
+        const shares = priceSource?.s ?? 0;
+        if (priceSource && shares > 0) {
+          sellValue += Math.abs(shareDelta) * (priceSource.v / shares);
+        }
+      }
+    }
+
+    const prevTotal = fund.quarters[prevQ]?.total ?? 0;
+    const currentTotal = fund.quarters[selectedQ]?.total ?? 0;
+    const aumDelta = currentTotal - prevTotal;
+    const aumChange = prevTotal > 0 ? (aumDelta / prevTotal) * 100 : null;
+
+    return { prevQ, prevTotal, aumDelta, aumChange, buyValue, sellValue, netValue: buyValue - sellValue };
+  }, [fund, selectedQ]);
+
   /* ── Sort handler ────────────────────────────── */
 
   const toggleSort = (key: SortKey) => {
     if (sortKey === key) setSortDir(d => d === 'asc' ? 'desc' : 'asc');
-    else { setSortKey(key); setSortDir(key === 't' || key === 'n' ? 'asc' : 'desc'); }
+    else { setSortKey(key); setSortDir(key === 't' || key === 'n' || key === 'sector' ? 'asc' : 'desc'); }
   };
 
   const SortIcon = ({ k }: { k: SortKey }) => (
@@ -106,7 +155,7 @@ export default function FundDetail() {
   );
 
   const actionCounts = useMemo(() => {
-    const m: Record<string, number> = { all: rows.length };
+    const m: Record<string, number> = { all: rows.filter(r => r.action !== 'cleared').length };
     for (const r of rows) m[r.action] = (m[r.action] ?? 0) + 1;
     return m;
   }, [rows]);
@@ -186,13 +235,16 @@ export default function FundDetail() {
   }
 
   const q = fund.quarters[selectedQ];
+  const currentHoldingCount = rows.filter(r => r.action !== 'cleared').length;
   const concentration = rows.slice(0, 10).reduce((s, r) => s + r.w, 0);
   const totalPositions = q?.total_positions ?? rows.length;
+  const isAumUp = quarterSummary.aumDelta >= 0;
+  const isNetBuy = quarterSummary.netValue >= 0;
 
   /* ── Action filter tabs ──────────────────────── */
 
   const TABS: { key: 'all' | Action; label: string }[] = [
-    { key: 'all', label: 'All' },
+    { key: 'all', label: '当前持仓' },
     { key: 'new', label: '新建' },
     { key: 'increased', label: '加仓' },
     { key: 'decreased', label: '减仓' },
@@ -232,6 +284,42 @@ export default function FundDetail() {
         </div>
       </header>
 
+      {/* Quarter summary */}
+      <section className="mb-6">
+        <div className="mb-2 flex items-center justify-between gap-3">
+          <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">本季度总结</h2>
+          <span className="text-[11px] text-gray-400">
+            {quarterSummary.prevQ ? `${quarterSummary.prevQ} → ${selectedQ} · 按股数变化估算` : `${selectedQ} · 无上一季度对比`}
+          </span>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
+            <div className="text-xs text-gray-500 dark:text-gray-400">资产市值变化</div>
+            <div className={`mt-1 font-mono text-xl font-bold ${isAumUp ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}`}>
+              {isAumUp ? '+' : '-'}{fmtValue(Math.abs(quarterSummary.aumDelta))}
+            </div>
+            <div className="mt-1 text-xs text-gray-400">{quarterSummary.aumChange == null ? '—' : fmtPct(quarterSummary.aumChange)}</div>
+          </div>
+          <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
+            <div className="text-xs text-gray-500 dark:text-gray-400">买入股票金额</div>
+            <div className="mt-1 font-mono text-xl font-bold text-emerald-600 dark:text-emerald-400">{fmtValue(quarterSummary.buyValue)}</div>
+            <div className="mt-1 text-xs text-gray-400">新增 + 加仓股数变化估算</div>
+          </div>
+          <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
+            <div className="text-xs text-gray-500 dark:text-gray-400">卖出股票金额</div>
+            <div className="mt-1 font-mono text-xl font-bold text-red-600 dark:text-red-400">{fmtValue(quarterSummary.sellValue)}</div>
+            <div className="mt-1 text-xs text-gray-400">减仓 + 清仓股数变化估算</div>
+          </div>
+          <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
+            <div className="text-xs text-gray-500 dark:text-gray-400">总体净买入/卖出</div>
+            <div className={`mt-1 font-mono text-xl font-bold ${isNetBuy ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}`}>
+              {isNetBuy ? '+' : '-'}{fmtValue(Math.abs(quarterSummary.netValue))}
+            </div>
+            <div className="mt-1 text-xs text-gray-400">{isNetBuy ? '净买入' : '净卖出'}</div>
+          </div>
+        </div>
+      </section>
+
       {/* Charts row */}
       <div className="mb-6 grid gap-4 lg:grid-cols-2">
         {/* AUM trend */}
@@ -264,8 +352,8 @@ export default function FundDetail() {
         </div>
       </div>
 
-      {/* Action filter tabs */}
-      <div className="mb-3 flex flex-wrap gap-1">
+      {/* Holdings filters */}
+      <div className="mb-3 flex flex-wrap items-center gap-1.5">
         {TABS.map(tab => (
           <button
             key={tab.key}
@@ -282,15 +370,28 @@ export default function FundDetail() {
       </div>
 
       {totalPositions > rows.length && (
-        <p className="mb-2 text-xs text-gray-400">显示前 {rows.length} 大持仓 (共 {totalPositions} 只)</p>
+        <p className="mb-2 text-xs text-gray-400">当前显示前 {currentHoldingCount} 大持仓 (共 {totalPositions} 只)</p>
       )}
 
       {/* ── Holdings table (desktop) ─────────────── */}
+      <div className="mb-2 flex flex-wrap items-end justify-between gap-2">
+        <div>
+          <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+            {filterAction === 'cleared' ? '已清仓股票' : '当前持仓股票'}
+          </h2>
+          <p className="mt-0.5 text-xs text-gray-400">
+            {filterAction === 'cleared'
+              ? `显示 ${selectedQ} 相比上一季度已经卖出的股票`
+              : `显示 ${selectedQ} 这家机构当前仍持有的股票`}
+          </p>
+        </div>
+        <span className="text-xs text-gray-400">当前列表 {filtered.length} 只</span>
+      </div>
       <div className="hidden md:block overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-800">
         <table className="w-full text-sm">
           <thead className="sticky top-0 bg-gray-50 dark:bg-gray-800/80">
             <tr>
-              {([['t','Ticker'],['n','Name'],['v','Value'],['w','Weight%'],['s','Shares'],['change','Change%'],['action','Action']] as [SortKey,string][]).map(([k,label]) => (
+              {([['t','Ticker'],['n','Name'],['sector','分类'],['v','Value'],['w','Weight%'],['s','Shares'],['change','Change%'],['action','Action']] as [SortKey,string][]).map(([k,label]) => (
                 <th
                   key={k}
                   onClick={() => toggleSort(k)}
@@ -303,14 +404,16 @@ export default function FundDetail() {
           </thead>
           <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
             {filtered.map((r, i) => (
-              <>
+              <Fragment key={r.t}>
                 <tr
-                  key={r.t}
                   onClick={() => setExpanded(expanded === r.t ? null : r.t)}
                   className={`cursor-pointer transition-colors hover:bg-blue-50/50 dark:hover:bg-blue-900/10 ${i % 2 === 1 ? 'bg-gray-50/50 dark:bg-white/[0.02]' : ''}`}
                 >
                   <td className="px-3 py-2 font-mono font-semibold text-gray-900 dark:text-white">{r.t}</td>
                   <td className="px-3 py-2 text-gray-600 dark:text-gray-300 max-w-[200px] truncate">{r.n}</td>
+                  <td className="px-3 py-2">
+                    <span className="rounded-md bg-gray-100 px-2 py-1 text-[11px] font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">{r.sector}</span>
+                  </td>
                   <td className="px-3 py-2 text-right font-mono tabular-nums text-gray-900 dark:text-white">{fmtValue(r.v)}</td>
                   <td className="px-3 py-2 text-right font-mono tabular-nums text-gray-600 dark:text-gray-300">{r.w.toFixed(2)}%</td>
                   <td className="px-3 py-2 text-right font-mono tabular-nums text-gray-600 dark:text-gray-300">{fmtShares(r.s)}</td>
@@ -323,10 +426,10 @@ export default function FundDetail() {
                 </tr>
                 {expanded === r.t && (
                   <tr key={r.t + '_exp'} className="bg-gray-50 dark:bg-gray-800/50">
-                    <td colSpan={7}><Sparkline ticker={r.t} row={r} /></td>
+                    <td colSpan={8}><Sparkline ticker={r.t} row={r} /></td>
                   </tr>
                 )}
-              </>
+              </Fragment>
             ))}
           </tbody>
         </table>
@@ -351,6 +454,10 @@ export default function FundDetail() {
               <div>
                 <div className="text-gray-400">Value</div>
                 <div className="font-mono font-medium text-gray-900 dark:text-white">{fmtValue(r.v)}</div>
+              </div>
+              <div>
+                <div className="text-gray-400">分类</div>
+                <div className="font-medium text-gray-700 dark:text-gray-200">{r.sector}</div>
               </div>
               <div>
                 <div className="text-gray-400">Weight</div>
