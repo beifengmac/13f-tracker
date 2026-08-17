@@ -116,7 +116,7 @@ FUNDS = {
         'name_en': 'Duquesne Family Office', 'name_cn': '杜肯家族办公室',
         'manager': '德鲁肯米勒', 'manager_en': 'Stanley Druckenmiller',
         'description': '索罗斯前首席操盘手，宏观交易传奇，30年无亏损年',
-        'cik': '0001536411', 'max_holdings': 50,
+        'cik': '0001536411', 'max_holdings': None,
     },
 }
 
@@ -137,7 +137,7 @@ TICKER_MAP = {
     '833445109': 'SNOW', '681236108': 'PLTR', '871607107': 'SNPS',
     '172886101': 'CRCL', '26856L103': 'CRDO', '227900107': 'CROX',
     '093671105': 'HRB', '27579R104': 'EWBC', '55354G100': 'MSCI',
-    '55024U109': 'LUMU', '219350105': 'GLW', '19247A100': 'COHR',
+    '55024U109': 'LITE', '219350105': 'GLW', '19247A100': 'COHR',
     'G87572163': 'TME', '458140100': 'INTC', '52603B107': 'LEGN',
     'G15241109': 'CLRW', '23254F108': 'CYTK', '29414B104': 'EQX',
     '69553P100': 'PACB', '00846L101': 'ALGS', '36831V108': 'GE',
@@ -155,7 +155,7 @@ TICKER_MAP = {
     '90353T100': 'UBER', '85208M102': 'SE',
     # Duquesne Family Office holdings
     '632307104': 'NTRA', '457669307': 'INSM', '874039100': 'TSM',
-    '984245100': 'YPF', '464286400': 'EEM', 'G0896C103': 'TBBB',
+    '984245100': 'YPF', '464286400': 'EWZ', 'G0896C103': 'TBBB',
     '013872106': 'AA', 'N62509109': 'NAMS', '81141R100': 'SE',
     '861012102': 'STM', '980745103': 'WWD', '881624209': 'TEVA',
     '77543R102': 'ROKU', '22266T109': 'CPNG', '68404L201': 'OPCH',
@@ -220,7 +220,8 @@ TICKER_MAP = {
     '35137L105': 'FOXA', '35137L204': 'FOX', '12514G108': 'CDW',
     'G11448100': 'BTDR', '343412102': 'FLR', '697435105': 'PANW',
     '44812J104': 'HUT', '149568107': 'CVCO', '44916Y106': 'PURR',
-    '750917106': 'RMBS',
+    '750917106': 'RMBS', '29444U700': 'EQIX', '146869102': 'CVNA',
+    '91823B109': 'UWMC', 'Q4982L109': 'IREN',
     '76243J105': 'RYTM', '830830105': 'SKY', '767292105': 'RIOT',
     # Broadcom fix (was incorrectly mapped to HOOD)
     '11135F101': 'AVGO',
@@ -256,6 +257,15 @@ TICKER_MAP = {
     '92837L109': 'VIST', '92840M102': 'VST', '934423104': 'WBD',
     'Y95308105': 'WVE', '960413102': 'WLK', '97785W106': 'WOLF',
     '98420N105': 'XEN', '983793100': 'XPO', '98954M200': 'Z',
+}
+
+TICKER_ALIASES = {
+    # Treat Alphabet A/C classes as one company-level position throughout the app.
+    'GOOGL': 'GOOG',
+}
+
+NAME_OVERRIDES = {
+    'GOOG': 'ALPHABET INC',
 }
 
 
@@ -432,22 +442,29 @@ def process_fund(fund_id, fund_info, num_quarters=4):
         limited, all_h = parse_13f_xml(xml_data, fund_info.get('max_holdings'))
         total = sum(h['value'] for h in all_h.values())
 
-        quarter_holdings = []
+        quarter_map = {}
         for _, h in limited.items():
             cusip = h['cusip']
             # Never invent pseudo-tickers from issuer names. If a CUSIP is not
             # mapped yet, keep the stable CUSIP visible so it can be audited.
             base_ticker = TICKER_MAP.get(cusip, cusip)
+            base_ticker = TICKER_ALIASES.get(base_ticker, base_ticker)
             put_call = h.get('put_call')
             ticker = f"{base_ticker} {put_call}" if put_call else base_ticker
-            pct = round(h['value'] / total * 100, 2) if total > 0 else 0
-            holding = {
-                't': ticker, 'n': h['name'],
-                'v': h['value'], 's': h['shares'], 'w': pct,
-            }
-            if put_call:
-                holding['o'] = put_call
-            quarter_holdings.append(holding)
+            if ticker not in quarter_map:
+                holding = {
+                    't': ticker, 'n': NAME_OVERRIDES.get(base_ticker, h['name']),
+                    'v': 0, 's': 0, 'w': 0,
+                }
+                if put_call:
+                    holding['o'] = put_call
+                quarter_map[ticker] = holding
+            quarter_map[ticker]['v'] += h['value']
+            quarter_map[ticker]['s'] += h['shares']
+
+        quarter_holdings = sorted(quarter_map.values(), key=lambda x: x['v'], reverse=True)
+        for holding in quarter_holdings:
+            holding['w'] = round(holding['v'] / total * 100, 2) if total > 0 else 0
 
         fund_data['quarters'][label] = {
             'total': total,
