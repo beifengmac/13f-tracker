@@ -5,6 +5,7 @@ import { ResponsiveContainer, AreaChart, Area, BarChart, Bar, XAxis, YAxis, Tool
 import rawData from '../data.json';
 import type { Data, Holding, Action, SortKey, SortDir } from '../types';
 import { fmtValue, fmtShares, fmtPct, getQuarterKeys, getPreviousQuarter, getAction, getShareChange, mergeGoogleClasses, inferSector, estimateCost } from '../utils';
+import { generateFundAnalysis } from '../analysis';
 import ActionBadge from './ActionBadge';
 
 const data = rawData as unknown as Data;
@@ -240,6 +241,7 @@ export default function FundDetail() {
   const totalPositions = currentHoldingCount;
   const isAumUp = quarterSummary.aumDelta >= 0;
   const isNetBuy = quarterSummary.netValue >= 0;
+  const fundAnalysis = fund ? generateFundAnalysis(fund) : null;
 
   /* ── Action filter tabs ──────────────────────── */
 
@@ -319,6 +321,30 @@ export default function FundDetail() {
           </div>
         </div>
       </section>
+
+      {fundAnalysis && selectedQ === fundAnalysis.latestQ && (
+        <section className="mb-6 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
+          <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">投资动作解读</h2>
+              <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">{fundAnalysis.prevQ} → {fundAnalysis.latestQ} · 按持股数变化自动生成</p>
+            </div>
+            <div className="flex flex-wrap gap-1.5 text-[11px] font-medium">
+              <span className="rounded-md bg-blue-50 px-2 py-1 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">新建 {fundAnalysis.counts.new}</span>
+              <span className="rounded-md bg-emerald-50 px-2 py-1 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300">加仓 {fundAnalysis.counts.increased}</span>
+              <span className="rounded-md bg-red-50 px-2 py-1 text-red-700 dark:bg-red-900/30 dark:text-red-300">减仓 {fundAnalysis.counts.decreased}</span>
+              <span className="rounded-md bg-orange-50 px-2 py-1 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300">清仓 {fundAnalysis.counts.cleared}</span>
+            </div>
+          </div>
+          <h3 className="text-base font-bold text-gray-900 dark:text-white">{fundAnalysis.title}</h3>
+          <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">{fundAnalysis.body}</p>
+          <ul className="mt-3 grid gap-2 text-sm text-gray-600 dark:text-gray-300 sm:grid-cols-2">
+            {fundAnalysis.details.map(detail => (
+              <li key={detail} className="rounded-lg bg-gray-50 px-3 py-2 dark:bg-gray-800/70">{detail}</li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {/* Charts row */}
       <div className="mb-6 grid gap-4 lg:grid-cols-2">
