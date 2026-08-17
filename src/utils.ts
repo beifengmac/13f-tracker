@@ -67,10 +67,15 @@ export function getAllQuarterKeys(funds: Record<string, Fund>): string[] {
   });
 }
 
-/* ── Holding lookup (merges GOOG / GOOGL) ────────────────────── */
+/* ── Holding lookup (normalizes GOOG / GOOGL) ────────────────── */
+
+export function normalizeTicker(ticker: string): string {
+  return ticker === 'GOOGL' ? 'GOOG' : ticker;
+}
 
 function findMerged(holdings: Holding[], ticker: string): Holding | undefined {
-  if (ticker === 'GOOG' || ticker === 'GOOGL') {
+  const normalizedTicker = normalizeTicker(ticker);
+  if (normalizedTicker === 'GOOG') {
     const both = holdings.filter(h => h.t === 'GOOG' || h.t === 'GOOGL');
     if (both.length === 0) return undefined;
     return {
@@ -80,7 +85,7 @@ function findMerged(holdings: Holding[], ticker: string): Holding | undefined {
       w: both.reduce((s, h) => s + h.w, 0),
     };
   }
-  return holdings.find(h => h.t === ticker);
+  return holdings.find(h => h.t === normalizedTicker);
 }
 
 /* ── Action / Change computation ─────────────────────────────── */
@@ -116,7 +121,7 @@ export function getShareChange(fund: Fund, ticker: string, currentQ: string): nu
 
 export function mergeGoogleClasses(holdings: Holding[]): Holding[] {
   const googl = holdings.filter(h => h.t === 'GOOGL' || h.t === 'GOOG');
-  if (googl.length <= 1) return holdings;
+  if (googl.length === 0) return holdings;
 
   const merged: Holding = {
     t: 'GOOG', n: 'ALPHABET INC',
@@ -175,7 +180,8 @@ export function estimateCost(fund: Fund, ticker: string): CostEstimate | null {
 }
 
 function findHolding(holdings: Holding[], ticker: string): Holding | undefined {
-  if (ticker === 'GOOG' || ticker === 'GOOGL') {
+  const normalizedTicker = normalizeTicker(ticker);
+  if (normalizedTicker === 'GOOG') {
     const both = holdings.filter(h => h.t === 'GOOG' || h.t === 'GOOGL');
     if (both.length === 0) return undefined;
     return {
@@ -185,7 +191,7 @@ function findHolding(holdings: Holding[], ticker: string): Holding | undefined {
       w: both.reduce((s, h) => s + h.w, 0),
     };
   }
-  return holdings.find(h => h.t === ticker);
+  return holdings.find(h => h.t === normalizedTicker);
 }
 
 /* ── Sector inference ────────────────────────────────────────── */

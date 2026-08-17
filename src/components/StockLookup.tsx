@@ -4,7 +4,7 @@ import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Cell } from 
 
 import rawData from '../data.json';
 import type { Data, Action } from '../types';
-import { fmtValue, fmtShares, getAllQuarterKeys, getPreviousQuarter, getAction, getShareChange, mergeGoogleClasses } from '../utils';
+import { fmtValue, fmtShares, getAllQuarterKeys, getPreviousQuarter, getAction, getShareChange, mergeGoogleClasses, normalizeTicker } from '../utils';
 import ActionBadge from './ActionBadge';
 
 const data = rawData as unknown as Data;
@@ -25,7 +25,7 @@ export default function StockLookup() {
   const { ticker: paramTicker } = useParams<{ ticker: string }>();
   const navigate = useNavigate();
   const [search, setSearch] = useState(paramTicker?.toUpperCase() ?? '');
-  const ticker = paramTicker?.toUpperCase() ?? '';
+  const ticker = normalizeTicker(paramTicker?.toUpperCase() ?? '');
 
   const allQuarters = useMemo(() => getAllQuarterKeys(data.funds), []);
   const latestQ = allQuarters[allQuarters.length - 1];
@@ -50,7 +50,7 @@ export default function StockLookup() {
   }, [latestQ]);
 
   const resolveSearch = (input: string): string => {
-    const s = input.trim().toUpperCase();
+    const s = normalizeTicker(input.trim().toUpperCase());
     if (!s) return '';
     const exact = tickerIndex.find(x => x.ticker === s);
     if (exact) return exact.ticker;
