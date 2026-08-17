@@ -158,7 +158,7 @@ function generateInsights(): Insight[] {
       tagColor: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900/40 dark:text-cyan-300',
       title: 'AI 交易进入分层：但斌转向半导体组合，段永平反而降低高波动暴露',
       signal: 'divergent',
-      body: `但斌 Q2 的变化最激进：清掉上一季度的大额 GOOG/AAPL/TSLA 暴露，重新建立 GOOGL、INTC、SNDK、AMD、MRVL、ARM、AVGO，并把 MU 加仓 ${fmtPct(danbinMuChange)}。段永平则相反，NVDA 减仓 ${fmtPct(hhNvdaChange)}，CRDO 也小幅减仓。这说明 AI 主线还在，但资金正在从“单一龙头叙事”分化到存储、网络、CPU/GPU 周边。`,
+      body: `但斌 Q2 的变化最激进：清掉上一季度的大额 Alphabet/AAPL/TSLA 暴露，重新建立 Alphabet、INTC、SNDK、AMD、MRVL、ARM、AVGO，并把 MU 加仓 ${fmtPct(danbinMuChange)}。段永平则相反，NVDA 减仓 ${fmtPct(hhNvdaChange)}，CRDO 也小幅减仓。这说明 AI 主线还在，但资金正在从“单一龙头叙事”分化到存储、网络、CPU/GPU 周边。`,
       details: [
         `但斌新建：${topMoves('danbin', latestQ, 'new', 8)}`,
         `但斌加仓：${topMoves('danbin', latestQ, 'increased', 3)}`,
@@ -188,7 +188,7 @@ function generateInsights(): Insight[] {
       tagColor: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300',
       title: '高波动成长股：ARK 继续拥抱，段永平开始降速',
       signal: 'divergent',
-      body: `ARK 的 TSLA 仍是第一大仓，权重 ${arkTsla?.w.toFixed(1)}%，同时新建 SpaceX、Cerebras 等非传统成长资产；但段永平在 TSLA、NVDA、GOOGL、MSFT、UNH 上都减仓。这个分歧说明成长风格并没有退潮，但价值投资人已经开始控制高估值资产的仓位弹性。`,
+      body: `ARK 的 TSLA 仍是第一大仓，权重 ${arkTsla?.w.toFixed(1)}%，同时新建 SpaceX、Cerebras 等非传统成长资产；但段永平在 TSLA、NVDA、Alphabet、MSFT、UNH 上都减仓。这个分歧说明成长风格并没有退潮，但价值投资人已经开始控制高估值资产的仓位弹性。`,
       details: [
         positionLine('ark', 'TSLA', latestQ) ?? 'ARK：TSLA 仍是核心仓',
         `ARK 新建：${topMoves('ark', latestQ, 'new', 6)}`,
