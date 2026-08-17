@@ -104,6 +104,8 @@ function generateInsights(): Insight[] {
   const danbinMuChange = getShareChange(danbin, 'MU', latestQ);
   const arkTsla = getHolding(ark, latestQ, 'TSLA');
   const duqAum = fundAumChange(duquesne, latestQ, prevQ);
+  const duqPrevPositions = duquesne.quarters[prevQ]?.total_positions ?? mergeGoogleClasses(duquesne.quarters[prevQ]?.holdings ?? []).length;
+  const duqLatestPositions = duquesne.quarters[latestQ]?.total_positions ?? mergeGoogleClasses(duquesne.quarters[latestQ]?.holdings ?? []).length;
 
   return [
     {
@@ -201,10 +203,11 @@ function generateInsights(): Insight[] {
       icon: '📈',
       tag: '杜肯',
       tagColor: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300',
-      title: `杜肯 Q2 明显进攻：市值环比 ${fmtPct(duqAum)}，持仓从 65 只扩到 86 只`,
+      title: `杜肯 Q2 明显进攻：市值环比 ${fmtPct(duqAum)}，持仓从 ${duqPrevPositions} 只扩到 ${duqLatestPositions} 只`,
       signal: 'bullish',
-      body: `杜肯是这轮主动资金里最明显的风险偏好提升信号：新建 AMZN、GOOG、FOX、CDW、Bitdeer、DAL、DHI，同时大幅加 UAL、STX、DAKT、CLF。它不是单押科技，而是科技、航空、周期、加密算力一起扩张。`,
+      body: `杜肯是这轮主动资金里最明显的风险偏好提升信号：大幅加仓 AMZN、UAL、STX、DAKT、CLF，同时新建 GOOG、FOX、CDW、Bitdeer、DAL、DHI。它不是单押科技，而是科技、航空、周期、加密算力一起扩张。`,
       details: [
+        positionLine('duquesne', 'AMZN', latestQ) ?? '杜肯：AMZN 大幅加仓',
         `杜肯新建：${topMoves('duquesne', latestQ, 'new', 8)}`,
         `杜肯加仓：${topMoves('duquesne', latestQ, 'increased', 8)}`,
         `杜肯清仓：${topMoves('duquesne', latestQ, 'cleared', 6)}`,
