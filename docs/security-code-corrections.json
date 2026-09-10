@@ -1,0 +1,187 @@
+{
+  "baseline_commit": "39ef6c17847ebc164e5508b17f9235a4bad1bb4d",
+  "note": "Differences from current OpenFIGI reference symbols; includes incorrect aliases, share-class swaps and symbol changes. Not a claim that every old symbol was historically invalid.",
+  "source": "https://api.openfigi.com/v3/mapping",
+  "changes": [
+    {
+      "cusip": "02079K305",
+      "issuer": "Alphabet Inc",
+      "previous_ticker": "GOOG",
+      "verified_ticker": "GOOGL"
+    },
+    {
+      "cusip": "02079K107",
+      "issuer": "ALPHABET INC",
+      "previous_ticker": "GOOGL",
+      "verified_ticker": "GOOG"
+    },
+    {
+      "cusip": "530909308",
+      "issuer": "LIBERTY LIVE HOLDINGS INC",
+      "previous_ticker": "LLYVA",
+      "verified_ticker": "LLYVK"
+    },
+    {
+      "cusip": "530909100",
+      "issuer": "LIBERTY LIVE HOLDINGS INC",
+      "previous_ticker": "LLYVK",
+      "verified_ticker": "LLYVA"
+    },
+    {
+      "cusip": "531229755",
+      "issuer": "Liberty Media Corp Del",
+      "previous_ticker": "LSXMA",
+      "verified_ticker": "FWONK"
+    },
+    {
+      "cusip": "780259305",
+      "issuer": "SHELL PLC",
+      "previous_ticker": "SAGI",
+      "verified_ticker": "SHEL"
+    },
+    {
+      "cusip": "91529Y106",
+      "issuer": "UNUM GROUP",
+      "previous_ticker": "UTHR",
+      "verified_ticker": "UNM"
+    },
+    {
+      "cusip": "268150109",
+      "issuer": "DYNATRACE INC",
+      "previous_ticker": "DXCM",
+      "verified_ticker": "DT"
+    },
+    {
+      "cusip": "42824C109",
+      "issuer": "HEWLETT PACKARD ENTERPRISE C",
+      "previous_ticker": "HRMY",
+      "verified_ticker": "HPE"
+    },
+    {
+      "cusip": "74743L100",
+      "issuer": "Qnity Electronics Inc",
+      "previous_ticker": "QNTY",
+      "verified_ticker": "Q"
+    },
+    {
+      "cusip": "N4732M103",
+      "issuer": "Jbs N.V.",
+      "previous_ticker": "JBSAY",
+      "verified_ticker": "JBS"
+    },
+    {
+      "cusip": "278768106",
+      "issuer": "Echostar Corp",
+      "previous_ticker": "SATS",
+      "verified_ticker": "ECHO"
+    },
+    {
+      "cusip": "125896100",
+      "issuer": "CMS ENERGY CORP",
+      "previous_ticker": "CME",
+      "verified_ticker": "CMS"
+    },
+    {
+      "cusip": "45687V106",
+      "issuer": "Ingersoll Rand Inc",
+      "previous_ticker": "IONQ",
+      "verified_ticker": "IR"
+    },
+    {
+      "cusip": "12510Q100",
+      "issuer": "Ccc Intelligent Solutions Hl",
+      "previous_ticker": "CCCS",
+      "verified_ticker": "CCC"
+    },
+    {
+      "cusip": "896945201",
+      "issuer": "TRIPADVISOR INC",
+      "previous_ticker": "TT",
+      "verified_ticker": "TRIP"
+    },
+    {
+      "cusip": "009158106",
+      "issuer": "AIR PRODS  CHEMS INC",
+      "previous_ticker": "ABNB",
+      "verified_ticker": "APD"
+    },
+    {
+      "cusip": "83443Q103",
+      "issuer": "Solstice Advanced Matls Inc",
+      "previous_ticker": "SOLM",
+      "verified_ticker": "SOLS"
+    },
+    {
+      "cusip": "98420N105",
+      "issuer": "Xenon Pharmaceuticals Inc",
+      "previous_ticker": "XEN",
+      "verified_ticker": "XENE"
+    },
+    {
+      "cusip": "16935C109",
+      "issuer": "Chime Finl Inc",
+      "previous_ticker": "CHME",
+      "verified_ticker": "CHYM"
+    },
+    {
+      "cusip": "349381103",
+      "issuer": "Figure Technology Solutio",
+      "previous_ticker": "FGRE",
+      "verified_ticker": "FIGR"
+    },
+    {
+      "cusip": "020398707",
+      "issuer": "Almonty Inds Inc",
+      "previous_ticker": "ALMTF",
+      "verified_ticker": "ALM"
+    },
+    {
+      "cusip": "142152107",
+      "issuer": "Caris Life Sciences Inc",
+      "previous_ticker": "CRIS",
+      "verified_ticker": "CAI"
+    },
+    {
+      "cusip": "64073B103",
+      "issuer": "Neptune Ins Hldgs Inc",
+      "previous_ticker": "NPTN",
+      "verified_ticker": "NP"
+    },
+    {
+      "cusip": "46137V357",
+      "issuer": "Invesco Exchange Traded Fd T",
+      "previous_ticker": "XLK",
+      "verified_ticker": "RSP"
+    },
+    {
+      "cusip": "010911105",
+      "issuer": "ALAMAR BIOSCIENCES INC",
+      "previous_ticker": "ALMS",
+      "verified_ticker": "ALMR"
+    },
+    {
+      "cusip": "05967A107",
+      "issuer": "BANCO SANTANDER BRASIL S A",
+      "previous_ticker": "BNTX",
+      "verified_ticker": "BSBR"
+    },
+    {
+      "cusip": "78464A797",
+      "issuer": "Spdr Series Trust",
+      "previous_ticker": "SPDR",
+      "verified_ticker": "KBE"
+    },
+    {
+      "cusip": "00851L103",
+      "issuer": "AGORA INC",
+      "previous_ticker": "AGORA",
+      "verified_ticker": "API"
+    },
+    {
+      "cusip": "37950E259",
+      "issuer": "Global X Fds",
+      "previous_ticker": "GXC",
+      "verified_ticker": "ARGT"
+    }
+  ]
+}

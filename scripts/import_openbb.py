@@ -4,7 +4,6 @@ No credentials or portfolio data are sent to an AI service.
 """
 import argparse
 import asyncio
-import ast
 from collections import defaultdict
 from datetime import datetime, timezone
 import hashlib
@@ -19,9 +18,9 @@ from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
 try:
-    from security_identity import checked_mapping, validate_identity
+    from security_identity import checked_mapping, validate_identity, identity_status
 except ModuleNotFoundError:
-    from scripts.security_identity import checked_mapping, validate_identity
+    from scripts.security_identity import checked_mapping, validate_identity, identity_status
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / '.cache' / 'sec'
@@ -41,12 +40,7 @@ def fetch(url):
 
 
 def ticker_map():
-    # Reuse mappings without importing the legacy fetcher's network side effects.
-    tree = ast.parse((ROOT / 'scripts/fetch_13f.py').read_text())
-    for node in tree.body:
-        if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'TICKER_MAP' for t in node.targets):
-            return checked_mapping(ast.literal_eval(node.value))
-    return {}
+    return checked_mapping()
 
 
 def filing_list(cik):
@@ -91,7 +85,7 @@ async def parse(text, filing, mapping):
         if key not in grouped:
             ticker = mapping.get(cusip, cusip)
             grouped[key] = {'t': ticker + (' ' + option if option else ''), 'n': r['nameOfIssuer'],
-                            'cusip': cusip, 'asset_class': key[1], 'security_type': key[2], 's': 0, 'v': 0, 'w': 0}
+                            'cusip': cusip, 'ticker_status': identity_status(cusip), 'asset_class': key[1], 'security_type': key[2], 's': 0, 'v': 0, 'w': 0}
             if option:
                 grouped[key]['o'] = option
         grouped[key]['s'] += int(r['principal_amount'])
@@ -114,10 +108,14 @@ async def parse(text, filing, mapping):
         ticker_counts[ticker] += 1
     for h in holdings:
         if ticker_counts[h['t'].removesuffix(' CALL').removesuffix(' PUT')] > 1:
-            h['t'] += ' [' + h['cusip'] + ' ' + h['asset_class'] + ']'
-        h['t'] = h['t'].upper()
+            h['t'] += ' [' + h['cusip'] + ']'
         validate_identity(h)
         h['w'] = h['v'] / total * 100
+    labels = defaultdict(int)
+    for h in holdings: labels[h['t']] += 1
+    for h in holdings:
+        if labels[h['t']] > 1:
+            h['t'] += ' [' + h['cusip'] + ' ' + h['asset_class'] + ' ' + h['security_type'] + ']'
     return {'total': total, 'holdings': holdings, 'total_positions': len(holdings), 'complete': True,
             'period_ending': filing['reportDate'], 'filing_date': filing['filingDate'],
             'provider': 'OpenBB SEC', 'warnings': [], 'value_scale': scale, 'value_unit_inferred': inferred_unit, 'cover_rounding_difference_usd': delta}

@@ -15,7 +15,7 @@ test('Q2 research checks article figures and separates options from ordinary wei
  assert.match(r.synthesis,/0.00% → 2.78%/);
  const checks=referenceChecks(stan,'Q2 2026');
  assert.match(checks[0].finding,/3,186,306/);
- assert.match(checks[1].finding,/GOOG，CUSIP 02079K305/);
+ assert.match(checks[1].finding,/GOOGL，CUSIP 02079K305/);
  assert.match(checks[2].finding,/11.83 倍/);
 });
 test('historical selection never includes the later article or future new baskets',()=>{

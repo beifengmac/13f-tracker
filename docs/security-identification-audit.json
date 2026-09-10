@@ -1,0 +1,2818 @@
+{
+  "source": "https://api.openfigi.com/v3/mapping",
+  "unique_cusips": 6453,
+  "registry_entries": 6453,
+  "queried_through": "2026-09-10T09:08:58.895562+00:00",
+  "statuses": {
+    "resolved": 5474,
+    "unresolved": 878,
+    "ambiguous": 94,
+    "invalid": 7
+  },
+  "funds": {
+    "berkshire": {
+      "quarter": "Q2 2026",
+      "records": 29,
+      "unresolved_records": 0,
+      "unresolved_weight": 0,
+      "unresolved": []
+    },
+    "bridgewater": {
+      "quarter": "Q2 2026",
+      "records": 997,
+      "unresolved_records": 7,
+      "unresolved_weight": 0.16279640274151916,
+      "unresolved": [
+        {
+          "cusip": "30231G102",
+          "name": "EXXON MOBIL CORP",
+          "class": "COM",
+          "weight": 0.12127575098495517,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "524660107",
+          "name": "LEGGETT  PLATT INC",
+          "class": "COM",
+          "weight": 0.012857125347593684,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "637870106",
+          "name": "NATIONAL STORAGE AFFILIATES",
+          "class": "COM SHS BEN IN",
+          "weight": 0.011452773588427199,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "530307305",
+          "name": "LIBERTY BROADBAND CORP",
+          "class": "COM SER C",
+          "weight": 0.010374745744718195,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "858927106",
+          "name": "STELLAR BANCORP INC",
+          "class": "COM",
+          "weight": 0.003872947361087334,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "16115Q308",
+          "name": "CHART INDS INC",
+          "class": "COM",
+          "weight": 0.0018334485293607958,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "60784B101",
+          "name": "MODIV INDUSTRIAL INC",
+          "class": "COM STK CL C",
+          "weight": 0.0011296111853767693,
+          "status": "unresolved"
+        }
+      ]
+    },
+    "blackrock": {
+      "quarter": "Q2 2026",
+      "records": 5696,
+      "unresolved_records": 382,
+      "unresolved_weight": 1.1170062714245454,
+      "unresolved": [
+        {
+          "cusip": "30231G102",
+          "name": "EXXON MOBIL CORP",
+          "class": "COM",
+          "weight": 0.6800843759437611,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "285512109",
+          "name": "ELECTRONIC ARTS INC",
+          "class": "COM",
+          "weight": 0.07616923517697057,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "053484101",
+          "name": "AVALONBAY CMNTYS INC",
+          "class": "COM",
+          "weight": 0.05005780187357997,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "16115Q308",
+          "name": "CHART INDS INC",
+          "class": "COM",
+          "weight": 0.018903733128269297,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "947890109",
+          "name": "WEBSTER FINL CORP",
+          "class": "COM",
+          "weight": 0.017566286719349403,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "87724P106",
+          "name": "TAYLOR MORRISON HOME CORP",
+          "class": "COM",
+          "weight": 0.014911780603652593,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "G39108108",
+          "name": "GATES INDL CORP PLC",
+          "class": "ORD SHS",
+          "weight": 0.012507220552269004,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "03770N101",
+          "name": "APOGEE THERAPEUTICS INC",
+          "class": "COM",
+          "weight": 0.010861789048373802,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "G4474Y214",
+          "name": "JANUS HENDERSON GROUP PLC",
+          "class": "ORD SHS",
+          "weight": 0.010688946248794063,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "670703107",
+          "name": "NUVALENT INC",
+          "class": "COM",
+          "weight": 0.010250687111910982,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "14888U101",
+          "name": "CATALYST PHARMACEUTICALS INC",
+          "class": "COM",
+          "weight": 0.008948022180920393,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "097023204",
+          "name": "BOEING CO",
+          "class": "DEP CONV PFD A",
+          "weight": 0.007787567845617544,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "637870106",
+          "name": "NATIONAL STORAGE AFFILIATES",
+          "class": "COM SHS BEN IN",
+          "weight": 0.005990391823525953,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "22663K107",
+          "name": "CRINETICS PHARMACEUTICALS IN",
+          "class": "COM",
+          "weight": 0.0054265157396169205,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "949746804",
+          "name": "WELLS FARGO  CO",
+          "class": "PERP PFD CNV A",
+          "weight": 0.004645905570945163,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "G5S37H101",
+          "name": "MAREX GROUP PLC",
+          "class": "ORD",
+          "weight": 0.004160959459459529,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "68389X204",
+          "name": "ORACLE CORP",
+          "class": "6.5 DEP CUM SR D",
+          "weight": 0.004153985370677694,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "524660107",
+          "name": "LEGGETT  PLATT INC",
+          "class": "COM",
+          "weight": 0.003940742996301824,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "858927106",
+          "name": "STELLAR BANCORP INC",
+          "class": "COM",
+          "weight": 0.0037071354368597804,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "958102AT2",
+          "name": "WESTERN DIGITAL CORP",
+          "class": "NOTE 3.000%11/1",
+          "weight": 0.0036195974597840463,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00971TAQ4",
+          "name": "AKAMAI TECHNOLOGIES INC",
+          "class": "NOTE 0.250% 5/1",
+          "weight": 0.003247808228688069,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "81619Q105",
+          "name": "SELECT MED HLDGS CORP",
+          "class": "COM",
+          "weight": 0.00320743818043311,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "42824C208",
+          "name": "HEWLETT PACKARD ENTERPRISE C",
+          "class": "7.625 MAND CONV",
+          "weight": 0.003206957790889555,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "90187B804",
+          "name": "TWO HARBORS INVENTMENT CORPO",
+          "class": "COM",
+          "weight": 0.0031456067055440776,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "86800U500",
+          "name": "SUPER MICRO COMPUTER INC",
+          "class": "7 DEP CM SR A WI",
+          "weight": 0.0031214303379679094,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "530307305",
+          "name": "LIBERTY BROADBAND CORP",
+          "class": "COM SER C",
+          "weight": 0.003007988311730961,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "89055F103",
+          "name": "TOPBUILD COR",
+          "class": "COM",
+          "weight": 0.0029861424456672507,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "060505682",
+          "name": "BANK OF AMER CORP",
+          "class": "7.25%CNV PFD L",
+          "weight": 0.0029597790485237814,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "83419XAB4",
+          "name": "SOLARIS ENERGY INFRAS INC",
+          "class": "NOTE 0.250%10/0",
+          "weight": 0.0027868054375993294,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "05350V106",
+          "name": "AVANOS MED INC",
+          "class": "COM",
+          "weight": 0.002761312635054605,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "472145AH4",
+          "name": "JAZZ INVESTMENTS I LTD",
+          "class": "NOTE 3.125% 9/1",
+          "weight": 0.0026990121235548094,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "595017302",
+          "name": "MICROCHIP TECHNOLOGY INC",
+          "class": "DEP SHS REPSTG",
+          "weight": 0.0026344771795353506,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "012653200",
+          "name": "ALBEMARLE CORP",
+          "class": "7.25% DEP SHS A",
+          "weight": 0.002593734044783546,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "842587ED5",
+          "name": "SOUTHERN CO",
+          "class": "NOTE 3.250% 6/1",
+          "weight": 0.002474819845501775,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "966084204",
+          "name": "WHITESTONE REIT",
+          "class": "COM",
+          "weight": 0.0023307875053172502,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "01609WBG6",
+          "name": "ALIBABA GROUP HLDG LTD",
+          "class": "NOTE 0.500% 6/0",
+          "weight": 0.00212564678587531,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "337932AV9",
+          "name": "FIRSTENERGY CORP",
+          "class": "NOTE 3.875% 1/1",
+          "weight": 0.0020899751726317865,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "65339F655",
+          "name": "NEXTERA ENERGY INC",
+          "class": "UNIT 02/15/2029",
+          "weight": 0.0020168999849201072,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "252131AM9",
+          "name": "DEXCOM INC",
+          "class": "NOTE 0.375% 5/1",
+          "weight": 0.0019897699527561753,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "76954AAD5",
+          "name": "RIVIAN AUTOMOTIVE INC",
+          "class": "NOTE 3.625%10/1",
+          "weight": 0.0019712854761099762,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "65339F663",
+          "name": "NEXTERA ENERGY INC",
+          "class": "UNIT 06/01/2027",
+          "weight": 0.0019440489433317574,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "48251W500",
+          "name": "KKR  CO INC",
+          "class": "6.25 CON SER D",
+          "weight": 0.0019060033932059477,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00971TAN1",
+          "name": "AKAMAI TECHNOLOGIES INC",
+          "class": "NOTE 1.125% 2/1",
+          "weight": 0.0018627790482448673,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "92939UAR7",
+          "name": "WEC ENERGY GROUP INC",
+          "class": "NOTE 4.375% 6/0",
+          "weight": 0.0018221729065394008,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "842587842",
+          "name": "SOUTHERN CO",
+          "class": "UNIT 12/15/2028",
+          "weight": 0.0018196649337228513,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "N3144W105",
+          "name": "EXPRO GROUP HOLDINGS NV",
+          "class": "COM",
+          "weight": 0.001750096658034475,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "146280508",
+          "name": "SILA REALTY TRUST INC",
+          "class": "COMMON STOCK",
+          "weight": 0.0017477485178685834,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "10950A205",
+          "name": "BRIGHTSPRING HEALTH SVCS INC",
+          "class": "UNIT 02/01/2027",
+          "weight": 0.001675120522773946,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "Y95308105",
+          "name": "WAVE LIFE SCIENCES LTD",
+          "class": "SHS",
+          "weight": 0.0016578595178141804,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "57142B104",
+          "name": "MARQETA INC",
+          "class": "CLASS A COM",
+          "weight": 0.0016564207862005036,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "337932AT4",
+          "name": "FIRSTENERGY CORP",
+          "class": "NOTE 3.625% 1/1",
+          "weight": 0.001629414685266256,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "03769M304",
+          "name": "APOLLO GLOBAL MGMT INC",
+          "class": "SER A MAND CNV",
+          "weight": 0.0016187435971361632,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "26142RAB0",
+          "name": "DRAFTKINGS INC NEW",
+          "class": "NOTE 3/1",
+          "weight": 0.0015978007498850077,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "69331C306",
+          "name": "PGE CORP",
+          "class": "PFD CONV SER A",
+          "weight": 0.0015580235654514786,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "83089J108",
+          "name": "SKYWATER TECHNOLOGY INC",
+          "class": "COM",
+          "weight": 0.0015244281123622258,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "55306NAB0",
+          "name": "MKS INC.",
+          "class": "NOTE 1.250% 6/0",
+          "weight": 0.0014961133481660315,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "02079K907",
+          "name": "ALPHABET INC",
+          "class": "OPTIONS",
+          "weight": 0.0014123668048467855,
+          "status": "invalid"
+        },
+        {
+          "cusip": "81761L102",
+          "name": "SERVICE PPTYS TR",
+          "class": "COM SH BEN INT",
+          "weight": 0.0013963466724691317,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "65339F119",
+          "name": "NEXTERA ENERGY INC",
+          "class": "UNIT 11/01/2027",
+          "weight": 0.0013636820261300248,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "92939UAT3",
+          "name": "WEC ENERGY GROUP INC",
+          "class": "NOTE 3.375% 6/0",
+          "weight": 0.0013292863695973046,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "23804LAD5",
+          "name": "DATADOG INC",
+          "class": "NOTE 12/0",
+          "weight": 0.0012869364827984844,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "30034WAD8",
+          "name": "EVERGY INC",
+          "class": "NOTE 4.500%12/1",
+          "weight": 0.0012435545193058373,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "163072AC5",
+          "name": "CHEESECAKE FACTORY INC",
+          "class": "NOTE 2.000% 3/1",
+          "weight": 0.0012282452380354286,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "36322Q206",
+          "name": "DAMORA THERAPEUTICS INC",
+          "class": "COM NEW",
+          "weight": 0.001222154939407729,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "66611T108",
+          "name": "NORTHFIELD BANCORP INC DEL",
+          "class": "COM",
+          "weight": 0.0011822410591250552,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "116794207",
+          "name": "BRUKER CORP",
+          "class": "6.375 PREF SER A",
+          "weight": 0.0011427812812941716,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "55405YAD2",
+          "name": "MACOM TECH SOLUTIONS HLDGS I",
+          "class": "NOTE 12/1",
+          "weight": 0.0011387642451481063,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "98139AAD7",
+          "name": "WORKIVA INC",
+          "class": "NOTE 1.250% 8/1",
+          "weight": 0.0011066825511040265,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "40131MAD1",
+          "name": "GUARDANT HEALTH INC",
+          "class": "DEBT 1.250% 2/1",
+          "weight": 0.0010894468970648653,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29786AAN6",
+          "name": "ETSY INC",
+          "class": "NOTE 0.250% 6/1",
+          "weight": 0.001045795063660671,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29664W105",
+          "name": "ESPERION THERAPEUTICS INC NE",
+          "class": "COM",
+          "weight": 0.0010390689562170825,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "69351T866",
+          "name": "PPL CORP",
+          "class": "UNIT 02/15/2029",
+          "weight": 0.0010322418017277076,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "03990B309",
+          "name": "ARES MANAGEMENT CORPORATION",
+          "class": "6.75 SE B PFD",
+          "weight": 0.0010157342510928732,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "682189AU9",
+          "name": "ON SEMICONDUCTOR CORP",
+          "class": "NOTE 0.500% 3/0",
+          "weight": 0.0010058052792147802,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "18915MAF4",
+          "name": "CLOUDFLARE INC",
+          "class": "NOTE 6/1",
+          "weight": 0.00095340168687576,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "405024AD2",
+          "name": "HAEMONETICS CORP MASS",
+          "class": "NOTE 2.500% 6/0",
+          "weight": 0.00092224925415642,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "76954AAB9",
+          "name": "RIVIAN AUTOMOTIVE INC",
+          "class": "NOTE 4.625% 3/1",
+          "weight": 0.0008872693228011614,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "25809KAB1",
+          "name": "DOORDASH INC",
+          "class": "NOTE 5/1",
+          "weight": 0.000886560774972166,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "89422GAB3",
+          "name": "TRAVERE THERAPEUTICS INC",
+          "class": "NOTE 0.500% 5/1",
+          "weight": 0.0008856754988320627,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "87427V103",
+          "name": "TALKSPACE INC",
+          "class": "COM",
+          "weight": 0.0008701011771045012,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "59001ABF8",
+          "name": "MERITAGE HOMES CORP",
+          "class": "NOTE 1.750% 5/1",
+          "weight": 0.0008686041651211812,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "112463AF1",
+          "name": "BROOKDALE SR LIVING INC",
+          "class": "NOTE 3.500%10/1",
+          "weight": 0.0008640742111987339,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "36467WAG4",
+          "name": "GAMESTOP CORP",
+          "class": "NOTE 6/1",
+          "weight": 0.0008384542082551966,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "69352PAS2",
+          "name": "PPL CAP FDG INC",
+          "class": "NOTE 2.875% 3/1",
+          "weight": 0.0007891405008375758,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "90353TAM2",
+          "name": "UBER TECHNOLOGIES INC",
+          "class": "NOTE 0.875%12/0",
+          "weight": 0.0007800836095441953,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "67000B203",
+          "name": "NOVANTA INC",
+          "class": "UNIT 11/01/2028",
+          "weight": 0.0007797833214998947,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "197641103",
+          "name": "COLUMBIA FINL INC",
+          "class": "COM",
+          "weight": 0.0007712523355002513,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "477143AR2",
+          "name": "JETBLUE AIRWAYS CORP",
+          "class": "NOTE 2.500% 9/0",
+          "weight": 0.0007088756077801856,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "82452J307",
+          "name": "SHIFT4 PMTS INC",
+          "class": "6 SER A CNV PREF",
+          "weight": 0.0006879095642880785,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "69331CAL2",
+          "name": "PGE CORP",
+          "class": "NOTE 4.250%12/0",
+          "weight": 0.0006688863880089624,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "594972887",
+          "name": "STRATEGY INC",
+          "class": "SERIES A PERP PF",
+          "weight": 0.0006461448439033771,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "018802AE8",
+          "name": "ALLIANT ENERGY CORP",
+          "class": "NOTE 3.250% 5/3",
+          "weight": 0.0006356758201451367,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "86800UAF1",
+          "name": "SUPER MICRO COMPUTER INC",
+          "class": "NOTE 6/1",
+          "weight": 0.0006302980963684044,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "833445AD1",
+          "name": "SNOWFLAKE INC",
+          "class": "NOTE 10/0",
+          "weight": 0.0006297022011356007,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "530307107",
+          "name": "LIBERTY BROADBAND CORP",
+          "class": "COM SER A",
+          "weight": 0.0006124948551291191,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "47215PAJ5",
+          "name": "JD.COM INC",
+          "class": "NOTE 0.250% 6/0",
+          "weight": 0.0006002294823742774,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "833445AB5",
+          "name": "SNOWFLAKE INC",
+          "class": "NOTE 10/0",
+          "weight": 0.0005821104839767706,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "928298AR9",
+          "name": "VISHAY INTERTECHNOLOGY INC",
+          "class": "NOTE 2.250% 9/1",
+          "weight": 0.0005645795645258787,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "23248VAD7",
+          "name": "CYBERARK SOFTWARE LTD",
+          "class": "NOTE 6/1",
+          "weight": 0.0005556677351826397,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "594972AU5",
+          "name": "STRATEGY INC",
+          "class": "NOTE 3/0",
+          "weight": 0.0005475281727466803,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "37940XAU6",
+          "name": "GLOBAL PMTS INC",
+          "class": "NOTE 1.500% 3/0",
+          "weight": 0.0005463122350091018,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "038169AB4",
+          "name": "APPLIED DIGITAL CORP",
+          "class": "NOTE 2.750% 6/0",
+          "weight": 0.0005457873253259627,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "227483104",
+          "name": "CROSS CTRY HEALTHCARE INC",
+          "class": "COM",
+          "weight": 0.0005398415982730355,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "538034BA6",
+          "name": "LIVE NATION ENTERTAINMENT IN",
+          "class": "NOTE 3.125% 1/1",
+          "weight": 0.0005351484682315035,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29355AAK3",
+          "name": "ENPHASE ENERGY INC",
+          "class": "NOTE 3/0",
+          "weight": 0.0005322526382175922,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "82846H504",
+          "name": "QXO INC",
+          "class": "5.50 DEP PFD",
+          "weight": 0.0005148484436500037,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "450056AB2",
+          "name": "IRHYTHM HOLDINGS INC",
+          "class": "NOTE 1.500% 9/0",
+          "weight": 0.0005031536597869401,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "12685JAG0",
+          "name": "CABLE ONE INC",
+          "class": "NOTE 1.125% 3/1",
+          "weight": 0.000489185094495796,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "918284209",
+          "name": "VSE CORP",
+          "class": "UNIT 02/01/2029",
+          "weight": 0.0004852796113163064,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "36467WAE9",
+          "name": "GAMESTOP CORP",
+          "class": "NOTE 4/0",
+          "weight": 0.000476979205759231,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "86800UAB0",
+          "name": "SUPER MICRO COMPUTER INC",
+          "class": "NOTE 3.500% 3/0",
+          "weight": 0.00047203333922435657,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "89677QAB3",
+          "name": "TRIP COM GROUP LTD",
+          "class": "NOTE 0.750% 6/1",
+          "weight": 0.0004494923735046564,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "682189AS4",
+          "name": "ON SEMICONDUCTOR CORP",
+          "class": "NOTE 5/0",
+          "weight": 0.00044597439088589654,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "842587DZ7",
+          "name": "SOUTHERN CO",
+          "class": "NOTE 4.500% 6/1",
+          "weight": 0.0004372420092080858,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "98419J206",
+          "name": "XOMA ROYALTY CORPORATION",
+          "class": "COM NEW",
+          "weight": 0.00043701018053730526,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "56087FAD6",
+          "name": "MAKEMYTRIP LIMITED MAURITIUS",
+          "class": "NOTE 7/0",
+          "weight": 0.00043533593500764853,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "45867GAD3",
+          "name": "INTERDIGITAL INC",
+          "class": "NOTE 3.500% 6/0",
+          "weight": 0.00043084102063431354,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "08265TAD1",
+          "name": "BENTLEY SYS INC",
+          "class": "NOTE 0.375% 7/0",
+          "weight": 0.00042479319148556343,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00971TAL5",
+          "name": "AKAMAI TECHNOLOGIES INC",
+          "class": "NOTE 0.375% 9/0",
+          "weight": 0.00042427349761317015,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "595017BG8",
+          "name": "MICROCHIP TECHNOLOGY INC.",
+          "class": "NOTE 0.750% 6/0",
+          "weight": 0.00042074997226675175,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "90353TAS9",
+          "name": "UBER TECHNOLOGIES INC",
+          "class": "NOTE 5/1",
+          "weight": 0.0004142026883744848,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "18915MAC1",
+          "name": "CLOUDFLARE INC",
+          "class": "NOTE 8/1",
+          "weight": 0.00041241816782618427,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "65339KCY4",
+          "name": "NEXTERA ENERGY CAP HLDGS INC",
+          "class": "NOTE 3.000% 3/0",
+          "weight": 0.0004016696746870472,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "538034BC2",
+          "name": "LIVE NATION ENTERTAINMENT IN",
+          "class": "NOTE 2.875% 1/1",
+          "weight": 0.0003951057328920853,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "387328AF4",
+          "name": "GRANITE CONSTR INC",
+          "class": "NOTE 3.250% 6/1",
+          "weight": 0.0003932483544518011,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "34962G208",
+          "name": "FORTE BIOSCIENCES INC",
+          "class": "COM NEW",
+          "weight": 0.0003861456090049045,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "55826TAB8",
+          "name": "SPHERE ENTERTAINMENT CO",
+          "class": "NOTE 3.500%12/0",
+          "weight": 0.0003857530412320258,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "84762LAZ8",
+          "name": "SPECTRUM BRANDS INC",
+          "class": "NOTE 3.375% 6/0",
+          "weight": 0.0003773612623978124,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "594972AS0",
+          "name": "STRATEGY INC",
+          "class": "NOTE 12/0",
+          "weight": 0.00037650307578189555,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "963320205",
+          "name": "WHIRLPOOL CORP",
+          "class": "8.5 DEP SR A CNV",
+          "weight": 0.0003729650026328559,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "090043AF7",
+          "name": "BILL HOLDINGS INC",
+          "class": "NOTE 4/0",
+          "weight": 0.0003669185405911958,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "767292AB1",
+          "name": "RIOT PLATFORMS INC",
+          "class": "NOTE 0.750% 1/1",
+          "weight": 0.00036458974796260045,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "68373J104",
+          "name": "OPEN LENDING CORP",
+          "class": "COM",
+          "weight": 0.00036439087846057774,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29786AAQ9",
+          "name": "ETSY INC",
+          "class": "NOTE 1.000% 6/1",
+          "weight": 0.0003627700689863102,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "781154AD1",
+          "name": "RUBRIK INC.",
+          "class": "NOTE 6/1",
+          "weight": 0.0003596199421937905,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "19260QAF4",
+          "name": "COINBASE GLOBAL INC",
+          "class": "NOTE 0.250% 4/0",
+          "weight": 0.0003568268383898083,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "679369108",
+          "name": "OLAPLEX HLDGS INC",
+          "class": "COM",
+          "weight": 0.0003434722379208319,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "205306103",
+          "name": "TRUBRIDGE INC",
+          "class": "COM",
+          "weight": 0.00033183901845639955,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "501812AD3",
+          "name": "LCI INDS",
+          "class": "NOTE 3.000% 3/0",
+          "weight": 0.000327385206454924,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00164VAJ2",
+          "name": "AMC GLOBAL MEDIA INC",
+          "class": "NOTE 4.250% 2/1",
+          "weight": 0.0003269872296931238,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "594972AQ4",
+          "name": "STRATEGY INC",
+          "class": "NOTE 0.625% 9/1",
+          "weight": 0.0003183293999312997,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "92939UAP1",
+          "name": "WEC ENERGY GROUP INC",
+          "class": "NOTE 4.375% 6/0",
+          "weight": 0.0003180681933179428,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00827BAD8",
+          "name": "AFFIRM HLDGS INC",
+          "class": "NOTE 0.750%12/1",
+          "weight": 0.0003174232456883538,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "10806XAB8",
+          "name": "BRIDGEBIO PHARMA INC",
+          "class": "NOTE 2.500% 3/1",
+          "weight": 0.0003089916127104936,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "46267XAK4",
+          "name": "IQIYI INC",
+          "class": "NOTE 4.625% 3/1",
+          "weight": 0.0003056078740640324,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "338307AF8",
+          "name": "FIVE9 INC",
+          "class": "NOTE 1.000% 3/1",
+          "weight": 0.0003024114439487672,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "974637AF7",
+          "name": "WINNEBAGO INDS INC",
+          "class": "NOTE 3.250% 1/1",
+          "weight": 0.00030091377813162157,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "10806XAJ1",
+          "name": "BRIDGEBIO PHARMA INC",
+          "class": "NOTE 1.750% 3/0",
+          "weight": 0.0002999314076684056,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "45826HAD1",
+          "name": "INTEGER HLDGS CORP",
+          "class": "DBCV 1.875% 3/1",
+          "weight": 0.0002969735377403535,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "75585H206",
+          "name": "THE REAL BROKERAGE INC",
+          "class": "COM NEW",
+          "weight": 0.0002966104965086479,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "74965L200",
+          "name": "RLJ LODGING TR",
+          "class": "CUM CONV PFD A",
+          "weight": 0.00029191695039104497,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "15189TBD8",
+          "name": "CENTERPOINT ENERGY INC",
+          "class": "NOTE 4.250% 8/1",
+          "weight": 0.0002909010709442632,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "902681AB1",
+          "name": "UGI CORP NEW",
+          "class": "NOTE 5.000% 6/0",
+          "weight": 0.00029030608216289963,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00182CAC7",
+          "name": "ANI PHARMACEUTICALS INC",
+          "class": "NOTE 2.250% 9/0",
+          "weight": 0.00028985214316956556,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "83304AAH9",
+          "name": "SNAP INC",
+          "class": "NOTE 0.125% 3/0",
+          "weight": 0.00028703203900055495,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09262F100",
+          "name": "BLACKROCK ESG CAP ALLC TERM",
+          "class": "SHS BEN INT",
+          "weight": 0.0002869844131502985,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "594972AJ0",
+          "name": "STRATEGY INC",
+          "class": "NOTE 0.625% 3/1",
+          "weight": 0.000285010251072833,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "87918AAF2",
+          "name": "TELADOC HEALTH INC",
+          "class": "NOTE 1.250% 6/0",
+          "weight": 0.0002782641422581224,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "125896BX7",
+          "name": "CMS ENERGY CORP",
+          "class": "NOTE 3.375% 5/0",
+          "weight": 0.0002726780535290355,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "10316TAD6",
+          "name": "BOX INC",
+          "class": "NOTE 1.500% 9/1",
+          "weight": 0.0002694698841246275,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "67059NAK4",
+          "name": "NUTANIX INC",
+          "class": "NOTE 0.500%12/1",
+          "weight": 0.00026815196317010357,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "462222AF7",
+          "name": "IONIS PHARMACEUTICALS INC",
+          "class": "NOTE 1.750% 6/1",
+          "weight": 0.00026389315710713537,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "18452BAC4",
+          "name": "CLEANSPARK INC",
+          "class": "NOTE 6/1",
+          "weight": 0.0002515118625869735,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "01625VAB0",
+          "name": "ALIGNMENT HEALTHCARE INC",
+          "class": "NOTE 4.250%11/1",
+          "weight": 0.00025008390437156056,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "387328AD9",
+          "name": "GRANITE CONSTR INC",
+          "class": "NOTE 3.750% 5/1",
+          "weight": 0.0002484682958481791,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "10806XAD4",
+          "name": "BRIDGEBIO PHARMA INC",
+          "class": "NOTE 2.250% 2/0",
+          "weight": 0.0002478921047893036,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "516544AB9",
+          "name": "LANTHEUS HLDGS INC",
+          "class": "NOTE 2.625%12/1",
+          "weight": 0.000244640470295348,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "91332UAH4",
+          "name": "UNITY SOFTWARE INC",
+          "class": "NOTE 3/1",
+          "weight": 0.0002434116341995722,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "589889AB0",
+          "name": "MERIT MED SYS INC",
+          "class": "NOTE 3.000% 2/0",
+          "weight": 0.00024058930105161044,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "70202LAD4",
+          "name": "PARSONS CORP DEL",
+          "class": "NOTE 2.625% 3/0",
+          "weight": 0.00023865729639604126,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29415FAD6",
+          "name": "ENVISTA HOLDINGS CORPORATION",
+          "class": "NOTE 1.750% 8/1",
+          "weight": 0.00023522402983728525,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "465741AQ9",
+          "name": "ITRON INC",
+          "class": "NOTE 1.375% 7/1",
+          "weight": 0.00023457252900957985,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "594972AN1",
+          "name": "STRATEGY INC",
+          "class": "NOTE 2.250% 6/1",
+          "weight": 0.00023003169766985096,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "343412AJ1",
+          "name": "FLUOR CORP",
+          "class": "NOTE 1.125% 8/1",
+          "weight": 0.0002240210776097256,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "69349HAF4",
+          "name": "TXNM ENERGY INC",
+          "class": "NOTE 5.750% 6/0",
+          "weight": 0.00022169944743349323,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "40637HAF6",
+          "name": "HALOZYME THERAPEUTICS INC",
+          "class": "NOTE 1.000% 8/1",
+          "weight": 0.00022070074598449512,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "86333MAA6",
+          "name": "STRIDE INC",
+          "class": "NOTE 1.125% 9/0",
+          "weight": 0.00021955065228513402,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "15102KAB6",
+          "name": "CELCUITY INC",
+          "class": "NOTE 0.250% 8/0",
+          "weight": 0.00021910551032872723,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "15643UAE4",
+          "name": "CENTRUS ENERGY CORP",
+          "class": "NOTE 2.250%11/0",
+          "weight": 0.0002154655431219001,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "665531AJ8",
+          "name": "NORTHERN OIL  GAS INC",
+          "class": "NOTE 3.625% 4/1",
+          "weight": 0.0002105162142397215,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "26210CAD6",
+          "name": "DROPBOX INC",
+          "class": "NOTE 3/0",
+          "weight": 0.00020843929623260747,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "86800UAD6",
+          "name": "SUPER MICRO COMPUTER INC",
+          "class": "NOTE 2.250% 7/1",
+          "weight": 0.00020747897780114833,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "283678209",
+          "name": "EL PASO ENERGY CAP TR I",
+          "class": "PFD CV TR SEC 28",
+          "weight": 0.000203667958749609,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "36165LAD0",
+          "name": "GDS HLDGS LTD",
+          "class": "NOTE 2.250% 6/0",
+          "weight": 0.00020290861992024636,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "87157DAJ8",
+          "name": "SYNAPTICS INC",
+          "class": "NOTE 0.750%12/0",
+          "weight": 0.00020126682832411855,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "38068T105",
+          "name": "GOLD RESOURCE CORP",
+          "class": "COM",
+          "weight": 0.00020037260654849124,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "75524W108",
+          "name": "RE/MAX HLDGS INC",
+          "class": "CL A",
+          "weight": 0.00019899020866284,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "40171VAC4",
+          "name": "GUIDEWIRE SOFTWARE INC",
+          "class": "NOTE 1.250%11/0",
+          "weight": 0.0001940245933744583,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "531229AP7",
+          "name": "LIBERTY MEDIA CORP DEL",
+          "class": "NOTE 3.750% 3/1",
+          "weight": 0.00019292864900375076,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "76155XAA8",
+          "name": "REVOLUTION MEDICINES INC",
+          "class": "NOTE 0.500% 5/0",
+          "weight": 0.00019032951094809873,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "163086AE1",
+          "name": "CHEFS WHSE INC",
+          "class": "NOTE 2.375%12/1",
+          "weight": 0.00018914625004194435,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "759916AD1",
+          "name": "REPLIGEN CORP",
+          "class": "NOTE 1.000%12/1",
+          "weight": 0.00018613558303246904,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09239BAF6",
+          "name": "BLACKLINE INC",
+          "class": "NOTE 1.000% 6/0",
+          "weight": 0.00018593186921619248,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "47775AAA9",
+          "name": "JOBY AVIATION INC",
+          "class": "NOTE 0.750% 2/1",
+          "weight": 0.00018565797228267363,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "83417MAE4",
+          "name": "SOLAREDGE TECHNOLOGIES INC",
+          "class": "NOTE 2.250% 7/0",
+          "weight": 0.00018511303150869348,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "723484AK7",
+          "name": "PINNACLE WEST CAP CORP",
+          "class": "NOTE 4.750% 6/1",
+          "weight": 0.00018415134597014432,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "565788AF3",
+          "name": "MARA HOLDINGS INC",
+          "class": "NOTE 3/0",
+          "weight": 0.00018379882551908814,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "88162GAB9",
+          "name": "TETRA TECH INC NEW",
+          "class": "DBCV 2.250% 8/1",
+          "weight": 0.0001824686006007538,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "40131MAB5",
+          "name": "GUARDANT HEALTH INC",
+          "class": "NOTE 11/1",
+          "weight": 0.0001809164733979014,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29786AAL0",
+          "name": "ETSY INC",
+          "class": "NOTE 0.125% 9/0",
+          "weight": 0.0001803155555325277,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "82452JAD1",
+          "name": "SHIFT4 PMTS INC",
+          "class": "NOTE 0.500% 8/0",
+          "weight": 0.00018010986535491448,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "737446AT1",
+          "name": "POST HLDGS INC",
+          "class": "NOTE 2.500% 8/1",
+          "weight": 0.00017840747525103438,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "83304AAK2",
+          "name": "SNAP INC",
+          "class": "NOTE 0.500% 5/0",
+          "weight": 0.00017756790803928957,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "531229AQ5",
+          "name": "LIBERTY MEDIA CORP DEL",
+          "class": "NOTE 2.250% 8/1",
+          "weight": 0.00017437730298901677,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "62914VAK2",
+          "name": "NIO INC",
+          "class": "NOTE 4.625%10/1",
+          "weight": 0.00017178584748081638,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "98423FAD1",
+          "name": "XOMETRY INC",
+          "class": "NOTE 0.750% 6/1",
+          "weight": 0.00017167744480449151,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "70614WAD2",
+          "name": "PELOTON INTERACTIVE INC",
+          "class": "NOTE 5.500%12/0",
+          "weight": 0.00017004924997996582,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "62914VAJ5",
+          "name": "NIO INC",
+          "class": "NOTE 3.875%10/1",
+          "weight": 0.0001695787868226738,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "753422AF1",
+          "name": "RAPID7 INC",
+          "class": "NOTE 0.250% 3/1",
+          "weight": 0.00016840381771821776,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09061GAK7",
+          "name": "BIOMARIN PHARMACEUTICAL INC",
+          "class": "NOTE 1.250% 5/1",
+          "weight": 0.00016790048455132594,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "594972AL5",
+          "name": "STRATEGY INC",
+          "class": "NOTE 0.875% 3/1",
+          "weight": 0.000166134419948741,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "57164YAF4",
+          "name": "MARRIOTT VACATIONS WORLDWIDE",
+          "class": "NOTE 3.250%12/1",
+          "weight": 0.00016363268827325475,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "60784B101",
+          "name": "MODIV INDUSTRIAL INC",
+          "class": "COM STK CL C",
+          "weight": 0.00016352493943075556,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "86771WAD7",
+          "name": "SUNRUN INC",
+          "class": "NOTE 4.000% 3/0",
+          "weight": 0.0001623132813327634,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "67059NAH1",
+          "name": "NUTANIX INC",
+          "class": "NOTE 0.250%10/0",
+          "weight": 0.00016202782342841787,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "34379VAB9",
+          "name": "FLUENCE ENERGY INC",
+          "class": "NOTE 2.250% 6/1",
+          "weight": 0.00015686250648587162,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29786AAJ5",
+          "name": "ETSY INC",
+          "class": "NOTE 0.125%10/0",
+          "weight": 0.00015631007634261555,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "852234AK9",
+          "name": "BLOCK INC",
+          "class": "NOTE 0.250%11/0",
+          "weight": 0.0001538772349765799,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "91680MAD9",
+          "name": "UPSTART HLDGS INC",
+          "class": "NOTE 2.000%10/0",
+          "weight": 0.00014986721268428078,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "89377MAB5",
+          "name": "TRANSMEDICS GROUP INC",
+          "class": "NOTE 1.500% 6/0",
+          "weight": 0.0001498199286107968,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "25470MAB5",
+          "name": "DISH NETWORK CORPORATION",
+          "class": "NOTE 3.375% 8/1",
+          "weight": 0.0001431004338047631,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "02043QAB3",
+          "name": "ALNYLAM PHARMACEUTICALS INC",
+          "class": "NOTE 1.000% 9/1",
+          "weight": 0.00014293401823626932,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "55087PAD6",
+          "name": "LYFT INC",
+          "class": "NOTE 0.625% 3/0",
+          "weight": 0.00014235819867388573,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "671044AF2",
+          "name": "OSI SYSTEMS INC",
+          "class": "NOTE 2.250% 8/0",
+          "weight": 0.00014017030723472313,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "358039AB1",
+          "name": "FRESHPET INC",
+          "class": "NOTE 3.000% 4/0",
+          "weight": 0.00013962324150080952,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "75737FAE8",
+          "name": "REDFIN CORP",
+          "class": "NOTE 0.500% 4/0",
+          "weight": 0.00013873164992034458,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "01626W101",
+          "name": "ALIGHT INC",
+          "class": "COM CL A",
+          "weight": 0.00013727480413772456,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "98149GAB6",
+          "name": "WORLD KINECT CORPORATION",
+          "class": "NOTE 3.250% 7/0",
+          "weight": 0.0001355696649598047,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "922280AD4",
+          "name": "VARONIS SYS INC",
+          "class": "NOTE 1.000% 9/1",
+          "weight": 0.0001347835783830281,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "011642AD7",
+          "name": "ALARM COM HLDGS INC",
+          "class": "NOTE 2.250% 6/0",
+          "weight": 0.0001328848152335506,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "194014AB2",
+          "name": "ENOVIS CORPORATION",
+          "class": "NOTE 3.875%10/1",
+          "weight": 0.00013154072606614005,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "393657AM3",
+          "name": "GREENBRIER COS INC",
+          "class": "NOTE 2.875% 4/1",
+          "weight": 0.0001301420863538647,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "62886HBT7",
+          "name": "NCL CORP LTD",
+          "class": "NOTE 0.875% 4/1",
+          "weight": 0.00012950507388934186,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "26884U208",
+          "name": "EPR PPTYS",
+          "class": "PFD C CV 5.75%",
+          "weight": 0.00012635408522496103,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "743312AD2",
+          "name": "PROGRESS SOFTWARE CORP",
+          "class": "NOTE 3.500% 3/0",
+          "weight": 0.00012497711118809098,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "91332UAB7",
+          "name": "UNITY SOFTWARE INC",
+          "class": "NOTE 11/1",
+          "weight": 0.0001247013419122532,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "91680MAF4",
+          "name": "UPSTART HLDGS INC",
+          "class": "NOTE 1.000%11/1",
+          "weight": 0.00011697501731397946,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "69553PAD2",
+          "name": "PAGERDUTY INC",
+          "class": "NOTE 1.500%10/1",
+          "weight": 0.00011281605464816368,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "02081GAD4",
+          "name": "ALPHATEC HLDGS INC",
+          "class": "NOTE 0.750% 3/1",
+          "weight": 0.00011224134957525564,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "70932AAH6",
+          "name": "PENNYMAC CORP",
+          "class": "NOTE 8.500% 6/0",
+          "weight": 0.00011094564411094498,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "45258DAB1",
+          "name": "IMMUNOCORE HLDGS PLC",
+          "class": "NOTE 2.500% 2/0",
+          "weight": 0.00011081368855703616,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "64944P307",
+          "name": "FLAGSTAR BANK NATIONAL ASSOC",
+          "class": "UNIT 05/07/2051",
+          "weight": 0.00010884487602905347,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "703343AG8",
+          "name": "PATRICK INDS INC",
+          "class": "NOTE 1.750%12/0",
+          "weight": 0.00010702336929002329,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "70509V704",
+          "name": "PEBBLEBROOK HOTEL TR",
+          "class": "6.3 CUM PFD SR F",
+          "weight": 0.000103966740734575,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "91325VAB4",
+          "name": "UNITI GROUP LLC",
+          "class": "NOTE 7.500%12/0",
+          "weight": 0.00010357953737103876,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "05601U105",
+          "name": "BRC INC",
+          "class": "COM CL A",
+          "weight": 0.00010146600466968694,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "01644JAB4",
+          "name": "ALKAMI TECHNOLOGY INC",
+          "class": "NOTE 1.500% 3/1",
+          "weight": 0.00010115234275167938,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "08862E109",
+          "name": "BEYOND MEAT INC",
+          "class": "COM",
+          "weight": 0.00010035188669059763,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "26884U307",
+          "name": "EPR PPTYS",
+          "class": "CONV PFD 9% SR E",
+          "weight": 0.00010014184257409977,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "25402DAB8",
+          "name": "DIGITALOCEAN HLDGS INC",
+          "class": "NOTE 12/0",
+          "weight": 9.922634147941869e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "875372AD6",
+          "name": "TANDEM DIABETES CARE INC",
+          "class": "NOTE 1.500% 3/1",
+          "weight": 9.868975194657555e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "22410JAD8",
+          "name": "CRACKER BARREL OLD CTRY STOR",
+          "class": "NOTE 1.750% 9/1",
+          "weight": 9.81130853721905e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "565788AD8",
+          "name": "MARA HOLDINGS INC",
+          "class": "NOTE 2.125% 9/0",
+          "weight": 9.789685955406809e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "92790CAB0",
+          "name": "VIRIDIAN THERAPEUTICS INC",
+          "class": "NOTE 1.750% 5/1",
+          "weight": 9.63391450439781e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "565788AH9",
+          "name": "MARA HOLDINGS INC",
+          "class": "NOTE 6/0",
+          "weight": 9.499551653221744e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09290C814",
+          "name": "BLACKROCK ETF TRUST",
+          "class": "ISHA US SELE ETF",
+          "weight": 9.498517406988405e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "03209RAB9",
+          "name": "AMPHASTAR PHARMACEUTICALS IN",
+          "class": "NOTE 2.000% 3/1",
+          "weight": 9.203733454711217e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "532206AC3",
+          "name": "LIFE360 INC",
+          "class": "NOTE 6/0",
+          "weight": 9.183393278788876e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "92538JAB2",
+          "name": "VERTEX INC",
+          "class": "NOTE 0.750% 5/0",
+          "weight": 9.168793466658763e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "74623VAD5",
+          "name": "PURECYCLE TECHNOLOGIES INC",
+          "class": "NOTE 4.750% 7/0",
+          "weight": 9.033338415796627e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "695127AJ9",
+          "name": "PACIRA BIOSCIENCES INC",
+          "class": "NOTE 2.125% 5/1",
+          "weight": 8.811555010155973e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "758075AF2",
+          "name": "REDWOOD TRUST INC",
+          "class": "NOTE 7.750% 6/1",
+          "weight": 8.442257777527395e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "30050BAH4",
+          "name": "EVOLENT HEALTH INC",
+          "class": "NOTE 3.500%12/0",
+          "weight": 8.34320195293774e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29103W104",
+          "name": "EMERALD HOLDING INC",
+          "class": "COM",
+          "weight": 8.242853320556411e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "45781MAD3",
+          "name": "INNOVIVA INC",
+          "class": "NOTE 2.125% 3/1",
+          "weight": 8.234889921756893e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "529043309",
+          "name": "LXP INDUSTRIAL TRUST",
+          "class": "PFD CONV SER C",
+          "weight": 8.056498792351499e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "500688AH9",
+          "name": "KOSMOS ENERGY LTD",
+          "class": "NOTE 3.125% 3/1",
+          "weight": 8.042341804039684e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "67080NAA9",
+          "name": "NUVATION BIO INC",
+          "class": "NOTE 0.750% 7/0",
+          "weight": 7.906063516951585e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09257WAE0",
+          "name": "BLACKSTONE MORTGAGE TRUST IN",
+          "class": "NOTE 5.500% 3/1",
+          "weight": 7.868875232130393e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "70509VAA8",
+          "name": "PEBBLEBROOK HOTEL TR",
+          "class": "NOTE 1.750%12/1",
+          "weight": 7.632411771117384e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "70509V605",
+          "name": "PEBBLEBROOK HOTEL TR",
+          "class": "6.375 PFD SER E",
+          "weight": 7.551550358713083e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "04271TAB6",
+          "name": "ARRAY TECHNOLOGIES INC",
+          "class": "NOTE 1.000%12/0",
+          "weight": 7.541612084562834e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "48123VAH5",
+          "name": "ZIFF DAVIS INC",
+          "class": "DEBT 3.625% 3/0",
+          "weight": 7.520196054800066e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "75134PAB1",
+          "name": "RAMACO RES INC",
+          "class": "NOTE 11/0",
+          "weight": 7.456603285323405e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "753422AH7",
+          "name": "RAPID7 INC",
+          "class": "NOTE 1.250% 3/1",
+          "weight": 7.188387276158104e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "46436E247",
+          "name": "ISHARES TR",
+          "class": "FUTU META TE ETF",
+          "weight": 7.002471113813588e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "68828E809",
+          "name": "OSISKO DEVELOPMENT CORP",
+          "class": "COM NEW",
+          "weight": 6.6950949164483e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "762093102",
+          "name": "RHINEBECK BANCORP INC",
+          "class": "COM",
+          "weight": 6.630184077418518e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "819047AB7",
+          "name": "SHAKE SHACK INC",
+          "class": "NOTE 3/0",
+          "weight": 6.555520712484415e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "893830BW8",
+          "name": "TRANSOCEAN INC",
+          "class": "DEB 4.625% 9/3",
+          "weight": 6.451259479050814e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "88557WAB7",
+          "name": "QFIN HOLDINGS INC",
+          "class": "NOTE 0.500% 4/0",
+          "weight": 6.342792905329351e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "02462A104",
+          "name": "AMERICAN BITCOIN CORP.",
+          "class": "COM CL A",
+          "weight": 6.253039352895881e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "50066V305",
+          "name": "KORE GROUP HLDGS INC",
+          "class": "COM NEW",
+          "weight": 5.8335960378100196e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "226718104",
+          "name": "CRITEO S A",
+          "class": "SPONS ADS",
+          "weight": 5.6340489261861615e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "644323107",
+          "name": "FS SPECIALTY LENDING FD",
+          "class": "COM SH BEN INT",
+          "weight": 4.767109852921078e-05,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "91688FAB0",
+          "name": "UPWORK INC",
+          "class": "NOTE 0.250% 8/1",
+          "weight": 4.28980373024901e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "04638F108",
+          "name": "ASTRONOVA INC",
+          "class": "COM",
+          "weight": 4.2557330439875094e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "10482B200",
+          "name": "BRAEMAR HOTELS  RESORTS INC",
+          "class": "5.5 CUM CV PFD B",
+          "weight": 3.8736949676740875e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "40167F101",
+          "name": "GUGGENHEIM STRATEGIC OPPORTU",
+          "class": "COM SBI",
+          "weight": 3.589268337589967e-05,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "307359885",
+          "name": "FARADAY FUTURE INTLGT ELEC I",
+          "class": "COM NEW CL A",
+          "weight": 2.2307383585477995e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "594960304",
+          "name": "MICROVISION INC DEL",
+          "class": "COM NEW",
+          "weight": 2.1514372314093127e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "98421MAE6",
+          "name": "XEROX HOLDINGS CORP",
+          "class": "NOTE 3.750% 3/1",
+          "weight": 2.0148141955767678e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "64081V109",
+          "name": "NERDY INC",
+          "class": "CL A COM",
+          "weight": 1.3848467905255579e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "08771Y402",
+          "name": "SRX GLOBAL INC",
+          "class": "COM NEW",
+          "weight": 1.2490990004278359e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "G7309R114",
+          "name": "QMMM HOLDINGS LTD",
+          "class": "COM SHS CL A",
+          "weight": 1.1616130625806813e-05,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00832E103",
+          "name": "AFFINITY BANCSHARES INC",
+          "class": "COM",
+          "weight": 8.884115704946145e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09175M804",
+          "name": "HYPERSCALE DATA INC",
+          "class": "COM SHS",
+          "weight": 8.121106490243924e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "68634K106",
+          "name": "ORLA MNG LTD NEW",
+          "class": "COM",
+          "weight": 8.089232091242302e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "36468G103",
+          "name": "GAMESQUARE HLDGS INC",
+          "class": "COM",
+          "weight": 6.133243622158644e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "74640Y106",
+          "name": "PURPLE INNOVATION INC",
+          "class": "COM",
+          "weight": 5.545967107966063e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "21924B302",
+          "name": "CORNERSTONE STRATEGIC INVEST",
+          "class": "COM",
+          "weight": 4.634938831046988e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "538146309",
+          "name": "LIVEPERSON INC",
+          "class": "COM",
+          "weight": 3.654009774219461e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "23283X206",
+          "name": "CYTOSORBENTS CORP",
+          "class": "COM NEW",
+          "weight": 3.485781302845402e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "91702V101",
+          "name": "URANIUM RTY CORP",
+          "class": "COM",
+          "weight": 3.380097980840958e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "21924U300",
+          "name": "CORNERSTONE TOTAL RETURN FD",
+          "class": "COM",
+          "weight": 3.1830562415582058e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "95790K109",
+          "name": "WESTERN ASSET DIVERSIFIED IN",
+          "class": "COM SHS BEN INT",
+          "weight": 2.9047162099967263e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "72203T100",
+          "name": "PIMCO ACCESS INCOME FUND",
+          "class": "SHS BENFIN INT",
+          "weight": 2.839288247850274e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "76881Y109",
+          "name": "RIVERNORTH OPPORTUNITIES FD",
+          "class": "COM",
+          "weight": 2.663614986779332e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "95766A101",
+          "name": "WESTERN ASSET EMERGING MKTS",
+          "class": "COM",
+          "weight": 2.596047204839764e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "72201Y101",
+          "name": "PIMCO DYNAMIC INCOME FD",
+          "class": "SHS",
+          "weight": 2.5895534461620447e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "83086J200",
+          "name": "SKYE BIOSCIENCE INC",
+          "class": "COM NEW",
+          "weight": 2.3991540641537564e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "72201B101",
+          "name": "PIMCO CORPORATE  INCOME OPP",
+          "class": "COM",
+          "weight": 2.352538684355115e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "54303L203",
+          "name": "LONGEVERON INC",
+          "class": "CL A NEW",
+          "weight": 2.3417950058105124e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "722014107",
+          "name": "PIMCO HIGH INCOME FD",
+          "class": "COM SHS",
+          "weight": 2.3379463021548386e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "72201H108",
+          "name": "PIMCO INCOME STRATEGY FD",
+          "class": "COM",
+          "weight": 2.314274545693494e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "48249T106",
+          "name": "KKR INCOME OPPORTUNITIES FD",
+          "class": "COM",
+          "weight": 2.2847034249414073e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "09260U109",
+          "name": "BLACKROCK CAP ALLOCATION TER",
+          "class": "COM",
+          "weight": 2.2633795263086205e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "35472T101",
+          "name": "FRANKLIN LTD DURATION INCOME",
+          "class": "COM",
+          "weight": 2.2477172342117868e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "09260K101",
+          "name": "BLACKROCK SCIENCE  TECHNOLO",
+          "class": "SHS BEN INT",
+          "weight": 2.231207930113511e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "69355M107",
+          "name": "PIMCO DYNAMIC INCOME OPRNTS",
+          "class": "COM BEN SHS",
+          "weight": 2.105330058811536e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "09255X100",
+          "name": "BLACKROCK FLOATING RATE INCO",
+          "class": "COM",
+          "weight": 2.0875130870619114e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "09255P107",
+          "name": "BLACKROCK CORPOR HI YLD FD I",
+          "class": "COM",
+          "weight": 2.0196183882095067e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "72200U100",
+          "name": "PIMCO CORPORATE  INCM STRG",
+          "class": "COM",
+          "weight": 1.9982499099976967e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "338480106",
+          "name": "FLAHERTY  CRUMRINE PFD INCO",
+          "class": "COM",
+          "weight": 1.993138118269698e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "09251A104",
+          "name": "BLACKROCK ENHANCED EQUITY DI",
+          "class": "COM",
+          "weight": 1.9909239991782096e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "628877201",
+          "name": "NCS MULTISTAGE HLDGS INC",
+          "class": "COM NEW",
+          "weight": 1.9655433588543077e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09262G108",
+          "name": "BLACKROCK 2037 MUNICIPAL TAR",
+          "class": "COM",
+          "weight": 1.5275935745299296e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "693691107",
+          "name": "PSQ HOLDINGS INC",
+          "class": "CL A",
+          "weight": 1.4909194408534719e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "46658E107",
+          "name": "JFB CONSTR HLDGS",
+          "class": "CL A",
+          "weight": 1.486283164635054e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "486606106",
+          "name": "KAYNE ANDERSON ENERGY INFRST",
+          "class": "COM",
+          "weight": 1.4527444613498978e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "977852AP7",
+          "name": "WOLFSPEED INC",
+          "class": "NOTE 2.500% 6/1",
+          "weight": 1.3995758834348385e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "67054R203",
+          "name": "T3 DEFENSE INC",
+          "class": "COM NEW",
+          "weight": 1.2195338236196185e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09076W307",
+          "name": "BIOAFFINITY TECHNOLOGIES INC",
+          "class": "COM NEW",
+          "weight": 1.1918647649058567e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "774374300",
+          "name": "ROCKWELL MED INC",
+          "class": "COM NEW",
+          "weight": 1.184152497734835e-06,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09260E105",
+          "name": "BLACKROCK HEALTH SCIENCES TE",
+          "class": "COM SHS",
+          "weight": 1.1404942300114017e-06,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "68622D205",
+          "name": "ORIGIN MATERIALS INC",
+          "class": "COM",
+          "weight": 9.231985019924215e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "23255M204",
+          "name": "CYCLERION THERAPEUTICS INC",
+          "class": "COM",
+          "weight": 8.461501295805764e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "895436103",
+          "name": "TRI CONTL CORP",
+          "class": "COM",
+          "weight": 7.989254955352834e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "27828N102",
+          "name": "EATON VANCE TAX-MANAGED DIVE",
+          "class": "COM",
+          "weight": 7.296488297331576e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "09260Q108",
+          "name": "BLACKROCK TECH AND PRIVATE E",
+          "class": "SHS BEN INT",
+          "weight": 6.709226642998669e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "12811P108",
+          "name": "CALAMOS CONV  HIGH INCOME F",
+          "class": "COM SHS",
+          "weight": 6.674900367150769e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "G989A6102",
+          "name": "TOP FINANCIAL GROUP LTD",
+          "class": "SHS CL A",
+          "weight": 6.4236201400564e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00326W106",
+          "name": "ABRDN GLOBAL INFRA INCOME FU",
+          "class": "COM SHS BEN INT",
+          "weight": 6.122113587262507e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "49876K103",
+          "name": "GREENLAND MINES LTD",
+          "class": "COM",
+          "weight": 5.542579059960297e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00326L100",
+          "name": "ABRDN TOTAL DYNAMIC DIVIDEND",
+          "class": "COM SH BEN INT",
+          "weight": 5.37287946247847e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "54570M306",
+          "name": "SPORTS ENTMT GAMING GLOBAL",
+          "class": "COM",
+          "weight": 5.318046580279876e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09256U105",
+          "name": "BLACKSTONE SENI FLTN RAT 202",
+          "class": "COM",
+          "weight": 4.828117006814391e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "92941V308",
+          "name": "VYNE THERAPEUTICS INC",
+          "class": "COM",
+          "weight": 4.2937564529224037e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "231269309",
+          "name": "CURIS INC",
+          "class": "COM",
+          "weight": 4.137876524937784e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "006212104",
+          "name": "ADAMS DIVERSIFIED EQUITY FD",
+          "class": "COM",
+          "weight": 3.6562684728899724e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "36242H104",
+          "name": "GABELLI DIVID  INCOME TR",
+          "class": "COM",
+          "weight": 3.4830025090862857e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "M549GJ111",
+          "name": "INTERCURE LTD",
+          "class": "COM NEW",
+          "weight": 3.350898356580731e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "89788C104",
+          "name": "TRULIEVE CANNABIS CORP",
+          "class": "SUB VTG SHS",
+          "weight": 2.9171390526845374e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "52886N406",
+          "name": "LEXARIA BIOSCIENCE CORP",
+          "class": "COM NEW",
+          "weight": 2.2838118333609422e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "25401N507",
+          "name": "DIGITAL BRANDS GROUP INC",
+          "class": "COM NEW",
+          "weight": 2.1355104338102742e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "67071L106",
+          "name": "NUVEEN AMT FREE MUN CR INC F",
+          "class": "COM",
+          "weight": 2.122730954490277e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "693489122",
+          "name": "VEEA INC",
+          "class": "COM",
+          "weight": 1.6831763053210614e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "08862L202",
+          "name": "BEYOND AIR INC",
+          "class": "COM NEW",
+          "weight": 1.4599812130113384e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09257A108",
+          "name": "BLACKROCK RES  COMMODITIES",
+          "class": "SHS",
+          "weight": 1.3125714050411349e-07,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "560667305",
+          "name": "MAISON SOLUTIONS INC",
+          "class": "CL A COM",
+          "weight": 1.0514836705616518e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "30052F118",
+          "name": "EVGO INC",
+          "class": "*W EXP 07/01/202",
+          "weight": 1.0340976347425856e-07,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "182744300",
+          "name": "KIDZ AI INC",
+          "class": "CL B NEW",
+          "weight": 8.810410800961042e-08,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "61745C105",
+          "name": "MORGAN STANLEY INDIA INVT FD",
+          "class": "COM",
+          "weight": 8.477549944254132e-08,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "36254L308",
+          "name": "GT BIOPHARMA INC",
+          "class": "COM",
+          "weight": 6.047962887487171e-08,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "37149D204",
+          "name": "GENERATION INCOME PPTYS INC",
+          "class": "COM NEW",
+          "weight": 4.3821726179851775e-08,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "27828U106",
+          "name": "EATON VANCE TAX-ADVANTAGED G",
+          "class": "COM",
+          "weight": 4.1622466948038255e-08,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "831445606",
+          "name": "AIRWA INC",
+          "class": "COM NEW",
+          "weight": 1.3685930760136822e-08,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "23248B109",
+          "name": "CXAPP INC",
+          "class": "COM CL A",
+          "weight": 1.2482282126509151e-08,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "670750108",
+          "name": "NUVEEN MULTI ASSET INCOME FU",
+          "class": "COM",
+          "weight": 1.2214804652369671e-08,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "G7185A136",
+          "name": "ALPHA COMPUTE CORP",
+          "class": "SHS NEW",
+          "weight": 1.5305655464648125e-09,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "372446302",
+          "name": "GENPREX INC",
+          "class": "COM NEW",
+          "weight": 1.4562662480927343e-09,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "19249X108",
+          "name": "COHEN  STEERS TAX ADVAN PFD",
+          "class": "COM",
+          "weight": 1.3522472303718247e-09,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "53271X108",
+          "name": "LIMINATUS PHARMA INC.",
+          "class": "CL A",
+          "weight": 5.20095088604548e-10,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "83419H103",
+          "name": "SOLARMAX TECHNOLOGY INC",
+          "class": "COM SHS",
+          "weight": 3.566366321859758e-10,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "19248A109",
+          "name": "COHEN  STEERS INFRASTRUCTUR",
+          "class": "COM",
+          "weight": 2.674774741394818e-10,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "075896159",
+          "name": "BED BATH  BEYOND INC",
+          "class": "*W EXP 10/07/202",
+          "weight": 2.377577547906505e-10,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "27828G107",
+          "name": "EATON VANCE TAX ADVT DIV INC",
+          "class": "COM",
+          "weight": 2.080380354418192e-10,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "00808Y604",
+          "name": "AETHLON MED INC",
+          "class": "COM NEW",
+          "weight": 1.1887887739532525e-10,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "33733U108",
+          "name": "FIRST TR SR FLTG RATE INCOME",
+          "class": "COM",
+          "weight": 1.1887887739532525e-10,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "46132X101",
+          "name": "INVESCO MUNI INCOME OPP TRST",
+          "class": "COM",
+          "weight": 7.429929837207829e-11,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "64190A103",
+          "name": "NEUBERGER R/EST SECS INC FD",
+          "class": "COM",
+          "weight": 2.971971934883131e-11,
+          "status": "ambiguous"
+        },
+        {
+          "cusip": "42227T105",
+          "name": "HEALTHY CHOICE WELLNESS CORP",
+          "class": "CL A",
+          "weight": 0.0,
+          "status": "unresolved"
+        }
+      ]
+    },
+    "ark": {
+      "quarter": "Q2 2026",
+      "records": 191,
+      "unresolved_records": 1,
+      "unresolved_weight": 0.00850666765229601,
+      "unresolved": [
+        {
+          "cusip": "M4130Y106",
+          "name": "Enlivex Ltd",
+          "class": "Common Stock",
+          "weight": 0.00850666765229601,
+          "status": "unresolved"
+        }
+      ]
+    },
+    "hhlr": {
+      "quarter": "Q2 2026",
+      "records": 35,
+      "unresolved_records": 0,
+      "unresolved_weight": 0,
+      "unresolved": []
+    },
+    "himalaya": {
+      "quarter": "Q2 2026",
+      "records": 8,
+      "unresolved_records": 0,
+      "unresolved_weight": 0,
+      "unresolved": []
+    },
+    "hh": {
+      "quarter": "Q2 2026",
+      "records": 18,
+      "unresolved_records": 0,
+      "unresolved_weight": 0,
+      "unresolved": []
+    },
+    "danbin": {
+      "quarter": "Q2 2026",
+      "records": 13,
+      "unresolved_records": 0,
+      "unresolved_weight": 0,
+      "unresolved": []
+    },
+    "duquesne": {
+      "quarter": "Q2 2026",
+      "records": 95,
+      "unresolved_records": 1,
+      "unresolved_weight": 0.019286658468397513,
+      "unresolved": [
+        {
+          "cusip": "Y95308105",
+          "name": "Wave Life Sciences Ltd",
+          "class": "SHS",
+          "weight": 0.019286658468397513,
+          "status": "unresolved"
+        }
+      ]
+    }
+  }
+}

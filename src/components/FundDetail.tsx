@@ -4,7 +4,7 @@ import { ResponsiveContainer, AreaChart, Area, BarChart, Bar, XAxis, YAxis, Tool
 
 import rawData from '../data.json';
 import type { Data, Holding, Action, SortKey, SortDir } from '../types';
-import { fmtValue, fmtShares, fmtPct, getQuarterKeys, comparablePrevious, getAction, getShareChange, mergeGoogleClasses, inferSector } from '../utils';
+import { fmtValue, fmtShares, fmtPct, getQuarterKeys, comparablePrevious, getAction, getShareChange, mergeGoogleClasses, inferSector, tickerStatusLabel } from '../utils';
 import { generateFundAnalysis } from '../analysis';
 import DeepReport from './DeepReport';
 import ActionBadge from './ActionBadge';
@@ -227,6 +227,7 @@ export default function FundDetail() {
             </div>
           </div>
         </div>
+        <p className="mt-3 text-xs text-gray-400">交易代码已核对 {q.holdings.filter(h=>h.ticker_status==='resolved').length} / {q.holdings.length} 条 · 未匹配项保留证券编号和公司名，持仓仍计入统计。</p>
       </header>
 
       <details className="deep-report-shell mb-6 rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900"><summary className="cursor-pointer px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-300">持仓深度分析 · 历史趋势与证据</summary><DeepReport fund={fund} quarter={selectedQ} /></details>
@@ -365,7 +366,7 @@ export default function FundDetail() {
                   onClick={() => setExpanded(expanded === r.t ? null : r.t)}
                   className={`cursor-pointer transition-colors hover:bg-blue-50/50 dark:hover:bg-blue-900/10 ${i % 2 === 1 ? 'bg-gray-50/50 dark:bg-white/[0.02]' : ''}`}
                 >
-                  <td className="px-3 py-2 font-mono font-semibold text-gray-900 dark:text-white">{r.t}</td>
+                  <td className="px-3 py-2 font-mono font-semibold text-gray-900 dark:text-white">{r.t}{tickerStatusLabel(r.ticker_status)&&<small className="block font-sans font-normal text-gray-400">{tickerStatusLabel(r.ticker_status)}</small>}</td>
                   <td className="px-3 py-2 text-gray-600 dark:text-gray-300 max-w-[200px] truncate">{r.n}</td>
                   <td className="px-3 py-2">
                     <span className="rounded-md bg-gray-100 px-2 py-1 text-[11px] font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">{r.sector}</span>
@@ -401,7 +402,7 @@ export default function FundDetail() {
           >
             <div className="flex items-start justify-between mb-2">
               <div>
-                <div className="font-mono font-bold text-gray-900 dark:text-white">{r.t}</div>
+                <div className="font-mono font-bold text-gray-900 dark:text-white">{r.t}{tickerStatusLabel(r.ticker_status)&&<small className="ml-2 font-sans font-normal text-gray-400">{tickerStatusLabel(r.ticker_status)}</small>}</div>
                 <div className="text-xs text-gray-500 dark:text-gray-400 truncate max-w-[180px]">{r.n}</div>
               </div>
               <ActionBadge action={r.action} change={r.change} />

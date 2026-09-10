@@ -1,31 +1,51 @@
-"""Verified corrections and quarantined aliases from the legacy ticker table.
-Issuer/CUSIP evidence: reconciled SEC information tables retained in .cache/sec.
-TER ticker: https://investors.teradyne.com/ (NASDAQ:TER).
-Unverified replacement symbols intentionally fall back to CUSIP.
+"""Security identity from independently queried CUSIPs, never the legacy ticker table.
+OpenFIGI responses are stored in security_registry.json, with ambiguous/missing
+results retained. Symbols are reference labels, not historical point-in-time prices.
 """
-VERIFIED = {'874039100': ('TSM', 'TAIWAN SEMICONDUCTOR'),
-            '880770102': ('TER', 'TERADYNE')}
-# These legacy aliases conflict with SEC issuer names or describe the wrong ETF.
-QUARANTINED = {
-    '876568502', '20030N101', '464287200', '922908363', 'G0750C108',
-    '85208M102', '26856L103', '78467J100', '75886F107', '92556V106',
-    '19247A100', '29414B104', '253868103', '76954A103', '87612E106',
-    '69553P100', '87918A105', '464287655', '464287234', '46267X108', '52603B107',
-}
+import json
+import re
+from functools import lru_cache
+from pathlib import Path
 
-def checked_mapping(mapping):
-    result = {c:t for c,t in mapping.items() if c not in QUARANTINED}
-    result.update({c:item[0] for c,item in VERIFIED.items()})
+VERIFIED = {'874039100': ('TSM', 'TAIWAN SEMICONDUCTOR'),
+            '880770102': ('TER', 'TERADYNE'),
+            '02079K305': ('GOOGL', 'ALPHABET'),
+            '02079K107': ('GOOG', 'ALPHABET')}
+
+@lru_cache(maxsize=1)
+def registry():
+    path=Path(__file__).with_name('security_registry.json')
+    return json.loads(path.read_text()) if path.exists() else {}
+
+def canonical_ticker(ticker):
+    # Share class notation only; preserve other Bloomberg instrument suffixes.
+    return ticker.replace('/','.') if re.fullmatch(r'[A-Z]+/[A-Z]',ticker) else ticker
+
+@lru_cache(maxsize=1)
+def resolved_mapping():
+    result={c:canonical_ticker(r['ticker']) for c,r in registry().items() if r.get('status')=='resolved'}
+    for cusip,(ticker,_) in VERIFIED.items():
+        if cusip in result:
+            assert result[cusip]==ticker,(cusip,'registry conflicts with verified identity')
+        result[cusip]=ticker
     return result
 
+def checked_mapping(mapping=None):
+    # Argument retained for existing callers; legacy aliases are never trusted.
+    return resolved_mapping()
+
+def identity_status(cusip):
+    if cusip in VERIFIED:return 'resolved'
+    return registry().get(cusip,{}).get('status','pending')
 
 def validate_identity(holding):
-    cusip = holding.get('cusip')
+    cusip=holding.get('cusip')
+    if not cusip:return
+    base=holding['t'].split(' [')[0]
+    if holding.get('o'):base=base.removesuffix(' '+holding['o'])
+    expected=checked_mapping().get(cusip,cusip)
+    assert base==expected,(cusip,'incorrect ticker',base,expected)
+    if 'ticker_status' in holding:
+        assert holding['ticker_status']==identity_status(cusip),(cusip,'incorrect lookup status')
     if cusip in VERIFIED:
-        ticker, issuer = VERIFIED[cusip]
-        assert holding['t'].split(' [')[0].removesuffix(' CALL').removesuffix(' PUT') == ticker, (cusip, 'incorrect ticker')
-        assert issuer in holding['n'].upper(), (cusip, 'issuer mismatch')
-    if cusip in QUARANTINED:
-        assert holding['t'].split(' [')[0].removesuffix(' CALL').removesuffix(' PUT') == cusip, (cusip, 'quarantined ticker alias')
-    if holding['t'].split(' [')[0].removesuffix(' CALL').removesuffix(' PUT') == 'TSM':
-        assert cusip == '874039100', ('TSM mapped to unrelated security', cusip)
+        assert VERIFIED[cusip][1] in holding['n'].upper(),(cusip,'issuer mismatch')

@@ -5,6 +5,7 @@ export interface Holding {
   s: number;  // shares
   w: number;  // weight %
   cusip?: string;
+  ticker_status?: 'resolved' | 'unresolved' | 'ambiguous' | 'invalid' | 'pending';
   asset_class?: string;
   security_type?: string;
   comparison_warning?: string;

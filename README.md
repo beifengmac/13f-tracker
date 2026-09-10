@@ -54,7 +54,7 @@ python scripts/fetch_13f.py --output src/data.json --quarters 4
 
 - 首页按 `max(前后权重) × min(|披露股数变化率|, 1)` 排序重要变化；新出现/退出按对应权重。规则用于研究排序，不代表现金流、交易金额或信心。
 - 每家机构提供一页报告；Stanley 历史从 2013 Q2 起。季度选择只使用截至所选季度的数据。
-- 证券按 CUSIP、股类、SH/PRN、CALL/PUT 区分；不合并 GOOG/GOOGL 股数。模糊 ticker 映射保留 CUSIP；未匹配名称不生成伪 ticker。
+- 证券按 CUSIP、股类、SH/PRN、CALL/PUT 区分；不合并 GOOG/GOOGL 股数。通过 OpenFIGI 按 CUSIP/CINS 查询交易代码；未匹配或有歧义的记录保留编号及状态，不依赖手工猜测。详见 [识别方法](docs/security-identification.md)。
 - `complete` 仅表示已取得完整明细且解析和原始明细总额一致；封面总额允许不超过每行 0.5 单位的舍入误差。覆盖率不能替代完整性标记。
 - 权重变动指标为 `½Σ|w本期−w前期|`，仅相邻完整季度计算，含价格影响，不是真实换手率。
 - 股数未统一拆股复权；疑似拆股、证券类型变化、缺季、部分名单缺失及未完成的修订均不判定买卖。没有实际建仓成本、当前报价或基金收益率估算。

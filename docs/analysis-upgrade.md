@@ -5,18 +5,18 @@ Implemented locally on 2026-09-10, branch `codex/13f-analysis`. No production de
 - 9 institutions, 84 quarter snapshots, 30,056 security records; complete recent four-quarter data for all nine institutions.
 - Stanley: 52 quarters from 2013 Q2 through 2026 Q2. 2021 Q1 intentionally omitted: NEW HOLDINGS amendment contains CPNG already present in original, requiring explicit reconciliation. 2021 Q2 uses disjoint original + additive amendment with both SEC sources retained.
 - Monetary reconciliation verifies parser totals against raw XML rows and cover rounding. Some Stanley source documents have low implied prices consistent with legacy thousand-dollar units. The scale is an inference, explicitly labelled in UI and data; it is not independent currency/price verification.
-- Tickers reuse the existing mapping. Ambiguous mappings retain CUSIP in display identifiers. Underlying CUSIP and security class are preserved; mappings are not a new independently verified security master.
+- Tickers now use the queried OpenFIGI CUSIP/CINS registry. Ambiguous or unresolved records retain their identifiers; underlying CUSIP and security class are preserved. See security-identification.md for current lookup coverage and limitations.
 - Regression suite: 7 TypeScript tests and 5 Python tests pass. Dataset validation and production build pass. Lint has the pre-existing Fast Refresh export warning; build warns about the large bundled dataset (approximately 1.44 MB gzip).
 - Browser checks: homepage, fund report, historical-quarter routing, stock lookup, comparison, desktop/mobile layout, dark mode. No console errors in the final local browsing session. Historical Q4 2025 report contains no Q2 2026 metrics. 390px viewport has no page overflow.
 - Preview is a persistent LaunchAgent on loopback port 8890, with logs under `.cache/logs`; source is `scripts/serve_preview.py`. Workspace registry updated. Production GitHub Pages remains unchanged.
 
-Remaining beyond this first release: independent money-unit and ticker-master verification, 2021 Q1 amendment reconciliation, comprehensive corporate-action adjustments, supplier-backed fundamentals/valuation, LLM narrative generation, and smaller per-fund data delivery. No placeholder fundamentals or claimed AI analysis are shipped.
+Remaining beyond this first release: independent money-unit verification and unresolved security identification, 2021 Q1 amendment reconciliation, comprehensive corporate-action adjustments, supplier-backed fundamentals/valuation, LLM narrative generation, and smaller per-fund data delivery. No placeholder fundamentals or claimed AI analysis are shipped.
 
 ### 持仓事实与配置判断（2026-09-10）
 
 深度报告沿用现有 UI，新增核心仓连续出现、六组明确 CUSIP 研究篮子的股数动作、前后权重、独立列示的期权数量及名义权重。各组依次输出配置倾向、条件判断、替代解释和后续验证；篮子是人工限定的研究范围，不是全组合行业分类或收入穿透。解释依据数量与权重动态生成，缺少完整相邻快照或存在待核实动作时降低置信度并抑制判断。
 
-杜肯 Q2 2026 附参考文章核对，修正 NTRA 股数和 GOOG 股类，区分 CALL 名义值与权利金。美元单位推断标识继续保留，不据此确认实际资金流或宏观动机。新回归测试覆盖参考数字、期权分离、历史时点、不完整快照及反向变化，遍历全部基金季度确认聚合值可渲染。
+杜肯 Q2 2026 附参考文章核对，修正 NTRA 股数；Alphabet A 类实际为 GOOGL，此前本站误标 GOOG 的说明已纠正，区分 CALL 名义值与权利金。美元单位推断标识继续保留，不据此确认实际资金流或宏观动机。新回归测试覆盖参考数字、期权分离、历史时点、不完整快照及反向变化，遍历全部基金季度确认聚合值可渲染。
 
 ### 各机构独立分析主体
 
@@ -35,3 +35,9 @@ Remaining beyond this first release: independent money-unit and ticker-master ve
 修复遗留映射将 Teradyne（880770102）标为 TSM 的错误，恢复为 TER；台积电（874039100）统一显示 TSM。全量历史仅更新代码标签，股数、市值、权重和来源不变。其他已识别的发行人与代码冲突先隔离，未验证替代代码时展示 CUSIP，不猜测。新增映射与发行人校验进入更新和发布的数据验证；旧 TSM 括号链接按完整 CUSIP 兼容解析。
 
 身份依据为已保存的 SEC 信息表；TER 代码另核对 https://investors.teradyne.com/。本轮不宣称已完成全部证券代码的独立核验。
+
+### 全量证券标识核对
+
+完成 6,453 个现有 CUSIP/CINS 查询，其中 5,474 个唯一匹配、878 个未匹配、94 个有歧义、7 个编号格式被接口拒绝。完整清单见 `security-identification-audit.json`。旧手工表已移除，改用有来源与查询时间的注册表；股数、市值、权重及 SEC 证券身份保持不变。Alphabet A/C 类对应代码此前颠倒的问题同时纠正。
+
+后续季度更新先查询新增或过期编号，再应用标签、校验数据、运行分析测试。旧 CUSIP 链接按精确证券身份兼容，期权与多候选不猜测合并。原有 UI 保留，新增识别覆盖提示及未识别状态。全量财务字段对照通过；25 项前端测试和 12 项 Python 测试通过。

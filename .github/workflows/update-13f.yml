@@ -40,6 +40,14 @@ jobs:
         id: history
         continue-on-error: true
         run: python scripts/import_openbb.py --output src/data.json --funds duquesne --quarters 60
+      - name: Resolve public security identifiers
+        id: identifiers
+        continue-on-error: true
+        run: python scripts/resolve_identifiers.py
+      - name: Apply verified security labels and report coverage
+        run: |
+          python scripts/apply_identifiers.py
+          python scripts/audit_identifiers.py
       - name: Validate snapshots
         run: python scripts/validate_data.py
       - uses: actions/setup-node@v4
@@ -56,16 +64,20 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          git diff --quiet src/data.json && echo "has_changes=false" >> $GITHUB_OUTPUT || echo "has_changes=true" >> $GITHUB_OUTPUT
+          git diff --quiet src/data.json scripts/security_registry.json docs/security-identification-audit.json && echo "has_changes=false" >> $GITHUB_OUTPUT || echo "has_changes=true" >> $GITHUB_OUTPUT
       - name: Commit and push
         if: steps.check.outputs.has_changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           DATE=$(python -c "import json; print(json.load(open('src/data.json'))['generated'])")
-          git add src/data.json
+          git add src/data.json scripts/security_registry.json docs/security-identification-audit.json
           git commit -m "data: update 13F holdings ($DATE)"
           git push
+
+      - name: Note identifier lookup interruption
+        if: steps.identifiers.outcome == 'failure'
+        run: echo 'Identifier lookup interrupted; cached mappings retained and pending securities shown by CUSIP.'
 
       - name: Report incomplete refresh
         if: steps.fetch.outcome == 'failure' || steps.history.outcome == 'failure'

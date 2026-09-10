@@ -1,21 +1,32 @@
 import unittest
-from scripts.security_identity import checked_mapping, validate_identity, QUARANTINED
-from scripts.import_openbb import ticker_map
+from scripts.security_identity import checked_mapping, validate_identity, canonical_ticker
+from scripts.resolve_identifiers import select_result, identifier_job
 
 class SecurityIdentityTests(unittest.TestCase):
-    def test_legacy_alias_is_corrected_and_unverified_alias_removed(self):
-        mapping=checked_mapping({'880770102':'TSM','874039100':'TSM','876568502':'TSM','20030N101':'CB'})
+    def test_foreign_issuer_uses_cins_without_guessing_its_ticker(self):
+        self.assertEqual(identifier_job('H1467J104')['idType'],'ID_CINS')
+        self.assertEqual(identifier_job('G11448100')['idType'],'ID_CINS')
+        self.assertEqual(identifier_job('874039100')['idType'],'ID_CUSIP')
+
+    def test_legacy_aliases_are_not_trusted(self):
+        mapping=checked_mapping({'880770102':'TSM','874039100':'TSM','876568502':'TSM','NOTACUSIP':'FAKE'})
         self.assertEqual(mapping['880770102'],'TER')
         self.assertEqual(mapping['874039100'],'TSM')
-        self.assertNotIn('876568502',mapping)
-        self.assertNotIn('20030N101',mapping)
-    def test_future_updates_cannot_restore_quarantined_aliases(self):
-        mapping=ticker_map()
-        self.assertTrue(QUARANTINED.isdisjoint(mapping))
-        self.assertEqual([c for c,t in mapping.items() if t=='TSM'],['874039100'])
+        self.assertNotIn('NOTACUSIP',mapping)
+        self.assertEqual(mapping['02079K305'],'GOOGL')
+        self.assertEqual(mapping['02079K107'],'GOOG')
     def test_issuer_and_ticker_mismatch_fails_validation(self):
-        with self.assertRaises(AssertionError):
-            validate_identity({'cusip':'880770102','t':'TSM','n':'TERADYNE INC'})
-        with self.assertRaises(AssertionError):
-            validate_identity({'cusip':'874039100','t':'TSM','n':'TERADYNE INC'})
+        with self.assertRaises(AssertionError):validate_identity({'cusip':'880770102','t':'TSM','n':'TERADYNE INC'})
+        with self.assertRaises(AssertionError):validate_identity({'cusip':'874039100','t':'TSM','n':'TERADYNE INC'})
         validate_identity({'cusip':'880770102','t':'TER','n':'TERADYNE INC'})
+    def test_classes_and_options_are_not_collapsed(self):
+        self.assertEqual(canonical_ticker('BRK/B'),'BRK.B')
+        self.assertEqual(canonical_ticker('ABC WS'),'ABC WS')
+        validate_identity({'cusip':'02079K305','t':'GOOGL CALL','o':'CALL','n':'ALPHABET INC'})
+    def test_ambiguous_or_foreign_only_candidates_are_not_guessed(self):
+        a={'ticker':'A','figi':'1','name':'Issuer','exchCode':'US','marketSector':'Equity'}
+        b={**a,'ticker':'B','figi':'2'}
+        self.assertEqual(select_result({'data':[a,b]})['status'],'ambiguous')
+        self.assertEqual(select_result({'data':[{**a,'exchCode':'LN'}]})['status'],'unresolved')
+        self.assertEqual(select_result({'warning':'No identifier found'})['status'],'unresolved')
+        self.assertEqual(select_result({'data':[a]})['ticker'],'A')

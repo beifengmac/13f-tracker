@@ -4,8 +4,9 @@ import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Cell } from 
 
 import rawData from '../data.json';
 import type { Data, Action } from '../types';
-import { fmtValue, fmtShares, getAllQuarterKeys, getPreviousQuarter, getAction, getShareChange, mergeGoogleClasses, normalizeTicker } from '../utils';
+import { fmtValue, fmtShares, getAllQuarterKeys, getPreviousQuarter, getAction, getShareChange, mergeGoogleClasses, normalizeTicker, tickerStatusLabel } from '../utils';
 import ActionBadge from './ActionBadge';
+import {resolveSecurityIdentity, type SecuritySearchEntry} from '../securitySearch';
 
 const data = rawData as unknown as Data;
 
@@ -26,35 +27,40 @@ export default function StockLookup() {
   const navigate = useNavigate();
   const [params, setParams] = useSearchParams();
   const [search, setSearch] = useState(normalizeTicker(paramTicker?.toUpperCase() ?? ''));
-  const ticker = normalizeTicker(paramTicker?.toUpperCase() ?? '');
+  const rawTicker = normalizeTicker(paramTicker?.toUpperCase() ?? '');
 
   const allQuarters = useMemo(() => getAllQuarterKeys(data.funds), []);
   const latestQ = allQuarters.includes(params.get('quarter') ?? '') ? params.get('quarter')! : allQuarters.at(-1)!;
 
   /* Build ticker↔name index for fuzzy search */
   const tickerIndex = useMemo(() => {
-    const map = new Map<string, { ticker: string; name: string }>();
+    const map = new Map<string, SecuritySearchEntry>();
     for (const fund of Object.values(data.funds)) {
       const q = fund.quarters[latestQ];
       if (!q) continue;
       for (const h of mergeGoogleClasses(q.holdings)) {
-        if (!map.has(h.t)) map.set(h.t, { ticker: h.t, name: h.n });
+        if (!map.has(h.t)) map.set(h.t, { ticker: h.t, name: h.n, cusip: h.cusip, option: h.o, status: h.ticker_status });
       }
       const prevQ = getPreviousQuarter(fund, latestQ);
       if (prevQ) {
         for (const h of mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? [])) {
-          if (!map.has(h.t)) map.set(h.t, { ticker: h.t, name: h.n });
+          if (!map.has(h.t)) map.set(h.t, { ticker: h.t, name: h.n, cusip: h.cusip, option: h.o, status: h.ticker_status });
         }
       }
     }
     return [...map.values()];
   }, [latestQ]);
 
+  const ticker = resolveSecurityIdentity(rawTicker,tickerIndex);
+
   const resolveSearch = (input: string): string => {
     const s = normalizeTicker(input.trim().toUpperCase());
     if (!s) return '';
+    const resolved = resolveSecurityIdentity(s,tickerIndex);
+    if (resolved !== s) return resolved;
     const exact = tickerIndex.find(x => x.ticker === s);
     if (exact) return exact.ticker;
+    if (/^[A-Z0-9]{8}[0-9](?: (CALL|PUT))?$/.test(s) || /\[[A-Z0-9]{9}(?:\s|\])/.test(s)) return s;
     const partialTicker = tickerIndex.find(x => x.ticker.includes(s));
     if (partialTicker) return partialTicker.ticker;
     const nameMatch = tickerIndex.find(x => x.name.toUpperCase().includes(s));
@@ -67,7 +73,7 @@ export default function StockLookup() {
     if (s.length < 2) return [];
     const rank = (t: string) => t === s ? 0 : t.startsWith(s) ? 1 : t.includes(s) ? 2 : 3;
     return tickerIndex
-      .filter(x => normalizeTicker(x.ticker).includes(s) || x.name.toUpperCase().includes(s))
+      .filter(x => normalizeTicker(x.ticker).includes(s) || x.cusip === s || x.name.toUpperCase().includes(s))
       .sort((a, b) => rank(a.ticker) - rank(b.ticker) || a.ticker.localeCompare(b.ticker))
       .slice(0, 8);
   }, [search, tickerIndex]);
@@ -132,7 +138,7 @@ export default function StockLookup() {
               onChange={e => { setSearch(e.target.value.toUpperCase()); setShowSuggestions(true); }}
               onFocus={() => setShowSuggestions(true)}
               onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
-              placeholder="Ticker 或公司名（如 AAPL, CIRCLE）…"
+              placeholder="Ticker、CUSIP 或公司名…"
               className="w-full rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-mono outline-none focus:border-blue-400 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
             />
             {showSuggestions && suggestions.length > 0 && (
@@ -148,7 +154,7 @@ export default function StockLookup() {
                     }}
                     className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                   >
-                    <span className="font-mono font-bold text-gray-900 dark:text-white">{s.ticker}</span>
+                    <span className="font-mono font-bold text-gray-900 dark:text-white">{s.ticker}{tickerStatusLabel(s.status)&&<small className="block font-sans text-xs font-normal text-gray-400">{tickerStatusLabel(s.status)}</small>}</span>
                     <span className="truncate text-xs text-gray-500 dark:text-gray-400">{s.name}</span>
                   </button>
                 ))}

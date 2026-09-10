@@ -100,7 +100,7 @@ export function referenceChecks(fund: Fund, quarter: string) {
   const ntra=get('632307104'),goog=get('02079K305'),amzn=get('023135106');
   return [
     { claim:'Natera 的股数', finding:ntra ? `本期 ${ntra.holding.s.toLocaleString('en-US')} 股，约 ${(ntra.holding.s/10000).toFixed(1)} 万股；参考文章写成 3.19 亿股，量级有误。` : '记录不足，未确认。' },
-    { claim:'Alphabet 新增的是哪个股类', finding:goog ? `${goog.holding.t}，CUSIP ${goog.holding.cusip}；本期状态为${actionNames[goog.action]}。不能将 GOOG 与 GOOGL 混写。` : '记录不足，未确认。' },
+    { claim:'Alphabet 新增的是哪个股类', finding:goog ? `${goog.holding.t}，CUSIP ${goog.holding.cusip}；本期状态为${actionNames[goog.action]}。该记录为 A 类股，对应 GOOGL；参考文章此处正确，本站此前的 GOOG 标注已更正。` : '记录不足，未确认。' },
     { claim:'Amazon 直接持股超过十倍', finding:amzn && Number.isFinite(amzn.change) ? `本期普通股数量是前期的 ${(1+amzn.change/100).toFixed(2)} 倍，增幅 ${fmtPct(amzn.change)}；当前普通股权重 ${pct(amzn.weight)}，应与小基数背景一起看。` : '记录不足，未确认。' },
     { claim:'CALL 的美元金额', finding:'13F 列示对应标的名义市值，不能描述成支付了同额权利金；本期美元金额的单位还标有待独立核验。' },
     { claim:'AI 硬件泡沫已过、下一瓶颈在电力', finding:'这是参考文章的宏观解释，不是 13F 事实。需要同时解释仍持有或增加的芯片仓位，并补充公司经营、项目和估值证据。' },

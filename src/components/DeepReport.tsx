@@ -51,6 +51,7 @@ export default function DeepReport({ fund, quarter }: { fund: Fund; quarter: str
       {profile.changes.length ? profile.changes.slice(0, 4).map(c => <details key={c.quarter} className="report-quarter"><summary>{c.previous} → {c.quarter}<strong>{percent(c.distance)}</strong></summary><p>{moves(fund, c.quarter).filter(r => r.action !== 'unknown' && r.action !== 'unchanged').slice(0, 5).map(r => `${r.holding.t}：${percent(r.previousWeight)} → ${percent(r.weight)}${Number.isFinite(r.change) ? `，股数 ${fmtPct(r.change)}` : ''}`).join('；') || '本期无可确认的股数变化，结构差异可能来自价格变化或待核实项目。'}</p></details>) : <p className="report-note">尚无相邻且已核对完整的季度对；不以部分名单估算。</p>}
     </Block>
     <details className="report-method"><summary>数据来源、计算方法与分析边界</summary>
+      <p>交易代码由完整 CUSIP 对照 OpenFIGI 证券库，无法唯一识别的记录保留编号和发行人名称。代码为查询时的参考标签，不保证等于历史季度当时的代码；同名、不同股类不自动合并。</p>
       <p>机构申报不等于经理人个人或单只基金的全部持仓。13F 不覆盖现金、空头及完整衍生品组合，季度末持仓变化不等于基金业绩；不能单凭快照确认投资动机。ETF 识别基于名称规则，未做穿透。</p>
         <a className="report-source" href={q.source_url || secInstitutionUrl(fund)} target="_blank" rel="noreferrer">{q.source_url ? '查看本期 SEC 申报 ↗' : '前往 SEC 核查申报 ↗'}</a>
         {q.source_urls && q.source_urls.length > 1 && <p className="report-note">包含追加型修订：{q.source_urls.map((url, i) => <a key={url} href={url} target="_blank" rel="noreferrer"> {i === 0 ? "原始申报" : `修订 ${i}`} ↗ </a>)}</p>}

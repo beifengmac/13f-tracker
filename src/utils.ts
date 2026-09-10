@@ -69,7 +69,7 @@ export function getAllQuarterKeys(funds: Record<string, Fund>): string[] {
   });
 }
 
-/* ── Holding lookup (normalizes GOOG / GOOGL) ────────────────── */
+/* ── Holding lookup (preserves distinct share classes) ────────────────── */
 
 export function normalizeTicker(ticker: string): string {
   // Preserve bookmarks from the former incorrect TSM alias using the full CUSIP.
@@ -154,4 +154,9 @@ export function inferSector(name: string): string {
   if (/BITCOIN|CRYPTO|BITMINE|BULLISH|ARK 21SH|CIRCLE/.test(n)) return 'Crypto';
   if (/DEFENSE|KRATOS|AEROVIRONMENT|L3HARRIS|BWX|ELBIT|ROCKET LAB|ARCHER|JOBY/.test(n)) return 'Defense/Aero';
   return 'Other';
+}
+
+/** Missing symbols retain their CUSIP; do not imply missing holdings. */
+export function tickerStatusLabel(status: Holding['ticker_status']): string {
+  return status === 'resolved' ? '' : status === 'ambiguous' ? '代码有歧义' : status === 'invalid' ? '编号待核实' : status === 'pending' ? '代码待查询' : status === 'unresolved' ? '暂未匹配代码' : '';
 }
