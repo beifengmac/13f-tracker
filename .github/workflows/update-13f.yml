@@ -42,6 +42,17 @@ jobs:
         run: python scripts/import_openbb.py --output src/data.json --funds duquesne --quarters 60
       - name: Validate snapshots
         run: python scripts/validate_data.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install analysis dependencies
+        run: npm ci
+      - name: Verify updated reports before committing data
+        run: |
+          npm test
+          npm run lint
+          npm run build
       - name: Check for changes
         id: check
         run: |
