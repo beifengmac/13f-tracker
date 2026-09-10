@@ -5,6 +5,7 @@ import type { Fund } from '../types';
 import { generateFundAnalysis, historyProfile, moves, quarterMetrics, secInstitutionUrl } from '../analysis';
 import { fmtPct, fmtValue, quarterOrdinal } from '../utils';
 import ActionBadge from './ActionBadge';
+import ResearchNarrative from './ResearchNarrative';
 
 function Block({ title, note, children }: { title: string; note?: string; children: ReactNode }) {
   return <section className="report-block"><h3>{title}</h3>{note && <p className="report-note">{note}</p>}{children}</section>;
@@ -32,6 +33,7 @@ export default function DeepReport({ fund, quarter }: { fund: Fund; quarter: str
         {[['最大披露仓位', percent(metric.top1)], ['前三项合计', percent(metric.top3)], ['前十项合计', percent(metric.top10)], ['本季样本覆盖', percent(metric.coverage)]].map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}
       </div>
     </div>
+    <ResearchNarrative fund={fund} quarter={quarter} />
     <div className="report-grid">
       <Block title="本季核心发现" note="以下数字可由持仓表复算；解读不代表机构公开表态。">
         <p className="report-lead">{analysis.title}</p><p>{analysis.body}</p>
