@@ -1,61 +1,58 @@
 import { Fragment, useState, useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useSearchParams } from 'react-router-dom';
 import { ResponsiveContainer, AreaChart, Area, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Cell } from 'recharts';
 
 import rawData from '../data.json';
 import type { Data, Holding, Action, SortKey, SortDir } from '../types';
-import { fmtValue, fmtShares, fmtPct, getQuarterKeys, getPreviousQuarter, getAction, getShareChange, mergeGoogleClasses, inferSector, estimateCost } from '../utils';
+import { fmtValue, fmtShares, fmtPct, getQuarterKeys, comparablePrevious, getAction, getShareChange, mergeGoogleClasses, inferSector } from '../utils';
 import { generateFundAnalysis } from '../analysis';
+import DeepReport from './DeepReport';
 import ActionBadge from './ActionBadge';
 
 const data = rawData as unknown as Data;
 
-const ACTION_ORDER: Record<Action, number> = { new: 0, increased: 1, unchanged: 2, decreased: 3, cleared: 4 };
+const ACTION_ORDER: Record<Action, number> = { new: 0, increased: 1, unchanged: 2, decreased: 3, cleared: 4, unknown: 5 };
 const SECTOR_COLORS = ['#3b82f6','#22c55e','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#f97316','#6366f1','#64748b'];
 
 interface Row extends Holding {
   sector: string;
   action: Action;
   change: number;
-  entryPrice: number | null;
-  currentPrice: number | null;
-  pnlPct: number | null;
-  entryQuarter: string | null;
+
 }
 
 export default function FundDetail() {
   const { id } = useParams<{ id: string }>();
+  const [params, setParams] = useSearchParams();
   const fund = id ? data.funds[id] : undefined;
 
   const quarters = useMemo(() => (fund ? getQuarterKeys(fund) : []), [fund]);
-  const [selectedQ, setSelectedQ] = useState(() => quarters[quarters.length - 1] ?? '');
+  const selectedQ = quarters.includes(params.get('quarter') ?? '') ? params.get('quarter')! : quarters.at(-1) ?? '';
+  const setSelectedQ = (q: string) => setParams({ quarter: q });
   const [sortKey, setSortKey] = useState<SortKey>('v');
   const [sortDir, setSortDir] = useState<SortDir>('desc');
   const [filterAction, setFilterAction] = useState<'all' | Action>('all');
+  const [visibleRows, setVisibleRows] = useState(100);
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const rows = useMemo(() => {
     if (!fund || !fund.quarters[selectedQ]) return [];
     const current = mergeGoogleClasses(fund.quarters[selectedQ].holdings);
-    const prevQ = getPreviousQuarter(fund, selectedQ);
+    const prevQ = comparablePrevious(fund, selectedQ);
     const previous = prevQ ? mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? []) : [];
     const currentTickers = new Set(current.map(h => h.t));
     const cleared = previous
-      .filter(h => !currentTickers.has(h.t))
+      .filter(h => !currentTickers.has(h.t) && getAction(fund, h.t, selectedQ) === 'cleared')
       .map(h => ({ ...h, v: 0, s: 0, w: 0 }));
 
     return [...current, ...cleared].map((h): Row => {
-      const cost = estimateCost(fund, h.t);
       const action = getAction(fund, h.t, selectedQ);
       return {
         ...h,
         sector: inferSector(h.n),
         action,
         change: action === 'cleared' ? -100 : getShareChange(fund, h.t, selectedQ),
-        entryPrice: cost?.entryPrice ?? null,
-        currentPrice: cost?.currentPrice ?? null,
-        pnlPct: cost?.pnlPct ?? null,
-        entryQuarter: cost?.entryQuarter ?? null,
+
       };
     });
   }, [fund, selectedQ]);
@@ -84,8 +81,8 @@ export default function FundDetail() {
 
   const aumTrend = useMemo(() => {
     if (!fund) return [];
-    return quarters.map(q => ({ quarter: q, value: fund.quarters[q]?.total ?? 0 }));
-  }, [fund, quarters]);
+    return quarters.slice(0, quarters.indexOf(selectedQ) + 1).map(q => ({ quarter: q, value: fund.quarters[q]?.total ?? 0 }));
+  }, [fund, quarters, selectedQ]);
 
   const sectorData = useMemo(() => {
     const map = new Map<string, number>();
@@ -103,37 +100,9 @@ export default function FundDetail() {
       return { prevQ: null, prevTotal: null, aumDelta: 0, aumChange: null, buyValue: 0, sellValue: 0, netValue: 0 };
     }
 
-    const prevQ = getPreviousQuarter(fund, selectedQ);
+    const prevQ = comparablePrevious(fund, selectedQ);
     if (!prevQ) {
       return { prevQ: null, prevTotal: null, aumDelta: 0, aumChange: null, buyValue: 0, sellValue: 0, netValue: 0 };
-    }
-
-    const curr = mergeGoogleClasses(fund.quarters[selectedQ]?.holdings ?? []);
-    const prev = mergeGoogleClasses(fund.quarters[prevQ]?.holdings ?? []);
-    const currByTicker = new Map(curr.map(h => [h.t, h]));
-    const prevByTicker = new Map(prev.map(h => [h.t, h]));
-    const tickers = new Set([...currByTicker.keys(), ...prevByTicker.keys()]);
-    let buyValue = 0;
-    let sellValue = 0;
-
-    for (const ticker of tickers) {
-      const currHolding = currByTicker.get(ticker);
-      const prevHolding = prevByTicker.get(ticker);
-      const currShares = currHolding?.s ?? 0;
-      const prevShares = prevHolding?.s ?? 0;
-      const shareDelta = currShares - prevShares;
-
-      if (shareDelta > 0 && currHolding && currShares > 0) {
-        buyValue += shareDelta * (currHolding.v / currShares);
-      }
-
-      if (shareDelta < 0) {
-        const priceSource = prevHolding && prevShares > 0 ? prevHolding : currHolding;
-        const shares = priceSource?.s ?? 0;
-        if (priceSource && shares > 0) {
-          sellValue += Math.abs(shareDelta) * (priceSource.v / shares);
-        }
-      }
     }
 
     const prevTotal = fund.quarters[prevQ]?.total ?? 0;
@@ -141,7 +110,7 @@ export default function FundDetail() {
     const aumDelta = currentTotal - prevTotal;
     const aumChange = prevTotal > 0 ? (aumDelta / prevTotal) * 100 : null;
 
-    return { prevQ, prevTotal, aumDelta, aumChange, buyValue, sellValue, netValue: buyValue - sellValue };
+    return { prevQ, prevTotal, aumDelta, aumChange };
   }, [fund, selectedQ]);
 
   /* ── Sort handler ────────────────────────────── */
@@ -163,40 +132,13 @@ export default function FundDetail() {
 
   /* ── Sparkline for expanded row ──────────────── */
 
-  const Sparkline = ({ ticker, row }: { ticker: string; row: Row }) => {
-    const sparkData = quarters.map(q => {
+  const Sparkline = ({ ticker }: { ticker: string; row: Row }) => {
+    const sparkData = quarters.slice(0, quarters.indexOf(selectedQ) + 1).map(q => {
       const h = mergeGoogleClasses(fund!.quarters[q]?.holdings ?? []).find(x => x.t === ticker);
       return { q, v: h?.v ?? 0, s: h?.s ?? 0 };
     });
-    const cost = row;
     return (
       <div className="py-3 px-4">
-        {/* Cost basis card */}
-        {cost.entryPrice != null && cost.pnlPct != null && (
-          <div className="mb-3 flex flex-wrap items-center gap-4 rounded-lg border border-gray-100 bg-gray-50/50 px-4 py-2.5 dark:border-gray-700 dark:bg-gray-800/50">
-            <div className="flex items-center gap-2">
-              <span className="text-xs text-gray-500 dark:text-gray-400">估算建仓价</span>
-              <span className="font-mono text-sm font-bold text-gray-900 dark:text-white">
-                ${cost.entryPrice < 1 ? cost.entryPrice.toFixed(4) : cost.entryPrice < 100 ? cost.entryPrice.toFixed(2) : cost.entryPrice.toFixed(0)}
-              </span>
-              <span className="text-[10px] text-gray-400">({cost.entryQuarter})</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <span className="text-xs text-gray-500 dark:text-gray-400">现价</span>
-              <span className="font-mono text-sm font-medium text-gray-700 dark:text-gray-200">
-                ${cost.currentPrice! < 1 ? cost.currentPrice!.toFixed(4) : cost.currentPrice! < 100 ? cost.currentPrice!.toFixed(2) : cost.currentPrice!.toFixed(0)}
-              </span>
-            </div>
-            <div className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm font-bold ${
-              cost.pnlPct >= 0
-                ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300'
-                : 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300'
-            }`}>
-              {cost.pnlPct >= 0 ? '▲' : '▼'} {fmtPct(cost.pnlPct)}
-            </div>
-            <span className="text-[10px] text-gray-400 dark:text-gray-500">ℹ️ 估算值，基于首次出现在 13F 时的每股市值</span>
-          </div>
-        )}
         {/* Charts */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
@@ -238,10 +180,9 @@ export default function FundDetail() {
   const q = fund.quarters[selectedQ];
   const currentHoldingCount = rows.filter(r => r.action !== 'cleared').length;
   const concentration = rows.slice(0, 10).reduce((s, r) => s + r.w, 0);
-  const totalPositions = currentHoldingCount;
+  const totalPositions = q?.total_positions ?? currentHoldingCount;
   const isAumUp = quarterSummary.aumDelta >= 0;
-  const isNetBuy = quarterSummary.netValue >= 0;
-  const fundAnalysis = fund ? generateFundAnalysis(fund) : null;
+  const fundAnalysis = fund ? generateFundAnalysis(fund, selectedQ) : null;
 
   /* ── Action filter tabs ──────────────────────── */
 
@@ -251,6 +192,7 @@ export default function FundDetail() {
     { key: 'increased', label: '加仓' },
     { key: 'decreased', label: '减仓' },
     { key: 'cleared', label: '清仓' },
+    { key: 'unknown', label: '待核实' },
   ];
 
   return (
@@ -267,7 +209,7 @@ export default function FundDetail() {
             <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{fund.name_cn}</h1>
             <p className="text-sm text-gray-500 dark:text-gray-400">{fund.name_en}</p>
             <p className="mt-1 text-xs text-gray-400">👤 {fund.manager} · {fund.manager_en} · CIK {fund.cik}</p>
-            <p className="mt-1 text-xs text-gray-400">{fund.description}</p>
+            <p className="mt-1 text-xs text-gray-400">机构申报口径；不代表关联人物的全部个人持仓。</p>
           </div>
           <div className="text-right">
             <select
@@ -278,6 +220,7 @@ export default function FundDetail() {
               {quarters.map(q2 => <option key={q2} value={q2}>{q2}</option>)}
             </select>
             <div className="font-mono text-3xl font-bold text-gray-900 dark:text-white">{fmtValue(q?.total ?? 0)}</div>
+            {q?.value_unit_inferred && <p className="text-xs text-amber-600">金额单位为推断值，待独立核验</p>}
             <div className="mt-1 flex items-center justify-end gap-3 text-xs text-gray-500 dark:text-gray-400">
               <span>📈 {totalPositions} positions</span>
               <span>🎯 Top‑10: {concentration.toFixed(1)}%</span>
@@ -286,39 +229,25 @@ export default function FundDetail() {
         </div>
       </header>
 
+      <DeepReport fund={fund} quarter={selectedQ} />
+
       {/* Quarter summary */}
       <section className="mb-6">
         <div className="mb-2 flex items-center justify-between gap-3">
           <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">本季度总结</h2>
           <span className="text-[11px] text-gray-400">
-            {quarterSummary.prevQ ? `${quarterSummary.prevQ} → ${selectedQ} · 按股数变化估算` : `${selectedQ} · 无上一季度对比`}
+            {quarterSummary.prevQ ? `${quarterSummary.prevQ} → ${selectedQ} · 申报市值变化，不代表投资收益` : `${selectedQ} · 无上一季度对比`}
           </span>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
           <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
-            <div className="text-xs text-gray-500 dark:text-gray-400">资产市值变化</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">13F 申报市值变化（非收益）</div>
             <div className={`mt-1 font-mono text-xl font-bold ${isAumUp ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}`}>
               {isAumUp ? '+' : '-'}{fmtValue(Math.abs(quarterSummary.aumDelta))}
             </div>
             <div className="mt-1 text-xs text-gray-400">{quarterSummary.aumChange == null ? '—' : fmtPct(quarterSummary.aumChange)}</div>
           </div>
-          <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
-            <div className="text-xs text-gray-500 dark:text-gray-400">买入股票金额</div>
-            <div className="mt-1 font-mono text-xl font-bold text-emerald-600 dark:text-emerald-400">{fmtValue(quarterSummary.buyValue)}</div>
-            <div className="mt-1 text-xs text-gray-400">新增 + 加仓股数变化估算</div>
-          </div>
-          <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
-            <div className="text-xs text-gray-500 dark:text-gray-400">卖出股票金额</div>
-            <div className="mt-1 font-mono text-xl font-bold text-red-600 dark:text-red-400">{fmtValue(quarterSummary.sellValue)}</div>
-            <div className="mt-1 text-xs text-gray-400">减仓 + 清仓股数变化估算</div>
-          </div>
-          <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
-            <div className="text-xs text-gray-500 dark:text-gray-400">总体净买入/卖出</div>
-            <div className={`mt-1 font-mono text-xl font-bold ${isNetBuy ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}`}>
-              {isNetBuy ? '+' : '-'}{fmtValue(Math.abs(quarterSummary.netValue))}
-            </div>
-            <div className="mt-1 text-xs text-gray-400">{isNetBuy ? '净买入' : '净卖出'}</div>
-          </div>
+
         </div>
       </section>
 
@@ -326,7 +255,7 @@ export default function FundDetail() {
         <section className="mb-6 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
           <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
             <div>
-              <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">投资工作解读</h2>
+              <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">本季证据摘要</h2>
               <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">{fundAnalysis.prevQ} → {fundAnalysis.latestQ} · 按持股数变化自动生成</p>
             </div>
             <div className="flex flex-wrap gap-1.5 text-[11px] font-medium">
@@ -350,7 +279,7 @@ export default function FundDetail() {
       <div className="mb-6 grid gap-4 lg:grid-cols-2">
         {/* AUM trend */}
         <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
-          <h3 className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">AUM Trend</h3>
+          <h3 className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">13F 申报市值历史</h3>
           <ResponsiveContainer width="100%" height={200}>
             <AreaChart data={aumTrend}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -364,7 +293,7 @@ export default function FundDetail() {
 
         {/* Sector breakdown */}
         <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
-          <h3 className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">Sector Breakdown</h3>
+          <h3 className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">样本行业分布（名称推断）</h3>
           <ResponsiveContainer width="100%" height={200}>
             <BarChart data={sectorData} layout="vertical" margin={{ left: 60 }}>
               <XAxis type="number" tickFormatter={(v: number) => `${v}%`} tick={{ fontSize: 11 }} />
@@ -399,6 +328,7 @@ export default function FundDetail() {
         <p className="mb-2 text-xs text-gray-400">当前显示前 {currentHoldingCount} 大持仓 (共 {totalPositions} 只)</p>
       )}
 
+      {filtered.length > visibleRows && <button className="mb-3 rounded-lg border px-3 py-2 text-xs" onClick={() => setVisibleRows(n => n + 100)}>再显示 100 条（已显示 {visibleRows} / {filtered.length}）</button>}
       {/* ── Holdings table (desktop) ─────────────── */}
       <div className="mb-2 flex flex-wrap items-end justify-between gap-2">
         <div>
@@ -429,7 +359,7 @@ export default function FundDetail() {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-            {filtered.map((r, i) => (
+            {filtered.slice(0, visibleRows).map((r, i) => (
               <Fragment key={r.t}>
                 <tr
                   onClick={() => setExpanded(expanded === r.t ? null : r.t)}
@@ -463,7 +393,7 @@ export default function FundDetail() {
 
       {/* ── Holdings cards (mobile) ──────────────── */}
       <div className="md:hidden space-y-3">
-        {filtered.map(r => (
+        {filtered.slice(0, visibleRows).map(r => (
           <div
             key={r.t}
             onClick={() => setExpanded(expanded === r.t ? null : r.t)}
@@ -493,18 +423,7 @@ export default function FundDetail() {
                 <div className="text-gray-400">Shares</div>
                 <div className="font-mono font-medium text-gray-900 dark:text-white">{fmtShares(r.s)}</div>
               </div>
-              <div>
-                <div className="text-gray-400">Est. Cost → P&L</div>
-                <div className="font-mono font-medium">
-                  {r.entryPrice != null && r.pnlPct != null ? (
-                    <>
-                      <span className="text-gray-500">${r.entryPrice < 100 ? r.entryPrice.toFixed(2) : r.entryPrice.toFixed(0)}</span>
-                      {' '}
-                      <span className={r.pnlPct >= 0 ? 'text-emerald-600' : 'text-red-600'}>{fmtPct(r.pnlPct)}</span>
-                    </>
-                  ) : <span className="text-gray-400">—</span>}
-                </div>
-              </div>
+
             </div>
             {expanded === r.t && <Sparkline ticker={r.t} row={r} />}
           </div>

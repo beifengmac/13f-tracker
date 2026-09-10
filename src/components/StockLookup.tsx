@@ -1,5 +1,5 @@
 import { useState, useMemo, type FormEvent } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Cell } from 'recharts';
 
 import rawData from '../data.json';
@@ -24,11 +24,12 @@ interface FundRow {
 export default function StockLookup() {
   const { ticker: paramTicker } = useParams<{ ticker: string }>();
   const navigate = useNavigate();
+  const [params, setParams] = useSearchParams();
   const [search, setSearch] = useState(paramTicker?.toUpperCase() ?? '');
   const ticker = normalizeTicker(paramTicker?.toUpperCase() ?? '');
 
   const allQuarters = useMemo(() => getAllQuarterKeys(data.funds), []);
-  const latestQ = allQuarters[allQuarters.length - 1];
+  const latestQ = allQuarters.includes(params.get('quarter') ?? '') ? params.get('quarter')! : allQuarters.at(-1)!;
 
   /* Build ticker↔name index for fuzzy search */
   const tickerIndex = useMemo(() => {
@@ -95,9 +96,9 @@ export default function StockLookup() {
       rows.push({
         fundId,
         fundName: fund.name_cn,
-        weight: h?.w ?? 0,
-        shares: h?.s ?? 0,
-        value: h?.v ?? 0,
+        weight: h?.w ?? (action === 'cleared' ? 0 : NaN),
+        shares: h?.s ?? (action === 'cleared' ? 0 : NaN),
+        value: h?.v ?? (action === 'cleared' ? 0 : NaN),
         action,
         change: action === 'cleared' ? -100 : getShareChange(fund, ticker, latestQ),
       });
@@ -105,13 +106,14 @@ export default function StockLookup() {
     return rows.sort((a, b) => b.weight - a.weight);
   }, [ticker, latestQ]);
 
-  const chartData = useMemo(() => fundRows.map(r => ({ name: r.fundName, weight: r.weight })), [fundRows]);
+  const chartData = useMemo(() => fundRows.filter(r => Number.isFinite(r.weight)).map(r => ({ name: r.fundName, weight: r.weight })), [fundRows]);
 
   const buying = fundRows.filter(r => r.action === 'new' || r.action === 'increased').length;
   const selling = fundRows.filter(r => r.action === 'decreased' || r.action === 'cleared').length;
   const holding = fundRows.filter(r => r.action === 'unchanged').length;
-  const total = fundRows.length;
-  const consensusPct = total > 0 ? (buying / total) * 100 : 50;
+  const unknown = fundRows.filter(r => r.action === 'unknown').length;
+  const total = fundRows.length - unknown;
+  const consensusPct = total > 0 ? (buying / total) * 100 : 0;
 
   return (
     <div>
@@ -120,7 +122,7 @@ export default function StockLookup() {
       </Link>
 
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Stock Lookup</h1>
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-4"><h1 className="text-2xl font-bold">个股持仓 · 共识与分歧</h1><select aria-label="个股报告季度" value={latestQ} onChange={e => setParams({quarter: e.target.value})} className="rounded-lg border px-3 py-2 text-sm dark:bg-gray-900">{allQuarters.map(q => <option key={q}>{q}</option>)}</select></div>
         <form onSubmit={handleSearch} className="flex gap-2 relative">
           <div className="relative flex-1 max-w-xs">
             <input
@@ -159,7 +161,7 @@ export default function StockLookup() {
 
       {ticker && fundRows.length === 0 && (
         <div className="rounded-xl border border-gray-200 bg-white p-10 text-center dark:border-gray-800 dark:bg-gray-900">
-          <p className="text-lg text-gray-400">No funds hold <span className="font-mono font-bold">{ticker}</span> in {latestQ}</p>
+          <p className="text-lg text-gray-400">当前样本未收录 <span className="font-mono font-bold">{ticker}</span> · {latestQ}</p>
           {(() => {
             const resolved = resolveSearch(ticker);
             return resolved && resolved !== ticker ? (
@@ -175,15 +177,16 @@ export default function StockLookup() {
 
       {fundRows.length > 0 && (
         <>
+          <p className="mb-4 text-xs text-gray-500">仅统计本站跟踪机构；缺失记录可能来自名单不完整，不代表未持有。待核实 {unknown} 家，不进入方向占比。披露股数未统一拆股复权。</p>
           {/* Consensus meter */}
           <div className="mb-6 rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-900">
             <h2 className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
-              <span className="font-mono text-lg font-bold text-gray-900 dark:text-white">{ticker}</span> — Consensus ({latestQ})
+              <span className="font-mono text-lg font-bold text-gray-900 dark:text-white">{ticker}</span> — 样本持仓方向 ({latestQ})
             </h2>
             <div className="mb-2 flex gap-4 text-xs text-gray-500 dark:text-gray-400">
-              <span className="text-green-600 dark:text-green-400">🟢 Buying: {buying}</span>
-              <span className="text-red-600 dark:text-red-400">🔴 Selling: {selling}</span>
-              <span className="text-gray-500">⚫ Holding: {holding}</span>
+              <span className="text-green-600 dark:text-green-400">🟢 增加: {buying}</span>
+              <span className="text-red-600 dark:text-red-400">🔴 减少: {selling}</span>
+              <span className="text-gray-500">⚫ 不变: {holding}</span>
             </div>
             <div className="h-3 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
               <div
@@ -192,8 +195,8 @@ export default function StockLookup() {
               />
             </div>
             <div className="mt-1 flex justify-between text-[10px] text-gray-400">
-              <span>Bullish</span>
-              <span>Bearish</span>
+              <span>增持机构 / 可比样本</span>
+              <span>不代表市场看多概率</span>
             </div>
           </div>
 
@@ -220,13 +223,13 @@ export default function StockLookup() {
                 {fundRows.map(r => (
                   <Link
                     key={r.fundId}
-                    to={`/fund/${r.fundId}`}
+                    to={`/fund/${r.fundId}?quarter=${encodeURIComponent(latestQ)}`}
                     className="flex items-center justify-between rounded-lg border border-gray-100 bg-gray-50 p-3 hover:border-gray-300 transition dark:border-gray-800 dark:bg-gray-800/50 dark:hover:border-gray-600"
                   >
                     <div>
                       <div className="font-medium text-gray-900 dark:text-white text-sm">{r.fundName}</div>
                       <div className="text-xs text-gray-500 dark:text-gray-400 font-mono mt-0.5">
-                        {fmtValue(r.value)} · {fmtShares(r.shares)} shares · {r.weight.toFixed(2)}%
+                        {fmtValue(r.value)} · {fmtShares(r.shares)} shares · {Number.isFinite(r.weight) ? r.weight.toFixed(2) + '%' : '本期记录缺失'}
                       </div>
                     </div>
                     <ActionBadge action={r.action} change={r.change} />

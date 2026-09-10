@@ -1,0 +1,2 @@
+openbb-sec==1.6.7
+openbb-core==1.6.13

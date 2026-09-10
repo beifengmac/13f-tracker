@@ -85,7 +85,7 @@ export default function CompareView() {
         const h = holdings.find(x => x.t === ticker);
         if (!h && !prevHolding) return null;
         return {
-          weight: h?.w ?? 0,
+          weight: h?.w ?? (getAction(fund, ticker, quarter) === 'cleared' ? 0 : NaN),
           value: h?.v ?? 0,
           action: getAction(fund, ticker, quarter),
         };
@@ -118,6 +118,7 @@ export default function CompareView() {
       </Link>
       <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Compare Funds</h1>
 
+      <p className="mb-4 text-xs text-gray-500">仅比较所选机构的已收录数据；空白不证明未持仓。待核实项目不参与方向判断，方向标签不表示所有机构一致行动。</p>
       {/* Controls */}
       <div className="mb-6 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
         <div className="flex flex-wrap items-center gap-3 mb-3">
@@ -165,9 +166,9 @@ export default function CompareView() {
         <>
           {/* Legend */}
           <div className="mb-3 flex flex-wrap gap-3 text-xs text-gray-500 dark:text-gray-400">
-            <span className="flex items-center gap-1"><span className="h-3 w-3 rounded bg-green-100 dark:bg-green-900/40" /> Consensus Buy</span>
-            <span className="flex items-center gap-1"><span className="h-3 w-3 rounded bg-red-100 dark:bg-red-900/40" /> Consensus Sell</span>
-            <span className="flex items-center gap-1"><span className="h-3 w-3 rounded bg-yellow-100 dark:bg-yellow-900/40" /> Divergence</span>
+            <span className="flex items-center gap-1"><span className="h-3 w-3 rounded bg-green-100 dark:bg-green-900/40" /> 仅观察到增加</span>
+            <span className="flex items-center gap-1"><span className="h-3 w-3 rounded bg-red-100 dark:bg-red-900/40" /> 仅观察到减少</span>
+            <span className="flex items-center gap-1"><span className="h-3 w-3 rounded bg-yellow-100 dark:bg-yellow-900/40" /> 双向调整</span>
           </div>
 
           <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-800">
@@ -198,7 +199,7 @@ export default function CompareView() {
                       <td key={selected[i]} className="px-3 py-2 text-center">
                         {cell ? (
                           <div className="flex flex-col items-center gap-0.5">
-                            <span className="font-mono text-xs tabular-nums text-gray-900 dark:text-white">{cell.weight.toFixed(2)}%</span>
+                            <span className="font-mono text-xs tabular-nums text-gray-900 dark:text-white">{Number.isFinite(cell.weight) ? cell.weight.toFixed(2) + '%' : '未知'}</span>
                             <ActionBadge action={cell.action} compact />
                           </div>
                         ) : (
@@ -207,8 +208,8 @@ export default function CompareView() {
                       </td>
                     ))}
                     <td className="px-3 py-2 text-center">
-                      {row.consensus === 'buy' && <span className="text-green-600 dark:text-green-400 text-xs font-medium">📈 All Buy</span>}
-                      {row.consensus === 'sell' && <span className="text-red-600 dark:text-red-400 text-xs font-medium">📉 All Sell</span>}
+                      {row.consensus === 'buy' && <span className="text-green-600 dark:text-green-400 text-xs font-medium">📈 有增加，无减少</span>}
+                      {row.consensus === 'sell' && <span className="text-red-600 dark:text-red-400 text-xs font-medium">📉 有减少，无增加</span>}
                       {row.consensus === 'mixed' && <span className="text-yellow-600 dark:text-yellow-400 text-xs font-medium">⚡ Diverge</span>}
                       {row.consensus === 'neutral' && <span className="text-gray-400 text-xs">—</span>}
                     </td>

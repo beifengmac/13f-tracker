@@ -60,7 +60,7 @@ export default function App() {
                 </div>
               </div>
               <div className="mt-3 text-center text-[10px] text-gray-400 dark:text-gray-500">
-                ⚠️ 本站仅展示公开 13F 持仓数据，不构成投资建议。13F 有 45 天延迟，仅反映美股多头持仓。
+                ⚠️ 本站仅展示公开 13F 持仓数据，不构成投资建议。13F 通常在季末后 45 天内披露，包含部分期权，不覆盖现金、空头及完整资产组合。
               </div>
             </div>
           </footer>

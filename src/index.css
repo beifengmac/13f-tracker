@@ -27,3 +27,63 @@
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+.deep-report { color: #253d41; background: #f3f1e9; border: 1px solid #e1e4dc; border-radius: 20px; padding: 18px; margin-bottom: 28px; }
+.report-hero { background: #102c31; color: #f6f7f2; border-radius: 14px; padding: 30px; }
+.report-eyebrow { font-size: 11px; letter-spacing: .16em; color: #9fc4b5; margin-bottom: 14px; }
+.report-hero h2 { font-size: clamp(25px, 3vw, 36px); line-height: 1.25; font-weight: 650; letter-spacing: -.03em; }
+.report-hero h2 span { font-size: .7em; font-weight: 400; color: #b6d0c5; }
+.report-print { border: 1px solid #53716d; border-radius: 8px; padding: 9px 13px; font-size: 12px; cursor: pointer; }
+.report-print:hover { background: #284740; }
+.report-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 26px; }
+.report-stats span { display: block; font-size: 11px; color: #b2c6c0; }
+.report-stats strong { display: block; font-size: 25px; margin-top: 5px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.report-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.report-block { background: #fffefa; border: 1px solid #e4e5df; border-radius: 12px; padding: 22px; margin-top: 16px; min-width: 0; }
+.report-block h3 { font-size: 17px; font-weight: 650; margin-bottom: 10px; }
+.report-block p, .report-bullets { font-size: 13px; line-height: 1.9; }
+.report-note { color: #617575; font-size: 11px !important; margin: 8px 0 14px; }
+.report-lead { font-weight: 600; margin: 12px 0; }
+.report-callout { background: #f3f4ed; padding: 12px 15px; border-radius: 8px; margin-top: 14px; font-size: 12px; }
+.report-bullets { padding-left: 18px; list-style: disc; }
+.report-bullets li { margin: 9px 0; }
+.report-source, .report-block a { color: #216d66; text-decoration: underline; text-underline-offset: 3px; }
+.report-source { display: inline-block; margin-top: 15px; font-size: 12px; }
+.report-table-scroll { overflow-x: auto; max-height: 450px; }
+.report-block table { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.report-block th { color: #617575; text-align: right; font-weight: 500; background: #f2f3ed; padding: 10px; white-space: nowrap; }
+.report-block td { text-align: right; padding: 10px; border-bottom: 1px solid #eceee6; white-space: nowrap; }
+.report-block td:first-child, .report-block th:first-child { text-align: left; }
+.report-block small { display: block; max-width: 150px; overflow: hidden; text-overflow: ellipsis; color: #788987; font-size: 10px; margin-top: 3px; }
+.report-quarter { border-bottom: 1px solid #e5e9df; font-size: 13px; padding: 12px 0; }
+.report-quarter summary { cursor: pointer; }
+.report-quarter strong { float: right; }
+.report-quarter p { margin-top: 12px; }
+.report-method { padding: 20px 8px 2px; font-size: 12px; color: #617575; line-height: 1.9; }
+.report-method summary { cursor: pointer; }
+.dark .deep-report { background: #13272b; border-color: #294246; color: #d3e1dc; }
+.dark .report-block { background: #193237; border-color: #2c464a; }
+.dark .report-callout, .dark .report-block th { background: #213d3f; }
+.dark .report-note, .dark .report-method, .dark .report-block th { color: #a1bab2; }
+.dark .report-block td, .dark .report-quarter { border-color: #2c464a; }
+.dark .report-source, .dark .report-block a { color: #8dc9b4; }
+@media (max-width: 700px) { .deep-report { padding: 10px; } .report-hero { padding: 20px; } .report-grid { grid-template-columns: 1fr; gap: 0; } .report-stats { grid-template-columns: repeat(2, 1fr); } .report-block { padding: 17px; } }
+@media print {
+  @page { size: A4; margin: 12mm; }
+  body * { visibility: hidden; }
+  #deep-report, #deep-report * { visibility: visible; }
+  #deep-report { position: absolute; left: 0; top: 0; width: 100%; background: white; color: #253d41; padding: 0; border: 0; }
+  .report-print { display: none; }
+  .report-hero { background: #102c31 !important; print-color-adjust: exact; }
+  .report-grid { display: block; }
+  .report-block { background: white !important; color: #253d41 !important; break-inside: avoid; }
+  .report-table-scroll { overflow: visible; max-height: none; }
+  .report-block th { color: #253d41 !important; }
+  .report-note, .report-method { color: #617575 !important; }
+}
+@media print {
+  nav, footer, main > div > :not(#deep-report) { display: none !important; }
+  #deep-report { position: static; }
+  .report-block { break-inside: auto; }
+  .report-block tr, .report-callout { break-inside: avoid; }
+}

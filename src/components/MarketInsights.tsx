@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import rawData from '../data.json';
 import type { Data } from '../types';
 import { generateMarketInsights, type Insight } from '../analysis';
@@ -7,10 +8,10 @@ const data = rawData as unknown as Data;
 
 function SignalBadge({ signal }: { signal: Insight['signal'] }) {
   const config = {
-    bullish:   { label: '看多信号', icon: '↑', cls: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300' },
-    bearish:   { label: '看空信号', icon: '↓', cls: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300' },
-    neutral:   { label: '中性信号', icon: '—', cls: 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400' },
-    divergent: { label: '分歧信号', icon: '⇄', cls: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300' },
+    bullish:   { label: '增加记录', icon: '↑', cls: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300' },
+    bearish:   { label: '减少记录', icon: '↓', cls: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300' },
+    neutral:   { label: '持仓观察', icon: '—', cls: 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400' },
+    divergent: { label: '双向调整', icon: '⇄', cls: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300' },
   };
   const c = config[signal];
   return (
@@ -20,8 +21,8 @@ function SignalBadge({ signal }: { signal: Insight['signal'] }) {
   );
 }
 
-export default function MarketInsights() {
-  const insights = useMemo(() => generateMarketInsights(data), []);
+export default function MarketInsights({ quarter }: { quarter: string }) {
+  const insights = useMemo(() => generateMarketInsights(data, quarter), [quarter]);
 
   if (insights.length === 0) return null;
 
@@ -32,13 +33,13 @@ export default function MarketInsights() {
           💡
         </div>
         <div>
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white">持仓变动深度解读</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400">基于 9 位顶级投资人的最新 13F 变化，提炼组合动作背后的市场信号</p>
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white">机构证据摘要</h2>
+          <p className="text-sm text-gray-500 dark:text-gray-400">先看可核对的变化，再进入机构深度报告查看历史证据</p>
         </div>
       </div>
 
       <div className="mb-6 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-xs text-amber-800 dark:border-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
-        ⚠️ 以下分析仅基于 13F 公开持仓数据的变化趋势，不构成投资建议。13F 有 45 天延迟，且不反映空头、衍生品和非美股资产。投资者应独立研究、审慎决策。
+        ⚠️ 以下分析仅基于 13F 公开持仓数据的变化趋势，不构成投资建议。13F 通常在季末后 45 天内披露，包含部分期权，但不覆盖空头、现金及完整资产组合。
       </div>
 
       <div className="space-y-4">
@@ -65,6 +66,7 @@ export default function MarketInsights() {
             </summary>
 
             <div className="border-t border-gray-100 px-5 py-4 dark:border-gray-800">
+              <Link className="inline-block mb-4 text-blue-600 hover:underline" to={`/fund/${insight.id}?quarter=${encodeURIComponent(quarter)}`}>查看深度报告 →</Link>
               <ul className="space-y-2">
                 {insight.details.map((d, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300">
