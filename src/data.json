@@ -82,7 +82,7 @@
               "w": 4.300101046559243
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -390,7 +390,7 @@
               "w": 5.929428607658505
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LTD SWITZ",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -698,7 +698,7 @@
               "w": 3.9737336583502993
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -1136,7 +1136,7 @@
               "w": 4.396984203325407
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -1514,7 +1514,7 @@
               "w": 16.29895102362028
             },
             {
-              "t": "IEMG [464287200 CORE SP500 ETF]",
+              "t": "464287200",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "CORE SP500 ETF",
@@ -1574,7 +1574,7 @@
               "w": 1.6678666015549297
             },
             {
-              "t": "VWO [922908363 SP 500 ETF SHS]",
+              "t": "922908363",
               "n": "VANGUARD INDEX FDS",
               "cusip": "922908363",
               "asset_class": "SP 500 ETF SHS",
@@ -1664,7 +1664,7 @@
               "w": 0.6971595534453495
             },
             {
-              "t": "VWO [922042858 FTSE EMR MKT ETF]",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "cusip": "922042858",
               "asset_class": "FTSE EMR MKT ETF",
@@ -1734,7 +1734,7 @@
               "w": 0.5046049859095245
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HLDG NV",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -1784,7 +1784,7 @@
               "w": 0.4854703762819306
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "SEA LTD",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -1834,7 +1834,7 @@
               "w": 0.4517743603529947
             },
             {
-              "t": "IEMG [46434G103 CORE MSCI EMKT]",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "cusip": "46434G103",
               "asset_class": "CORE MSCI EMKT",
@@ -2304,7 +2304,7 @@
               "w": 0.20333535056580718
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -2334,7 +2334,7 @@
               "w": 0.19823515534591435
             },
             {
-              "t": "TSM [880770102 COM]",
+              "t": "TER",
               "n": "TERADYNE INC",
               "cusip": "880770102",
               "asset_class": "COM",
@@ -2534,7 +2534,7 @@
               "w": 0.15973883647023632
             },
             {
-              "t": "SPGI [78409V104 COM]",
+              "t": "SPGI",
               "n": "SP GLOBAL INC",
               "cusip": "78409V104",
               "asset_class": "COM",
@@ -2754,7 +2754,7 @@
               "w": 0.13153773457662565
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "REGENERON PHARMACEUTICALS",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -3034,7 +3034,7 @@
               "w": 0.11077482830054591
             },
             {
-              "t": "VIPS [92556V106 COM]",
+              "t": "92556V106",
               "n": "VIATRIS INC",
               "cusip": "92556V106",
               "asset_class": "COM",
@@ -3304,7 +3304,7 @@
               "w": 0.09495087725223955
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -3324,7 +3324,7 @@
               "w": 0.09293810953665006
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "COMCAST CORP NEW",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -3914,7 +3914,7 @@
               "w": 0.06773965533670921
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MANUFAC",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -5884,7 +5884,7 @@
               "w": 0.02469451358646781
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -5984,7 +5984,7 @@
               "w": 0.02380029293406024
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -6414,7 +6414,7 @@
               "w": 0.019635059114634673
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -6894,7 +6894,7 @@
               "w": 0.015272242307715504
             },
             {
-              "t": "SPGI [78467J100 COM]",
+              "t": "78467J100",
               "n": "SSC TECH HLDGS",
               "cusip": "78467J100",
               "asset_class": "COM",
@@ -7024,7 +7024,7 @@
               "w": 0.014665651910942738
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "ROKU INC",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -7144,7 +7144,7 @@
               "w": 0.013867299805650962
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "TARGET CORP",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -8714,7 +8714,7 @@
               "w": 0.007870020471247482
             },
             {
-              "t": "SE [85208M102 COM]",
+              "t": "85208M102",
               "n": "SPROUTS FMRS MKT INC",
               "cusip": "85208M102",
               "asset_class": "COM",
@@ -8884,7 +8884,7 @@
               "w": 0.007329273293320559
             },
             {
-              "t": "TXRH [882681109 COM]",
+              "t": "TXRH",
               "n": "TEXAS ROADHOUSE INC",
               "cusip": "882681109",
               "asset_class": "COM",
@@ -8924,7 +8924,7 @@
               "w": 0.007162359707951036
             },
             {
-              "t": "ASML [G0750C108 COM]",
+              "t": "G0750C108",
               "n": "AXALTA COATING SYS LTD",
               "cusip": "G0750C108",
               "asset_class": "COM",
@@ -9664,7 +9664,7 @@
               "w": 0.004724888872471524
             },
             {
-              "t": "RKLB [773121108 COM]",
+              "t": "RKLB",
               "n": "ROCKET LAB CORP",
               "cusip": "773121108",
               "asset_class": "COM",
@@ -11274,7 +11274,7 @@
               "w": 0.0010264486044224753
             },
             {
-              "t": "CRDO [26856L103 COM]",
+              "t": "26856L103",
               "n": "E L F BEAUTY INC",
               "cusip": "26856L103",
               "asset_class": "COM",
@@ -11334,7 +11334,7 @@
               "w": 0.0009604125736585167
             },
             {
-              "t": "DIS [253868103 COM]",
+              "t": "253868103",
               "n": "DIGITAL RLTY TR INC",
               "cusip": "253868103",
               "asset_class": "COM",
@@ -11424,7 +11424,7 @@
               "w": 0.0008070368463694488
             },
             {
-              "t": "PACB [69404D108 COM]",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "cusip": "69404D108",
               "asset_class": "COM",
@@ -11454,7 +11454,7 @@
               "w": 0.0005671049773714436
             },
             {
-              "t": "TEM [87918A105 COM]",
+              "t": "87918A105",
               "n": "TELADOC HEALTH INC",
               "cusip": "87918A105",
               "asset_class": "COM",
@@ -11502,7 +11502,7 @@
               "w": 12.669947426355069
             },
             {
-              "t": "IEMG [464287200 CORE SP500 ETF]",
+              "t": "464287200",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "CORE SP500 ETF",
@@ -11582,7 +11582,7 @@
               "w": 1.694395282310051
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MANUFAC",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -11712,7 +11712,7 @@
               "w": 0.6608342565124081
             },
             {
-              "t": "VWO [922042858 FTSE EMR MKT ETF]",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "cusip": "922042858",
               "asset_class": "FTSE EMR MKT ETF",
@@ -11772,7 +11772,7 @@
               "w": 0.5605991623304135
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HLDG NV",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -11822,7 +11822,7 @@
               "w": 0.49550384993089486
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "SEA LTD",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -11862,7 +11862,7 @@
               "w": 0.4668386466623658
             },
             {
-              "t": "TSM [880770102 COM]",
+              "t": "TER",
               "n": "TERADYNE INC",
               "cusip": "880770102",
               "asset_class": "COM",
@@ -11882,7 +11882,7 @@
               "w": 0.4351933920959798
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -11892,7 +11892,7 @@
               "w": 0.4307934504652558
             },
             {
-              "t": "VWO [922908363 SP 500 ETF SHS]",
+              "t": "922908363",
               "n": "VANGUARD INDEX FDS",
               "cusip": "922908363",
               "asset_class": "SP 500 ETF SHS",
@@ -11902,7 +11902,7 @@
               "w": 0.4230755484538432
             },
             {
-              "t": "IEMG [46434G103 CORE MSCI EMKT]",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "cusip": "46434G103",
               "asset_class": "CORE MSCI EMKT",
@@ -12362,7 +12362,7 @@
               "w": 0.18641173420262863
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -12462,7 +12462,7 @@
               "w": 0.1569464076453059
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "COMCAST CORP NEW",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -13202,7 +13202,7 @@
               "w": 0.08218290610807891
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "ROKU INC",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -13272,7 +13272,7 @@
               "w": 0.07875158034777108
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "REGENERON PHARMACEUTICALS",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -13542,7 +13542,7 @@
               "w": 0.06526926369444769
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LTD SWITZ",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -13572,7 +13572,7 @@
               "w": 0.06312008837114276
             },
             {
-              "t": "SPGI [78409V104 COM]",
+              "t": "SPGI",
               "n": "SP GLOBAL INC",
               "cusip": "78409V104",
               "asset_class": "COM",
@@ -13742,7 +13742,7 @@
               "w": 0.056830766892767205
             },
             {
-              "t": "SE [85208M102 COM]",
+              "t": "85208M102",
               "n": "SPROUTS FMRS MKT INC",
               "cusip": "85208M102",
               "asset_class": "COM",
@@ -13822,7 +13822,7 @@
               "w": 0.05473647774896454
             },
             {
-              "t": "CRDO [26856L103 COM]",
+              "t": "26856L103",
               "n": "E L F BEAUTY INC",
               "cusip": "26856L103",
               "asset_class": "COM",
@@ -14182,7 +14182,7 @@
               "w": 0.043840287896114064
             },
             {
-              "t": "VIPS [92556V106 COM]",
+              "t": "92556V106",
               "n": "VIATRIS INC",
               "cusip": "92556V106",
               "asset_class": "COM",
@@ -16842,7 +16842,7 @@
               "w": 0.014166539362859117
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "TARGET CORP",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -16902,7 +16902,7 @@
               "w": 0.01384876012222939
             },
             {
-              "t": "ASML [G0750C108 COM]",
+              "t": "G0750C108",
               "n": "AXALTA COATING SYS LTD",
               "cusip": "G0750C108",
               "asset_class": "COM",
@@ -17402,7 +17402,7 @@
               "w": 0.011785611978214273
             },
             {
-              "t": "DIS [253868103 COM]",
+              "t": "253868103",
               "n": "DIGITAL RLTY TR INC",
               "cusip": "253868103",
               "asset_class": "COM",
@@ -17692,7 +17692,7 @@
               "w": 0.010473302484945872
             },
             {
-              "t": "SPGI [78467J100 COM]",
+              "t": "78467J100",
               "n": "SSC TECH HLDGS",
               "cusip": "78467J100",
               "asset_class": "COM",
@@ -17762,7 +17762,7 @@
               "w": 0.01028908095345225
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -19262,7 +19262,7 @@
               "w": 0.004835384485571751
             },
             {
-              "t": "RKLB [773121108 COM]",
+              "t": "RKLB",
               "n": "ROCKET LAB CORP",
               "cusip": "773121108",
               "asset_class": "COM",
@@ -20012,7 +20012,7 @@
               "w": 0.002850666848689597
             },
             {
-              "t": "TXRH [882681109 COM]",
+              "t": "TXRH",
               "n": "TEXAS ROADHOUSE INC",
               "cusip": "882681109",
               "asset_class": "COM",
@@ -21042,7 +21042,7 @@
               "w": 0.0012046304593176427
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -21392,7 +21392,7 @@
               "w": 0.0004258019548131985
             },
             {
-              "t": "TEM [87918A105 COM]",
+              "t": "87918A105",
               "n": "TELADOC HEALTH INC",
               "cusip": "87918A105",
               "asset_class": "COM",
@@ -21450,7 +21450,7 @@
               "w": 11.079709793287538
             },
             {
-              "t": "IEMG [464287200 CORE SP500 ETF]",
+              "t": "464287200",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "CORE SP500 ETF",
@@ -21650,7 +21650,7 @@
               "w": 0.7347293498079285
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "SEA LTD",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -21750,7 +21750,7 @@
               "w": 0.5384905276379206
             },
             {
-              "t": "VWO [922042858 FTSE EMR MKT ETF]",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "cusip": "922042858",
               "asset_class": "FTSE EMR MKT ETF",
@@ -21840,7 +21840,7 @@
               "w": 0.3841100478366703
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "COMCAST CORP NEW",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -21910,7 +21910,7 @@
               "w": 0.33918712653681915
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HOLDING N V",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -21930,7 +21930,7 @@
               "w": 0.3157350969084083
             },
             {
-              "t": "IEMG [46434G103 CORE MSCI EMKT]",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "cusip": "46434G103",
               "asset_class": "CORE MSCI EMKT",
@@ -22210,7 +22210,7 @@
               "w": 0.20929892877862033
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "REGENERON PHARMACEUTICALS",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -22370,7 +22370,7 @@
               "w": 0.17002747646089217
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -22520,7 +22520,7 @@
               "w": 0.15023414105164648
             },
             {
-              "t": "SPGI [78409V104 COM]",
+              "t": "SPGI",
               "n": "SP GLOBAL INC",
               "cusip": "78409V104",
               "asset_class": "COM",
@@ -22590,7 +22590,7 @@
               "w": 0.14222371535745604
             },
             {
-              "t": "TSM [880770102 COM]",
+              "t": "TER",
               "n": "TERADYNE INC",
               "cusip": "880770102",
               "asset_class": "COM",
@@ -23180,7 +23180,7 @@
               "w": 0.08544962067245333
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "ROKU INC",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -23200,7 +23200,7 @@
               "w": 0.08376448279958874
             },
             {
-              "t": "VWO [922908363 SP 500 ETF SHS]",
+              "t": "922908363",
               "n": "VANGUARD INDEX FDS",
               "cusip": "922908363",
               "asset_class": "SP 500 ETF SHS",
@@ -23730,7 +23730,7 @@
               "w": 0.06471331742184337
             },
             {
-              "t": "VIPS [92556V106 COM]",
+              "t": "92556V106",
               "n": "VIATRIS INC",
               "cusip": "92556V106",
               "asset_class": "COM",
@@ -23750,7 +23750,7 @@
               "w": 0.06464378832658953
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -24200,7 +24200,7 @@
               "w": 0.049838722420663596
             },
             {
-              "t": "SE [85208M102 COM]",
+              "t": "85208M102",
               "n": "SPROUTS FMRS MKT INC",
               "cusip": "85208M102",
               "asset_class": "COM",
@@ -25250,7 +25250,7 @@
               "w": 0.03314302380721696
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -27110,7 +27110,7 @@
               "w": 0.016334177221545388
             },
             {
-              "t": "TEM [87918A105 COM]",
+              "t": "87918A105",
               "n": "TELADOC HEALTH INC",
               "cusip": "87918A105",
               "asset_class": "COM",
@@ -27480,7 +27480,7 @@
               "w": 0.014185860920206825
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "TARGET CORP",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -28070,7 +28070,7 @@
               "w": 0.011163464043283115
             },
             {
-              "t": "ASML [G0750C108 COM]",
+              "t": "G0750C108",
               "n": "AXALTA COATING SYS LTD",
               "cusip": "G0750C108",
               "asset_class": "COM",
@@ -28090,7 +28090,7 @@
               "w": 0.011120049384781231
             },
             {
-              "t": "RKLB [773121108 COM]",
+              "t": "RKLB",
               "n": "ROCKET LAB CORP",
               "cusip": "773121108",
               "asset_class": "COM",
@@ -28990,7 +28990,7 @@
               "w": 0.00768698375328262
             },
             {
-              "t": "PACB [69553P100 COM]",
+              "t": "69553P100",
               "n": "PAGERDUTY INC",
               "cusip": "69553P100",
               "asset_class": "COM",
@@ -29830,7 +29830,7 @@
               "w": 0.004915790180537306
             },
             {
-              "t": "TXRH [882681109 COM]",
+              "t": "TXRH",
               "n": "TEXAS ROADHOUSE INC",
               "cusip": "882681109",
               "asset_class": "COM",
@@ -31540,7 +31540,7 @@
               "w": 0.0010990819208104938
             },
             {
-              "t": "DIS [253868103 COM]",
+              "t": "253868103",
               "n": "DIGITAL RLTY TR INC",
               "cusip": "253868103",
               "asset_class": "COM",
@@ -31590,7 +31590,7 @@
               "w": 0.0010168292855723584
             },
             {
-              "t": "CRDO [26856L103 COM]",
+              "t": "26856L103",
               "n": "E L F BEAUTY INC",
               "cusip": "26856L103",
               "asset_class": "COM",
@@ -31858,7 +31858,7 @@
           "total": 25527677108,
           "holdings": [
             {
-              "t": "IEMG [464287200 CORE SP500 ETF]",
+              "t": "464287200",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "CORE SP500 ETF",
@@ -31998,7 +31998,7 @@
               "w": 1.1375138159711324
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "SEA LTD",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -32068,7 +32068,7 @@
               "w": 0.9039489806445573
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "COMCAST CORP NEW",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -32188,7 +32188,7 @@
               "w": 0.5349984310056951
             },
             {
-              "t": "VWO [922042858 FTSE EMR MKT ETF]",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "cusip": "922042858",
               "asset_class": "FTSE EMR MKT ETF",
@@ -32208,7 +32208,7 @@
               "w": 0.5200049868947911
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "REGENERON PHARMACEUTICALS",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -32408,7 +32408,7 @@
               "w": 0.3438825225993218
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HOLDING N V",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -32478,7 +32478,7 @@
               "w": 0.312238777789229
             },
             {
-              "t": "IEMG [46434G103 CORE MSCI EMKT]",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "cusip": "46434G103",
               "asset_class": "CORE MSCI EMKT",
@@ -32678,7 +32678,7 @@
               "w": 0.20600442718511058
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -33328,7 +33328,7 @@
               "w": 0.1129142180780987
             },
             {
-              "t": "TSM [880770102 COM]",
+              "t": "TER",
               "n": "TERADYNE INC",
               "cusip": "880770102",
               "asset_class": "COM",
@@ -33768,7 +33768,7 @@
               "w": 0.0833958957955024
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "ROKU INC",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -33958,7 +33958,7 @@
               "w": 0.07445353887700075
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -34388,7 +34388,7 @@
               "w": 0.05879583534569361
             },
             {
-              "t": "VIPS [92556V106 COM]",
+              "t": "92556V106",
               "n": "VIATRIS INC",
               "cusip": "92556V106",
               "asset_class": "COM",
@@ -34398,7 +34398,7 @@
               "w": 0.058639702847498115
             },
             {
-              "t": "SE [85208M102 COM]",
+              "t": "85208M102",
               "n": "SPROUTS FMRS MKT INC",
               "cusip": "85208M102",
               "asset_class": "COM",
@@ -34538,7 +34538,7 @@
               "w": 0.053612774644940096
             },
             {
-              "t": "SPGI [78409V104 COM]",
+              "t": "SPGI",
               "n": "SP GLOBAL INC",
               "cusip": "78409V104",
               "asset_class": "COM",
@@ -35448,7 +35448,7 @@
               "w": 0.03422168794693139
             },
             {
-              "t": "RKLB [773121108 COM]",
+              "t": "RKLB",
               "n": "ROCKET LAB CORP",
               "cusip": "773121108",
               "asset_class": "COM",
@@ -36878,7 +36878,7 @@
               "w": 0.01904373429447876
             },
             {
-              "t": "TXRH [882681109 COM]",
+              "t": "TXRH",
               "n": "TEXAS ROADHOUSE INC",
               "cusip": "882681109",
               "asset_class": "COM",
@@ -37318,7 +37318,7 @@
               "w": 0.015458437457136766
             },
             {
-              "t": "ASML [G0750C108 COM]",
+              "t": "G0750C108",
               "n": "AXALTA COATING SYS LTD",
               "cusip": "G0750C108",
               "asset_class": "COM",
@@ -37438,7 +37438,7 @@
               "w": 0.014656911336548702
             },
             {
-              "t": "TEM [87918A105 COM]",
+              "t": "87918A105",
               "n": "TELADOC HEALTH INC",
               "cusip": "87918A105",
               "asset_class": "COM",
@@ -38288,7 +38288,7 @@
               "w": 0.011003515862866029
             },
             {
-              "t": "CRDO [26856L103 COM]",
+              "t": "26856L103",
               "n": "E L F BEAUTY INC",
               "cusip": "26856L103",
               "asset_class": "COM",
@@ -38498,7 +38498,7 @@
               "w": 0.010174235552305937
             },
             {
-              "t": "SPGI [78467J100 COM]",
+              "t": "78467J100",
               "n": "SSC TECHNOLOGIES HLDGS INC",
               "cusip": "78467J100",
               "asset_class": "COM",
@@ -38648,7 +38648,7 @@
               "w": 0.009685832320501787
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "TARGET CORP",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -39328,7 +39328,7 @@
               "w": 0.00704102841945113
             },
             {
-              "t": "PACB [69553P100 COM]",
+              "t": "69553P100",
               "n": "PAGERDUTY INC",
               "cusip": "69553P100",
               "asset_class": "COM",
@@ -39988,7 +39988,7 @@
               "w": 0.005108533747441193
             },
             {
-              "t": "VWO [922908363 SP 500 ETF SHS]",
+              "t": "922908363",
               "n": "VANGUARD INDEX FDS",
               "cusip": "922908363",
               "asset_class": "SP 500 ETF SHS",
@@ -40448,7 +40448,7 @@
               "w": 0.003544403966612566
             },
             {
-              "t": "DIS [253868103 COM]",
+              "t": "253868103",
               "n": "DIGITAL RLTY TR INC",
               "cusip": "253868103",
               "asset_class": "COM",
@@ -42156,7 +42156,7 @@
               "w": 1.003413232903846
             },
             {
-              "t": "IEMG [464287200 CORE SP500 ETF]",
+              "t": "464287200",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "CORE SP500 ETF",
@@ -42776,7 +42776,7 @@
               "w": 0.19635929735925114
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -43036,7 +43036,7 @@
               "w": 0.1486929356629292
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -43056,7 +43056,7 @@
               "w": 0.14515891882464474
             },
             {
-              "t": "SPGI [78409V104 COM]",
+              "t": "SPGI",
               "n": "SP GLOBAL INC",
               "cusip": "78409V104",
               "asset_class": "COM",
@@ -43096,7 +43096,7 @@
               "w": 0.14291580608141152
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MANUFAC",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -43147,7 +43147,7 @@
               "w": 0.13975152036879826
             },
             {
-              "t": "TSM [880770102 COM]",
+              "t": "TER",
               "n": "TERADYNE INC",
               "cusip": "880770102",
               "asset_class": "COM",
@@ -43377,7 +43377,7 @@
               "w": 0.1148264261766337
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "COMCAST CORP NEW",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -43447,7 +43447,7 @@
               "w": 0.10838552480734853
             },
             {
-              "t": "DIS [253868103 COM]",
+              "t": "253868103",
               "n": "DIGITAL RLTY TR INC",
               "cusip": "253868103",
               "asset_class": "COM",
@@ -43637,7 +43637,7 @@
               "w": 0.09783443277834063
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -43977,7 +43977,7 @@
               "w": 0.08569352852626992
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "REGENERON PHARMACEUTICALS",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -44237,7 +44237,7 @@
               "w": 0.07533909957760054
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "TARGET CORP",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -44347,7 +44347,7 @@
               "w": 0.07223936959795042
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -44637,7 +44637,7 @@
               "w": 0.06149247371541006
             },
             {
-              "t": "RKLB [773121108 COM]",
+              "t": "RKLB",
               "n": "ROCKET LAB CORP",
               "cusip": "773121108",
               "asset_class": "COM",
@@ -44837,7 +44837,7 @@
               "w": 0.054737125352011
             },
             {
-              "t": "IEMG [46434G103 CORE MSCI EMKT]",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "cusip": "46434G103",
               "asset_class": "CORE MSCI EMKT",
@@ -45187,7 +45187,7 @@
               "w": 0.047225659271591475
             },
             {
-              "t": "IBIT [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -45797,7 +45797,7 @@
               "w": 0.03790744560654716
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HLDG NV",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -46447,7 +46447,7 @@
               "w": 0.030300936992999405
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "SEA LTD",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -46697,7 +46697,7 @@
               "w": 0.027530537330856
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "ROKU INC",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -47317,7 +47317,7 @@
               "w": 0.023402943487036143
             },
             {
-              "t": "VWO [922908363 SP 500 ETF SHS]",
+              "t": "922908363",
               "n": "VANGUARD INDEX FDS",
               "cusip": "922908363",
               "asset_class": "SP 500 ETF SHS",
@@ -47977,7 +47977,7 @@
               "w": 0.020321756130663116
             },
             {
-              "t": "VIPS [92556V106 COM]",
+              "t": "92556V106",
               "n": "VIATRIS INC",
               "cusip": "92556V106",
               "asset_class": "COM",
@@ -48247,7 +48247,7 @@
               "w": 0.019414020962106347
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "ISHARES TR",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -48347,7 +48347,7 @@
               "w": 0.01898427319620814
             },
             {
-              "t": "TXRH [882681109 COM]",
+              "t": "TXRH",
               "n": "TEXAS ROADHOUSE INC",
               "cusip": "882681109",
               "asset_class": "COM",
@@ -49509,7 +49509,7 @@
               "w": 0.015639470680982766
             },
             {
-              "t": "SPGI [78467J100 COM]",
+              "t": "78467J100",
               "n": "SSC TECH HLDGS",
               "cusip": "78467J100",
               "asset_class": "COM",
@@ -49909,7 +49909,7 @@
               "w": 0.014565542693228739
             },
             {
-              "t": "ROKU [76954A103 COM CL A]",
+              "t": "76954A103",
               "n": "RIVIAN AUTOMOTIVE INC",
               "cusip": "76954A103",
               "asset_class": "COM CL A",
@@ -50279,7 +50279,7 @@
               "w": 0.013530780807898848
             },
             {
-              "t": "IEMG PUT [464287200 OPTIONS]",
+              "t": "464287200 PUT",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "OPTIONS",
@@ -51130,7 +51130,7 @@
               "w": 0.01141927291102627
             },
             {
-              "t": "SE [85208M102 COM]",
+              "t": "85208M102",
               "n": "SPROUTS FMRS MKT INC",
               "cusip": "85208M102",
               "asset_class": "COM",
@@ -52040,7 +52040,7 @@
               "w": 0.009969598481825244
             },
             {
-              "t": "ASML [G0750C108 COM]",
+              "t": "G0750C108",
               "n": "AXALTA COATING SYS LTD",
               "cusip": "G0750C108",
               "asset_class": "COM",
@@ -53832,7 +53832,7 @@
               "w": 0.007848576574655984
             },
             {
-              "t": "EQX [29414B104 COM]",
+              "t": "29414B104",
               "n": "EPAM SYS INC",
               "cusip": "29414B104",
               "asset_class": "COM",
@@ -54433,7 +54433,7 @@
               "w": 0.007141014652770314
             },
             {
-              "t": "TEM [88023B103 CL A]",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "cusip": "88023B103",
               "asset_class": "CL A",
@@ -55373,7 +55373,7 @@
               "w": 0.006364842648667795
             },
             {
-              "t": "CRDO [26856L103 COM]",
+              "t": "26856L103",
               "n": "E L F BEAUTY INC",
               "cusip": "26856L103",
               "asset_class": "COM",
@@ -56753,7 +56753,7 @@
               "w": 0.005114072047765324
             },
             {
-              "t": "COHR [19247A100 COM]",
+              "t": "19247A100",
               "n": "COHEN  STEERS INC",
               "cusip": "19247A100",
               "asset_class": "COM",
@@ -58064,7 +58064,7 @@
               "w": 0.0040654586036793635
             },
             {
-              "t": "VWO [922042858 FTSE EMR MKT ETF]",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "cusip": "922042858",
               "asset_class": "FTSE EMR MKT ETF",
@@ -58524,7 +58524,7 @@
               "w": 0.003755131149023579
             },
             {
-              "t": "VIPS [92763W103 SPONSORED ADS A]",
+              "t": "VIPS",
               "n": "VIPSHOP HLDGS LTD",
               "cusip": "92763W103",
               "asset_class": "SPONSORED ADS A",
@@ -62317,7 +62317,7 @@
               "w": 0.002048870690672279
             },
             {
-              "t": "TEM [87918A105 COM]",
+              "t": "87918A105",
               "n": "TELADOC HEALTH INC",
               "cusip": "87918A105",
               "asset_class": "COM",
@@ -62387,7 +62387,7 @@
               "w": 0.002033384190715393
             },
             {
-              "t": "LEGN [52490G102 SPONSORED ADS]",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "cusip": "52490G102",
               "asset_class": "SPONSORED ADS",
@@ -64519,7 +64519,7 @@
               "w": 0.001424063089555676
             },
             {
-              "t": "IBIT CALL [464287655 OPTIONS]",
+              "t": "464287655 CALL",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "OPTIONS",
@@ -64922,7 +64922,7 @@
               "w": 0.0013292863695973046
             },
             {
-              "t": "PACB [69553P100 COM]",
+              "t": "69553P100",
               "n": "PAGERDUTY INC",
               "cusip": "69553P100",
               "asset_class": "COM",
@@ -68057,7 +68057,7 @@
               "w": 0.000844730225409107
             },
             {
-              "t": "IBIT CALL [464287234 OPTIONS]",
+              "t": "464287234 CALL",
               "n": "ISHARES TR",
               "cusip": "464287234",
               "asset_class": "OPTIONS",
@@ -68319,7 +68319,7 @@
               "w": 0.0008081631124420242
             },
             {
-              "t": "PACB [69404D108 COM]",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "cusip": "69404D108",
               "asset_class": "COM",
@@ -68329,7 +68329,7 @@
               "w": 0.0008073427738886981
             },
             {
-              "t": "LEGN [52603B107 COM]",
+              "t": "52603B107",
               "n": "LENDINGTREE INC",
               "cusip": "52603B107",
               "asset_class": "COM",
@@ -77237,7 +77237,7 @@
               "w": 0.0001983652029649341
             },
             {
-              "t": "IBIT [46267X108 SPONSORED ADS]",
+              "t": "46267X108",
               "n": "IQIYI INC",
               "cusip": "46267X108",
               "asset_class": "SPONSORED ADS",
@@ -77497,7 +77497,7 @@
               "w": 0.00018954731765455683
             },
             {
-              "t": "IEMG CALL [464287200 OPTIONS]",
+              "t": "464287200 CALL",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "OPTIONS",
@@ -80749,7 +80749,7 @@
               "w": 9.168793466658763e-05
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -99168,7 +99168,7 @@
               "w": 1.0148053579909002
             },
             {
-              "t": "IEMG [464287200 CORE SP500 ETF]",
+              "t": "464287200",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "CORE SP500 ETF",
@@ -99739,7 +99739,7 @@
               "o": "CALL"
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -99969,7 +99969,7 @@
               "w": 0.1802611434878876
             },
             {
-              "t": "SPGI [78409V104 COM]",
+              "t": "SPGI",
               "n": "SP GLOBAL INC",
               "cusip": "78409V104",
               "asset_class": "COM",
@@ -100109,7 +100109,7 @@
               "w": 0.1599010337082314
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LTD SWITZ",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -100159,7 +100159,7 @@
               "w": 0.15800671201528776
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "COMCAST CORP NEW",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -100349,7 +100349,7 @@
               "w": 0.12454143883113787
             },
             {
-              "t": "DIS [253868103 COM]",
+              "t": "253868103",
               "n": "DIGITAL RLTY TR INC",
               "cusip": "253868103",
               "asset_class": "COM",
@@ -100379,7 +100379,7 @@
               "w": 0.12124327940972152
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "REGENERON PHARMACEUTICALS",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -100639,7 +100639,7 @@
               "w": 0.10780253067398686
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MANUFAC",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -101109,7 +101109,7 @@
               "w": 0.08463814426556407
             },
             {
-              "t": "TSM [880770102 COM]",
+              "t": "TER",
               "n": "TERADYNE INC",
               "cusip": "880770102",
               "asset_class": "COM",
@@ -101149,7 +101149,7 @@
               "w": 0.08041032820827483
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "TARGET CORP",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -101679,7 +101679,7 @@
               "w": 0.06234570901826344
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -101699,7 +101699,7 @@
               "w": 0.06180053430869402
             },
             {
-              "t": "IEMG [46434G103 CORE MSCI EMKT]",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "cusip": "46434G103",
               "asset_class": "CORE MSCI EMKT",
@@ -102430,7 +102430,7 @@
               "w": 0.04549397635672974
             },
             {
-              "t": "IBIT [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -102610,7 +102610,7 @@
               "w": 0.04275266973217863
             },
             {
-              "t": "RKLB [773121108 COM]",
+              "t": "RKLB",
               "n": "ROCKET LAB CORP",
               "cusip": "773121108",
               "asset_class": "COM",
@@ -103380,7 +103380,7 @@
               "w": 0.032558716290277914
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -103610,7 +103610,7 @@
               "w": 0.030422504304548383
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "SEA LTD",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -103820,7 +103820,7 @@
               "w": 0.028351007032585484
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HLDG NV",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -104450,7 +104450,7 @@
               "w": 0.023954115273135363
             },
             {
-              "t": "SPGI [78467J100 COM]",
+              "t": "78467J100",
               "n": "SSC TECH HLDGS",
               "cusip": "78467J100",
               "asset_class": "COM",
@@ -104840,7 +104840,7 @@
               "w": 0.022137768149445285
             },
             {
-              "t": "VWO [922908363 SP 500 ETF SHS]",
+              "t": "922908363",
               "n": "VANGUARD INDEX FDS",
               "cusip": "922908363",
               "asset_class": "SP 500 ETF SHS",
@@ -105290,7 +105290,7 @@
               "w": 0.01992856942412864
             },
             {
-              "t": "VIPS [92556V106 COM]",
+              "t": "92556V106",
               "n": "VIATRIS INC",
               "cusip": "92556V106",
               "asset_class": "COM",
@@ -105450,7 +105450,7 @@
               "w": 0.019447235107980583
             },
             {
-              "t": "TXRH [882681109 COM]",
+              "t": "TXRH",
               "n": "TEXAS ROADHOUSE INC",
               "cusip": "882681109",
               "asset_class": "COM",
@@ -106111,7 +106111,7 @@
               "w": 0.01712749812412394
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "ISHARES TR",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -106151,7 +106151,7 @@
               "w": 0.01702049404726016
             },
             {
-              "t": "IEMG PUT [464287200 OPTIONS]",
+              "t": "464287200 PUT",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "OPTIONS",
@@ -107022,7 +107022,7 @@
               "w": 0.014267321287176216
             },
             {
-              "t": "ROKU [76954A103 COM CL A]",
+              "t": "76954A103",
               "n": "RIVIAN AUTOMOTIVE INC",
               "cusip": "76954A103",
               "asset_class": "COM CL A",
@@ -107032,7 +107032,7 @@
               "w": 0.014191636126148604
             },
             {
-              "t": "SE [85208M102 COM]",
+              "t": "85208M102",
               "n": "SPROUTS FMRS MKT INC",
               "cusip": "85208M102",
               "asset_class": "COM",
@@ -107912,7 +107912,7 @@
               "w": 0.012283778262297792
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "ROKU INC",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -109304,7 +109304,7 @@
               "w": 0.009675617948843585
             },
             {
-              "t": "EQX [29414B104 COM]",
+              "t": "29414B104",
               "n": "EPAM SYS INC",
               "cusip": "29414B104",
               "asset_class": "COM",
@@ -109714,7 +109714,7 @@
               "w": 0.009239385647408175
             },
             {
-              "t": "ASML [G0750C108 COM]",
+              "t": "G0750C108",
               "n": "AXALTA COATING SYS LTD",
               "cusip": "G0750C108",
               "asset_class": "COM",
@@ -111536,7 +111536,7 @@
               "w": 0.007095084966727889
             },
             {
-              "t": "TEM [88023B103 CL A]",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "cusip": "88023B103",
               "asset_class": "CL A",
@@ -112357,7 +112357,7 @@
               "w": 0.006172852471058706
             },
             {
-              "t": "VIPS [92763W103 SPONSORED ADS A]",
+              "t": "VIPS",
               "n": "VIPSHOP HLDGS LTD",
               "cusip": "92763W103",
               "asset_class": "SPONSORED ADS A",
@@ -112707,7 +112707,7 @@
               "w": 0.005907005098448836
             },
             {
-              "t": "CRDO [26856L103 COM]",
+              "t": "26856L103",
               "n": "E L F BEAUTY INC",
               "cusip": "26856L103",
               "asset_class": "COM",
@@ -113837,7 +113837,7 @@
               "w": 0.004802768501334034
             },
             {
-              "t": "COHR [19247A100 COM]",
+              "t": "19247A100",
               "n": "COHEN  STEERS INC",
               "cusip": "19247A100",
               "asset_class": "COM",
@@ -114567,7 +114567,7 @@
               "w": 0.00426126266301243
             },
             {
-              "t": "VWO [922042858 FTSE EMR MKT ETF]",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "cusip": "922042858",
               "asset_class": "FTSE EMR MKT ETF",
@@ -118803,7 +118803,7 @@
               "w": 0.0021535503371893894
             },
             {
-              "t": "IBIT CALL [464287655 OPTIONS]",
+              "t": "464287655 CALL",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "OPTIONS",
@@ -118944,7 +118944,7 @@
               "w": 0.0021097335604552086
             },
             {
-              "t": "IBIT CALL [464287234 OPTIONS]",
+              "t": "464287234 CALL",
               "n": "ISHARES TR",
               "cusip": "464287234",
               "asset_class": "OPTIONS",
@@ -120357,7 +120357,7 @@
               "w": 0.0016920084517885274
             },
             {
-              "t": "DIS CALL [254687106 OPTIONS]",
+              "t": "DIS CALL",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "OPTIONS",
@@ -121119,7 +121119,7 @@
               "w": 0.0014815715547496274
             },
             {
-              "t": "LEGN [52490G102 SPONSORED ADS]",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "cusip": "52490G102",
               "asset_class": "SPONSORED ADS",
@@ -121479,7 +121479,7 @@
               "w": 0.0014129043511315195
             },
             {
-              "t": "IBIT PUT [464287655 OPTIONS]",
+              "t": "464287655 PUT",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "OPTIONS",
@@ -121540,7 +121540,7 @@
               "w": 0.0013918687019180754
             },
             {
-              "t": "TEM [87918A105 COM]",
+              "t": "87918A105",
               "n": "TELADOC HEALTH INC",
               "cusip": "87918A105",
               "asset_class": "COM",
@@ -122634,7 +122634,7 @@
               "w": 0.0011113976829418043
             },
             {
-              "t": "PACB [69553P100 COM]",
+              "t": "69553P100",
               "n": "PAGERDUTY INC",
               "cusip": "69553P100",
               "asset_class": "COM",
@@ -124529,7 +124529,7 @@
               "w": 0.0008166848622725251
             },
             {
-              "t": "LEGN [52603B107 COM]",
+              "t": "52603B107",
               "n": "LENDINGTREE INC",
               "cusip": "52603B107",
               "asset_class": "COM",
@@ -126713,7 +126713,7 @@
               "w": 0.0005864409630630666
             },
             {
-              "t": "PACB [69404D108 COM]",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "cusip": "69404D108",
               "asset_class": "COM",
@@ -129839,7 +129839,7 @@
               "w": 0.00035385565975724903
             },
             {
-              "t": "IEMG CALL [464287200 OPTIONS]",
+              "t": "464287200 CALL",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "OPTIONS",
@@ -131331,7 +131331,7 @@
               "w": 0.00027609309248342385
             },
             {
-              "t": "IBIT [46267X108 SPONSORED ADS]",
+              "t": "46267X108",
               "n": "IQIYI INC",
               "cusip": "46267X108",
               "asset_class": "SPONSORED ADS",
@@ -138705,7 +138705,7 @@
               "w": 6.148852375833865e-05
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -156115,7 +156115,7 @@
               "w": 1.029655980205681
             },
             {
-              "t": "IEMG [464287200 CORE SP500 ETF]",
+              "t": "464287200",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "CORE SP500 ETF",
@@ -156606,7 +156606,7 @@
               "w": 0.2555803928567525
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -156736,7 +156736,7 @@
               "w": 0.22833033809963027
             },
             {
-              "t": "SPGI [78409V104 COM]",
+              "t": "SPGI",
               "n": "SP GLOBAL INC",
               "cusip": "78409V104",
               "asset_class": "COM",
@@ -156996,7 +156996,7 @@
               "w": 0.1612136836750163
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "COMCAST CORP NEW",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -157046,7 +157046,7 @@
               "w": 0.15119967954082358
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -157326,7 +157326,7 @@
               "w": 0.11439434150874166
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "REGENERON PHARMACEUTICALS",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -157496,7 +157496,7 @@
               "w": 0.10182806407827236
             },
             {
-              "t": "DIS [253868103 COM]",
+              "t": "253868103",
               "n": "DIGITAL RLTY TR INC",
               "cusip": "253868103",
               "asset_class": "COM",
@@ -157886,7 +157886,7 @@
               "w": 0.08466735736788054
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MFG LTD",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -158676,7 +158676,7 @@
               "w": 0.057866938270683496
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "TARGET CORP",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -158766,7 +158766,7 @@
               "w": 0.056221481928933614
             },
             {
-              "t": "IEMG [46434G103 CORE MSCI EMKT]",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "cusip": "46434G103",
               "asset_class": "CORE MSCI EMKT",
@@ -158916,7 +158916,7 @@
               "w": 0.05125574835270799
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -158946,7 +158946,7 @@
               "w": 0.05120919813222326
             },
             {
-              "t": "TSM [880770102 COM]",
+              "t": "TER",
               "n": "TERADYNE INC",
               "cusip": "880770102",
               "asset_class": "COM",
@@ -159206,7 +159206,7 @@
               "w": 0.04518676709876172
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -159307,7 +159307,7 @@
               "w": 0.043942571946061416
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "SEA LTD",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -159377,7 +159377,7 @@
               "w": 0.04307617834110029
             },
             {
-              "t": "IBIT [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -159497,7 +159497,7 @@
               "w": 0.04141180024194689
             },
             {
-              "t": "SPGI [78467J100 COM]",
+              "t": "78467J100",
               "n": "SSC TECHNOLOGIES HLDGS INC",
               "cusip": "78467J100",
               "asset_class": "COM",
@@ -159657,7 +159657,7 @@
               "w": 0.03901568481754726
             },
             {
-              "t": "RKLB [773121108 COM]",
+              "t": "RKLB",
               "n": "ROCKET LAB CORP",
               "cusip": "773121108",
               "asset_class": "COM",
@@ -161707,7 +161707,7 @@
               "w": 0.02222464865910549
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HOLDING N V",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -162518,7 +162518,7 @@
               "w": 0.018280366387772133
             },
             {
-              "t": "VIPS [92556V106 COM]",
+              "t": "92556V106",
               "n": "VIATRIS INC",
               "cusip": "92556V106",
               "asset_class": "COM",
@@ -162548,7 +162548,7 @@
               "w": 0.018236469611645354
             },
             {
-              "t": "TXRH [882681109 COM]",
+              "t": "TXRH",
               "n": "TEXAS ROADHOUSE INC",
               "cusip": "882681109",
               "asset_class": "COM",
@@ -162878,7 +162878,7 @@
               "w": 0.016821506763370613
             },
             {
-              "t": "ROKU [76954A103 COM CL A]",
+              "t": "76954A103",
               "n": "RIVIAN AUTOMOTIVE INC",
               "cusip": "76954A103",
               "asset_class": "COM CL A",
@@ -163138,7 +163138,7 @@
               "w": 0.016016846225011528
             },
             {
-              "t": "VWO [922908363 SP 500 ETF SHS]",
+              "t": "922908363",
               "n": "VANGUARD INDEX FDS",
               "cusip": "922908363",
               "asset_class": "SP 500 ETF SHS",
@@ -163238,7 +163238,7 @@
               "w": 0.015663563400991013
             },
             {
-              "t": "IEMG PUT [464287200 OPTIONS]",
+              "t": "464287200 PUT",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "OPTIONS",
@@ -163439,7 +163439,7 @@
               "w": 0.01510051978916466
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "ISHARES TR",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -163579,7 +163579,7 @@
               "w": 0.014669624524759792
             },
             {
-              "t": "SE [85208M102 COM]",
+              "t": "85208M102",
               "n": "SPROUTS FMRS MKT INC",
               "cusip": "85208M102",
               "asset_class": "COM",
@@ -163639,7 +163639,7 @@
               "w": 0.014555719593972095
             },
             {
-              "t": "EQX [29414B104 COM]",
+              "t": "29414B104",
               "n": "EPAM SYS INC",
               "cusip": "29414B104",
               "asset_class": "COM",
@@ -164329,7 +164329,7 @@
               "w": 0.01273242134455152
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "ROKU INC",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -165499,7 +165499,7 @@
               "w": 0.010660297092898393
             },
             {
-              "t": "ASML [G0750C108 COM]",
+              "t": "G0750C108",
               "n": "AXALTA COATING SYS LTD",
               "cusip": "G0750C108",
               "asset_class": "COM",
@@ -167921,7 +167921,7 @@
               "w": 0.007542274072811373
             },
             {
-              "t": "IBIT CALL [464287655 OPTIONS]",
+              "t": "464287655 CALL",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "OPTIONS",
@@ -167962,7 +167962,7 @@
               "w": 0.007534260767869671
             },
             {
-              "t": "TEM [88023B103 CL A]",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "cusip": "88023B103",
               "asset_class": "CL A",
@@ -168452,7 +168452,7 @@
               "w": 0.006912236784216589
             },
             {
-              "t": "CRDO [26856L103 COM]",
+              "t": "26856L103",
               "n": "E L F BEAUTY INC",
               "cusip": "26856L103",
               "asset_class": "COM",
@@ -168492,7 +168492,7 @@
               "w": 0.0068028644469099175
             },
             {
-              "t": "VIPS [92763W103 SPONSORED ADS A]",
+              "t": "VIPS",
               "n": "VIPSHOP HLDGS LTD",
               "cusip": "92763W103",
               "asset_class": "SPONSORED ADS A",
@@ -170874,7 +170874,7 @@
               "w": 0.004556419125152153
             },
             {
-              "t": "COHR [19247A100 COM]",
+              "t": "19247A100",
               "n": "COHEN  STEERS INC",
               "cusip": "19247A100",
               "asset_class": "COM",
@@ -171685,7 +171685,7 @@
               "w": 0.004010454884150141
             },
             {
-              "t": "VWO [922042858 FTSE EMR MKT ETF]",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "cusip": "922042858",
               "asset_class": "FTSE EMR MKT ETF",
@@ -175830,7 +175830,7 @@
               "w": 0.0020704661510583585
             },
             {
-              "t": "PACB [69553P100 COM]",
+              "t": "69553P100",
               "n": "PAGERDUTY INC",
               "cusip": "69553P100",
               "asset_class": "COM",
@@ -177124,7 +177124,7 @@
               "w": 0.0016900877771734062
             },
             {
-              "t": "TEM [87918A105 COM]",
+              "t": "87918A105",
               "n": "TELADOC HEALTH INC",
               "cusip": "87918A105",
               "asset_class": "COM",
@@ -177454,7 +177454,7 @@
               "w": 0.0015737822945251212
             },
             {
-              "t": "LEGN [52490G102 SPONSORED ADS]",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "cusip": "52490G102",
               "asset_class": "SPONSORED ADS",
@@ -180444,7 +180444,7 @@
               "w": 0.0009600393485472165
             },
             {
-              "t": "LEGN [52603B107 COM]",
+              "t": "52603B107",
               "n": "LENDINGTREE INC NEW",
               "cusip": "52603B107",
               "asset_class": "COM",
@@ -182086,7 +182086,7 @@
               "w": 0.000738513279020845
             },
             {
-              "t": "PACB [69404D108 COM]",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "cusip": "69404D108",
               "asset_class": "COM",
@@ -182246,7 +182246,7 @@
               "w": 0.0007281525800119118
             },
             {
-              "t": "IBIT PUT [464287655 OPTIONS]",
+              "t": "464287655 PUT",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "OPTIONS",
@@ -185591,7 +185591,7 @@
               "w": 0.00043121703385228747
             },
             {
-              "t": "DIS CALL [254687106 OPTIONS]",
+              "t": "DIS CALL",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "OPTIONS",
@@ -186383,7 +186383,7 @@
               "w": 0.00038095699097239133
             },
             {
-              "t": "IEMG CALL [464287200 OPTIONS]",
+              "t": "464287200 CALL",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "OPTIONS",
@@ -186824,7 +186824,7 @@
               "w": 0.0003558899222196797
             },
             {
-              "t": "IBIT [46267X108 SPONSORED ADS]",
+              "t": "46267X108",
               "n": "IQIYI INC",
               "cusip": "46267X108",
               "asset_class": "SPONSORED ADS",
@@ -194790,7 +194790,7 @@
               "w": 7.594761266660902e-05
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -197522,7 +197522,7 @@
               "w": 3.0228648231892625e-05
             },
             {
-              "t": "IBIT CALL [464287234 OPTIONS]",
+              "t": "464287234 CALL",
               "n": "ISHARES TR",
               "cusip": "464287234",
               "asset_class": "OPTIONS",
@@ -211511,7 +211511,7 @@
               "w": 0.8431004961736537
             },
             {
-              "t": "IEMG [464287200 CORE SP500 ETF]",
+              "t": "464287200",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "CORE SP500 ETF",
@@ -211982,7 +211982,7 @@
               "w": 0.2566345836311014
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -212172,7 +212172,7 @@
               "w": 0.2160964511973272
             },
             {
-              "t": "SPGI [78409V104 COM]",
+              "t": "SPGI",
               "n": "SP GLOBAL INC",
               "cusip": "78409V104",
               "asset_class": "COM",
@@ -212352,7 +212352,7 @@
               "w": 0.1773006024146916
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "COMCAST CORP NEW",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -212602,7 +212602,7 @@
               "w": 0.13683684607902905
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "CHUBB LIMITED",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -212762,7 +212762,7 @@
               "w": 0.11506471396708147
             },
             {
-              "t": "DIS [253868103 COM]",
+              "t": "253868103",
               "n": "DIGITAL RLTY TR INC",
               "cusip": "253868103",
               "asset_class": "COM",
@@ -213282,7 +213282,7 @@
               "w": 0.08750739613065865
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "REGENERON PHARMACEUTICALS",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -213332,7 +213332,7 @@
               "w": 0.0850220854117837
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MFG LTD",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -213922,7 +213922,7 @@
               "w": 0.06456654094837666
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "SEA LTD",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -214262,7 +214262,7 @@
               "w": 0.055120266566932336
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "TARGET CORP",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -214382,7 +214382,7 @@
               "w": 0.050770976935993216
             },
             {
-              "t": "IEMG [46434G103 CORE MSCI EMKT]",
+              "t": "IEMG",
               "n": "ISHARES INC",
               "cusip": "46434G103",
               "asset_class": "CORE MSCI EMKT",
@@ -214683,7 +214683,7 @@
               "w": 0.044753403788385174
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -214733,7 +214733,7 @@
               "w": 0.044042671762911274
             },
             {
-              "t": "SPGI [78467J100 COM]",
+              "t": "78467J100",
               "n": "SSC TECHNOLOGIES HLDGS INC",
               "cusip": "78467J100",
               "asset_class": "COM",
@@ -215143,7 +215143,7 @@
               "w": 0.039220123665075005
             },
             {
-              "t": "IBIT [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -215433,7 +215433,7 @@
               "w": 0.035288689699767374
             },
             {
-              "t": "TSM [880770102 COM]",
+              "t": "TER",
               "n": "TERADYNE INC",
               "cusip": "880770102",
               "asset_class": "COM",
@@ -216383,7 +216383,7 @@
               "w": 0.02709925056946801
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -216523,7 +216523,7 @@
               "w": 0.026361846097868753
             },
             {
-              "t": "RKLB [773121108 COM]",
+              "t": "RKLB",
               "n": "ROCKET LAB CORP",
               "cusip": "773121108",
               "asset_class": "COM",
@@ -217074,7 +217074,7 @@
               "w": 0.02316648252494169
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HOLDING N V",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -217404,7 +217404,7 @@
               "w": 0.02097831212159686
             },
             {
-              "t": "SE [85208M102 COM]",
+              "t": "85208M102",
               "n": "SPROUTS FMRS MKT INC",
               "cusip": "85208M102",
               "asset_class": "COM",
@@ -217734,7 +217734,7 @@
               "w": 0.018943594913016622
             },
             {
-              "t": "TXRH [882681109 COM]",
+              "t": "TXRH",
               "n": "TEXAS ROADHOUSE INC",
               "cusip": "882681109",
               "asset_class": "COM",
@@ -219104,7 +219104,7 @@
               "w": 0.01445269047794835
             },
             {
-              "t": "CRDO [26856L103 COM]",
+              "t": "26856L103",
               "n": "E L F BEAUTY INC",
               "cusip": "26856L103",
               "asset_class": "COM",
@@ -219194,7 +219194,7 @@
               "w": 0.01428733520490959
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "ISHARES TR",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -219234,7 +219234,7 @@
               "w": 0.014205983489709044
             },
             {
-              "t": "VIPS [92556V106 COM]",
+              "t": "92556V106",
               "n": "VIATRIS INC",
               "cusip": "92556V106",
               "asset_class": "COM",
@@ -219534,7 +219534,7 @@
               "w": 0.013224190624049935
             },
             {
-              "t": "ROKU [76954A103 COM CL A]",
+              "t": "76954A103",
               "n": "RIVIAN AUTOMOTIVE INC",
               "cusip": "76954A103",
               "asset_class": "COM CL A",
@@ -219974,7 +219974,7 @@
               "w": 0.012356934829829368
             },
             {
-              "t": "EQX [29414B104 COM]",
+              "t": "29414B104",
               "n": "EPAM SYS INC",
               "cusip": "29414B104",
               "asset_class": "COM",
@@ -220234,7 +220234,7 @@
               "w": 0.011940962606195904
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "ROKU INC",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -220665,7 +220665,7 @@
               "w": 0.011142022745909797
             },
             {
-              "t": "IEMG PUT [464287200 OPTIONS]",
+              "t": "464287200 PUT",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "OPTIONS",
@@ -221396,7 +221396,7 @@
               "w": 0.010116072271259097
             },
             {
-              "t": "ASML [G0750C108 COM]",
+              "t": "G0750C108",
               "n": "AXALTA COATING SYS LTD",
               "cusip": "G0750C108",
               "asset_class": "COM",
@@ -221726,7 +221726,7 @@
               "w": 0.009519483917383805
             },
             {
-              "t": "TEM [88023B103 CL A]",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "cusip": "88023B103",
               "asset_class": "CL A",
@@ -223348,7 +223348,7 @@
               "w": 0.007452215655538175
             },
             {
-              "t": "VIPS [92763W103 SPONSORED ADS A]",
+              "t": "VIPS",
               "n": "VIPSHOP HLDGS LTD",
               "cusip": "92763W103",
               "asset_class": "SPONSORED ADS A",
@@ -224861,7 +224861,7 @@
               "w": 0.005741631082317366
             },
             {
-              "t": "VWO [922908363 SP 500 ETF SHS]",
+              "t": "922908363",
               "n": "VANGUARD INDEX FDS",
               "cusip": "922908363",
               "asset_class": "SP 500 ETF SHS",
@@ -226212,7 +226212,7 @@
               "w": 0.004757094781462623
             },
             {
-              "t": "COHR [19247A100 COM]",
+              "t": "19247A100",
               "n": "COHEN  STEERS INC",
               "cusip": "19247A100",
               "asset_class": "COM",
@@ -226742,7 +226742,7 @@
               "w": 0.004374347810749036
             },
             {
-              "t": "IBIT CALL [464287655 OPTIONS]",
+              "t": "464287655 CALL",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "OPTIONS",
@@ -229794,7 +229794,7 @@
               "w": 0.0026191352363285933
             },
             {
-              "t": "IBIT PUT [464287234 OPTIONS]",
+              "t": "464287234 PUT",
               "n": "ISHARES TR",
               "cusip": "464287234",
               "asset_class": "OPTIONS",
@@ -229915,7 +229915,7 @@
               "w": 0.0025660993289112217
             },
             {
-              "t": "LEGN [52490G102 SPONSORED ADS]",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "cusip": "52490G102",
               "asset_class": "SPONSORED ADS",
@@ -230425,7 +230425,7 @@
               "w": 0.0023966518362309465
             },
             {
-              "t": "PACB [69553P100 COM]",
+              "t": "69553P100",
               "n": "PAGERDUTY INC",
               "cusip": "69553P100",
               "asset_class": "COM",
@@ -231859,7 +231859,7 @@
               "w": 0.0019359899894934064
             },
             {
-              "t": "IBIT CALL [464287234 OPTIONS]",
+              "t": "464287234 CALL",
               "n": "ISHARES TR",
               "cusip": "464287234",
               "asset_class": "OPTIONS",
@@ -232020,7 +232020,7 @@
               "w": 0.001878222657719514
             },
             {
-              "t": "TEM [87918A105 COM]",
+              "t": "87918A105",
               "n": "TELADOC HEALTH INC",
               "cusip": "87918A105",
               "asset_class": "COM",
@@ -233414,7 +233414,7 @@
               "w": 0.001482999894796441
             },
             {
-              "t": "IBIT PUT [464287655 OPTIONS]",
+              "t": "464287655 PUT",
               "n": "ISHARES TR",
               "cusip": "464287655",
               "asset_class": "OPTIONS",
@@ -235173,7 +235173,7 @@
               "w": 0.0010783304589102416
             },
             {
-              "t": "LEGN [52603B107 COM]",
+              "t": "52603B107",
               "n": "LENDINGTREE INC NEW",
               "cusip": "52603B107",
               "asset_class": "COM",
@@ -235656,7 +235656,7 @@
               "w": 0.000993159095957993
             },
             {
-              "t": "DIS CALL [254687106 OPTIONS]",
+              "t": "DIS CALL",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "OPTIONS",
@@ -239970,7 +239970,7 @@
               "w": 0.0005102107771560712
             },
             {
-              "t": "PACB [69404D108 COM]",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "cusip": "69404D108",
               "asset_class": "COM",
@@ -240220,7 +240220,7 @@
               "w": 0.0004898897287313202
             },
             {
-              "t": "IBIT [46267X108 SPONSORED ADS]",
+              "t": "46267X108",
               "n": "IQIYI INC",
               "cusip": "46267X108",
               "asset_class": "SPONSORED ADS",
@@ -244204,7 +244204,7 @@
               "w": 0.00024775681891753775
             },
             {
-              "t": "IEMG CALL [464287200 OPTIONS]",
+              "t": "464287200 CALL",
               "n": "ISHARES TR",
               "cusip": "464287200",
               "asset_class": "OPTIONS",
@@ -248659,7 +248659,7 @@
               "w": 9.962826437704192e-05
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -248869,7 +248869,7 @@
               "w": 9.557333299020345e-05
             },
             {
-              "t": "VWO [922042858 FTSE EMR MKT ETF]",
+              "t": "VWO",
               "n": "VANGUARD INTL EQUITY INDEX F",
               "cusip": "922042858",
               "asset_class": "FTSE EMR MKT ETF",
@@ -265992,7 +265992,7 @@
               "w": 4.967368711820494
             },
             {
-              "t": "TEM [88023B103 COMMON STOCK]",
+              "t": "TEM",
               "n": "Tempus AI Inc",
               "cusip": "88023B103",
               "asset_class": "Common Stock",
@@ -266112,7 +266112,7 @@
               "w": 2.2804991070699776
             },
             {
-              "t": "TSM [880770102 COMMON STOCK]",
+              "t": "TER",
               "n": "Teradyne Inc",
               "cusip": "880770102",
               "asset_class": "Common Stock",
@@ -266192,7 +266192,7 @@
               "w": 1.51254508740182
             },
             {
-              "t": "TSM [874039100 ADR]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Manufacturing Company Ltd",
               "cusip": "874039100",
               "asset_class": "ADR",
@@ -266232,7 +266232,7 @@
               "w": 1.0970706795509355
             },
             {
-              "t": "RKLB [773121108 COMMON STOCK]",
+              "t": "RKLB",
               "n": "Rocket Lab Corp",
               "cusip": "773121108",
               "asset_class": "Common Stock",
@@ -266402,7 +266402,7 @@
               "w": 0.6015852188128746
             },
             {
-              "t": "ROKU [77543R102 COMMON STOCK]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "Common Stock",
@@ -266562,7 +266562,7 @@
               "w": 0.3251060678222984
             },
             {
-              "t": "PACB [69404D108 COMMON STOCK]",
+              "t": "PACB",
               "n": "Pacific Biosciences of California, Inc.",
               "cusip": "69404D108",
               "asset_class": "Common Stock",
@@ -266922,7 +266922,7 @@
               "w": 0.09982968548494843
             },
             {
-              "t": "SE [81141R100 ADR]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "ADR",
@@ -267941,7 +267941,7 @@
               "w": 3.5375707748884433
             },
             {
-              "t": "TEM [88023B103 COMMON STOCK]",
+              "t": "TEM",
               "n": "Tempus AI Inc",
               "cusip": "88023B103",
               "asset_class": "Common Stock",
@@ -267981,7 +267981,7 @@
               "w": 3.221974166643555
             },
             {
-              "t": "TSM [880770102 COMMON STOCK]",
+              "t": "TER",
               "n": "Teradyne Inc",
               "cusip": "880770102",
               "asset_class": "Common Stock",
@@ -267991,7 +267991,7 @@
               "w": 2.870480150149983
             },
             {
-              "t": "ROKU [77543R102 COMMON STOCK]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "Common Stock",
@@ -268081,7 +268081,7 @@
               "w": 1.74811485591354
             },
             {
-              "t": "TSM [874039100 ADR]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Manufacturing Company Ltd",
               "cusip": "874039100",
               "asset_class": "ADR",
@@ -268171,7 +268171,7 @@
               "w": 1.1714516360794403
             },
             {
-              "t": "RKLB [773121108 COMMON STOCK]",
+              "t": "RKLB",
               "n": "Rocket Lab Corp",
               "cusip": "773121108",
               "asset_class": "Common Stock",
@@ -268401,7 +268401,7 @@
               "w": 0.3724992503735847
             },
             {
-              "t": "PACB [69404D108 COMMON STOCK]",
+              "t": "PACB",
               "n": "Pacific Biosciences of California, Inc.",
               "cusip": "69404D108",
               "asset_class": "Common Stock",
@@ -268781,7 +268781,7 @@
               "w": 0.11475709527835856
             },
             {
-              "t": "SE [81141R100 ADR]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "ADR",
@@ -269750,7 +269750,7 @@
               "w": 4.2507799812085745
             },
             {
-              "t": "ROKU [77543R102 COMMON STOCK]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "Common Stock",
@@ -269810,7 +269810,7 @@
               "w": 3.6076662927386796
             },
             {
-              "t": "TSM [880770102 COMMON STOCK]",
+              "t": "TER",
               "n": "Teradyne Inc",
               "cusip": "880770102",
               "asset_class": "Common Stock",
@@ -269820,7 +269820,7 @@
               "w": 3.0269071823720854
             },
             {
-              "t": "TEM [88023B103 COMMON STOCK]",
+              "t": "TEM",
               "n": "Tempus AI Inc",
               "cusip": "88023B103",
               "asset_class": "Common Stock",
@@ -269920,7 +269920,7 @@
               "w": 1.5528766946756625
             },
             {
-              "t": "TSM [874039100 ADR]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Manufacturing Company Ltd",
               "cusip": "874039100",
               "asset_class": "ADR",
@@ -270040,7 +270040,7 @@
               "w": 1.038497083420148
             },
             {
-              "t": "RKLB [773121108 COMMON STOCK]",
+              "t": "RKLB",
               "n": "Rocket Lab Corp",
               "cusip": "773121108",
               "asset_class": "Common Stock",
@@ -270120,7 +270120,7 @@
               "w": 0.7375471429214883
             },
             {
-              "t": "PACB [69553P100 COMMON STOCK]",
+              "t": "69553P100",
               "n": "PagerDuty Inc",
               "cusip": "69553P100",
               "asset_class": "Common Stock",
@@ -270210,7 +270210,7 @@
               "w": 0.46342126621922314
             },
             {
-              "t": "PACB [69404D108 COMMON STOCK]",
+              "t": "PACB",
               "n": "Pacific Biosciences of California, Inc.",
               "cusip": "69404D108",
               "asset_class": "Common Stock",
@@ -270610,7 +270610,7 @@
               "w": 0.1299081994457952
             },
             {
-              "t": "SE [81141R100 ADR]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "ADR",
@@ -271570,7 +271570,7 @@
               "w": 0.0005684447974714574
             },
             {
-              "t": "RKLB [75886F107 COMMON STOCK]",
+              "t": "75886F107",
               "n": "Regeneron Pharmaceuticals Inc",
               "cusip": "75886F107",
               "asset_class": "Common Stock",
@@ -271728,7 +271728,7 @@
               "w": 4.812378201202157
             },
             {
-              "t": "ROKU [77543R102 COMMON STOCK]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "Common Stock",
@@ -271788,7 +271788,7 @@
               "w": 3.7755992477082776
             },
             {
-              "t": "TEM [88023B103 COMMON STOCK]",
+              "t": "TEM",
               "n": "Tempus AI Inc",
               "cusip": "88023B103",
               "asset_class": "Common Stock",
@@ -271828,7 +271828,7 @@
               "w": 2.3089978626619296
             },
             {
-              "t": "TSM [880770102 COMMON STOCK]",
+              "t": "TER",
               "n": "Teradyne Inc",
               "cusip": "880770102",
               "asset_class": "Common Stock",
@@ -271918,7 +271918,7 @@
               "w": 1.2945920115440808
             },
             {
-              "t": "TSM [874039100 ADR]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Manufactu",
               "cusip": "874039100",
               "asset_class": "ADR",
@@ -272018,7 +272018,7 @@
               "w": 0.896023041610656
             },
             {
-              "t": "PACB [69553P100 COMMON STOCK]",
+              "t": "69553P100",
               "n": "PagerDuty Inc",
               "cusip": "69553P100",
               "asset_class": "Common Stock",
@@ -272118,7 +272118,7 @@
               "w": 0.7119437143801922
             },
             {
-              "t": "RKLB [773121108 COMMON STOCK]",
+              "t": "RKLB",
               "n": "Rocket Lab Corp",
               "cusip": "773121108",
               "asset_class": "Common Stock",
@@ -272318,7 +272318,7 @@
               "w": 0.2458007954305521
             },
             {
-              "t": "PACB [69404D108 COMMON STOCK]",
+              "t": "PACB",
               "n": "Pacific Biosciences of Califor",
               "cusip": "69404D108",
               "asset_class": "Common Stock",
@@ -272498,7 +272498,7 @@
               "w": 0.17037566511888266
             },
             {
-              "t": "SE [81141R100 ADR]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "ADR",
@@ -272888,7 +272888,7 @@
               "w": 0.042392809908712706
             },
             {
-              "t": "RKLB [75886F107 COMMON STOCK]",
+              "t": "75886F107",
               "n": "Regeneron Pharmaceuticals Inc",
               "cusip": "75886F107",
               "asset_class": "Common Stock",
@@ -273696,7 +273696,7 @@
           "total": 832072843,
           "holdings": [
             {
-              "t": "LEGN [52490G102 SPONSORED ADS]",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "cusip": "52490G102",
               "asset_class": "SPONSORED ADS",
@@ -273736,7 +273736,7 @@
               "w": 5.833156484834346
             },
             {
-              "t": "VIPS [92763W103 SPONSORED ADS A]",
+              "t": "VIPS",
               "n": "VIPSHOP HLDGS LTD",
               "cusip": "92763W103",
               "asset_class": "SPONSORED ADS A",
@@ -273856,7 +273856,7 @@
               "w": 1.0063092517009355
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MANUFAC",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -273936,7 +273936,7 @@
               "w": 0.3151459661326791
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -273966,7 +273966,7 @@
               "w": 0.23996805289317683
             },
             {
-              "t": "PACB [69404D108 COM]",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "cusip": "69404D108",
               "asset_class": "COM",
@@ -274006,7 +274006,7 @@
               "w": 0.09839607275825969
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -274104,7 +274104,7 @@
               "w": 11.604849874671133
             },
             {
-              "t": "LEGN [52490G102 SPONSORED ADS]",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "cusip": "52490G102",
               "asset_class": "SPONSORED ADS",
@@ -274224,7 +274224,7 @@
               "w": 0.43041037894839784
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MANUFAC",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -274264,7 +274264,7 @@
               "w": 0.17036491663691625
             },
             {
-              "t": "VIPS [92763W103 SPONSORED ADS A]",
+              "t": "VIPS",
               "n": "VIPSHOP HLDGS LTD",
               "cusip": "92763W103",
               "asset_class": "SPONSORED ADS A",
@@ -274304,7 +274304,7 @@
               "w": 0.0764245037951477
             },
             {
-              "t": "PACB [69404D108 COM]",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "cusip": "69404D108",
               "asset_class": "COM",
@@ -274314,7 +274314,7 @@
               "w": 0.07250842691812956
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -274364,7 +274364,7 @@
               "w": 0.061935216621604276
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "COHERENT CORP",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -274502,7 +274502,7 @@
               "w": 8.625352920421001
             },
             {
-              "t": "LEGN [52490G102 SPONSORED ADS]",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "cusip": "52490G102",
               "asset_class": "SPONSORED ADS",
@@ -274632,7 +274632,7 @@
               "w": 0.13824938953132362
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MFG LTD",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -274692,7 +274692,7 @@
               "w": 0.05646993516271187
             },
             {
-              "t": "PACB [69404D108 COM]",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "cusip": "69404D108",
               "asset_class": "COM",
@@ -274712,7 +274712,7 @@
               "w": 0.04753505233135034
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -274870,7 +274870,7 @@
               "w": 5.285933341762162
             },
             {
-              "t": "LEGN [52490G102 SPONSORED ADS]",
+              "t": "LEGN",
               "n": "LEGEND BIOTECH CORP",
               "cusip": "52490G102",
               "asset_class": "SPONSORED ADS",
@@ -274930,7 +274930,7 @@
               "w": 1.0820988192583818
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "SEA LTD",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -275080,7 +275080,7 @@
               "w": 0.03363863344021274
             },
             {
-              "t": "PACB [69404D108 COM]",
+              "t": "PACB",
               "n": "PACIFIC BIOSCIENCES CALIF IN",
               "cusip": "69404D108",
               "asset_class": "COM",
@@ -275090,7 +275090,7 @@
               "w": 0.028752200213779423
             },
             {
-              "t": "EQX [29446Y502 COM]",
+              "t": "EQX",
               "n": "EQUINOX GOLD CORP",
               "cusip": "29446Y502",
               "asset_class": "COM",
@@ -275356,7 +275356,7 @@
               "w": 1.9106099174195141
             },
             {
-              "t": "SPGI [78409V104 COM]",
+              "t": "SPGI",
               "n": "SP GLOBAL INC",
               "cusip": "78409V104",
               "asset_class": "COM",
@@ -275730,7 +275730,7 @@
               "w": 1.4727004143816458
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -275750,7 +275750,7 @@
               "w": 0.8695322962492924
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -275810,7 +275810,7 @@
               "w": 0.01332419982209701
             },
             {
-              "t": "TEM [88023B103 CL A]",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "cusip": "88023B103",
               "asset_class": "CL A",
@@ -275938,7 +275938,7 @@
               "w": 0.8135015828657749
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -275948,7 +275948,7 @@
               "w": 0.7283908789802065
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -275958,7 +275958,7 @@
               "w": 0.3525052853196813
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MANUFAC",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -276018,7 +276018,7 @@
               "w": 0.007539493520982434
             },
             {
-              "t": "TEM [88023B103 CL A]",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "cusip": "88023B103",
               "asset_class": "CL A",
@@ -276136,7 +276136,7 @@
               "w": 2.146076504227621
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MFG LTD",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -276146,7 +276146,7 @@
               "w": 2.127549912204168
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -276166,7 +276166,7 @@
               "w": 0.12279928603088437
             },
             {
-              "t": "CRDO [G25457105 ORDINARY SHARES]",
+              "t": "CRDO",
               "n": "CREDO TECHNOLOGY GROUP HOLDI",
               "cusip": "G25457105",
               "asset_class": "ORDINARY SHARES",
@@ -276176,7 +276176,7 @@
               "w": 0.11625682998577297
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HOLDING N V",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -276186,7 +276186,7 @@
               "w": 0.0605630651782554
             },
             {
-              "t": "TEM [88023B103 CL A]",
+              "t": "TEM",
               "n": "TEMPUS AI INC",
               "cusip": "88023B103",
               "asset_class": "CL A",
@@ -276294,7 +276294,7 @@
               "w": 0.7598691671743694
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "DISNEY WALT CO",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -276304,7 +276304,7 @@
               "w": 0.5639772781828958
             },
             {
-              "t": "ASML [N07059210 N Y REGISTRY SHS]",
+              "t": "ASML",
               "n": "ASML HOLDING N V",
               "cusip": "N07059210",
               "asset_class": "N Y REGISTRY SHS",
@@ -276314,7 +276314,7 @@
               "w": 0.5276227878609429
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MFG LTD",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -276422,7 +276422,7 @@
               "w": 7.9297854822393345
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MANUFAC",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -276570,7 +276570,7 @@
               "w": 6.543520426459748
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MANUFAC",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -276916,7 +276916,7 @@
               "w": 0.7382019549827941
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "TAIWAN SEMICONDUCTOR MFG LTD",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -276964,7 +276964,7 @@
               "w": 16.598482092001774
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Manufac",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -277118,7 +277118,7 @@
               "w": 2.0742081531326138
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -277148,7 +277148,7 @@
               "w": 1.9967352772749813
             },
             {
-              "t": "IBIT CALL [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655 CALL",
               "n": "Ishares Tr",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -277383,7 +277383,7 @@
               "w": 0.49141638149279115
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -277951,7 +277951,7 @@
               "w": 5.588587870036614
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Manufac",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -278033,7 +278033,7 @@
               "w": 2.910275560377964
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -278073,7 +278073,7 @@
               "w": 2.1204515006390614
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -278305,7 +278305,7 @@
               "w": 0.5881851252121814
             },
             {
-              "t": "IBIT CALL [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655 CALL",
               "n": "Ishares Tr",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -278496,7 +278496,7 @@
               "w": 0.28988743282157103
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "Coherent Corp",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -278724,7 +278724,7 @@
               "w": 3.789807429162634
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Mfg Ltd",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -278765,7 +278765,7 @@
               "w": 2.681195696915084
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -278895,7 +278895,7 @@
               "w": 1.42526894280724
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -278936,7 +278936,7 @@
               "w": 1.3188265527483896
             },
             {
-              "t": "IBIT CALL [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655 CALL",
               "n": "Ishares Tr",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -278957,7 +278957,7 @@
               "w": 1.2376597803958216
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "Ishares Tr",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -279326,7 +279326,7 @@
               "w": 8.252012615451047
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Mfg Ltd",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -279386,7 +279386,7 @@
               "w": 2.632494363002686
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "Ishares Tr",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -279406,7 +279406,7 @@
               "w": 2.362553646563038
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -279487,7 +279487,7 @@
               "w": 1.3468724666131462
             },
             {
-              "t": "IBIT CALL [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655 CALL",
               "n": "Ishares Tr",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -279538,7 +279538,7 @@
               "w": 1.2563998598720876
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -279909,7 +279909,7 @@
               "w": 0.13532732496750988
             },
             {
-              "t": "TXRH [882681109 COM]",
+              "t": "TXRH",
               "n": "Texas Roadhouse Inc",
               "cusip": "882681109",
               "asset_class": "COM",
@@ -280017,7 +280017,7 @@
               "w": 5.733210720877581
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "Coherent Corp",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -280047,7 +280047,7 @@
               "w": 3.4131817540117018
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Mfg Ltd",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -280228,7 +280228,7 @@
               "w": 1.1582171260058667
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -280508,7 +280508,7 @@
           "total": 2917218000,
           "holdings": [
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "Coherent Corp",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -280999,7 +280999,7 @@
               "w": 0.16447176727964793
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -281167,7 +281167,7 @@
           "total": 4387664000,
           "holdings": [
             {
-              "t": "IBIT CALL [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655 CALL",
               "n": "Ishares Tr",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -281238,7 +281238,7 @@
               "w": 3.623226391081906
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "Coherent Corp",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -281718,7 +281718,7 @@
               "w": 0.1494644986489394
             },
             {
-              "t": "LEGN [52490G102 SPONSORED ADS]",
+              "t": "LEGN",
               "n": "Legend Biotech Corp",
               "cusip": "52490G102",
               "asset_class": "SPONSORED ADS",
@@ -282877,7 +282877,7 @@
               "w": 0.27901170955718113
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -283045,7 +283045,7 @@
           "total": 3411248000,
           "holdings": [
             {
-              "t": "IBIT [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655",
               "n": "Ishares Tr",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -283095,7 +283095,7 @@
               "w": 5.449442550057926
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "Ishares Tr",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -283165,7 +283165,7 @@
               "w": 2.5572459111738577
             },
             {
-              "t": "IBIT CALL [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655 CALL",
               "n": "Ishares Tr",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -283216,7 +283216,7 @@
               "w": 2.3278577224523107
             },
             {
-              "t": "SE [81141R100 SPONSORED ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORED ADS",
@@ -284214,7 +284214,7 @@
               "w": 0.6626556284840805
             },
             {
-              "t": "VIPS [92763W103 SPONSORED ADR]",
+              "t": "VIPS",
               "n": "Vipshop Hldgs Ltd",
               "cusip": "92763W103",
               "asset_class": "SPONSORED ADR",
@@ -284442,7 +284442,7 @@
               "w": 1.6796685420114994
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "Chubb Limited",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -284572,7 +284572,7 @@
               "w": 0.6836389240260192
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "Regeneron Pharmaceuticals",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -284680,7 +284680,7 @@
               "w": 6.929296573893362
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "Ishares Tr",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -284830,7 +284830,7 @@
               "w": 1.7574992209666573
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "Comcast Corp New",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -285148,7 +285148,7 @@
           "total": 1026024000,
           "holdings": [
             {
-              "t": "IBIT [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655",
               "n": "Ishares Tr",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -285486,7 +285486,7 @@
           "total": 1130839000,
           "holdings": [
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "Ishares Tr",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -285944,7 +285944,7 @@
               "w": 9.420988132169024
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "IShrs MSCI Emgg Mkt Idx",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -286263,7 +286263,7 @@
               "w": 17.249537577954346
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "IShrs MSCI Emgg Mkt Idx",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -287575,7 +287575,7 @@
               "w": 7.421227400580201
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "Target Corp",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -288073,7 +288073,7 @@
               "w": 2.4076404681822976
             },
             {
-              "t": "TXRH [87612E106 COM]",
+              "t": "87612E106",
               "n": "Target Corp",
               "cusip": "87612E106",
               "asset_class": "COM",
@@ -289971,7 +289971,7 @@
               "w": 5.110438918711798
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Mfg Ltd",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -290031,7 +290031,7 @@
               "w": 2.8436194736021205
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "Coherent Corp",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -290061,7 +290061,7 @@
               "w": 2.454894129697108
             },
             {
-              "t": "ROKU [77543R102 COM CL A]",
+              "t": "ROKU",
               "n": "Roku Inc",
               "cusip": "77543R102",
               "asset_class": "COM CL A",
@@ -290111,7 +290111,7 @@
               "w": 1.7944589567590337
             },
             {
-              "t": "IBIT CALL [464287655 RUSSELL 2000 ETF]",
+              "t": "464287655 CALL",
               "n": "Ishares Tr",
               "cusip": "464287655",
               "asset_class": "RUSSELL 2000 ETF",
@@ -290163,7 +290163,7 @@
               "w": 1.2228170429020044
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -290653,7 +290653,7 @@
               "w": 15.166248494809627
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "Coherent Corp",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -291087,7 +291087,7 @@
               "o": "CALL"
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Mfg Ltd",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -291347,7 +291347,7 @@
               "w": 0.13003125746215838
             },
             {
-              "t": "CRDO [26856L103 COM]",
+              "t": "26856L103",
               "n": "E L F Beauty Inc",
               "cusip": "26856L103",
               "asset_class": "COM",
@@ -291465,7 +291465,7 @@
               "w": 9.72658822317913
             },
             {
-              "t": "COHR [19247G107 COM]",
+              "t": "COHR",
               "n": "Coherent Corp",
               "cusip": "19247G107",
               "asset_class": "COM",
@@ -291868,7 +291868,7 @@
               "w": 0.3951080314243672
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "Chubb Limited",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -291908,7 +291908,7 @@
               "w": 0.3383010896635078
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Mfg Ltd",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -293273,7 +293273,7 @@
               "w": 2.812901358513775
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Mfg Ltd",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -293831,7 +293831,7 @@
               "w": 3.1268145143817874
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Mfg Ltd",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -294359,7 +294359,7 @@
               "w": 1.813047933766189
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -294661,7 +294661,7 @@
               "w": 0.3700387165412694
             },
             {
-              "t": "TSM [874039100 SPONSORED ADS]",
+              "t": "TSM",
               "n": "Taiwan Semiconductor Mfg Ltd",
               "cusip": "874039100",
               "asset_class": "SPONSORED ADS",
@@ -295558,7 +295558,7 @@
               "w": 1.009582037242569
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -296067,7 +296067,7 @@
               "w": 0.9794601361964855
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -296416,7 +296416,7 @@
               "w": 4.3942461219555815
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -296446,7 +296446,7 @@
               "w": 3.4575683007711917
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "Disney Walt Co",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -296976,7 +296976,7 @@
               "w": 4.6575148405832945
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",
@@ -297297,7 +297297,7 @@
               "w": 0.5847403184589307
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "Regeneron Pharmaceuticals",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -297307,7 +297307,7 @@
               "w": 0.5782086910125096
             },
             {
-              "t": "DIS [254687106 COM DISNEY]",
+              "t": "DIS",
               "n": "Disney Walt Co",
               "cusip": "254687106",
               "asset_class": "COM DISNEY",
@@ -297477,7 +297477,7 @@
               "w": 0.2300003744799736
             },
             {
-              "t": "DIS CALL [254687106 COM DISNEY]",
+              "t": "DIS CALL",
               "n": "Disney Walt Co",
               "cusip": "254687106",
               "asset_class": "COM DISNEY",
@@ -297667,7 +297667,7 @@
               "w": 3.521502595905917
             },
             {
-              "t": "SE [81141R100 SPONSORED ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORED ADS",
@@ -297807,7 +297807,7 @@
               "w": 1.1246579542804753
             },
             {
-              "t": "CB [H1467J104 COM]",
+              "t": "CB",
               "n": "Chubb Limited",
               "cusip": "H1467J104",
               "asset_class": "COM",
@@ -297877,7 +297877,7 @@
               "w": 0.7726515206690172
             },
             {
-              "t": "RKLB [75886F107 COM]",
+              "t": "75886F107",
               "n": "Regeneron Pharmaceuticals",
               "cusip": "75886F107",
               "asset_class": "COM",
@@ -297977,7 +297977,7 @@
               "w": 0.4907526015671524
             },
             {
-              "t": "DIS [254687106 COM]",
+              "t": "DIS",
               "n": "Disney Walt Co",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -298187,7 +298187,7 @@
               "w": 0.1362674649110513
             },
             {
-              "t": "DIS CALL [254687106 COM]",
+              "t": "DIS CALL",
               "n": "Disney Walt Co",
               "cusip": "254687106",
               "asset_class": "COM",
@@ -298447,7 +298447,7 @@
               "w": 2.3394050634142864
             },
             {
-              "t": "SE [81141R100 SPONSORED ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORED ADS",
@@ -298678,7 +298678,7 @@
               "o": "CALL"
             },
             {
-              "t": "DIS CALL [254687106 COM DISNEY]",
+              "t": "DIS CALL",
               "n": "Disney Walt Co",
               "cusip": "254687106",
               "asset_class": "COM DISNEY",
@@ -298908,7 +298908,7 @@
               "w": 2.982985771608817
             },
             {
-              "t": "SE [81141R100 SPONSORED ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORED ADS",
@@ -299307,7 +299307,7 @@
               "w": 3.539132220759316
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "Ishares Tr",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -299487,7 +299487,7 @@
               "w": 1.6344022575984405
             },
             {
-              "t": "SE [81141R100 SPONSORED ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORED ADS",
@@ -299876,7 +299876,7 @@
               "w": 17.682714677713783
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "Ishares Tr",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -300456,7 +300456,7 @@
               "w": 0.014815957394989364
             },
             {
-              "t": "SE [81141R100 SPONSORED ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORED ADS",
@@ -300575,7 +300575,7 @@
               "w": 3.9427581591275933
             },
             {
-              "t": "IBIT [464287234 MSCI EMG MKT ETF]",
+              "t": "464287234",
               "n": "Ishares Tr",
               "cusip": "464287234",
               "asset_class": "MSCI EMG MKT ETF",
@@ -301629,7 +301629,7 @@
               "w": 5.018712945822204
             },
             {
-              "t": "CB [20030N101 CL A]",
+              "t": "20030N101",
               "n": "Comcast Corp New",
               "cusip": "20030N101",
               "asset_class": "CL A",
@@ -302177,7 +302177,7 @@
               "w": 1.039194384709241
             },
             {
-              "t": "SE [81141R100 SPONSORD ADS]",
+              "t": "SE",
               "n": "Sea Ltd",
               "cusip": "81141R100",
               "asset_class": "SPONSORD ADS",

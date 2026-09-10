@@ -25,7 +25,7 @@ export default function StockLookup() {
   const { ticker: paramTicker } = useParams<{ ticker: string }>();
   const navigate = useNavigate();
   const [params, setParams] = useSearchParams();
-  const [search, setSearch] = useState(paramTicker?.toUpperCase() ?? '');
+  const [search, setSearch] = useState(normalizeTicker(paramTicker?.toUpperCase() ?? ''));
   const ticker = normalizeTicker(paramTicker?.toUpperCase() ?? '');
 
   const allQuarters = useMemo(() => getAllQuarterKeys(data.funds), []);

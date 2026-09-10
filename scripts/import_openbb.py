@@ -18,6 +18,11 @@ import certifi
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
+try:
+    from security_identity import checked_mapping, validate_identity
+except ModuleNotFoundError:
+    from scripts.security_identity import checked_mapping, validate_identity
+
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / '.cache' / 'sec'
 
@@ -40,7 +45,7 @@ def ticker_map():
     tree = ast.parse((ROOT / 'scripts/fetch_13f.py').read_text())
     for node in tree.body:
         if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'TICKER_MAP' for t in node.targets):
-            return ast.literal_eval(node.value)
+            return checked_mapping(ast.literal_eval(node.value))
     return {}
 
 
@@ -64,6 +69,7 @@ def metadata(text, key):
 
 async def parse(text, filing, mapping):
     from openbb_sec.utils.parse_13f import parse_13f_hr
+    mapping = checked_mapping(mapping)
     records = await parse_13f_hr(text)
     if any(str(r['period_ending']) != filing['reportDate'] for r in records):
         raise ValueError('Parsed period does not match SEC submissions metadata')
@@ -110,6 +116,7 @@ async def parse(text, filing, mapping):
         if ticker_counts[h['t'].removesuffix(' CALL').removesuffix(' PUT')] > 1:
             h['t'] += ' [' + h['cusip'] + ' ' + h['asset_class'] + ']'
         h['t'] = h['t'].upper()
+        validate_identity(h)
         h['w'] = h['v'] / total * 100
     return {'total': total, 'holdings': holdings, 'total_positions': len(holdings), 'complete': True,
             'period_ending': filing['reportDate'], 'filing_date': filing['filingDate'],

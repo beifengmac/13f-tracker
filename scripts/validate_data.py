@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Fail builds on inconsistent monetary totals, duplicate securities, or invalid weights."""
+from security_identity import validate_identity
 import json
 import math
 from pathlib import Path
@@ -12,6 +13,7 @@ for fid, fund in data['funds'].items():
         assert len({h['t'] for h in holdings}) == len(holdings), (fid,label,'duplicate ticker')
         assert quarter['total'] > 0, (fid,label,'nonpositive total')
         for h in holdings:
+            validate_identity(h)
             assert all(math.isfinite(h[k]) and h[k] >= 0 for k in ('s','v','w')), (fid,label,h)
             assert abs(h['w'] - h['v']/quarter['total']*100) < .02, (fid,label,'weight mismatch')
         if quarter.get('complete'):

@@ -72,6 +72,9 @@ export function getAllQuarterKeys(funds: Record<string, Fund>): string[] {
 /* ── Holding lookup (normalizes GOOG / GOOGL) ────────────────── */
 
 export function normalizeTicker(ticker: string): string {
+  // Preserve bookmarks from the former incorrect TSM alias using the full CUSIP.
+  const legacy = ticker.match(/^TSM(?: (CALL|PUT))? \[(874039100|880770102) [^\]]+\]$/);
+  if (legacy) return (legacy[2] === '874039100' ? 'TSM' : 'TER') + (legacy[1] ? ` ${legacy[1]}` : '');
   return ticker;
 }
 
