@@ -229,7 +229,7 @@ export default function FundDetail() {
         </div>
       </header>
 
-      <DeepReport fund={fund} quarter={selectedQ} />
+      <details className="deep-report-shell mb-6 rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900"><summary className="cursor-pointer px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-300">持仓深度分析 · 历史趋势与证据</summary><DeepReport fund={fund} quarter={selectedQ} /></details>
 
       {/* Quarter summary */}
       <section className="mb-6">

@@ -23,11 +23,11 @@ export default function DeepReport({ fund, quarter }: { fund: Fund; quarter: str
   return <article className="deep-report" id="deep-report">
     <div className="report-hero">
       <div className="flex flex-wrap items-start justify-between gap-4">
-        <div><p className="report-eyebrow">13F RESEARCH / {quarter}</p><h2>{fund.manager_en}<br /><span>持仓研究 · 一页结论</span></h2></div>
+        <div><h2>持仓深度分析</h2><p className="report-eyebrow">{fund.name_cn} · {quarter}</p></div>
         <button className="report-print" onClick={() => window.print()}>打印 / 保存 PDF</button>
       </div>
-      <p className="mt-4 text-sm leading-7 text-slate-300">{fund.name_en} · {first} — {quarter} · {profile.quarters.length} 个季度，其中 {fullCount} 期已核对完整申报。</p>
-      {gaps.length > 0 && <p className="mt-3 text-xs text-amber-200">未纳入完整统计的季度：{gaps.join('、')}。追加申报存在重叠记录，待人工核对，未将缺失当作空仓。</p>}
+      <p className="mt-2 text-xs leading-6 text-gray-500 dark:text-gray-400">{fund.name_en} · {first} — {quarter} · {profile.quarters.length} 个季度，其中 {fullCount} 期已核对完整申报。</p>
+      {gaps.length > 0 && <p className="mt-2 text-xs text-amber-700 dark:text-amber-300">未纳入完整统计的季度：{gaps.join('、')}。追加申报存在重叠记录，待人工核对，未将缺失当作空仓。</p>}
       <div className="report-stats">
         {[['最大披露仓位', percent(metric.top1)], ['前三项合计', percent(metric.top3)], ['前十项合计', percent(metric.top10)], ['本季样本覆盖', percent(metric.coverage)]].map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}
       </div>
@@ -51,7 +51,7 @@ export default function DeepReport({ fund, quarter }: { fund: Fund; quarter: str
       </Block>
     </div>
     <Block title="持仓结构的变化" note="权重以各期完整申报市值为分母。期权为对应标的名义市值占比，不是权利金、投入比例或风险敞口；ETF 不含期权。">
-      <div style={{ width: '100%', height: 220 }}><ResponsiveContainer width="100%" height="100%"><LineChart data={profile.metrics} margin={{ top: 10, right: 12, left: -15, bottom: 10 }}><CartesianGrid strokeDasharray="3 3" stroke="#d5dfd6" /><XAxis dataKey="quarter" minTickGap={55} tick={{ fontSize: 10 }} /><YAxis domain={[0, 100]} tickFormatter={v => `${v}%`} tick={{ fontSize: 10 }} /><Tooltip formatter={v => percent(Number(v))} /><Legend wrapperStyle={{ fontSize: 11 }} /><Line name="前三项" type="linear" dataKey="top3" stroke="#21756a" dot={false} strokeWidth={2} isAnimationActive={false} /><Line name="前十项" type="linear" dataKey="top10" stroke="#bd9254" dot={false} strokeWidth={2} isAnimationActive={false} /></LineChart></ResponsiveContainer></div>
+      <div style={{ width: '100%', height: 220 }}><ResponsiveContainer width="100%" height="100%"><LineChart data={profile.metrics} margin={{ top: 10, right: 12, left: -15, bottom: 10 }}><CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" /><XAxis dataKey="quarter" minTickGap={55} tick={{ fontSize: 10 }} /><YAxis domain={[0, 100]} tickFormatter={v => `${v}%`} tick={{ fontSize: 10 }} /><Tooltip formatter={v => percent(Number(v))} /><Legend wrapperStyle={{ fontSize: 11 }} /><Line name="前三项" type="linear" dataKey="top3" stroke="#3b82f6" dot={false} strokeWidth={2} isAnimationActive={false} /><Line name="前十项" type="linear" dataKey="top10" stroke="#22c55e" dot={false} strokeWidth={2} isAnimationActive={false} /></LineChart></ResponsiveContainer></div>
       <div className="report-table-scroll"><table><thead><tr><th>季度</th><th>记录数</th><th>前三项</th><th>前十项</th><th>ETF*</th><th>CALL</th><th>PUT</th><th>覆盖市值</th></tr></thead><tbody>{profile.metrics.map(m => <tr key={m.quarter}><td>{m.quarter}</td><td>{m.count}</td><td>{percent(m.top3)}</td><td>{percent(m.top10)}</td><td>{percent(m.etf)}</td><td>{percent(m.call)}</td><td>{percent(m.put)}</td><td>{percent(m.coverage)}{!m.complete ? ' · 待核对' : ''}</td></tr>)}</tbody></table></div>
     </Block>
     <div className="report-grid">
