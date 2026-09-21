@@ -1,11 +1,11 @@
 {
   "source": "https://api.openfigi.com/v3/mapping",
-  "unique_cusips": 6453,
-  "registry_entries": 6453,
-  "queried_through": "2026-09-10T09:08:58.895562+00:00",
+  "unique_cusips": 6503,
+  "registry_entries": 6503,
+  "queried_through": "2026-09-21T05:17:58.889655+00:00",
   "statuses": {
-    "resolved": 5474,
-    "unresolved": 878,
+    "resolved": 5482,
+    "unresolved": 920,
     "ambiguous": 94,
     "invalid": 7
   },
@@ -2810,6 +2810,630 @@
           "name": "Wave Life Sciences Ltd",
           "class": "SHS",
           "weight": 0.019286658468397513,
+          "status": "unresolved"
+        }
+      ]
+    },
+    "oaktree": {
+      "quarter": "Q2 2026",
+      "records": 145,
+      "unresolved_records": 88,
+      "unresolved_weight": 21.309280054061976,
+      "unresolved": [
+        {
+          "cusip": "70509VAA8",
+          "name": "PEBBLEBROOK HOTEL TRUST",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.875589752069204,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09061GAK7",
+          "name": "BIOMARIN PHARMACEUTICAL INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.8655640383602574,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "81141RAG5",
+          "name": "SEA LTD",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.8612211999279741,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29786AAN6",
+          "name": "ETSY INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.8487513802459984,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29355AAK3",
+          "name": "ENPHASE ENERGY INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.7994615906145754,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "252131AM9",
+          "name": "DEXCOM INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.7923450768561171,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "278768AB2",
+          "name": "ECHOSTAR CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.780591902950181,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "57164YAF4",
+          "name": "MARRIOTT VACATIONS WORLDWIDE CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.7764878909344894,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "26142RAB0",
+          "name": "DRAFTKINGS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.7560610439321652,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "207410AH4",
+          "name": "CONMED CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.7280640656289331,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "767292AB1",
+          "name": "RIOT PLATFORMS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.7254816873482387,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "87918AAF2",
+          "name": "TELADOC HEALTH INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.7251745296547556,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "08265TAD1",
+          "name": "BENTLEY SYSTEMS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.7238894326002239,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "91332UAB7",
+          "name": "UNITY SOFTWARE INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.6749196231845924,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "338307AF8",
+          "name": "FIVE9 INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.6581073813859929,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "82452JAD1",
+          "name": "SHIFT4 PAYMENTS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.6420145330467846,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "194014AB2",
+          "name": "ENOVIS CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.5244687363953247,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "03209RAB9",
+          "name": "AMPHASTAR PHARMACEUTICALS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.5162425193696273,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00827BAB2",
+          "name": "AFFIRM HOLDINGS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.4758873078583194,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "04271TAB6",
+          "name": "ARRAY TECHNOLOGIES INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.4388625244816505,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "83304AAF3",
+          "name": "SNAP INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.3703425455791959,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "84762LAZ8",
+          "name": "SPECTRUM BRANDS HOLDINGS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.33999534048412283,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "974637AF7",
+          "name": "WINNEBAGO INDUSTRIES INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.25976716364413266,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "852234AK9",
+          "name": "BLOCK INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.23688863372377877,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "83304AAH9",
+          "name": "SNAP INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.22340602906006532,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "19240QAA0",
+          "name": "COGENT BIOSCIENCES INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.2048058225219811,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "09257WAE0",
+          "name": "BLACKSTONE MORTGAGE TRUST INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.19516878111262226,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "91688FAB0",
+          "name": "UPWORK INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.19494453962129699,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "98139AAD7",
+          "name": "WORKIVA INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.19470572708189374,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29786AAQ9",
+          "name": "ETSY INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.19303440011297587,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "75737FAE8",
+          "name": "REDFIN CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.18802986957168996,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "85571BBA2",
+          "name": "STARWOOD PROPERTY TRUST INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.167502981916419,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "833445AB5",
+          "name": "SNOWFLAKE INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.16508067700675236,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "62957HAL9",
+          "name": "NABORS INDUSTRIES LTD",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.15670038155552216,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "008073AA6",
+          "name": "AEROVIRONMENT INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.1565120403512232,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "465741AQ9",
+          "name": "ITRON INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.15540357215377348,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "48123VAE2",
+          "name": "ZIFF DAVIS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.15448384759909345,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "04280AAC4",
+          "name": "ARROWHEAD PHARMACEUTICALS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.15198047215335883,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29415FAD6",
+          "name": "ENVISTA HOLDINGS CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.14224652633568732,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "18915MAF4",
+          "name": "CLOUDFLARE INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.1415382901359672,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "753422AF1",
+          "name": "RAPID7 INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.13473170950872126,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "358039AB1",
+          "name": "FRESHPET INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.12765434329943248,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "02081GAB8",
+          "name": "ALPHATEC HOLDINGS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.12690522490196224,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "91680MAB3",
+          "name": "UPSTART HOLDINGS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.1148396616024235,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "82982TAA4",
+          "name": "SITIME CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.11239724864640929,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "758075AF2",
+          "name": "REDWOOD TRUST INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.11100661557222728,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "25809KAB1",
+          "name": "DOORDASH INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.11070910252485289,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "47215PAJ5",
+          "name": "JD.COM INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.11007284730263783,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "011642AD7",
+          "name": "ALARM.COM HOLDINGS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.10786838650033083,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "70932AAH6",
+          "name": "PENNYMAC MORTGAGE INVESTMENT TRUST",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.10083793906585305,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "156727AD1",
+          "name": "CERENCE INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.10043568099858118,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "15102KAB6",
+          "name": "CELCUITY INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.09899639450100747,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "98139AAB1",
+          "name": "WORKIVA INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.09804032558926443,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "22410JAD8",
+          "name": "CRACKER BARREL OLD COUNTRY STORE INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.09538745119025008,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "29786AAL0",
+          "name": "ETSY INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.09517433920421861,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "69553PAD2",
+          "name": "PAGERDUTY INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.09288314597287621,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "803607AD2",
+          "name": "SAREPTA THERAPEUTICS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.08804641839669368,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "501812AD3",
+          "name": "LCI INDUSTRIES",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.08791285045597916,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "90353TAS9",
+          "name": "UBER TECHNOLOGIES INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.08667941817477523,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "090043AD2",
+          "name": "BILL HOLDINGS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.08504042505540177,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "393222AK0",
+          "name": "GREEN PLAINS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.0686646069625197,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "376535AG5",
+          "name": "GLADSTONE CAPITAL CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.06695252269054952,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "594972AS0",
+          "name": "STRATEGY INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.06537958498912942,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "337932AT4",
+          "name": "FIRSTENERGY CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.0649031949801124,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "781154AD1",
+          "name": "RUBRIK INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.06397167481508355,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "665531AJ8",
+          "name": "NORTHERN OIL  GAS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.06150658653282233,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "76954AAD5",
+          "name": "RIVIAN AUTOMOTIVE INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.0503778444843751,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "48123VAH5",
+          "name": "ZIFF DAVIS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.04852587815085662,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "89377MAB5",
+          "name": "TRANSMEDICS GROUP INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.04714050453117131,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "81761L102",
+          "name": "SERVICE PROPERTIES TRUST",
+          "class": "COMMON STOCK",
+          "weight": 0.0466324190232876,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "92939UAT3",
+          "name": "WEC ENERGY GROUP INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.04635187777762686,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "00971TAN1",
+          "name": "AKAMAI TECHNOLOGIES INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.043514991857171004,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "62886HBD2",
+          "name": "NORWEGIAN CRUISE LINE HOLDINGS LTD",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.039544034326214166,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "67059NAH1",
+          "name": "NUTANIX INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.03448342606561114,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "55303JAB2",
+          "name": "MGP INGREDIENTS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.03400686953033038,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "90353TAM2",
+          "name": "UBER TECHNOLOGIES INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.033249743995011585,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "538034BC2",
+          "name": "LIVE NATION ENTERTAINMENT INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.03009057424544882,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "405024AD2",
+          "name": "HAEMONETICS CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.029461576792895443,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "23804LAD5",
+          "name": "DATADOG INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.027665563283996282,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "343412AJ1",
+          "name": "FLUOR CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.02340108933599501,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "399473AK3",
+          "name": "GROUPON INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.023006741266251168,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "682189AU9",
+          "name": "ON SEMICONDUCTOR CORP",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.020945881612049504,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "76155XAA8",
+          "name": "REVOLUTION MEDICINES INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.020021633093870974,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "64049MAB6",
+          "name": "NEOGENOMICS INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.013595245803950306,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "01609WBG6",
+          "name": "ALIBABA GROUP HOLDING LTD",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.012291719842897125,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "83304AAB2",
+          "name": "SNAP INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.012117352967564353,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "45258DAB1",
+          "name": "IMMUNOCORE HOLDINGS PLC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.010634922290491268,
+          "status": "unresolved"
+        },
+        {
+          "cusip": "819047AB7",
+          "name": "SHAKE SHACK INC",
+          "class": "CONVERTIBLE BOND",
+          "weight": 0.0034986057838357096,
           "status": "unresolved"
         }
       ]

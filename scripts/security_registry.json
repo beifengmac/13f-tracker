@@ -72322,5 +72322,395 @@
     "source": "https://api.openfigi.com/v3/mapping",
     "queried_at": "2026-09-10T09:08:58.895562+00:00",
     "id_type": "ID_CUSIP"
+  },
+  "81141RAG5": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00827BAB2": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "22410JAB2": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G7553X106": {
+    "status": "resolved",
+    "ticker": "KRSP",
+    "name": "RICE ACQUISITION CORP 3-A",
+    "figi": "BBG01X0FFM89",
+    "composite_figi": "BBG01X0FFM89",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CINS"
+  },
+  "83304AAF3": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "008073AA6": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "55303JAB2": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "32076VAD5": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "53802LAB8": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "57808L305": {
+    "status": "resolved",
+    "ticker": "MINE",
+    "name": "MAYFAIR GOLD CORP",
+    "figi": "BBG011BZNQX7",
+    "composite_figi": "BBG011BZNQX7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "queried_at": "2026-09-21T05:17:50.157185+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "19240QAA0": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "04280AAC4": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "91680MAB3": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "85571BBA2": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "09570Q509": {
+    "status": "resolved",
+    "ticker": "BMM",
+    "name": "BLUE MOON METALS INC",
+    "figi": "BBG000VLHCM9",
+    "composite_figi": "BBG000VLHCM9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "48123VAE2": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "707569AU3": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "55955DAB6": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "501812AB7": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "50202MAB8": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:51.073089+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "02081GAB8": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G470AU126": {
+    "status": "resolved",
+    "ticker": "ILLUU",
+    "name": "ILLUMINATION ACQUISITION COR",
+    "figi": "BBG01ZB6ZDW3",
+    "composite_figi": "BBG01ZB6ZDW3",
+    "security_type": "Unit",
+    "security_type2": "Unit",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CINS"
+  },
+  "82982TAA4": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "L01800116": {
+    "status": "resolved",
+    "ticker": "ALVOW",
+    "name": "ALVOTECH SA -27",
+    "figi": "BBG0186DQF77",
+    "composite_figi": "BBG0186DQF77",
+    "security_type": "Equity WRT",
+    "security_type2": "Warrant",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CINS"
+  },
+  "393222AK0": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "156727AD1": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "98139AAB1": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "090043AD2": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "606710AA9": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "35953DAB0": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:53.841499+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "376535AG5": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "67011XAB9": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "83304AAB2": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "74736LAF6": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "42703MAF0": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "62886HBD2": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "399473AF4": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "163072AA9": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "29664WAB1": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "09239BAD1": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:56.289465+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "399473AK3": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "15102KAA8": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "31188VAD2": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "70614WAB6": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "31188VAB6": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "893870204": {
+    "status": "resolved",
+    "ticker": "TGS",
+    "name": "TRANSPORTADOR GAS-ADR SP B",
+    "figi": "BBG000DQX5M5",
+    "composite_figi": "BBG000DQX5M5",
+    "security_type": "ADR",
+    "security_type2": "Depositary Receipt",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "33835LAA3": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G7553X114": {
+    "status": "resolved",
+    "ticker": "KRSP/WS",
+    "name": "RICE ACQUISITION CORP 3",
+    "figi": "BBG01XMPKW67",
+    "composite_figi": "BBG01XMPKW67",
+    "security_type": "Equity WRT",
+    "security_type2": "Warrant",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CINS"
+  },
+  "67623C307": {
+    "status": "resolved",
+    "ticker": "OPI",
+    "name": "OFFICE PROPERTIES INCOME TRU",
+    "figi": "BBG0231WBJ69",
+    "composite_figi": "BBG0231WBJ69",
+    "security_type": "REIT",
+    "security_type2": "REIT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "87266J104": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "queried_at": "2026-09-21T05:17:58.889655+00:00",
+    "id_type": "ID_CUSIP"
   }
 }

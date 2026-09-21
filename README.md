@@ -13,6 +13,7 @@
 | Bridgewater Associates | 达利欧 (Ray Dalio) | 全球最大对冲基金 |
 | BlackRock Inc. | 拉里·芬克 (Larry Fink) | 全球最大资管公司 |
 | ARK Investment | 木头姐 (Cathie Wood) | 颠覆式创新ETF |
+| Oaktree Capital Management | 霍华德·马克斯 (Howard Marks) | 联合创始人；机构13F不代表个人或完整信贷组合 |
 | Duquesne Family Office | 德鲁肯米勒 (Stanley Druckenmiller) | 索罗斯前首席操盘手，宏观传奇 |
 
 ### 🐉 Chinese Value Masters

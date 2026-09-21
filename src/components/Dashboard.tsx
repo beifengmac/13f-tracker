@@ -9,7 +9,7 @@ import MarketInsights from './MarketInsights';
 
 const data = rawData as unknown as Data;
 
-const GLOBAL_IDS = ['berkshire', 'bridgewater', 'blackrock', 'ark', 'duquesne'];
+const GLOBAL_IDS = ['berkshire', 'bridgewater', 'blackrock', 'ark', 'duquesne', 'oaktree'];
 const CN_IDS     = ['hhlr', 'himalaya', 'hh', 'danbin'];
 
 interface CardInfo {

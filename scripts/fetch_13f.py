@@ -112,6 +112,12 @@ FUNDS = {
         'description': '中国私募教父，长期主义践行者',
         'cik': '0002046333', 'max_holdings': None,
     },
+    'oaktree': {
+        'name_en': 'Oaktree Capital Management', 'name_cn': '橡树资本',
+        'manager': '霍华德·马克斯', 'manager_en': 'Howard Marks',
+        'description': '霍华德·马克斯联合创立；展示橡树资本机构13F申报，不代表其个人或完整信贷组合',
+        'cik': '0000949509', 'max_holdings': None,
+    },
     'duquesne': {
         'name_en': 'Duquesne Family Office', 'name_cn': '杜肯家族办公室',
         'manager': '德鲁肯米勒', 'manager_en': 'Stanley Druckenmiller',
