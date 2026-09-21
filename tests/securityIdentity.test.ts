@@ -18,3 +18,11 @@ test('old TSM bookmarks resolve by CUSIP without confusing Teradyne and Taiwan S
  assert.equal(normalizeTicker('TSM CALL [874039100 ADR]'),'TSM CALL');
  assert.equal(normalizeTicker('GOOGL'),'GOOGL');
 });
+
+test('bond labels preserve maturity and identify principal separately from shares',async()=>{
+ const {securityTypeLabel}=await import('../src/utils.ts');
+ assert.equal(normalizeTicker('AVAV 0 07/15/30'),'AVAV 0 07/15/30');
+ assert.equal(securityTypeLabel({security_type:'PRN',asset_class:'CONVERTIBLE BOND'}),'可转债');
+ assert.equal(securityTypeLabel({security_type:'PRN',asset_class:'NOTE 1.000%'}),'债券');
+ assert.equal(securityTypeLabel({security_type:'SH',asset_class:'COM'}),'');
+});

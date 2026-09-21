@@ -160,3 +160,9 @@ export function inferSector(name: string): string {
 export function tickerStatusLabel(status: Holding['ticker_status']): string {
   return status === 'resolved' ? '' : status === 'ambiguous' ? '代码有歧义' : status === 'invalid' ? '编号待核实' : status === 'pending' ? '代码待查询' : status === 'unresolved' ? '暂未匹配代码' : '';
 }
+
+/** SEC PRN records represent bond principal, never ordinary shares. */
+export function securityTypeLabel(holding: Pick<Holding, 'security_type' | 'asset_class'>): string {
+  if (holding.security_type !== 'PRN') return '';
+  return /CONV/i.test(holding.asset_class ?? '') ? '可转债' : '债券';
+}

@@ -16,18 +16,23 @@ ROOT=Path(__file__).resolve().parents[1]
 REGISTRY=ROOT/'scripts/security_registry.json'
 CACHE=ROOT/'.cache/openfigi'
 
-def identifier_job(cusip):
-    return {'idType':'ID_CINS' if cusip[0].isalpha() else 'ID_CUSIP','idValue':cusip,'exchCode':'US'}
+def identifier_job(cusip, security_type='SH'):
+    job = {'idType':'ID_CINS' if cusip[0].isalpha() else 'ID_CUSIP','idValue':cusip}
+    # PRN is principal, not shares. Corporate bonds need no equity venue filter.
+    return {**job, **({'marketSecDes':'Corp'} if security_type == 'PRN' else {'exchCode':'US'})}
 
-def select_result(response):
-    candidates=[r for r in response.get('data',[]) if r.get('exchCode')=='US' and r.get('marketSector')=='Equity' and r.get('ticker') and r.get('name') and (r.get('compositeFIGI') or r.get('figi'))]
+def select_result(response, security_type='SH'):
+    bond = security_type == 'PRN'
+    candidates=[r for r in response.get('data',[]) if
+                (r.get('marketSector') == 'Corp' if bond else r.get('exchCode')=='US' and r.get('marketSector')=='Equity')
+                and r.get('ticker') and r.get('name') and (r.get('compositeFIGI') or r.get('figi'))]
     identities={(r['ticker'],r.get('compositeFIGI') or r.get('figi')) for r in candidates}
     if len(identities)!=1:
-        return {'status':'ambiguous' if candidates else 'unresolved','candidates':candidates,'reason':response.get('warning') or 'No unique US equity match'}
+        return {'status':'ambiguous' if candidates else 'unresolved','candidates':candidates,'reason':response.get('warning') or ('No unique corporate bond match' if bond else 'No unique US equity match')}
     r=candidates[0]
     return {'status':'resolved','ticker':r['ticker'],'name':r['name'],'figi':r.get('figi'),
             'composite_figi':r.get('compositeFIGI'),'security_type':r.get('securityType'),
-            'security_type2':r.get('securityType2'),'source':'https://api.openfigi.com/v3/mapping'}
+            'security_type2':r.get('securityType2'),'market_sector':r.get('marketSector'),'exchange':r.get('exchCode'),'source':'https://api.openfigi.com/v3/mapping'}
 
 def save(path,data):
     temp=path.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');temp.replace(path)
@@ -35,15 +40,22 @@ def save(path,data):
 def main(limit=0,refresh_days=90):
     data=json.loads((ROOT/'src/data.json').read_text())
     scores={}
+    security_types={}
     for f in data['funds'].values():
         for q in f['quarters'].values():
             for h in q['holdings']:
                 c=h.get('cusip')
-                if c:scores[c]=max(scores.get(c,0),h['w'])
+                if c:
+                    scores[c]=max(scores.get(c,0),h['w'])
+                    security_types.setdefault(c,set()).add(h.get('security_type','SH'))
+    # Mixed/unknown types retain the stricter equity lookup.
+    kinds={c: 'PRN' if types == {'PRN'} else 'SH' for c,types in security_types.items()}
+    jobs={c:identifier_job(c,kinds[c]) for c in scores}
     registry=json.loads(REGISTRY.read_text()) if REGISTRY.exists() else {}
     def stale(c):
         r=registry.get(c)
         if not r:return True
+        if kinds[c]=='PRN' and r.get('query') != jobs[c]:return True
         if r.get('status')=='invalid':return False
         if c[0].isalpha() and r.get('id_type')!='ID_CINS':return True
         try:return (datetime.now(timezone.utc)-datetime.fromisoformat(r['queried_at'])).days>=refresh_days
@@ -57,7 +69,7 @@ def main(limit=0,refresh_days=90):
         started=time.monotonic()
         batch=pending[start:start+10]
         request=Request('https://api.openfigi.com/v3/mapping',
-            data=json.dumps([identifier_job(c) for c in batch]).encode(),
+            data=json.dumps([jobs[c] for c in batch]).encode(),
             headers={'Content-Type':'application/json','User-Agent':'13FTracker/1.0'},method='POST')
         response=None
         for attempt in range(4):
@@ -84,9 +96,9 @@ def main(limit=0,refresh_days=90):
             if 'error' in r:
                 print(f'{c}: {r["error"]}',flush=True)
                 if 'Invalid idValue format' in r['error']:
-                    registry[c]={'status':'invalid','reason':r['error'],'queried_at':stamp}
+                    registry[c]={'status':'invalid','reason':r['error'],'queried_at':stamp,'query':jobs[c]}
                 continue
-            registry[c]={**select_result(r),'queried_at':stamp,'id_type':'ID_CINS' if c[0].isalpha() else 'ID_CUSIP'}
+            registry[c]={**select_result(r,kinds[c]),'query':jobs[c],'queried_at':stamp,'id_type':'ID_CINS' if c[0].isalpha() else 'ID_CUSIP'}
         save(REGISTRY,registry)
         if start%100==0 or start+10>=len(pending):
             resolved=sum(r['status']=='resolved' for r in registry.values())

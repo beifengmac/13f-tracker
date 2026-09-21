@@ -4,7 +4,7 @@ import { ResponsiveContainer, AreaChart, Area, BarChart, Bar, XAxis, YAxis, Tool
 
 import rawData from '../data.json';
 import type { Data, Holding, Action, SortKey, SortDir } from '../types';
-import { fmtValue, fmtShares, fmtPct, getQuarterKeys, comparablePrevious, getAction, getShareChange, mergeGoogleClasses, inferSector, tickerStatusLabel } from '../utils';
+import { fmtValue, fmtShares, fmtPct, getQuarterKeys, comparablePrevious, getAction, getShareChange, mergeGoogleClasses, inferSector, tickerStatusLabel, securityTypeLabel } from '../utils';
 import { generateFundAnalysis } from '../analysis';
 import DeepReport from './DeepReport';
 import ActionBadge from './ActionBadge';
@@ -227,7 +227,7 @@ export default function FundDetail() {
             </div>
           </div>
         </div>
-        <p className="mt-3 text-xs text-gray-400">交易代码已核对 {q.holdings.filter(h=>h.ticker_status==='resolved').length} / {q.holdings.length} 条 · 未匹配项保留证券编号和公司名，持仓仍计入统计。</p>
+        <p className="mt-3 text-xs text-gray-400">证券代码已核对 {q.holdings.filter(h=>h.ticker_status==='resolved').length} / {q.holdings.length} 条 · 未匹配项保留证券编号和公司名，持仓仍计入统计。债券显示完整债券代码，数量为申报本金。</p>
       </header>
 
       <details className="deep-report-shell mb-6 rounded-xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900"><summary className="cursor-pointer px-4 py-3 text-sm font-semibold text-gray-700 dark:text-gray-300">持仓深度分析 · 历史趋势与证据</summary><DeepReport fund={fund} quarter={selectedQ} /></details>
@@ -334,12 +334,12 @@ export default function FundDetail() {
       <div className="mb-2 flex flex-wrap items-end justify-between gap-2">
         <div>
           <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-            {filterAction === 'cleared' ? '已清仓股票' : '当前持仓股票'}
+            {filterAction === 'cleared' ? '已清仓证券' : '当前持仓证券'}
           </h2>
           <p className="mt-0.5 text-xs text-gray-400">
             {filterAction === 'cleared'
-              ? `显示 ${selectedQ} 相比上一季度已经卖出的股票`
-              : `显示 ${selectedQ} 这家机构当前仍持有的股票`}
+              ? `显示 ${selectedQ} 相比上一季度已经退出的证券`
+              : `显示 ${selectedQ} 这家机构当前仍持有的证券`}
           </p>
         </div>
         <span className="text-xs text-gray-400">当前列表 {filtered.length} 只</span>
@@ -348,7 +348,7 @@ export default function FundDetail() {
         <table className="w-full text-sm">
           <thead className="sticky top-0 bg-gray-50 dark:bg-gray-800/80">
             <tr>
-              {([['t','Ticker'],['n','Name'],['sector','分类'],['v','Value'],['w','Weight%'],['s','Shares'],['change','Change%'],['action','Action']] as [SortKey,string][]).map(([k,label]) => (
+              {([['t','Ticker'],['n','Name'],['sector','分类'],['v','Value'],['w','Weight%'],['s','股数 / 本金'],['change','Change%'],['action','Action']] as [SortKey,string][]).map(([k,label]) => (
                 <th
                   key={k}
                   onClick={() => toggleSort(k)}
@@ -366,7 +366,7 @@ export default function FundDetail() {
                   onClick={() => setExpanded(expanded === r.t ? null : r.t)}
                   className={`cursor-pointer transition-colors hover:bg-blue-50/50 dark:hover:bg-blue-900/10 ${i % 2 === 1 ? 'bg-gray-50/50 dark:bg-white/[0.02]' : ''}`}
                 >
-                  <td className="px-3 py-2 font-mono font-semibold text-gray-900 dark:text-white">{r.t}{tickerStatusLabel(r.ticker_status)&&<small className="block font-sans font-normal text-gray-400">{tickerStatusLabel(r.ticker_status)}</small>}</td>
+                  <td className="px-3 py-2 font-mono font-semibold text-gray-900 dark:text-white">{r.t}{securityTypeLabel(r) && <small className="block font-sans text-xs font-normal text-blue-500">{securityTypeLabel(r)} · CUSIP {r.cusip}</small>}{tickerStatusLabel(r.ticker_status)&&<small className="block font-sans font-normal text-gray-400">{tickerStatusLabel(r.ticker_status)}</small>}</td>
                   <td className="px-3 py-2 text-gray-600 dark:text-gray-300 max-w-[200px] truncate">{r.n}</td>
                   <td className="px-3 py-2">
                     <span className="rounded-md bg-gray-100 px-2 py-1 text-[11px] font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">{r.sector}</span>
@@ -402,7 +402,7 @@ export default function FundDetail() {
           >
             <div className="flex items-start justify-between mb-2">
               <div>
-                <div className="font-mono font-bold text-gray-900 dark:text-white">{r.t}{tickerStatusLabel(r.ticker_status)&&<small className="ml-2 font-sans font-normal text-gray-400">{tickerStatusLabel(r.ticker_status)}</small>}</div>
+                <div className="font-mono font-bold text-gray-900 dark:text-white">{r.t}{securityTypeLabel(r) && <small className="block font-sans text-xs font-normal text-blue-500">{securityTypeLabel(r)} · CUSIP {r.cusip}</small>}{tickerStatusLabel(r.ticker_status)&&<small className="ml-2 font-sans font-normal text-gray-400">{tickerStatusLabel(r.ticker_status)}</small>}</div>
                 <div className="text-xs text-gray-500 dark:text-gray-400 truncate max-w-[180px]">{r.n}</div>
               </div>
               <ActionBadge action={r.action} change={r.change} />
@@ -421,7 +421,7 @@ export default function FundDetail() {
                 <div className="font-mono font-medium text-gray-900 dark:text-white">{r.w.toFixed(2)}%</div>
               </div>
               <div>
-                <div className="text-gray-400">Shares</div>
+                <div className="text-gray-400">{r.security_type === 'PRN' ? '债券本金' : 'Shares'}</div>
                 <div className="font-mono font-medium text-gray-900 dark:text-white">{fmtShares(r.s)}</div>
               </div>
 

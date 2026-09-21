@@ -30,3 +30,19 @@ class SecurityIdentityTests(unittest.TestCase):
         self.assertEqual(select_result({'data':[{**a,'exchCode':'LN'}]})['status'],'unresolved')
         self.assertEqual(select_result({'warning':'No identifier found'})['status'],'unresolved')
         self.assertEqual(select_result({'data':[a]})['ticker'],'A')
+
+    def test_principal_lookup_is_not_limited_to_us_equity_venues(self):
+        self.assertEqual(identifier_job('008073AA6', 'PRN'),
+                         {'idType':'ID_CUSIP','idValue':'008073AA6','marketSecDes':'Corp'})
+        self.assertEqual(identifier_job('G11448100', 'PRN')['idType'], 'ID_CINS')
+
+    def test_bond_identity_keeps_coupon_maturity_and_rejects_common_stock(self):
+        bond={'ticker':'AVAV 0 07/15/30','figi':'BBG01VVSLGQ7','name':'AEROVIRONMENT INC',
+              'exchCode':'TRACE','marketSector':'Corp','securityType':'GLOBAL'}
+        stock={**bond,'ticker':'AVAV','figi':'stock','marketSector':'Equity','exchCode':'US'}
+        self.assertEqual(select_result({'data':[stock,bond]}, 'PRN')['ticker'], 'AVAV 0 07/15/30')
+        self.assertEqual(select_result({'data':[bond]})['status'], 'unresolved')
+        self.assertEqual(select_result({'data':[stock]}, 'PRN')['status'], 'unresolved')
+        other={**bond,'figi':'other','ticker':'AVAV 0 07/15/31'}
+        self.assertEqual(select_result({'data':[bond,other]}, 'PRN')['status'], 'ambiguous')
+        self.assertEqual(select_result({'data':[bond,{**bond,'exchCode':'FRANKFURT'}]}, 'PRN')['status'], 'resolved')
