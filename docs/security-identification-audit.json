@@ -4,8 +4,8 @@
   "registry_entries": 6503,
   "queried_through": "2026-09-21T05:25:47.350991+00:00",
   "statuses": {
-    "ambiguous": 94,
     "resolved": 5799,
+    "ambiguous": 94,
     "unresolved": 603,
     "invalid": 7
   },
