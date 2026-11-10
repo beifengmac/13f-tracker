@@ -5,8 +5,8 @@
   "queried_through": "2026-09-21T05:25:47.350991+00:00",
   "statuses": {
     "resolved": 5799,
-    "ambiguous": 94,
     "unresolved": 603,
+    "ambiguous": 94,
     "invalid": 7
   },
   "funds": {
@@ -1414,7 +1414,7 @@
       "unresolved": []
     },
     "danbin": {
-      "quarter": "Q2 2026",
+      "quarter": "Q3 2026",
       "records": 13,
       "unresolved_records": 0,
       "unresolved_weight": 0,
