@@ -76792,5 +76792,100 @@
     "reason": "No identifier found.",
     "queried_at": "2026-09-21T05:17:58.889655+00:00",
     "id_type": "ID_CUSIP"
+  },
+  "35661P100": {
+    "status": "resolved",
+    "ticker": "FRNM",
+    "name": "FREENOME INC",
+    "figi": "BBG01N0FG6L0",
+    "composite_figi": "BBG01N0FG6L0",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "35661P100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-13T19:21:19.626337+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "81517B101": {
+    "status": "resolved",
+    "ticker": "SECZ",
+    "name": "SECURITIZE CORP",
+    "figi": "BBG023CZLN51",
+    "composite_figi": "BBG023CZLN51",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "81517B101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-13T19:21:19.626337+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00214Q724": {
+    "status": "resolved",
+    "ticker": "ARKY",
+    "name": "ARK ACTIVE AUTOCALL INC ETF",
+    "figi": "BBG024DN9VB4",
+    "composite_figi": "BBG024DN9VB4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00214Q724",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-13T19:21:19.626337+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "811033109": {
+    "status": "resolved",
+    "ticker": "SCTX",
+    "name": "SCRIBE THERAPEUTICS INC",
+    "figi": "BBG00RR3PF94",
+    "composite_figi": "BBG00RR3PF94",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "811033109",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-13T19:21:19.626337+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "M8769Q102": {
+    "status": "resolved",
+    "ticker": "TEVA",
+    "name": "TEVA PHARMACEUTICAL IND LTD",
+    "figi": "BBG000HD3FM1",
+    "composite_figi": "BBG000HD3FM1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "M8769Q102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-13T19:21:19.626337+00:00",
+    "id_type": "ID_CINS"
   }
 }

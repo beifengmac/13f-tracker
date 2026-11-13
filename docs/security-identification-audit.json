@@ -1,10 +1,10 @@
 {
   "source": "https://api.openfigi.com/v3/mapping",
-  "unique_cusips": 6503,
-  "registry_entries": 6503,
-  "queried_through": "2026-09-21T05:25:47.350991+00:00",
+  "unique_cusips": 6508,
+  "registry_entries": 6508,
+  "queried_through": "2026-11-13T19:21:19.626337+00:00",
   "statuses": {
-    "resolved": 5799,
+    "resolved": 5804,
     "unresolved": 603,
     "ambiguous": 94,
     "invalid": 7
@@ -1378,19 +1378,11 @@
       ]
     },
     "ark": {
-      "quarter": "Q2 2026",
-      "records": 191,
-      "unresolved_records": 1,
-      "unresolved_weight": 0.00850666765229601,
-      "unresolved": [
-        {
-          "cusip": "M4130Y106",
-          "name": "Enlivex Ltd",
-          "class": "Common Stock",
-          "weight": 0.00850666765229601,
-          "status": "unresolved"
-        }
-      ]
+      "quarter": "Q3 2026",
+      "records": 182,
+      "unresolved_records": 0,
+      "unresolved_weight": 0,
+      "unresolved": []
     },
     "hhlr": {
       "quarter": "Q2 2026",
