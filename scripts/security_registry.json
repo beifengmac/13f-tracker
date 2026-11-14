@@ -76887,5 +76887,6074 @@
     },
     "queried_at": "2026-11-13T19:21:19.626337+00:00",
     "id_type": "ID_CINS"
+  },
+  "30233Q108": {
+    "status": "resolved",
+    "ticker": "XOM",
+    "name": "EXXONMOBIL HOLDINGS CORP",
+    "figi": "BBG023CY9MM1",
+    "composite_figi": "BBG023CY9MM1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "30233Q108",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "30609A109": {
+    "status": "resolved",
+    "ticker": "OKE",
+    "name": "ONEOK INC",
+    "figi": "BBG024TZWVN1",
+    "composite_figi": "BBG024TZWVN1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "30609A109",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78392B206": {
+    "status": "resolved",
+    "ticker": "SKHY",
+    "name": "SK HYNIX INC-ADR",
+    "figi": "BBG0238L5JS9",
+    "composite_figi": "BBG0238L5JS9",
+    "security_type": "ADR",
+    "security_type2": "Depositary Receipt",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78392B206",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G39104107": {
+    "status": "resolved",
+    "ticker": "GTES",
+    "name": "GATES INDUSTRIAL CORP LTD",
+    "figi": "BBG023G9VDF5",
+    "composite_figi": "BBG023G9VDF5",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G39104107",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CINS"
+  },
+  "60744M106": {
+    "status": "resolved",
+    "ticker": "MBGL",
+    "name": "MOBILITY GLOBAL INC",
+    "figi": "BBG022G54330",
+    "composite_figi": "BBG022G54330",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "60744M106",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G5T40M104": {
+    "status": "resolved",
+    "ticker": "MRX",
+    "name": "MAREX GROUP LTD",
+    "figi": "BBG023DGDZ18",
+    "composite_figi": "BBG023DGDZ18",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G5T40M104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CINS"
+  },
+  "197914104": {
+    "status": "resolved",
+    "ticker": "CLBK",
+    "name": "COLUMBIA FINANCIAL INC",
+    "figi": "BBG023TM45W0",
+    "composite_figi": "BBG023TM45W0",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "197914104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "59739R104": {
+    "status": "resolved",
+    "ticker": "MFP",
+    "name": "MIDERA FOOD PROCESSI INC",
+    "figi": "BBG01Y76YT20",
+    "composite_figi": "BBG01Y76YT20",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "59739R104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "001026103": {
+    "status": "resolved",
+    "ticker": "ADIG",
+    "name": "ADI GLOBAL DISTRIB",
+    "figi": "BBG01WF7KBR0",
+    "composite_figi": "BBG01WF7KBR0",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "001026103",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "22946R101": {
+    "status": "resolved",
+    "ticker": "CSQR",
+    "name": "CSQUARE INC",
+    "figi": "BBG02317F9W3",
+    "composite_figi": "BBG02317F9W3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "22946R101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:33.197524+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "98980GAD4": {
+    "status": "resolved",
+    "ticker": "ZS 0 07/15/28",
+    "name": "ZSCALER INC.",
+    "figi": "BBG01VVK99J2",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "98980GAD4",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "55024UAK5": {
+    "status": "resolved",
+    "ticker": "LITE 0.375 03/15/32",
+    "name": "LUMENTUM HOLDINGS INC",
+    "figi": "BBG01X2KMSS3",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "55024UAK5",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "57142B203": {
+    "status": "resolved",
+    "ticker": "MQ",
+    "name": "MARQETA INC-A",
+    "figi": "BBG0112Z87D8",
+    "composite_figi": "BBG0112Z87D8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "57142B203",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G3314M109": {
+    "status": "resolved",
+    "ticker": "XPRO",
+    "name": "EXPRO LTD",
+    "figi": "BBG023LFV6F0",
+    "composite_figi": "BBG023LFV6F0",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G3314M109",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CINS"
+  },
+  "15189TBR7": {
+    "status": "resolved",
+    "ticker": "CNP 3 08/01/28",
+    "name": "CENTERPOINT ENERGY INC",
+    "figi": "BBG01WDB6FY2",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "15189TBR7",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "204166AB8": {
+    "status": "resolved",
+    "ticker": "CVLT 0 09/15/30",
+    "name": "COMMVAULT SYSTEMS INC",
+    "figi": "BBG01X0X3YC2",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "204166AB8",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "63954QAH9": {
+    "status": "resolved",
+    "ticker": "NBIS 2.75 09/15/32",
+    "name": "NEBIUS GROUP NV",
+    "figi": "BBG01X6YLTD4",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "63954QAH9",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "698955101": {
+    "status": "resolved",
+    "ticker": "PBLS",
+    "name": "PARABILIS MEDICINES INC",
+    "figi": "BBG00KXR8FS7",
+    "composite_figi": "BBG00KXR8FS7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "698955101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "63954QAG1": {
+    "status": "resolved",
+    "ticker": "NBIS 1 09/15/30",
+    "name": "NEBIUS GROUP NV",
+    "figi": "BBG01X6YLTH0",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "63954QAG1",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "81761L201": {
+    "status": "resolved",
+    "ticker": "SVC",
+    "name": "SERVICE PROPERTIES TRUST",
+    "figi": "BBG000F79GY5",
+    "composite_figi": "BBG000F79GY5",
+    "security_type": "REIT",
+    "security_type2": "REIT",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "81761L201",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:35.663037+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "94352A104": {
+    "status": "resolved",
+    "ticker": "WVE",
+    "name": "WAVE LIFE SCIENCES INC",
+    "figi": "BBG0248CHKR2",
+    "composite_figi": "BBG0248CHKR2",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "94352A104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G2646Y104": {
+    "status": "resolved",
+    "ticker": "DMRA",
+    "name": "DAMORA THERAPEUTICS INC",
+    "figi": "BBG00XMLGWC5",
+    "composite_figi": "BBG00XMLGWC5",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G2646Y104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CINS"
+  },
+  "87877F103": {
+    "status": "resolved",
+    "ticker": "TGLS",
+    "name": "TECNOGLASS HOLDINGS INC",
+    "figi": "BBG002Z3L4S8",
+    "composite_figi": "BBG002Z3L4S8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "87877F103",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "53220KAH1": {
+    "status": "resolved",
+    "ticker": "LGND 0.75 10/01/30",
+    "name": "LIGAND PHARMACEUTICALS I",
+    "figi": "BBG01WMCMDP7",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "53220KAH1",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "462210105": {
+    "status": "resolved",
+    "ticker": "IOND",
+    "name": "IONIC DIGITAL INC CL-A",
+    "figi": "BBG023W4C9T3",
+    "composite_figi": "BBG023W4C9T3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "462210105",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "47668J102": {
+    "status": "resolved",
+    "ticker": "JMKE",
+    "name": "JERSEY MIKE'S SUBS INC-CL A",
+    "figi": "BBG023GD5N81",
+    "composite_figi": "BBG023GD5N81",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "47668J102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00654F105": {
+    "status": "resolved",
+    "ticker": "ADRX",
+    "name": "ADARX PHARMACEUTICALS INC",
+    "figi": "BBG00WHNQV30",
+    "composite_figi": "BBG00WHNQV30",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00654F105",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "687793AE9": {
+    "status": "resolved",
+    "ticker": "OSCR 2.25 09/01/30",
+    "name": "OSCAR HEALTH INC",
+    "figi": "BBG01XBBVFD7",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "687793AE9",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "19260QAH0": {
+    "status": "resolved",
+    "ticker": "COIN 0 10/01/29",
+    "name": "COINBASE GLOBAL INC",
+    "figi": "BBG01WJ7QK63",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "19260QAH0",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "05464CAE1": {
+    "status": "resolved",
+    "ticker": "AXON 0 09/15/31",
+    "name": "AXON ENTERPRISE INC",
+    "figi": "BBG0253X67W3",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "05464CAE1",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:38.268536+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "89790E106": {
+    "status": "resolved",
+    "ticker": "TRLV",
+    "name": "TRULIEVE CANNABIS CORP",
+    "figi": "BBG00M3PMKD9",
+    "composite_figi": "BBG00M3PMKD9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "89790E106",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "485925101": {
+    "status": "resolved",
+    "ticker": "KARD",
+    "name": "KARDIGAN INC",
+    "figi": "BBG01T3TSSM2",
+    "composite_figi": "BBG01T3TSSM2",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "485925101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "19260QAK3": {
+    "status": "resolved",
+    "ticker": "COIN 0 10/01/32",
+    "name": "COINBASE GLOBAL INC",
+    "figi": "BBG01WJ7RKP1",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "19260QAK3",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "296013105": {
+    "status": "resolved",
+    "ticker": "EROC",
+    "name": "EROCK INC-A",
+    "figi": "BBG022FRS3L7",
+    "composite_figi": "BBG022FRS3L7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "296013105",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "62886HBX8": {
+    "status": "resolved",
+    "ticker": "NCLH 0.75 09/15/30",
+    "name": "NCL CORPORATION LTD",
+    "figi": "BBG01X572G52",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "62886HBX8",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "776105108": {
+    "status": "resolved",
+    "ticker": "REAX",
+    "name": "REAL REMAX GROUP INC",
+    "figi": "BBG024M90BY3",
+    "composite_figi": "BBG024M90BY3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "776105108",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "35473P686": {
+    "status": "resolved",
+    "ticker": "FLTW",
+    "name": "FRANKLIN FTSE TAIWAN ETF",
+    "figi": "BBG00J3PQ956",
+    "composite_figi": "BBG00J3PQ956",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "35473P686",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46438T309": {
+    "status": "resolved",
+    "ticker": "IQQ",
+    "name": "ISHRS NASDAQ 100 ETF",
+    "figi": "BBG023GDXR45",
+    "composite_figi": "BBG023GDXR45",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46438T309",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "68629T104": {
+    "status": "resolved",
+    "ticker": "OIG",
+    "name": "ORION180 INSURANCE GROU-CL A",
+    "figi": "BBG02315VHR7",
+    "composite_figi": "BBG02315VHR7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "68629T104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "053807AZ6": {
+    "status": "resolved",
+    "ticker": "AVT 1.75 09/01/30",
+    "name": "AVNET INC",
+    "figi": "BBG01X0X2HS3",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "053807AZ6",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:40.902272+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "66982MAB0": {
+    "status": "resolved",
+    "ticker": "NVMI 0 09/15/30",
+    "name": "NOVA LTD",
+    "figi": "BBG01X0WXB40",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "66982MAB0",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "91703D100": {
+    "status": "resolved",
+    "ticker": "UROY",
+    "name": "URANIUM ROYALTY CORP",
+    "figi": "BBG0240B2R93",
+    "composite_figi": "BBG0240B2R93",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "91703D100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "53229X101": {
+    "status": "resolved",
+    "ticker": "LFTO",
+    "name": "LIFTOFF MOBILE INC",
+    "figi": "BBG0082WD3M4",
+    "composite_figi": "BBG0082WD3M4",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "53229X101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92940WAF6": {
+    "status": "resolved",
+    "ticker": "WIX 0 09/15/30",
+    "name": "WIX LTD",
+    "figi": "BBG01X56RPQ4",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92940WAF6",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "88023BAE3": {
+    "status": "resolved",
+    "ticker": "TEM 0.75 07/15/30",
+    "name": "TEMPUS AI INC",
+    "figi": "BBG01VW38B23",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "88023BAE3",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "97717PAK0": {
+    "status": "resolved",
+    "ticker": "WT 4.625 08/15/30",
+    "name": "WISDOMTREE INC",
+    "figi": "BBG01WN0GLS8",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "97717PAK0",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "867866105": {
+    "status": "resolved",
+    "ticker": "SSMR",
+    "name": "SUNSHINE SILVER MINING & REF",
+    "figi": "BBG002GP3MF4",
+    "composite_figi": "BBG002GP3MF4",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "867866105",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "565788AK2": {
+    "status": "resolved",
+    "ticker": "MARA 0 08/01/32",
+    "name": "MARA HOLDINGS INC",
+    "figi": "BBG01WB0YHR1",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "565788AK2",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "10567X101": {
+    "status": "resolved",
+    "ticker": "BRVE",
+    "name": "BRAVEHEART BIO INC",
+    "figi": "BBG01YCFNLC2",
+    "composite_figi": "BBG01YCFNLC2",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "10567X101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "75867H106": {
+    "status": "resolved",
+    "ticker": "REF",
+    "name": "REFORMATION INC",
+    "figi": "BBG023C4MJS3",
+    "composite_figi": "BBG023C4MJS3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "75867H106",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:43.510114+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "298736AN9": {
+    "status": "resolved",
+    "ticker": "EEFT 0.625 10/01/30",
+    "name": "EURONET WORLDWIDE INC",
+    "figi": "BBG01WR2Y104",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "298736AN9",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "03770Y107": {
+    "status": "resolved",
+    "ticker": "APMD",
+    "name": "APNIMED INC",
+    "figi": "BBG023ML25G9",
+    "composite_figi": "BBG023ML25G9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "03770Y107",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "925550AK1": {
+    "status": "resolved",
+    "ticker": "VIAV 0.625 03/01/31",
+    "name": "VIAVI SOLUTIONS INC",
+    "figi": "BBG01WR863Q0",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "925550AK1",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "13469VAD0": {
+    "status": "resolved",
+    "ticker": "CAMT 0 09/15/30",
+    "name": "CAMTEK LTD/ISRAEL",
+    "figi": "BBG01X72V3Y6",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "13469VAD0",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "15643UAG9": {
+    "status": "resolved",
+    "ticker": "LEU 0 08/15/32",
+    "name": "CENTRUS ENERGY CORP",
+    "figi": "BBG01WR5K8R8",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "15643UAG9",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "64125S104": {
+    "status": "resolved",
+    "ticker": "LIME",
+    "name": "NEUTRON HOLDINGS INC",
+    "figi": "BBG00G720BY0",
+    "composite_figi": "BBG00G720BY0",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "64125S104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "02043QAD9": {
+    "status": "resolved",
+    "ticker": "ALNY 0 09/15/28",
+    "name": "ALNYLAM PHARMACEUTICALS",
+    "figi": "BBG01X5VX1N8",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "02043QAD9",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "96524T101": {
+    "status": "resolved",
+    "ticker": "WHK",
+    "name": "WHITEHAWK MINERALS CORP-CL A",
+    "figi": "BBG0227C0PB1",
+    "composite_figi": "BBG0227C0PB1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "96524T101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "477839AE4": {
+    "status": "resolved",
+    "ticker": "JBTM 0.375 09/15/30",
+    "name": "JBT MAREL CORP",
+    "figi": "BBG01X1L9M00",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "477839AE4",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "747292100": {
+    "status": "resolved",
+    "ticker": "QVCG",
+    "name": "QVC GROUP INC",
+    "figi": "BBG0246CCK44",
+    "composite_figi": "BBG0246CCK44",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "747292100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:46.096154+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "778920AB4": {
+    "status": "resolved",
+    "ticker": "SHAZ 6 05/01/31",
+    "name": "SHARONAI HOLDINGS INC",
+    "figi": "BBG021YR8HD8",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "778920AB4",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "55087PAF1": {
+    "status": "resolved",
+    "ticker": "LYFT 0 09/15/30",
+    "name": "LYFT INC",
+    "figi": "BBG01X0WS1M8",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "55087PAF1",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "67448A106": {
+    "status": "resolved",
+    "ticker": "OBX",
+    "name": "OBSIDIAN THERAPEUTICS INC",
+    "figi": "BBG02451DLZ2",
+    "composite_figi": "BBG02451DLZ2",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "67448A106",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "248356AB3": {
+    "status": "resolved",
+    "ticker": "DMLCN 4.25 09/15/31 .",
+    "name": "DENISON MINES CORP",
+    "figi": "BBG01WN6T6M0",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "248356AB3",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "91680MAH0": {
+    "status": "resolved",
+    "ticker": "UPST 0 02/15/32",
+    "name": "UPSTART HOLDINGS INC",
+    "figi": "BBG01WN19YG9",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "FRANKFURT",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "91680MAH0",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78574HAB0": {
+    "status": "resolved",
+    "ticker": "SOC 6.5 07/01/31",
+    "name": "SABLE OFFSHORE CORP",
+    "figi": "BBG023DC23M7",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78574HAB0",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "45047B105": {
+    "status": "resolved",
+    "ticker": "ITG",
+    "name": "ITG INC CL A",
+    "figi": "BBG00271QZH1",
+    "composite_figi": "BBG00271QZH1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "45047B105",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "09290C632": {
+    "status": "resolved",
+    "ticker": "ENHE",
+    "name": "ISHARES EE MARKETS ACTIV ETF",
+    "figi": "BBG025H4BPP4",
+    "composite_figi": "BBG025H4BPP4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "09290C632",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "01626W200": {
+    "status": "resolved",
+    "ticker": "ALIT",
+    "name": "ALIGHT INC - CLASS A",
+    "figi": "BBG00H00J2N1",
+    "composite_figi": "BBG00H00J2N1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "01626W200",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "762093201": {
+    "status": "resolved",
+    "ticker": "RBKB",
+    "name": "RHINEBECK BANCORP INC",
+    "figi": "BBG00N2Q0L02",
+    "composite_figi": "BBG00N2Q0L02",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "762093201",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:48.537234+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "85238K100": {
+    "status": "resolved",
+    "ticker": "USDE",
+    "name": "STABLECOINX INC",
+    "figi": "BBG01YYTLYX9",
+    "composite_figi": "BBG01YYTLYX9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "85238K100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "04271TAD2": {
+    "status": "resolved",
+    "ticker": "ARRY 2.875 07/01/31",
+    "name": "ARRAY TECHNOLOGIES INC",
+    "figi": "BBG01VRLWHP4",
+    "composite_figi": null,
+    "security_type": "US DOMESTIC",
+    "security_type2": "Corp",
+    "market_sector": "Corp",
+    "exchange": "TRACE",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "04271TAD2",
+      "marketSecDes": "Corp"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "74274F100": {
+    "status": "resolved",
+    "ticker": "PBAM",
+    "name": "PRIVATE BANCORP OF AMERICA I",
+    "figi": "BBG000NFSZV8",
+    "composite_figi": "BBG000NFSZV8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "74274F100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "004966107": {
+    "status": "resolved",
+    "ticker": "ACCV",
+    "name": "ACCELEVATION HOLDINGS CL-A",
+    "figi": "BBG024V2VGM6",
+    "composite_figi": "BBG024V2VGM6",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "004966107",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "68827X105": {
+    "status": "resolved",
+    "ticker": "OGG",
+    "name": "OSISKO GOLD GROUP INC",
+    "figi": "BBG000RHKK96",
+    "composite_figi": "BBG000RHKK96",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "68827X105",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "05601U204": {
+    "status": "resolved",
+    "ticker": "BRCC",
+    "name": "BRC INC-A",
+    "figi": "BBG0157C6612",
+    "composite_figi": "BBG0157C6612",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "05601U204",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46438T408": {
+    "status": "resolved",
+    "ticker": "AIBF",
+    "name": "ISHARES FUTURE AI BENEFS ETF",
+    "figi": "BBG02540LXX9",
+    "composite_figi": "BBG02540LXX9",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46438T408",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "30347G103": {
+    "status": "resolved",
+    "ticker": "FAC",
+    "name": "FACTORIAL ENERGY INC",
+    "figi": "BBG01SQC0LF9",
+    "composite_figi": "BBG01SQC0LF9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "30347G103",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "517954103": {
+    "status": "resolved",
+    "ticker": "LTGO",
+    "name": "LATIGO BIOTHERAPEUTICS INC",
+    "figi": "BBG01LGT3SL3",
+    "composite_figi": "BBG01LGT3SL3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "517954103",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "04987L102": {
+    "status": "resolved",
+    "ticker": "ATTO",
+    "name": "ATTOVIA THERAPEUTICS INC",
+    "figi": "BBG01H3TV5J8",
+    "composite_figi": "BBG01H3TV5J8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "04987L102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:51.247511+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "76803X106": {
+    "status": "resolved",
+    "ticker": "RCBC",
+    "name": "RIVER CITY BANK/CA",
+    "figi": "BBG000BDM8N1",
+    "composite_figi": "BBG000BDM8N1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "76803X106",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "87821B109": {
+    "status": "resolved",
+    "ticker": "TMS",
+    "name": "TEAMSHARES INC",
+    "figi": "BBG01SRKGPB8",
+    "composite_figi": "BBG01SRKGPB8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "87821B109",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "31943F200": {
+    "status": "resolved",
+    "ticker": "FCBM",
+    "name": "FIRST CAROLINA FINANCIAL SER",
+    "figi": "BBG00BMFY6D2",
+    "composite_figi": "BBG00BMFY6D2",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "31943F200",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "02462A203": {
+    "status": "resolved",
+    "ticker": "ABTC",
+    "name": "AMERICAN BITCOIN CORP-A",
+    "figi": "BBG00MS8GZP1",
+    "composite_figi": "BBG00MS8GZP1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "02462A203",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "L20675101": {
+    "status": "resolved",
+    "ticker": "CRTO",
+    "name": "CRITEO SA-SPON",
+    "figi": "BBG005938P44",
+    "composite_figi": "BBG005938P44",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "L20675101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CINS"
+  },
+  "66982H105": {
+    "status": "resolved",
+    "ticker": "NVA",
+    "name": "NOVA MINERALS CORP",
+    "figi": "BBG022RCBK64",
+    "composite_figi": "BBG022RCBK64",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "66982H105",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "74347R669": {
+    "status": "resolved",
+    "ticker": "USD",
+    "name": "PROSHARES ULTRA SEMICONDUCT",
+    "figi": "BBG000QXLZT6",
+    "composite_figi": "BBG000QXLZT6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "74347R669",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "360852107": {
+    "status": "resolved",
+    "ticker": "VCX",
+    "name": "FUNDRISE INNOVATION FUND LLC",
+    "figi": "BBG01THXB421",
+    "composite_figi": "BBG01THXB421",
+    "security_type": "Closed-End Fund",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "360852107",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "095130100": {
+    "status": "resolved",
+    "ticker": "BLSM",
+    "name": "BLOSSOMHILL THERAPEUTICS INC",
+    "figi": "BBG00ZHSKKM1",
+    "composite_figi": "BBG00ZHSKKM1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "095130100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00774Q346": {
+    "status": "resolved",
+    "ticker": "DEMZ",
+    "name": "DEMOCRATIC LARGE CAP CORE",
+    "figi": "BBG00Y29K750",
+    "composite_figi": "BBG00Y29K750",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00774Q346",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:53.673609+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "08862E307": {
+    "status": "resolved",
+    "ticker": "BYND",
+    "name": "BEYOND MEAT INC",
+    "figi": "BBG003CVJP50",
+    "composite_figi": "BBG003CVJP50",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "08862E307",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92859A106": {
+    "status": "resolved",
+    "ticker": "VOGX",
+    "name": "VOGENX INC",
+    "figi": "BBG023PKT418",
+    "composite_figi": "BBG023PKT418",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92859A106",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "14067D607": {
+    "status": "resolved",
+    "ticker": "CEPL",
+    "name": "CAPSTONE ENERGY+ INC",
+    "figi": "BBG01KHN7LH3",
+    "composite_figi": "BBG01KHN7LH3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "14067D607",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92941V407": {
+    "status": "resolved",
+    "ticker": "YARW",
+    "name": "YARROW BIOSCIENCE INC",
+    "figi": "BBG00H5W8GM8",
+    "composite_figi": "BBG00H5W8GM8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92941V407",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "74906Q102": {
+    "status": "resolved",
+    "ticker": "QMLS",
+    "name": "QUMULUSAI INC",
+    "figi": "BBG01SX4P7K7",
+    "composite_figi": "BBG01SX4P7K7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "74906Q102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "26922A446": {
+    "status": "resolved",
+    "ticker": "OSCV",
+    "name": "OPUS SMALL CAP VALUE ETF",
+    "figi": "BBG00LG2DTX7",
+    "composite_figi": "BBG00LG2DTX7",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "26922A446",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V779": {
+    "status": "resolved",
+    "ticker": "PKB",
+    "name": "INVESCO BUILDING & CONSTRUCT",
+    "figi": "BBG000JJY4X5",
+    "composite_figi": "BBG000JJY4X5",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V779",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "38341P201": {
+    "status": "resolved",
+    "ticker": "GOSS",
+    "name": "GOSSAMER BIO INC",
+    "figi": "BBG00MVWLLM2",
+    "composite_figi": "BBG00MVWLLM2",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "38341P201",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "02072L102": {
+    "status": "resolved",
+    "ticker": "QVAL",
+    "name": "ALPHA ARCH US QNT VALUE ETF",
+    "figi": "BBG007D96646",
+    "composite_figi": "BBG007D96646",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "02072L102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "80280U205": {
+    "status": "resolved",
+    "ticker": "SCZM",
+    "name": "SANTACRUZ SILVER MINING LTD",
+    "figi": "BBG003DDHSB8",
+    "composite_figi": "BBG003DDHSB8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "80280U205",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:56.402625+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V324": {
+    "status": "resolved",
+    "ticker": "RSPN",
+    "name": "INVESCO S&P 500 EQUAL WEIGHT",
+    "figi": "BBG00KJR2QN0",
+    "composite_figi": "BBG00KJR2QN0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V324",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "33736G106": {
+    "status": "resolved",
+    "ticker": "FAN",
+    "name": "FIRST TRUST GLOBAL WIND ENER",
+    "figi": "BBG000GJLS87",
+    "composite_figi": "BBG000GJLS87",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "33736G106",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "33738R811": {
+    "status": "resolved",
+    "ticker": "FTXL",
+    "name": "FIRST TRUST NASDAQ SEMICONDU",
+    "figi": "BBG00DVWCNW7",
+    "composite_figi": "BBG00DVWCNW7",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "33738R811",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "35473P678": {
+    "status": "resolved",
+    "ticker": "FLGB",
+    "name": "FRANKLIN FTSE UNITED KINGDOM",
+    "figi": "BBG00J3PQYB4",
+    "composite_figi": "BBG00J3PQYB4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "35473P678",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78468R531": {
+    "status": "resolved",
+    "ticker": "EFIV",
+    "name": "SS SP S&P500 SC & SCR ETF-UI",
+    "figi": "BBG00W7DVDD6",
+    "composite_figi": "BBG00W7DVDD6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78468R531",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78468R754": {
+    "status": "resolved",
+    "ticker": "ONEV",
+    "name": "SS SPDR R1000 LO VOL FOC ETF",
+    "figi": "BBG00BL3NRB8",
+    "composite_figi": "BBG00BL3NRB8",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78468R754",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "33733C108": {
+    "status": "resolved",
+    "ticker": "FAB",
+    "name": "FIRST TRUST MULTI CAP VALUE",
+    "figi": "BBG000R6F241",
+    "composite_figi": "BBG000R6F241",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "33733C108",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V605": {
+    "status": "resolved",
+    "ticker": "DJD",
+    "name": "INVESCO DOW JONES INDUSTRIAL",
+    "figi": "BBG00KJR1MN0",
+    "composite_figi": "BBG00KJR1MN0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V605",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92647N576": {
+    "status": "resolved",
+    "ticker": "ULVM",
+    "name": "VICTORYSHARES US VALUE MOMEN",
+    "figi": "BBG00HZ6RB24",
+    "composite_figi": "BBG00HZ6RB24",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92647N576",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V274": {
+    "status": "resolved",
+    "ticker": "RSPU",
+    "name": "INVESCO S&P 500 EQUAL WEIGHT",
+    "figi": "BBG00KJR2VH6",
+    "composite_figi": "BBG00KJR2VH6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V274",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:45:58.991646+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92189F205": {
+    "status": "resolved",
+    "ticker": "SLX",
+    "name": "VANECK STEEL ETF",
+    "figi": "BBG000Q54VZ8",
+    "composite_figi": "BBG000Q54VZ8",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92189F205",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78464A102": {
+    "status": "resolved",
+    "ticker": "XNTK",
+    "name": "SS SPDR NYSE TECH ETF",
+    "figi": "BBG000C9R1B2",
+    "composite_figi": "BBG000C9R1B2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78464A102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138G847": {
+    "status": "resolved",
+    "ticker": "PBD",
+    "name": "INVESCO GLOBAL CLEAN ENERGY",
+    "figi": "BBG000QHWT40",
+    "composite_figi": "BBG000QHWT40",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138G847",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "08771Y501": {
+    "status": "resolved",
+    "ticker": "SRXH",
+    "name": "SRX GLOBAL INC",
+    "figi": "BBG000QJZFS7",
+    "composite_figi": "BBG000QJZFS7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "08771Y501",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "33734X176": {
+    "status": "resolved",
+    "ticker": "FXL",
+    "name": "FIRST TRUST TECHNOLOGY ALPHA",
+    "figi": "BBG000R6BJ93",
+    "composite_figi": "BBG000R6BJ93",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "33734X176",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "64081V208": {
+    "status": "resolved",
+    "ticker": "NRDY",
+    "name": "NERDY INC",
+    "figi": "BBG00XWZB4V9",
+    "composite_figi": "BBG00XWZB4V9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "64081V208",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "35473P827": {
+    "status": "resolved",
+    "ticker": "FLCA",
+    "name": "FRANKLIN FTSE CANADA ETF",
+    "figi": "BBG00J3N6M72",
+    "composite_figi": "BBG00J3N6M72",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "35473P827",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46641Q738": {
+    "status": "resolved",
+    "ticker": "BBRE",
+    "name": "JPM BETABLDRS MSCI US REIT",
+    "figi": "BBG00L53HBD4",
+    "composite_figi": "BBG00L53HBD4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46641Q738",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78463X749": {
+    "status": "resolved",
+    "ticker": "RWO",
+    "name": "STATE STREET SPDR DOW JONES",
+    "figi": "BBG000FS2Q74",
+    "composite_figi": "BBG000FS2Q74",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78463X749",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "37954Y327": {
+    "status": "resolved",
+    "ticker": "COLO",
+    "name": "GLOBAL X MSCI COLOMBIA ETF",
+    "figi": "BBG000C1MQ65",
+    "composite_figi": "BBG000C1MQ65",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "37954Y327",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:01.534301+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "37960A230": {
+    "status": "resolved",
+    "ticker": "CHPX",
+    "name": "GLO X AI SEMICON & QUANT ETF",
+    "figi": "BBG01XHHB3Y4",
+    "composite_figi": "BBG01XHHB3Y4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "37960A230",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92189F841": {
+    "status": "resolved",
+    "ticker": "HAP",
+    "name": "VANECK NATURAL RESOURCES ETF",
+    "figi": "BBG000C0MB88",
+    "composite_figi": "BBG000C0MB88",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92189F841",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "56089A400": {
+    "status": "resolved",
+    "ticker": "MAKO",
+    "name": "MAKO MINING CORP",
+    "figi": "BBG000TW74W6",
+    "composite_figi": "BBG000TW74W6",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "56089A400",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "36468G202": {
+    "status": "resolved",
+    "ticker": "GAME",
+    "name": "GAMESQUARE HOLDINGS INC",
+    "figi": "BBG00JCW80F9",
+    "composite_figi": "BBG00JCW80F9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "36468G202",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "67092P805": {
+    "status": "resolved",
+    "ticker": "NUDM",
+    "name": "NUVEEN ESG INTL DEVEL MRK EQ",
+    "figi": "BBG00GVWYJ91",
+    "composite_figi": "BBG00GVWYJ91",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "67092P805",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "33738R845": {
+    "status": "resolved",
+    "ticker": "FTXN",
+    "name": "FIRST TRUST NASDAQ OIL & GAS",
+    "figi": "BBG00DVWCBN3",
+    "composite_figi": "BBG00DVWCBN3",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "33738R845",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138E115": {
+    "status": "resolved",
+    "ticker": "PSCT",
+    "name": "INVESCO S&P SMALLCAP INFORMA",
+    "figi": "BBG000QM7X20",
+    "composite_figi": "BBG000QM7X20",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138E115",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "97717W547": {
+    "status": "resolved",
+    "ticker": "WTV",
+    "name": "WISDOMTREE U.S. VALUE FUND",
+    "figi": "BBG000R1SHP2",
+    "composite_figi": "BBG000R1SHP2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "97717W547",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "35473P561": {
+    "status": "resolved",
+    "ticker": "FLLA",
+    "name": "FRANKLIN FTSE LATIN AMERICA",
+    "figi": "BBG00M6PPS91",
+    "composite_figi": "BBG00M6PPS91",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "35473P561",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "644393308": {
+    "status": "resolved",
+    "ticker": "NFE",
+    "name": "NEW FORTRESS ENERGY INC",
+    "figi": "BBG00MJH9LC4",
+    "composite_figi": "BBG00MJH9LC4",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "644393308",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:04.206417+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138G615": {
+    "status": "resolved",
+    "ticker": "SOXQ",
+    "name": "INVESCO PHLX SEMICONDUCTOR",
+    "figi": "BBG011B9WBT3",
+    "composite_figi": "BBG011B9WBT3",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138G615",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "594960403": {
+    "status": "resolved",
+    "ticker": "MVIS",
+    "name": "MICROVISION INC",
+    "figi": "BBG000BVKXQ5",
+    "composite_figi": "BBG000BVKXQ5",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "594960403",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78468R796": {
+    "status": "resolved",
+    "ticker": "SPYX",
+    "name": "SS SPDR S&P 500 FOSS FL ETF",
+    "figi": "BBG00BKMB109",
+    "composite_figi": "BBG00BKMB109",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78468R796",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "98387C100": {
+    "status": "resolved",
+    "ticker": "XTND",
+    "name": "XTEND AI ROBOTICS INC",
+    "figi": "BBG024BHQLG7",
+    "composite_figi": "BBG024BHQLG7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "98387C100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "33939L746": {
+    "status": "resolved",
+    "ticker": "QLC",
+    "name": "NT US QUAL LC ETF",
+    "figi": "BBG00B2VYSL2",
+    "composite_figi": "BBG00B2VYSL2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "33939L746",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "032108805": {
+    "status": "resolved",
+    "ticker": "BATT",
+    "name": "AMPLIFY LITHIUM BATTERY TECH",
+    "figi": "BBG00L322ZG8",
+    "composite_figi": "BBG00L322ZG8",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "032108805",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "053906103": {
+    "status": "resolved",
+    "ticker": "ASM",
+    "name": "AVINO SILVER & GOLD MINES",
+    "figi": "BBG000BMTLV6",
+    "composite_figi": "BBG000BMTLV6",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "053906103",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138G417": {
+    "status": "resolved",
+    "ticker": "KLMN",
+    "name": "INVESCO MSCI N AMR CLIMT ETF",
+    "figi": "BBG01R4YHCT4",
+    "composite_figi": "BBG01R4YHCT4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138G417",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V340": {
+    "status": "resolved",
+    "ticker": "RSPF",
+    "name": "INVESCO S&P 500 EQUAL WEIGHT",
+    "figi": "BBG00KJR2NT1",
+    "composite_figi": "BBG00KJR2NT1",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V340",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "88636J600": {
+    "status": "resolved",
+    "ticker": "CHAT",
+    "name": "ROUNDHILL GEN AI & TECH ETF",
+    "figi": "BBG01GNBGD89",
+    "composite_figi": "BBG01GNBGD89",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "88636J600",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:06.793413+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78470E106": {
+    "status": "resolved",
+    "ticker": "EFAX",
+    "name": "STATE STREET SPDR MSCI EAFE",
+    "figi": "BBG00F161GN9",
+    "composite_figi": "BBG00F161GN9",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78470E106",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138G656": {
+    "status": "resolved",
+    "ticker": "RDIV",
+    "name": "INVESCO S&P ULTRA DIVIDEND",
+    "figi": "BBG00P4Y2VX8",
+    "composite_figi": "BBG00P4Y2VX8",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138G656",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "19762B202": {
+    "status": "resolved",
+    "ticker": "XCEM",
+    "name": "COLUMBIA EM CORE EX-CHINA",
+    "figi": "BBG009XW7GX4",
+    "composite_figi": "BBG009XW7GX4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "19762B202",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "26922A719": {
+    "status": "resolved",
+    "ticker": "GOAU",
+    "name": "US GLB GLD & METAL MNRS ETF",
+    "figi": "BBG00H1KV4J3",
+    "composite_figi": "BBG00H1KV4J3",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "26922A719",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "921932794": {
+    "status": "resolved",
+    "ticker": "VIOG",
+    "name": "VANGUARD S&P SM CAP 600 GRW",
+    "figi": "BBG0015VYVY0",
+    "composite_figi": "BBG0015VYVY0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "921932794",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G989A6110": {
+    "status": "resolved",
+    "ticker": "TOP",
+    "name": "TOP FINANCIAL GROUP LTD A",
+    "figi": "BBG012GNQ2N8",
+    "composite_figi": "BBG012GNQ2N8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G989A6110",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CINS"
+  },
+  "97717X263": {
+    "status": "resolved",
+    "ticker": "DDWM",
+    "name": "WISDOMTREE DY INTER EQ FD-US",
+    "figi": "BBG00BSZ29K3",
+    "composite_figi": "BBG00BSZ29K3",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "97717X263",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "464288497": {
+    "status": "resolved",
+    "ticker": "IEUS",
+    "name": "ISHARES MSCI EUROPE SMALL-CA",
+    "figi": "BBG000TVNCS7",
+    "composite_figi": "BBG000TVNCS7",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "464288497",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "316092360": {
+    "status": "resolved",
+    "ticker": "FFLC",
+    "name": "FIDELITY FNDMNTL L/C COR ETF",
+    "figi": "BBG00V6QF9V7",
+    "composite_figi": "BBG00V6QF9V7",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "316092360",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "55025L306": {
+    "status": "resolved",
+    "ticker": "LFT",
+    "name": "LUMENT FINANCE TRUST INC",
+    "figi": "BBG003QPMHR8",
+    "composite_figi": "BBG003QPMHR8",
+    "security_type": "REIT",
+    "security_type2": "REIT",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "55025L306",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:09.389315+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "45257L207": {
+    "status": "resolved",
+    "ticker": "IMMP",
+    "name": "IMMUTEP LTD-SP ADR",
+    "figi": "BBG002WD6SY6",
+    "composite_figi": "BBG002WD6SY6",
+    "security_type": "ADR",
+    "security_type2": "Depositary Receipt",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "45257L207",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "97717W802": {
+    "status": "resolved",
+    "ticker": "DTH",
+    "name": "WISDOMTREE INTERNATIONAL HIG",
+    "figi": "BBG000BT6K66",
+    "composite_figi": "BBG000BT6K66",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "97717W802",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "233051226": {
+    "status": "resolved",
+    "ticker": "EMCS",
+    "name": "XTRACKE MSCI EMER MS ETF-USD",
+    "figi": "BBG00MQCZG93",
+    "composite_figi": "BBG00MQCZG93",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "233051226",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "886364769": {
+    "status": "resolved",
+    "ticker": "SPRE",
+    "name": "SP/F S&P GLOBAL REIT SHARIA",
+    "figi": "BBG00YPTRSX7",
+    "composite_figi": "BBG00YPTRSX7",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "886364769",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "31609A107": {
+    "status": "resolved",
+    "ticker": "FELV",
+    "name": "FIDELITY ENH LRG CAP VAL ETF",
+    "figi": "BBG01K786HR6",
+    "composite_figi": "BBG01K786HR6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "31609A107",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "97717X610": {
+    "status": "resolved",
+    "ticker": "EUDG",
+    "name": "WISDOMTREE EUROPE QUALITY DI",
+    "figi": "BBG006G0HQG5",
+    "composite_figi": "BBG006G0HQG5",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "97717X610",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "952170108": {
+    "status": "resolved",
+    "ticker": "WCCB",
+    "name": "WEST COAST COMMUNITY BANCORP",
+    "figi": "BBG01J337QF6",
+    "composite_figi": "BBG01J337QF6",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "952170108",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78464A540": {
+    "status": "resolved",
+    "ticker": "XTL",
+    "name": "SS SPDR S&P TELECOM ETF",
+    "figi": "BBG001F6WLS5",
+    "composite_figi": "BBG001F6WLS5",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78464A540",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "66538R722": {
+    "status": "resolved",
+    "ticker": "HYTR",
+    "name": "COUNTERPOINT HI YLD ETF",
+    "figi": "BBG00RHHC288",
+    "composite_figi": "BBG00RHHC288",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "66538R722",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "71531U102": {
+    "status": "resolved",
+    "ticker": "PS",
+    "name": "PERSHING SQUARE INC",
+    "figi": "BBG01N5GDY62",
+    "composite_figi": "BBG01N5GDY62",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "71531U102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:12.026462+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "025072158": {
+    "status": "resolved",
+    "ticker": "AVLC",
+    "name": "AVANTIS US LG CAP EQ ETF",
+    "figi": "BBG01J9W37C5",
+    "composite_figi": "BBG01J9W37C5",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "025072158",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "674870605": {
+    "status": "resolved",
+    "ticker": "OPTT",
+    "name": "OCEAN POWER TECHNOLOGIES INC",
+    "figi": "BBG000RKMB42",
+    "composite_figi": "BBG000RKMB42",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "674870605",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "577125784": {
+    "status": "resolved",
+    "ticker": "MKOR",
+    "name": "MATTHEWS KOREA ACTIVE ETF",
+    "figi": "BBG01HDYMLL8",
+    "composite_figi": "BBG01HDYMLL8",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "577125784",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V225": {
+    "status": "resolved",
+    "ticker": "GRPM",
+    "name": "INVESCO S&P MIDCAP 400 GARP",
+    "figi": "BBG00KJR2C24",
+    "composite_figi": "BBG00KJR2C24",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V225",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92189F767": {
+    "status": "resolved",
+    "ticker": "GLIN",
+    "name": "VANECK INDIA GROWTH LEADERS",
+    "figi": "BBG0014XRYF0",
+    "composite_figi": "BBG0014XRYF0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92189F767",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138G672": {
+    "status": "resolved",
+    "ticker": "RWK",
+    "name": "INVESCO S&P MIDCAP 400 REV",
+    "figi": "BBG00P4Y2SG4",
+    "composite_figi": "BBG00P4Y2SG4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138G672",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "880245204": {
+    "status": "resolved",
+    "ticker": "XHLD",
+    "name": "TEN HOLDINGS INC",
+    "figi": "BBG01Q9G2CJ7",
+    "composite_figi": "BBG01Q9G2CJ7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "880245204",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46641Q241": {
+    "status": "resolved",
+    "ticker": "BBAG",
+    "name": "JPMORGAN BETABUILDERS US AGG",
+    "figi": "BBG00MSHTGF0",
+    "composite_figi": "BBG00MSHTGF0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46641Q241",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V472": {
+    "status": "resolved",
+    "ticker": "XMHQ",
+    "name": "INVESCO S&P MIDCAP QUAL ETF",
+    "figi": "BBG000QDT2T5",
+    "composite_figi": "BBG000QDT2T5",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V472",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "33737J802": {
+    "status": "resolved",
+    "ticker": "NFTY",
+    "name": "FIRST TRUST INDIA NIFTY 50 E",
+    "figi": "BBG002N8TGD1",
+    "composite_figi": "BBG002N8TGD1",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "33737J802",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:14.465538+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78468R630": {
+    "status": "resolved",
+    "ticker": "ROKT",
+    "name": "SS SPDR S&P KENSHO FF ETF",
+    "figi": "BBG00M9BL9V0",
+    "composite_figi": "BBG00M9BL9V0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78468R630",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00704R109": {
+    "status": "resolved",
+    "ticker": "ANL",
+    "name": "ADLAI NORTYE GROUP LTD",
+    "figi": "BBG01HP11SV4",
+    "composite_figi": "BBG01HP11SV4",
+    "security_type": "ADR",
+    "security_type2": "Depositary Receipt",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00704R109",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "09175M879": {
+    "status": "resolved",
+    "ticker": "GPUS",
+    "name": "HYPERSCALE DATA INC",
+    "figi": "BBG00JMZD4P6",
+    "composite_figi": "BBG00JMZD4P6",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "09175M879",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "464288109": {
+    "status": "resolved",
+    "ticker": "ILCV",
+    "name": "ISHARES MORNINGSTAR VALUE ET",
+    "figi": "BBG000BRLDW0",
+    "composite_figi": "BBG000BRLDW0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "464288109",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "524682200": {
+    "status": "resolved",
+    "ticker": "LRGE",
+    "name": "CLEARBRIDGE LARGE CAP GROWTH",
+    "figi": "BBG00GPY0T44",
+    "composite_figi": "BBG00GPY0T44",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "524682200",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "23283X305": {
+    "status": "resolved",
+    "ticker": "CTSO",
+    "name": "CYTOSORBENTS CORP",
+    "figi": "BBG000C3P8V0",
+    "composite_figi": "BBG000C3P8V0",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "23283X305",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "774374409": {
+    "status": "resolved",
+    "ticker": "RMTI",
+    "name": "ROCKWELL MEDICAL INC",
+    "figi": "BBG000BMC004",
+    "composite_figi": "BBG000BMC004",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "774374409",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "500767850": {
+    "status": "resolved",
+    "ticker": "KGRN",
+    "name": "KRANESHARES MSCI CHINA CLEAN",
+    "figi": "BBG00HYC3SY6",
+    "composite_figi": "BBG00HYC3SY6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "500767850",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V456": {
+    "status": "resolved",
+    "ticker": "XMVM",
+    "name": "INVESCO S&P MIDCAP VALUE WIT",
+    "figi": "BBG000L5XQG3",
+    "composite_figi": "BBG000L5XQG3",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V456",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00768Y818": {
+    "status": "resolved",
+    "ticker": "SURE",
+    "name": "ADVISORSHARES INSIDER ADVANT",
+    "figi": "BBG0024WVZ26",
+    "composite_figi": "BBG0024WVZ26",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00768Y818",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:17.189316+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "85210B201": {
+    "status": "resolved",
+    "ticker": "SGDJ",
+    "name": "SPROTT JR. GOLD MINERS ETF",
+    "figi": "BBG008F5F4H1",
+    "composite_figi": "BBG008F5F4H1",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "85210B201",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "45259L304": {
+    "status": "resolved",
+    "ticker": "IBO",
+    "name": "IMPACT BIOMEDICAL INC",
+    "figi": "BBG01JFZG014",
+    "composite_figi": "BBG01JFZG014",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "45259L304",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78463X772": {
+    "status": "resolved",
+    "ticker": "DWX",
+    "name": "STATE STREET SPDR S&P INTERN",
+    "figi": "BBG000VC0TD0",
+    "composite_figi": "BBG000VC0TD0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78463X772",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138E297": {
+    "status": "resolved",
+    "ticker": "EELV",
+    "name": "INVESCO S&P EMERGING MARKETS",
+    "figi": "BBG002DJ8GK3",
+    "composite_figi": "BBG002DJ8GK3",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138E297",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "233051143": {
+    "status": "resolved",
+    "ticker": "SNPE",
+    "name": "XTRCKR S&P 500 SCOR&SCRN ETF",
+    "figi": "BBG00PK99P07",
+    "composite_figi": "BBG00PK99P07",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "233051143",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138E800": {
+    "status": "resolved",
+    "ticker": "CQQQ",
+    "name": "INVESCO CHINA TECHNOLOGY ETF",
+    "figi": "BBG00KXH51H5",
+    "composite_figi": "BBG00KXH51H5",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138E800",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "25239Y196": {
+    "status": "resolved",
+    "ticker": "DUHP",
+    "name": "DIMENSIONAL US HIGH RELATIVE",
+    "figi": "BBG025H4PRQ4",
+    "composite_figi": "BBG025H4PRQ4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "25239Y196",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "808524672": {
+    "status": "resolved",
+    "ticker": "SCHY",
+    "name": "SCHWAB INTERNATIONAL DVD ETF",
+    "figi": "BBG00Z60CGG9",
+    "composite_figi": "BBG00Z60CGG9",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "808524672",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "301505889": {
+    "status": "resolved",
+    "ticker": "EMQQ",
+    "name": "EMG MKT INTERNET ETF-USA INC",
+    "figi": "BBG007J2YCX9",
+    "composite_figi": "BBG007J2YCX9",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "301505889",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "74640Y304": {
+    "status": "resolved",
+    "ticker": "PRPL",
+    "name": "PURPLE INNOVATION INC",
+    "figi": "BBG009S7FWY0",
+    "composite_figi": "BBG009S7FWY0",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "74640Y304",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:19.769506+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "693691206": {
+    "status": "resolved",
+    "ticker": "PSQH",
+    "name": "PSQ HOLDINGS INC",
+    "figi": "BBG00ZSKDJM7",
+    "composite_figi": "BBG00ZSKDJM7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "693691206",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "284825106": {
+    "status": "resolved",
+    "ticker": "ETRA",
+    "name": "ELECTRA THERAPEUTICS INC",
+    "figi": "BBG012QDV1C7",
+    "composite_figi": "BBG012QDV1C7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "284825106",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138E222": {
+    "status": "resolved",
+    "ticker": "IDMO",
+    "name": "INVESCO S&P INTERNATIONAL DE",
+    "figi": "BBG002PL3Z37",
+    "composite_figi": "BBG002PL3Z37",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138E222",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137Y500": {
+    "status": "resolved",
+    "ticker": "CVY",
+    "name": "INVESCO ZACKS MULTI-ASSET IN",
+    "figi": "BBG00KJR1PH0",
+    "composite_figi": "BBG00KJR1PH0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137Y500",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138E156": {
+    "status": "resolved",
+    "ticker": "PSCF",
+    "name": "INVESCO S&P SMALLCAP FINANCI",
+    "figi": "BBG000QM6ZZ0",
+    "composite_figi": "BBG000QM6ZZ0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138E156",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G9411M157": {
+    "status": "resolved",
+    "ticker": "FXHO",
+    "name": "UTIME LTD-A",
+    "figi": "BBG00SL6G1Q3",
+    "composite_figi": "BBG00SL6G1Q3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G9411M157",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CINS"
+  },
+  "47804J842": {
+    "status": "resolved",
+    "ticker": "JHSC",
+    "name": "JOHN HANCOCK MULTI SMALL CAP",
+    "figi": "BBG00J5LZW52",
+    "composite_figi": "BBG00J5LZW52",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "47804J842",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "23255M303": {
+    "status": "resolved",
+    "ticker": "KRSA",
+    "name": "KORSANA BIOSCIENCES INC",
+    "figi": "BBG00KXXHYD9",
+    "composite_figi": "BBG00KXXHYD9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "23255M303",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46436E742": {
+    "status": "resolved",
+    "ticker": "EMXF",
+    "name": "ISHARES ESG ADV MSCI EM ETF",
+    "figi": "BBG00XR16BC1",
+    "composite_figi": "BBG00XR16BC1",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46436E742",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V811": {
+    "status": "resolved",
+    "ticker": "PTF",
+    "name": "INVESCO DORSEY WRIGHT TECH",
+    "figi": "BBG000Q279Y2",
+    "composite_figi": "BBG000Q279Y2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V811",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:22.473467+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "27828X100": {
+    "status": "ambiguous",
+    "candidates": [
+      {
+        "figi": "BBG000BLQY16",
+        "name": "EATON VANCE T/M BUY-WRT INC",
+        "ticker": "ETB",
+        "exchCode": "US",
+        "compositeFIGI": "BBG000BLQY16",
+        "securityType": "Closed-End Fund",
+        "marketSector": "Equity",
+        "shareClassFIGI": "BBG001SDC8B5",
+        "securityType2": "Mutual Fund",
+        "securityDescription": "ETB"
+      },
+      {
+        "figi": "BBG000BPZJH3",
+        "name": "EATON VANCE T/M BUY-WRT INC",
+        "ticker": "XETBX",
+        "exchCode": "US",
+        "compositeFIGI": "BBG000BPZJH3",
+        "securityType": "Closed-End Fund",
+        "marketSector": "Equity",
+        "shareClassFIGI": "BBG001SDC8B5",
+        "securityType2": "Mutual Fund",
+        "securityDescription": "XETBX"
+      }
+    ],
+    "reason": "No unique US equity match",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "27828X100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "68270C202": {
+    "status": "resolved",
+    "ticker": "ONMD",
+    "name": "ONEMEDNET CORP",
+    "figi": "BBG00ZLKW5Y0",
+    "composite_figi": "BBG00ZLKW5Y0",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "68270C202",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "45782C862": {
+    "status": "resolved",
+    "ticker": "LOUP",
+    "name": "INNOVATOR DEEPWATER FRONTIER",
+    "figi": "BBG00LJTB8P2",
+    "composite_figi": "BBG00LJTB8P2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "45782C862",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "25239Y170": {
+    "status": "resolved",
+    "ticker": "DFSV",
+    "name": "DIMENSIONAL US SMALL CAP VAL",
+    "figi": "BBG025H4P270",
+    "composite_figi": "BBG025H4P270",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "25239Y170",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "032108524": {
+    "status": "resolved",
+    "ticker": "QDVO",
+    "name": "AMPLIFY CWP GRW & INC ETF",
+    "figi": "BBG01P6WD4T2",
+    "composite_figi": "BBG01P6WD4T2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "032108524",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "35473P108": {
+    "status": "resolved",
+    "ticker": "DIVI",
+    "name": "FRANKLIN INTERNATIONAL CORE",
+    "figi": "BBG00D0YL0Z4",
+    "composite_figi": "BBG00D0YL0Z4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "35473P108",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78433H634": {
+    "status": "resolved",
+    "ticker": "IWMI",
+    "name": "NEOS RUSSELL 2000 HIGH INC",
+    "figi": "BBG01NH9PL79",
+    "composite_figi": "BBG01NH9PL79",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78433H634",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "54303L302": {
+    "status": "resolved",
+    "ticker": "LGVN",
+    "name": "LONGEVERON INC-A",
+    "figi": "BBG00YZ6JHT4",
+    "composite_figi": "BBG00YZ6JHT4",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "54303L302",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "761562503": {
+    "status": "resolved",
+    "ticker": "DRNZ",
+    "name": "REX DRONE ETF",
+    "figi": "BBG01Y2DLZL9",
+    "composite_figi": "BBG01Y2DLZL9",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "761562503",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "31761T886": {
+    "status": "resolved",
+    "ticker": "CCNR",
+    "name": "ALPS CORECOMMODITY NTRL RES",
+    "figi": "BBG01NPDHFB8",
+    "composite_figi": "BBG01NPDHFB8",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "31761T886",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:24.873137+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92189H870": {
+    "status": "resolved",
+    "ticker": "EINC",
+    "name": "VANECK ENERGY INCOME ETF",
+    "figi": "BBG002QM2M43",
+    "composite_figi": "BBG002QM2M43",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92189H870",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78470P630": {
+    "status": "resolved",
+    "ticker": "ALLW",
+    "name": "STATE STREET BRGWTR ALL WTHR",
+    "figi": "BBG01SN3NWY2",
+    "composite_figi": "BBG01SN3NWY2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78470P630",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "025072307": {
+    "status": "resolved",
+    "ticker": "QGRO",
+    "name": "AMERICAN CENTURY US QUALITY",
+    "figi": "BBG00LY8L2C7",
+    "composite_figi": "BBG00LY8L2C7",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "025072307",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46138E875": {
+    "status": "resolved",
+    "ticker": "PIZ",
+    "name": "INVESCO DORSEY WRIGHT DEVELO",
+    "figi": "BBG000P0MST4",
+    "composite_figi": "BBG000P0MST4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138E875",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "83086J309": {
+    "status": "resolved",
+    "ticker": "SKYE",
+    "name": "SKYE BIOSCIENCE INC",
+    "figi": "BBG00433GZN1",
+    "composite_figi": "BBG00433GZN1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "83086J309",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00162Q726": {
+    "status": "resolved",
+    "ticker": "BFOR",
+    "name": "BARRON'S 400 ETF",
+    "figi": "BBG004N1S4Q6",
+    "composite_figi": "BBG004N1S4Q6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00162Q726",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78463X418": {
+    "status": "resolved",
+    "ticker": "QWLD",
+    "name": "STATE STREET SPDR MSCI WORLD",
+    "figi": "BBG006LCS5H6",
+    "composite_figi": "BBG006LCS5H6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78463X418",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "97717W703": {
+    "status": "resolved",
+    "ticker": "DWM",
+    "name": "WISDOMTREE INTERNATIONAL EQU",
+    "figi": "BBG000BSYGZ4",
+    "composite_figi": "BBG000BSYGZ4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "97717W703",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "09076W406": {
+    "status": "resolved",
+    "ticker": "BIAF",
+    "name": "BIOAFFINITY TECHNOLOGIES INC",
+    "figi": "BBG00H69JDX1",
+    "composite_figi": "BBG00H69JDX1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "09076W406",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "59124U605": {
+    "status": "resolved",
+    "ticker": "MTA",
+    "name": "METALLA ROYALTY & STREAMING",
+    "figi": "BBG000HM5YW7",
+    "composite_figi": "BBG000HM5YW7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "59124U605",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:27.529117+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "001661107": {
+    "status": "resolved",
+    "ticker": "AMCI",
+    "name": "AMC ROBOTICS CORP",
+    "figi": "BBG01BFJ8R35",
+    "composite_figi": "BBG01BFJ8R35",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "001661107",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "89834G760": {
+    "status": "resolved",
+    "ticker": "CLSE",
+    "name": "CONVERGENCE LONG/SHORT EQY",
+    "figi": "BBG015HY6PY5",
+    "composite_figi": "BBG015HY6PY5",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "89834G760",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G5331N101": {
+    "status": "resolved",
+    "ticker": "KYIV",
+    "name": "KYIVSTAR GROUP LTD",
+    "figi": "BBG01WRCTCP7",
+    "composite_figi": "BBG01WRCTCP7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G5331N101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CINS"
+  },
+  "38149W622": {
+    "status": "resolved",
+    "ticker": "GPIX",
+    "name": "GLDM SA S&P 500 PR IN ETF-US",
+    "figi": "BBG01JRK0B44",
+    "composite_figi": "BBG01JRK0B44",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "38149W622",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "T19377109": {
+    "status": "resolved",
+    "ticker": "BSP",
+    "name": "BENDING SPOONS SPA",
+    "figi": "BBG0140C2LP7",
+    "composite_figi": "BBG0140C2LP7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "T19377109",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CINS"
+  },
+  "80401L803": {
+    "status": "resolved",
+    "ticker": "MSLE",
+    "name": "SATELLOS BIOSCIENCE INC",
+    "figi": "BBG000VJM3C9",
+    "composite_figi": "BBG000VJM3C9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "80401L803",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00162Q395": {
+    "status": "resolved",
+    "ticker": "OUSM",
+    "name": "ALPS OSHARES US SMALL-CAP QU",
+    "figi": "BBG018B6MWZ2",
+    "composite_figi": "BBG018B6MWZ2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00162Q395",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "307359869": {
+    "status": "resolved",
+    "ticker": "FFAI",
+    "name": "FARADAY FUTURE INTELLIGENT E",
+    "figi": "BBG00W4M4KW2",
+    "composite_figi": "BBG00W4M4KW2",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "307359869",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G1739L102": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G1739L102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CINS"
+  },
+  "69374H717": {
+    "status": "resolved",
+    "ticker": "ALTL",
+    "name": "PACER LUNT LARGE CAP ALTERNA",
+    "figi": "BBG00VP22TF7",
+    "composite_figi": "BBG00VP22TF7",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "69374H717",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:30.212835+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46436E403": {
+    "status": "resolved",
+    "ticker": "GARP",
+    "name": "ISHARES MSCI USA QUALITY GAR",
+    "figi": "BBG00RD2C4W4",
+    "composite_figi": "BBG00RD2C4W4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46436E403",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "49876K202": {
+    "status": "resolved",
+    "ticker": "GRML",
+    "name": "GREENLAND MINES LTD",
+    "figi": "BBG015Z249H2",
+    "composite_figi": "BBG015Z249H2",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "49876K202",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G63638103": {
+    "status": "resolved",
+    "ticker": "NAMM",
+    "name": "NAMIB MINERALS",
+    "figi": "BBG01SZFGNY0",
+    "composite_figi": "BBG01SZFGNY0",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G63638103",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CINS"
+  },
+  "G67187107": {
+    "status": "resolved",
+    "ticker": "OWLS",
+    "name": "OBOOK HOLDINGS INC CL A",
+    "figi": "BBG00KW3WJ88",
+    "composite_figi": "BBG00KW3WJ88",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G67187107",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CINS"
+  },
+  "G0206E104": {
+    "status": "resolved",
+    "ticker": "AGCC",
+    "name": "AGENCIA COMERCIAL SPIRITS LT",
+    "figi": "BBG01W174952",
+    "composite_figi": "BBG01W174952",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G0206E104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CINS"
+  },
+  "126633205": {
+    "status": "resolved",
+    "ticker": "UAN",
+    "name": "CVR PARTNERS LP",
+    "figi": "BBG001CBC4Y0",
+    "composite_figi": "BBG001CBC4Y0",
+    "security_type": "MLP",
+    "security_type2": "Partnership Shares",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "126633205",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "381430438": {
+    "status": "resolved",
+    "ticker": "GSEW",
+    "name": "GOLDMAN SACHS EQL WGHT LARGE",
+    "figi": "BBG00H2DR4T2",
+    "composite_figi": "BBG00H2DR4T2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "381430438",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V845": {
+    "status": "resolved",
+    "ticker": "PRN",
+    "name": "INVESCO DORSEY WRIGHT INDUS",
+    "figi": "BBG000Q27TY8",
+    "composite_figi": "BBG000Q27TY8",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V845",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "67054R302": {
+    "status": "resolved",
+    "ticker": "DFNS",
+    "name": "T3 DEFENSE INC",
+    "figi": "BBG00SHZKZD8",
+    "composite_figi": "BBG00SHZKZD8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "67054R302",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92649G108": {
+    "status": "resolved",
+    "ticker": "VIDA",
+    "name": "VIDA GLOBAL INC CL-A",
+    "figi": "BBG01NMQKGR9",
+    "composite_figi": "BBG01NMQKGR9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92649G108",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:32.735916+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "M549GJ368": {
+    "status": "resolved",
+    "ticker": "INCR",
+    "name": "INTERCURE LTD",
+    "figi": "BBG00MVV4FL7",
+    "composite_figi": "BBG00MVV4FL7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "M549GJ368",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CINS"
+  },
+  "G47281103": {
+    "status": "resolved",
+    "ticker": "IMC",
+    "name": "IMC RARE EARTHS LTD",
+    "figi": "BBG023DNJ6N7",
+    "composite_figi": "BBG023DNJ6N7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G47281103",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CINS"
+  },
+  "464286657": {
+    "status": "resolved",
+    "ticker": "BKF",
+    "name": "ISHARES MSCI BIC ETF",
+    "figi": "BBG000TVZ652",
+    "composite_figi": "BBG000TVZ652",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "464286657",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "29287L502": {
+    "status": "resolved",
+    "ticker": "AIFD",
+    "name": "TCW ARTIFICIAL INTEL ETF",
+    "figi": "BBG01MQS6C89",
+    "composite_figi": "BBG01MQS6C89",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "29287L502",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V795": {
+    "status": "resolved",
+    "ticker": "PUI",
+    "name": "INVESCO DORSEY WRIGHT UTILIT",
+    "figi": "BBG000JJZQF5",
+    "composite_figi": "BBG000JJZQF5",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V795",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "37892C205": {
+    "status": "resolved",
+    "ticker": "BTLN",
+    "name": "BRIGHTLINE INTERACTIVE INC",
+    "figi": "BBG00FHS6535",
+    "composite_figi": "BBG00FHS6535",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "37892C205",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92189F692": {
+    "status": "resolved",
+    "ticker": "PPH",
+    "name": "VANECK PHARMACEUTICAL ETF",
+    "figi": "BBG000BCKT22",
+    "composite_figi": "BBG000BCKT22",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92189F692",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "37954Y442": {
+    "status": "resolved",
+    "ticker": "CLOU",
+    "name": "GLOBAL X CLOUD COMPUTING ETF",
+    "figi": "BBG00NW3VBY1",
+    "composite_figi": "BBG00NW3VBY1",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "37954Y442",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "72201R817": {
+    "status": "resolved",
+    "ticker": "CORP",
+    "name": "PIMC INVST GRD CRP BD ETF-UI",
+    "figi": "BBG001660LJ0",
+    "composite_figi": "BBG001660LJ0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "72201R817",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "381430396": {
+    "status": "resolved",
+    "ticker": "JUST",
+    "name": "GOLDMAN SACHS JUST US LRG",
+    "figi": "BBG00L45DJV7",
+    "composite_figi": "BBG00L45DJV7",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "381430396",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:35.418191+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "33939L795": {
+    "status": "resolved",
+    "ticker": "NFRA",
+    "name": "NT GLBL BRD INFRA ETF",
+    "figi": "BBG005D25MR6",
+    "composite_figi": "BBG005D25MR6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "33939L795",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "292102100": {
+    "status": "resolved",
+    "ticker": "ESBA",
+    "name": "EMPIRE STATE REALTY OP LP-ES",
+    "figi": "BBG004M284K3",
+    "composite_figi": "BBG004M284K3",
+    "security_type": "Ltd Part",
+    "security_type2": "Partnership Shares",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "292102100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "64082X203": {
+    "status": "resolved",
+    "ticker": "NGEN",
+    "name": "NERVGEN PHARMA CORP",
+    "figi": "BBG00NQ5C032",
+    "composite_figi": "BBG00NQ5C032",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "64082X203",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V761": {
+    "status": "resolved",
+    "ticker": "PXE",
+    "name": "INVESCO ENERGY EXPLORATION",
+    "figi": "BBG000JK2797",
+    "composite_figi": "BBG000JK2797",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V761",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "54570M405": {
+    "status": "resolved",
+    "ticker": "SEGG",
+    "name": "SPORTS ENTERTAINMENT GAMING",
+    "figi": "BBG00KDH03W1",
+    "composite_figi": "BBG00KDH03W1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "54570M405",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "45783Y855": {
+    "status": "resolved",
+    "ticker": "BALT",
+    "name": "INN DEFINED WEALTH SHIELD",
+    "figi": "BBG011MFV0P6",
+    "composite_figi": "BBG011MFV0P6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "45783Y855",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "927950204": {
+    "status": "resolved",
+    "ticker": "VWAV",
+    "name": "VISIONWAVE HOLDINGS INC",
+    "figi": "BBG01SYHG9J5",
+    "composite_figi": "BBG01SYHG9J5",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "927950204",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V720": {
+    "status": "resolved",
+    "ticker": "PEJ",
+    "name": "INVESCO LEISURE & ENTERTAINM",
+    "figi": "BBG000DTM8B7",
+    "composite_figi": "BBG000DTM8B7",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V720",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "H5870P102": {
+    "status": "resolved",
+    "ticker": "OCS",
+    "name": "OCULIS HOLDING AG",
+    "figi": "BBG01BJ1BHZ3",
+    "composite_figi": "BBG01BJ1BHZ3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "H5870P102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CINS"
+  },
+  "G2949D104": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G2949D104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:37.871502+00:00",
+    "id_type": "ID_CINS"
+  },
+  "37960A271": {
+    "status": "resolved",
+    "ticker": "GXPS",
+    "name": "GLOBAL X PURECAP CONS STAPL",
+    "figi": "BBG01W91H4T8",
+    "composite_figi": "BBG01W91H4T8",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "37960A271",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "188769103": {
+    "status": "resolved",
+    "ticker": "CUVL",
+    "name": "CLINUVEL PHARMACUTIC-SP ADR",
+    "figi": "BBG000FL1KQ2",
+    "composite_figi": "BBG000FL1KQ2",
+    "security_type": "ADR",
+    "security_type2": "Depositary Receipt",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "188769103",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "233051820": {
+    "status": "resolved",
+    "ticker": "DBAW",
+    "name": "XTRACKERS MSCI ALL WORLD EX",
+    "figi": "BBG005TJ1X47",
+    "composite_figi": "BBG005TJ1X47",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "233051820",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "09661T602": {
+    "status": "resolved",
+    "ticker": "BKAG",
+    "name": "BNY MELLON CORE BOND ETF",
+    "figi": "BBG00RYR56Q6",
+    "composite_figi": "BBG00RYR56Q6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "09661T602",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "886364793": {
+    "status": "resolved",
+    "ticker": "DIVY",
+    "name": "SOUND EQUITY DIVIDEND INCOME",
+    "figi": "BBG00YQ1FQM6",
+    "composite_figi": "BBG00YQ1FQM6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "886364793",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "652941204": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "652941204",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92189F601": {
+    "status": "resolved",
+    "ticker": "NLR",
+    "name": "VANECK URANI & NUCLR ETF-USD",
+    "figi": "BBG000KJ6RN4",
+    "composite_figi": "BBG000KJ6RN4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92189F601",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46137V373": {
+    "status": "resolved",
+    "ticker": "RSPS",
+    "name": "INVESCO S&P 500 EQUAL WEIGHT",
+    "figi": "BBG00KJR2L79",
+    "composite_figi": "BBG00KJR2L79",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46137V373",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00214Q203": {
+    "status": "resolved",
+    "ticker": "ARKQ",
+    "name": "ARK AUTONOMOUS TECH & ROBOT",
+    "figi": "BBG0077Q7038",
+    "composite_figi": "BBG0077Q7038",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00214Q203",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00162Q460": {
+    "status": "resolved",
+    "ticker": "ACES",
+    "name": "ALPS CLEAN ENERGY ETF",
+    "figi": "BBG00L99FCT0",
+    "composite_figi": "BBG00L99FCT0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00162Q460",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:40.471357+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "576810402": {
+    "status": "resolved",
+    "ticker": "MTNB",
+    "name": "MATINAS BIOPHARMA HOLDINGS I",
+    "figi": "BBG005WX2XG8",
+    "composite_figi": "BBG005WX2XG8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "576810402",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "72201R874": {
+    "status": "resolved",
+    "ticker": "SMMU",
+    "name": "PIMCO SHRT TRM MUNI BND ETF",
+    "figi": "BBG000Q8VW08",
+    "composite_figi": "BBG000Q8VW08",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "72201R874",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "34520K105": {
+    "status": "resolved",
+    "ticker": "FRBT",
+    "name": "FORBRIGHT INC -A",
+    "figi": "BBG022FNPS25",
+    "composite_figi": "BBG022FNPS25",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "34520K105",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46435U366": {
+    "status": "resolved",
+    "ticker": "IDRV",
+    "name": "ISHARES SELF-DRIVING EV&TECH",
+    "figi": "BBG00NWKVLW3",
+    "composite_figi": "BBG00NWKVLW3",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46435U366",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46431W598": {
+    "status": "resolved",
+    "ticker": "CMDY",
+    "name": "ISHARES BLOOMBERG ROLL SELEC",
+    "figi": "BBG00KHT03W1",
+    "composite_figi": "BBG00KHT03W1",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46431W598",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G7633Y108": {
+    "status": "resolved",
+    "ticker": "ROMA",
+    "name": "ROMA GREEN FINANCE LTD-A",
+    "figi": "BBG01GZT87C4",
+    "composite_figi": "BBG01GZT87C4",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G7633Y108",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CINS"
+  },
+  "52886N604": {
+    "status": "resolved",
+    "ticker": "LEXX",
+    "name": "LEXARIA BIOSCIENCE CORP",
+    "figi": "BBG000JQHT18",
+    "composite_figi": "BBG000JQHT18",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "52886N604",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "Y46002401": {
+    "status": "resolved",
+    "ticker": "JXG",
+    "name": "JX LUXVENTURE GROUP INC",
+    "figi": "BBG00429YTD4",
+    "composite_figi": "BBG00429YTD4",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "Y46002401",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CINS"
+  },
+  "G9491K139": {
+    "status": "resolved",
+    "ticker": "GGR",
+    "name": "GOGORO INC",
+    "figi": "BBG007G2T2H8",
+    "composite_figi": "BBG007G2T2H8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G9491K139",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CINS"
+  },
+  "46138G664": {
+    "status": "resolved",
+    "ticker": "RWJ",
+    "name": "INVESCO S&P SMALLCAP 600",
+    "figi": "BBG00P4Y2TY2",
+    "composite_figi": "BBG00P4Y2TY2",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46138G664",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:43.319405+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "693489205": {
+    "status": "resolved",
+    "ticker": "VEEA",
+    "name": "VEEA INC",
+    "figi": "BBG00ZKFG8Z3",
+    "composite_figi": "BBG00ZKFG8Z3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "693489205",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G3066T104": {
+    "status": "resolved",
+    "ticker": "EGG",
+    "name": "ENIGMATIG LTD - CLASS A",
+    "figi": "BBG01T4SBL00",
+    "composite_figi": "BBG01T4SBL00",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G3066T104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CINS"
+  },
+  "97717Y543": {
+    "status": "resolved",
+    "ticker": "WTAI",
+    "name": "WISDOMTREE AI AND INNOVATION",
+    "figi": "BBG013Y3WJW6",
+    "composite_figi": "BBG013Y3WJW6",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "97717Y543",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G7553X122": {
+    "status": "resolved",
+    "ticker": "KRSP/U",
+    "name": "RICE ACQUISITION CORP 3",
+    "figi": "BBG01X0FFG73",
+    "composite_figi": "BBG01X0FFG73",
+    "security_type": "Unit",
+    "security_type2": "Unit",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G7553X122",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CINS"
+  },
+  "53271X207": {
+    "status": "resolved",
+    "ticker": "LIMN",
+    "name": "LIMINATUS PHARMA INC-CL A",
+    "figi": "BBG01HVYG111",
+    "composite_figi": "BBG01HVYG111",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "53271X207",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "560667404": {
+    "status": "resolved",
+    "ticker": "MSS",
+    "name": "MAISON SOLUTIONS INC-A",
+    "figi": "BBG01GS7HFT4",
+    "composite_figi": "BBG01GS7HFT4",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "560667404",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "28661C104": {
+    "status": "resolved",
+    "ticker": "ETS",
+    "name": "ELITE EXPRESS HOLDING INC",
+    "figi": "BBG01TV7D2Q8",
+    "composite_figi": "BBG01TV7D2Q8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "28661C104",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G6005A102": {
+    "status": "resolved",
+    "ticker": "MGRT",
+    "name": "MEGA FORTUNE CO LTD",
+    "figi": "BBG01NR7GST3",
+    "composite_figi": "BBG01NR7GST3",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G6005A102",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CINS"
+  },
+  "08862L301": {
+    "status": "resolved",
+    "ticker": "XAIR",
+    "name": "BEYOND AIR INC",
+    "figi": "BBG00B4QYL72",
+    "composite_figi": "BBG00B4QYL72",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "08862L301",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "20715F100": {
+    "status": "resolved",
+    "ticker": "CNXU",
+    "name": "CONEXEU SCIENCES INC",
+    "figi": "BBG0200TPJ04",
+    "composite_figi": "BBG0200TPJ04",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "20715F100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:45.736063+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "31609A206": {
+    "status": "resolved",
+    "ticker": "FESM",
+    "name": "FIDELITY ENHANCED SMALL CAP",
+    "figi": "BBG01K786LQ8",
+    "composite_figi": "BBG01K786LQ8",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "31609A206",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "36254L407": {
+    "status": "resolved",
+    "ticker": "GTBP",
+    "name": "GT BIOPHARMA INC",
+    "figi": "BBG000DHJ738",
+    "composite_figi": "BBG000DHJ738",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "36254L407",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92267L108": {
+    "status": "resolved",
+    "ticker": "VHUB",
+    "name": "VENHUB GLOBAL INC",
+    "figi": "BBG01ZY38QV7",
+    "composite_figi": "BBG01ZY38QV7",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92267L108",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G63638111": {
+    "status": "resolved",
+    "ticker": "NAMMW",
+    "name": "NAMIB MINERALS",
+    "figi": "BBG01VF3SVH0",
+    "composite_figi": "BBG01VF3SVH0",
+    "security_type": "Equity WRT",
+    "security_type2": "Warrant",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G63638111",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CINS"
+  },
+  "231269408": {
+    "status": "resolved",
+    "ticker": "CRIS",
+    "name": "CURIS INC",
+    "figi": "BBG000C1GTC9",
+    "composite_figi": "BBG000C1GTC9",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "231269408",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "46090A101": {
+    "status": "resolved",
+    "ticker": "PSR",
+    "name": "INVESCO ACTIVE US REAL ESTAT",
+    "figi": "BBG000BWTQD3",
+    "composite_figi": "BBG000BWTQD3",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "46090A101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00768Y453": {
+    "status": "resolved",
+    "ticker": "MSOS",
+    "name": "ADVISORSHARES PURE US CANN",
+    "figi": "BBG00X28J818",
+    "composite_figi": "BBG00X28J818",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00768Y453",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G4453R115": {
+    "status": "resolved",
+    "ticker": "MAAS",
+    "name": "MAASE INC-A",
+    "figi": "BBG00MNFN5R6",
+    "composite_figi": "BBG00MNFN5R6",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G4453R115",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CINS"
+  },
+  "923725105": {
+    "status": "resolved",
+    "ticker": "VET",
+    "name": "VERMILION ENERGY INC",
+    "figi": "BBG000PL3C78",
+    "composite_figi": "BBG000PL3C78",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "923725105",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "90139K100": {
+    "status": "resolved",
+    "ticker": "QLTY",
+    "name": "GMO U.S. QUALITY ETF",
+    "figi": "BBG01K0RTKH0",
+    "composite_figi": "BBG01K0RTKH0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "90139K100",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:48.275755+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "37149D402": {
+    "status": "resolved",
+    "ticker": "GIPR",
+    "name": "GENERATION INCOME PROPERTIES",
+    "figi": "BBG00N761S87",
+    "composite_figi": "BBG00N761S87",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "37149D402",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "92189F411": {
+    "status": "resolved",
+    "ticker": "BIZD",
+    "name": "VANECK BDC INCOME ETF",
+    "figi": "BBG00440GKJ4",
+    "composite_figi": "BBG00440GKJ4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "92189F411",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00162Q361": {
+    "status": "resolved",
+    "ticker": "OGIG",
+    "name": "ALPS OSHARES GLOBAL INTERNET",
+    "figi": "BBG018B6MWJ0",
+    "composite_figi": "BBG018B6MWJ0",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00162Q361",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "63009J107": {
+    "status": "resolved",
+    "ticker": "NBTX",
+    "name": "NANOBIOTIX SA - ADR",
+    "figi": "BBG00Y9D2SW8",
+    "composite_figi": "BBG00Y9D2SW8",
+    "security_type": "ADR",
+    "security_type2": "Depositary Receipt",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "63009J107",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00162Q379": {
+    "status": "resolved",
+    "ticker": "OEFA",
+    "name": "ALPS O'SHARES INTL DEV QLTY",
+    "figi": "BBG018B6N553",
+    "composite_figi": "BBG018B6N553",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00162Q379",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "23248B307": {
+    "status": "resolved",
+    "ticker": "CXAI",
+    "name": "CXAPP INC",
+    "figi": "BBG00Z49NKK6",
+    "composite_figi": "BBG00Z49NKK6",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "23248B307",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "G7185A144": {
+    "status": "resolved",
+    "ticker": "ALP",
+    "name": "ALPHA COMPUTE CORP",
+    "figi": "BBG000L8TTY6",
+    "composite_figi": "BBG000L8TTY6",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CINS",
+      "idValue": "G7185A144",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CINS"
+  },
+  "33939L761": {
+    "status": "resolved",
+    "ticker": "SKOR",
+    "name": "NT CRDSCR US CORP BD ETF",
+    "figi": "BBG007J2RFB4",
+    "composite_figi": "BBG007J2RFB4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "33939L761",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "47103U886": {
+    "status": "resolved",
+    "ticker": "VNLA",
+    "name": "JANUS HENDERSON SHORT DURATI",
+    "figi": "BBG00F7XD804",
+    "composite_figi": "BBG00F7XD804",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "47103U886",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "451100101": {
+    "status": "resolved",
+    "ticker": "IEP",
+    "name": "ICAHN ENTERPRISES LP",
+    "figi": "BBG000BB3080",
+    "composite_figi": "BBG000BB3080",
+    "security_type": "MLP",
+    "security_type2": "Partnership Shares",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "451100101",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:50.876022+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "63911H504": {
+    "status": "resolved",
+    "ticker": "KITT",
+    "name": "NAUTICUS ROBOTICS INC",
+    "figi": "BBG0118T6971",
+    "composite_figi": "BBG0118T6971",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "63911H504",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:53.575020+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "372446401": {
+    "status": "resolved",
+    "ticker": "GNPX",
+    "name": "GENPREX INC",
+    "figi": "BBG00F7T0157",
+    "composite_figi": "BBG00F7T0157",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "372446401",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:53.575020+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "89147L886": {
+    "status": "ambiguous",
+    "candidates": [
+      {
+        "figi": "BBG000L1GR60",
+        "name": "TORTOISE ENERGY INFRASTRUCT",
+        "ticker": "TYG",
+        "exchCode": "US",
+        "compositeFIGI": "BBG000L1GR60",
+        "securityType": "Closed-End Fund",
+        "marketSector": "Equity",
+        "shareClassFIGI": "BBG001SJTT37",
+        "securityType2": "Mutual Fund",
+        "securityDescription": "TYG"
+      },
+      {
+        "figi": "BBG000MJRXV7",
+        "name": "TORTOISE ENERGY INFRASTRUCT",
+        "ticker": "XTYGX",
+        "exchCode": "US",
+        "compositeFIGI": "BBG000MJRXV7",
+        "securityType": "Closed-End Fund",
+        "marketSector": "Equity",
+        "shareClassFIGI": "BBG001SJTT37",
+        "securityType2": "Mutual Fund",
+        "securityDescription": "XTYGX"
+      }
+    ],
+    "reason": "No unique US equity match",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "89147L886",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:53.575020+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "12811T571": {
+    "status": "resolved",
+    "ticker": "CAIE",
+    "name": "CALAMOS AUTOCALLABLE INC ETF",
+    "figi": "BBG01VPYP2K4",
+    "composite_figi": "BBG01VPYP2K4",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "12811T571",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:53.575020+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "00808Y703": {
+    "status": "resolved",
+    "ticker": "AEMD",
+    "name": "AETHLON MEDICAL INC",
+    "figi": "BBG000L78XT8",
+    "composite_figi": "BBG000L78XT8",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "00808Y703",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:53.575020+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "78464A375": {
+    "status": "resolved",
+    "ticker": "SPIB",
+    "name": "SS PRT INT TRM CB IDX ETF-UI",
+    "figi": "BBG000F8Y230",
+    "composite_figi": "BBG000F8Y230",
+    "security_type": "ETP",
+    "security_type2": "Mutual Fund",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "78464A375",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:53.575020+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "690370127": {
+    "status": "unresolved",
+    "candidates": [],
+    "reason": "No identifier found.",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "690370127",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:53.575020+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "236918108": {
+    "status": "resolved",
+    "ticker": "DRK",
+    "name": "DARKHORSE TECHNOLOGIES INC",
+    "figi": "BBG004Z3JRW1",
+    "composite_figi": "BBG004Z3JRW1",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "236918108",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:53.575020+00:00",
+    "id_type": "ID_CUSIP"
+  },
+  "182744409": {
+    "status": "resolved",
+    "ticker": "KIDZ",
+    "name": "KIDZ AI INC",
+    "figi": "BBG01RQT6Y33",
+    "composite_figi": "BBG01RQT6Y33",
+    "security_type": "Common Stock",
+    "security_type2": "Common Stock",
+    "market_sector": "Equity",
+    "exchange": "US",
+    "source": "https://api.openfigi.com/v3/mapping",
+    "query": {
+      "idType": "ID_CUSIP",
+      "idValue": "182744409",
+      "exchCode": "US"
+    },
+    "queried_at": "2026-11-14T17:46:53.575020+00:00",
+    "id_type": "ID_CUSIP"
   }
 }
