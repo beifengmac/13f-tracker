@@ -11,68 +11,18 @@
   },
   "funds": {
     "berkshire": {
-      "quarter": "Q2 2026",
-      "records": 29,
+      "quarter": "Q3 2026",
+      "records": 30,
       "unresolved_records": 0,
       "unresolved_weight": 0,
       "unresolved": []
     },
     "bridgewater": {
-      "quarter": "Q2 2026",
-      "records": 997,
-      "unresolved_records": 7,
-      "unresolved_weight": 0.16279640274151916,
-      "unresolved": [
-        {
-          "cusip": "30231G102",
-          "name": "EXXON MOBIL CORP",
-          "class": "COM",
-          "weight": 0.12127575098495517,
-          "status": "unresolved"
-        },
-        {
-          "cusip": "524660107",
-          "name": "LEGGETT  PLATT INC",
-          "class": "COM",
-          "weight": 0.012857125347593684,
-          "status": "unresolved"
-        },
-        {
-          "cusip": "637870106",
-          "name": "NATIONAL STORAGE AFFILIATES",
-          "class": "COM SHS BEN IN",
-          "weight": 0.011452773588427199,
-          "status": "unresolved"
-        },
-        {
-          "cusip": "530307305",
-          "name": "LIBERTY BROADBAND CORP",
-          "class": "COM SER C",
-          "weight": 0.010374745744718195,
-          "status": "unresolved"
-        },
-        {
-          "cusip": "858927106",
-          "name": "STELLAR BANCORP INC",
-          "class": "COM",
-          "weight": 0.003872947361087334,
-          "status": "unresolved"
-        },
-        {
-          "cusip": "16115Q308",
-          "name": "CHART INDS INC",
-          "class": "COM",
-          "weight": 0.0018334485293607958,
-          "status": "unresolved"
-        },
-        {
-          "cusip": "60784B101",
-          "name": "MODIV INDUSTRIAL INC",
-          "class": "COM STK CL C",
-          "weight": 0.0011296111853767693,
-          "status": "unresolved"
-        }
-      ]
+      "quarter": "Q3 2026",
+      "records": 974,
+      "unresolved_records": 0,
+      "unresolved_weight": 0,
+      "unresolved": []
     },
     "blackrock": {
       "quarter": "Q3 2026",
@@ -650,15 +600,15 @@
       "unresolved": []
     },
     "himalaya": {
-      "quarter": "Q2 2026",
+      "quarter": "Q3 2026",
       "records": 8,
       "unresolved_records": 0,
       "unresolved_weight": 0,
       "unresolved": []
     },
     "hh": {
-      "quarter": "Q2 2026",
-      "records": 18,
+      "quarter": "Q3 2026",
+      "records": 16,
       "unresolved_records": 0,
       "unresolved_weight": 0,
       "unresolved": []
@@ -671,19 +621,11 @@
       "unresolved": []
     },
     "duquesne": {
-      "quarter": "Q2 2026",
-      "records": 95,
-      "unresolved_records": 1,
-      "unresolved_weight": 0.019286658468397513,
-      "unresolved": [
-        {
-          "cusip": "Y95308105",
-          "name": "Wave Life Sciences Ltd",
-          "class": "SHS",
-          "weight": 0.019286658468397513,
-          "status": "unresolved"
-        }
-      ]
+      "quarter": "Q3 2026",
+      "records": 65,
+      "unresolved_records": 0,
+      "unresolved_weight": 0,
+      "unresolved": []
     },
     "oaktree": {
       "quarter": "Q2 2026",
