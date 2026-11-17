@@ -379617,6 +379617,464 @@
           "source_urls": [
             "https://www.sec.gov/Archives/edgar/data/1762304/000090266425004996/0000902664-25-004996-index.html"
           ]
+        },
+        "Q3 2026": {
+          "total": 1543219087,
+          "holdings": [
+            {
+              "t": "PDD",
+              "n": "PDD HOLDINGS INC",
+              "cusip": "722304102",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 4447000,
+              "v": 346599180,
+              "w": 22.459492817302095
+            },
+            {
+              "t": "BABA",
+              "n": "ALIBABA GROUP HLDG LTD",
+              "cusip": "01609W102",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 2489800,
+              "v": 267753092,
+              "w": 17.350296808504936
+            },
+            {
+              "t": "LEGN",
+              "n": "LEGEND BIOTECH CORP",
+              "cusip": "52490G102",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 8361426,
+              "v": 166308763,
+              "w": 10.776743522742601
+            },
+            {
+              "t": "YMM",
+              "n": "FULL TRUCK ALLIANCE CO LTD",
+              "cusip": "35969L108",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 19596852,
+              "v": 162065966,
+              "w": 10.501811918037792
+            },
+            {
+              "t": "AVBP",
+              "n": "ARRIVENT BIOPHARMA INC",
+              "cusip": "04272N102",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 3929117,
+              "v": 118973663,
+              "w": 7.709447349519466
+            },
+            {
+              "t": "VIPS",
+              "n": "VIPSHOP HLDGS LTD",
+              "cusip": "92763W103",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS A",
+              "security_type": "SH",
+              "s": 6852600,
+              "v": 85726026,
+              "w": 5.555013330391759
+            },
+            {
+              "t": "TCOM",
+              "n": "TRIP COM GROUP LTD",
+              "cusip": "89677Q107",
+              "ticker_status": "resolved",
+              "asset_class": "ADS",
+              "security_type": "SH",
+              "s": 2127300,
+              "v": 83177430,
+              "w": 5.389865295257328
+            },
+            {
+              "t": "FUTU",
+              "n": "FUTU HLDGS LTD",
+              "cusip": "36118L106",
+              "ticker_status": "resolved",
+              "asset_class": "SPON ADS CL A",
+              "security_type": "SH",
+              "s": 631000,
+              "v": 69757050,
+              "w": 4.52022986156858
+            },
+            {
+              "t": "MRVL",
+              "n": "MARVELL TECHNOLOGY INC",
+              "cusip": "573874104",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 153933,
+              "v": 40670638,
+              "w": 2.635441613093527
+            },
+            {
+              "t": "CTKB",
+              "n": "CYTEK BIOSCIENCES INC",
+              "cusip": "23285D109",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 6657030,
+              "v": 39675899,
+              "w": 2.5709829106072997
+            },
+            {
+              "t": "ALMR",
+              "n": "ALAMAR BIOSCIENCES INC",
+              "cusip": "010911105",
+              "ticker_status": "resolved",
+              "asset_class": "COMMON STOCK",
+              "security_type": "SH",
+              "s": 956462,
+              "v": 32586660,
+              "w": 2.111602965159541
+            },
+            {
+              "t": "ODTX",
+              "n": "ODYSSEY THERAPEUTICS INC",
+              "cusip": "67613T104",
+              "ticker_status": "resolved",
+              "asset_class": "COMMON STOCK",
+              "security_type": "SH",
+              "s": 831656,
+              "v": 18479396,
+              "w": 1.1974577139221192
+            },
+            {
+              "t": "YSG",
+              "n": "YATSEN HLDG LTD",
+              "cusip": "985194208",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 4885873,
+              "v": 13582727,
+              "w": 0.8801554565012972
+            },
+            {
+              "t": "MAZE",
+              "n": "MAZE THERAPEUTICS INC",
+              "cusip": "578784100",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 366030,
+              "v": 9948695,
+              "w": 0.6446715883575642
+            },
+            {
+              "t": "CTNM",
+              "n": "CONTINEUM THERAPEUTICS INC",
+              "cusip": "21217B100",
+              "ticker_status": "resolved",
+              "asset_class": "CL A",
+              "security_type": "SH",
+              "s": 669337,
+              "v": 8982503,
+              "w": 0.582062720430829
+            },
+            {
+              "t": "API",
+              "n": "AGORA INC",
+              "cusip": "00851L103",
+              "ticker_status": "resolved",
+              "asset_class": "ADS",
+              "security_type": "SH",
+              "s": 2098553,
+              "v": 8771952,
+              "w": 0.5684190970611032
+            },
+            {
+              "t": "TSM",
+              "n": "TAIWAN SEMICONDUCTOR MANUFAC",
+              "cusip": "874039100",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 18907,
+              "v": 8625184,
+              "w": 0.5589085874234007
+            },
+            {
+              "t": "NBP",
+              "n": "NOVABRIDGE BIOSCIENCES",
+              "cusip": "44975P103",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 5980568,
+              "v": 8163475,
+              "w": 0.5289900227886437
+            },
+            {
+              "t": "CBRS",
+              "n": "CEREBRAS SYSTEMS INC",
+              "cusip": "15675D103",
+              "ticker_status": "resolved",
+              "asset_class": "COM CL A",
+              "security_type": "SH",
+              "s": 42994,
+              "v": 7637884,
+              "w": 0.4949319292601517
+            },
+            {
+              "t": "AMZN",
+              "n": "AMAZON COM INC",
+              "cusip": "023135106",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 24198,
+              "v": 6028932,
+              "w": 0.39067246191985444
+            },
+            {
+              "t": "BEKE",
+              "n": "KE HLDGS INC",
+              "cusip": "482497104",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 269612,
+              "v": 4542962,
+              "w": 0.2943821806164584
+            },
+            {
+              "t": "NTES",
+              "n": "NETEASE COM INC",
+              "cusip": "64110W102",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 34999,
+              "v": 4240479,
+              "w": 0.27478139920129174
+            },
+            {
+              "t": "INTC",
+              "n": "INTEL CORP",
+              "cusip": "458140100",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 34688,
+              "v": 4170538,
+              "w": 0.2702492494508656
+            },
+            {
+              "t": "NVDA",
+              "n": "NVIDIA CORPORATION",
+              "cusip": "67066G104",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 14054,
+              "v": 3209653,
+              "w": 0.2079842730716562
+            },
+            {
+              "t": "GE",
+              "n": "GE AEROSPACE",
+              "cusip": "369604301",
+              "ticker_status": "resolved",
+              "asset_class": "COM NEW",
+              "security_type": "SH",
+              "s": 10043,
+              "v": 3136328,
+              "w": 0.20323284142998677
+            },
+            {
+              "t": "TUYA",
+              "n": "TUYA INC",
+              "cusip": "90114C107",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSERED ADS",
+              "security_type": "SH",
+              "s": 1564400,
+              "v": 2659480,
+              "w": 0.1723332754502148
+            },
+            {
+              "t": "PACB",
+              "n": "PACIFIC BIOSCIENCES CALIF IN",
+              "cusip": "69404D108",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 918892,
+              "v": 2177774,
+              "w": 0.14111891294926682
+            },
+            {
+              "t": "GOOGL",
+              "n": "ALPHABET INC",
+              "cusip": "02079K305",
+              "ticker_status": "resolved",
+              "asset_class": "CAP STK CL A",
+              "security_type": "SH",
+              "s": 5802,
+              "v": 1996352,
+              "w": 0.12936283751394528
+            },
+            {
+              "t": "MSFT",
+              "n": "MICROSOFT CORP",
+              "cusip": "594918104",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 3640,
+              "v": 1866956,
+              "w": 0.12097802675764856
+            },
+            {
+              "t": "LITE",
+              "n": "LUMENTUM HLDGS INC",
+              "cusip": "55024U109",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 1750,
+              "v": 1699705,
+              "w": 0.11014022664171469
+            },
+            {
+              "t": "PAYP",
+              "n": "PAYPAY CORP",
+              "cusip": "70450C101",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 104175,
+              "v": 1635548,
+              "w": 0.1059828778543354
+            },
+            {
+              "t": "MOGU",
+              "n": "MOGU INC",
+              "cusip": "608012308",
+              "ticker_status": "resolved",
+              "asset_class": "SPON ADS",
+              "security_type": "SH",
+              "s": 847510,
+              "v": 1576369,
+              "w": 0.10214810154172231
+            },
+            {
+              "t": "SKHY",
+              "n": "SK HYNIX INC",
+              "cusip": "78392B206",
+              "ticker_status": "resolved",
+              "asset_class": "AMERICAN DEPOSIT",
+              "security_type": "SH",
+              "s": 8028,
+              "v": 1478356,
+              "w": 0.09579689704809878
+            },
+            {
+              "t": "SPGI",
+              "n": "SP GLOBAL INC",
+              "cusip": "78409V104",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 3112,
+              "v": 1227591,
+              "w": 0.07954742203107548
+            },
+            {
+              "t": "MCO",
+              "n": "MOODYS CORP",
+              "cusip": "615369105",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 2659,
+              "v": 1207532,
+              "w": 0.07824760658886279
+            },
+            {
+              "t": "EQX",
+              "n": "EQUINOX GOLD CORP",
+              "cusip": "29446Y502",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 80500,
+              "v": 894355,
+              "w": 0.057953858109584144
+            },
+            {
+              "t": "ZM",
+              "n": "ZOOM COMMUNICATIONS INC",
+              "cusip": "98980L101",
+              "ticker_status": "resolved",
+              "asset_class": "CL A",
+              "security_type": "SH",
+              "s": 9010,
+              "v": 817838,
+              "w": 0.0529955861024158
+            },
+            {
+              "t": "GOSS [38341P201]",
+              "n": "GOSSAMER BIO INC",
+              "cusip": "38341P201",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 62175,
+              "v": 736774,
+              "w": 0.04774267025379268
+            },
+            {
+              "t": "ALGS",
+              "n": "ALIGOS THERAPEUTICS INC",
+              "cusip": "01626L204",
+              "ticker_status": "resolved",
+              "asset_class": "COM NEW",
+              "security_type": "SH",
+              "s": 76247,
+              "v": 429271,
+              "w": 0.027816594780103312
+            },
+            {
+              "t": "RDGT",
+              "n": "RIDGETECH INC",
+              "cusip": "G2124G203",
+              "ticker_status": "resolved",
+              "asset_class": "SHS NEW",
+              "security_type": "SH",
+              "s": 135,
+              "v": 111,
+              "w": 7.192757070921325e-06
+            }
+          ],
+          "total_positions": 40,
+          "complete": true,
+          "period_ending": "2026-09-30",
+          "filing_date": "2026-11-16",
+          "provider": "OpenBB SEC",
+          "warnings": [],
+          "value_scale": 1,
+          "value_unit_inferred": false,
+          "cover_rounding_difference_usd": 0,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1762304/000091957426008150/0000919574-26-008150-index.html",
+          "source_urls": [
+            "https://www.sec.gov/Archives/edgar/data/1762304/000091957426008150/0000919574-26-008150-index.html"
+          ]
         }
       },
       "data_issues": {}
@@ -417756,6 +418214,6 @@
       "data_issues": {}
     }
   },
-  "generated": "2026-11-16",
+  "generated": "2026-11-17",
   "source": "SEC EDGAR · OpenBB SEC parser (reconciled filings); legacy snapshots labelled"
 }

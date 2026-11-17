@@ -5,8 +5,8 @@
   "queried_through": "2026-11-14T17:46:53.575020+00:00",
   "statuses": {
     "resolved": 6117,
-    "unresolved": 607,
     "ambiguous": 96,
+    "unresolved": 607,
     "invalid": 7
   },
   "funds": {
@@ -593,8 +593,8 @@
       "unresolved": []
     },
     "hhlr": {
-      "quarter": "Q2 2026",
-      "records": 35,
+      "quarter": "Q3 2026",
+      "records": 40,
       "unresolved_records": 0,
       "unresolved_weight": 0,
       "unresolved": []
