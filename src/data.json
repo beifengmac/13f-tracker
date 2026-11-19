@@ -119190,17 +119190,6 @@
               "w": 1.084769756232343e-09
             },
             {
-              "t": "ENVB",
-              "n": "ENVERIC BIOSCIENCES INC",
-              "cusip": "29405E505",
-              "ticker_status": "resolved",
-              "asset_class": "COM SHS",
-              "security_type": "SH",
-              "s": 51,
-              "v": 70,
-              "w": 1.040190177209096e-09
-            },
-            {
               "t": "SGVT",
               "n": "SCHWAB STRATEGIC TR",
               "cusip": "808524581",
@@ -119208,6 +119197,17 @@
               "asset_class": "GOVT MONE MA ETF",
               "security_type": "SH",
               "s": 1,
+              "v": 70,
+              "w": 1.040190177209096e-09
+            },
+            {
+              "t": "ENVB",
+              "n": "ENVERIC BIOSCIENCES INC",
+              "cusip": "29405E505",
+              "ticker_status": "resolved",
+              "asset_class": "COM SHS",
+              "security_type": "SH",
+              "s": 51,
               "v": 70,
               "w": 1.040190177209096e-09
             },
@@ -119311,22 +119311,22 @@
               "w": 6.984134046975359e-10
             },
             {
-              "t": "LDEM",
-              "n": "ISHARES TR",
-              "cusip": "46436E601",
+              "t": "JIRE",
+              "n": "J P MORGAN EXCHANGE TRADED F",
+              "cusip": "46641Q134",
               "ticker_status": "resolved",
-              "asset_class": "ESG MSCI EM LDRS",
+              "asset_class": "INTRNL RES EQT",
               "security_type": "SH",
               "s": 1,
               "v": 46,
               "w": 6.835535450231203e-10
             },
             {
-              "t": "JIRE",
-              "n": "J P MORGAN EXCHANGE TRADED F",
-              "cusip": "46641Q134",
+              "t": "LDEM",
+              "n": "ISHARES TR",
+              "cusip": "46436E601",
               "ticker_status": "resolved",
-              "asset_class": "INTRNL RES EQT",
+              "asset_class": "ESG MSCI EM LDRS",
               "security_type": "SH",
               "s": 1,
               "v": 46,
@@ -119366,22 +119366,22 @@
               "w": 6.389739659998732e-10
             },
             {
-              "t": "FRDM",
-              "n": "EA SERIES TRUST",
-              "cusip": "02072L607",
+              "t": "SPUS",
+              "n": "TIDAL TRUST I",
+              "cusip": "886364801",
               "ticker_status": "resolved",
-              "asset_class": "FREEDOM 100 EM",
+              "asset_class": "SP FDS SP 500",
               "security_type": "SH",
               "s": 1,
               "v": 41,
               "w": 6.092542466510419e-10
             },
             {
-              "t": "SPUS",
-              "n": "TIDAL TRUST I",
-              "cusip": "886364801",
+              "t": "FRDM",
+              "n": "EA SERIES TRUST",
+              "cusip": "02072L607",
               "ticker_status": "resolved",
-              "asset_class": "SP FDS SP 500",
+              "asset_class": "FREEDOM 100 EM",
               "security_type": "SH",
               "s": 1,
               "v": 41,
@@ -119498,17 +119498,6 @@
               "w": 4.606556499068854e-10
             },
             {
-              "t": "EARN",
-              "n": "ELLINGTON CREDIT COMPANY",
-              "cusip": "288578107",
-              "ticker_status": "resolved",
-              "asset_class": "COM SHS BEN INT",
-              "security_type": "SH",
-              "s": 6,
-              "v": 28,
-              "w": 4.160760708836384e-10
-            },
-            {
               "t": "SWAN",
               "n": "AMPLIFY ETF TR",
               "cusip": "032108888",
@@ -119516,6 +119505,17 @@
               "asset_class": "BLACKSWAN GRWT",
               "security_type": "SH",
               "s": 1,
+              "v": 28,
+              "w": 4.160760708836384e-10
+            },
+            {
+              "t": "EARN",
+              "n": "ELLINGTON CREDIT COMPANY",
+              "cusip": "288578107",
+              "ticker_status": "resolved",
+              "asset_class": "COM SHS BEN INT",
+              "security_type": "SH",
+              "s": 6,
               "v": 28,
               "w": 4.160760708836384e-10
             },
@@ -119575,17 +119575,6 @@
               "w": 3.120570531627288e-10
             },
             {
-              "t": "ENSC",
-              "n": "ENSYSCE BIOSCIENCES INC",
-              "cusip": "293602504",
-              "ticker_status": "resolved",
-              "asset_class": "COM NEW",
-              "security_type": "SH",
-              "s": 65,
-              "v": 19,
-              "w": 2.823373338138975e-10
-            },
-            {
               "t": "ISWN",
               "n": "AMPLIFY ETF TR",
               "cusip": "032108821",
@@ -119593,6 +119582,17 @@
               "asset_class": "BLACKSWAN ISWN",
               "security_type": "SH",
               "s": 1,
+              "v": 19,
+              "w": 2.823373338138975e-10
+            },
+            {
+              "t": "ENSC",
+              "n": "ENSYSCE BIOSCIENCES INC",
+              "cusip": "293602504",
+              "ticker_status": "resolved",
+              "asset_class": "COM NEW",
+              "security_type": "SH",
+              "s": 65,
               "v": 19,
               "w": 2.823373338138975e-10
             },
@@ -119608,17 +119608,6 @@
               "w": 2.823373338138975e-10
             },
             {
-              "t": "SJNK",
-              "n": "SPDR SERIES TRUST",
-              "cusip": "78468R408",
-              "ticker_status": "resolved",
-              "asset_class": "ST TERM HIGH ETF",
-              "security_type": "SH",
-              "s": 1,
-              "v": 18,
-              "w": 2.674774741394818e-10
-            },
-            {
               "t": "19248A109",
               "n": "COHEN  STEERS INFRASTRUCTUR",
               "cusip": "19248A109",
@@ -119630,24 +119619,24 @@
               "w": 2.674774741394818e-10
             },
             {
-              "t": "JYD",
-              "n": "JAYUD GLOBAL LOGISTICS LTD",
-              "cusip": "G5084H111",
+              "t": "SJNK",
+              "n": "SPDR SERIES TRUST",
+              "cusip": "78468R408",
               "ticker_status": "resolved",
-              "asset_class": "USD CL A ORD SHS",
+              "asset_class": "ST TERM HIGH ETF",
               "security_type": "SH",
-              "s": 20,
-              "v": 16,
-              "w": 2.377577547906505e-10
+              "s": 1,
+              "v": 18,
+              "w": 2.674774741394818e-10
             },
             {
-              "t": "075896159",
-              "n": "BED BATH  BEYOND INC",
-              "cusip": "075896159",
-              "ticker_status": "unresolved",
-              "asset_class": "*W EXP 10/07/202",
+              "t": "REVS",
+              "n": "COLUMBIA ETF TR I",
+              "cusip": "19761L805",
+              "ticker_status": "resolved",
+              "asset_class": "RESH ENHNC VLU",
               "security_type": "SH",
-              "s": 39,
+              "s": 1,
               "v": 16,
               "w": 2.377577547906505e-10
             },
@@ -119663,13 +119652,24 @@
               "w": 2.377577547906505e-10
             },
             {
-              "t": "REVS",
-              "n": "COLUMBIA ETF TR I",
-              "cusip": "19761L805",
-              "ticker_status": "resolved",
-              "asset_class": "RESH ENHNC VLU",
+              "t": "075896159",
+              "n": "BED BATH  BEYOND INC",
+              "cusip": "075896159",
+              "ticker_status": "unresolved",
+              "asset_class": "*W EXP 10/07/202",
               "security_type": "SH",
-              "s": 1,
+              "s": 39,
+              "v": 16,
+              "w": 2.377577547906505e-10
+            },
+            {
+              "t": "JYD",
+              "n": "JAYUD GLOBAL LOGISTICS LTD",
+              "cusip": "G5084H111",
+              "ticker_status": "resolved",
+              "asset_class": "USD CL A ORD SHS",
+              "security_type": "SH",
+              "s": 20,
               "v": 16,
               "w": 2.377577547906505e-10
             },
@@ -119696,22 +119696,22 @@
               "w": 1.783183160929879e-10
             },
             {
-              "t": "PGX",
-              "n": "INVESCO EXCH TRADED FD TR II",
-              "cusip": "46138E511",
+              "t": "CVR",
+              "n": "CHICAGO RIVET  MACH CO",
+              "cusip": "168088102",
               "ticker_status": "resolved",
-              "asset_class": "PFD ETF",
+              "asset_class": "COM",
               "security_type": "SH",
               "s": 1,
               "v": 10,
               "w": 1.4859859674415657e-10
             },
             {
-              "t": "CVR",
-              "n": "CHICAGO RIVET  MACH CO",
-              "cusip": "168088102",
+              "t": "PGX",
+              "n": "INVESCO EXCH TRADED FD TR II",
+              "cusip": "46138E511",
               "ticker_status": "resolved",
-              "asset_class": "COM",
+              "asset_class": "PFD ETF",
               "security_type": "SH",
               "s": 1,
               "v": 10,
@@ -119729,17 +119729,6 @@
               "w": 1.4859859674415657e-10
             },
             {
-              "t": "OXLC",
-              "n": "OXFORD LANE CAP CORP",
-              "cusip": "691543847",
-              "ticker_status": "resolved",
-              "asset_class": "COM",
-              "security_type": "SH",
-              "s": 1,
-              "v": 9,
-              "w": 1.337387370697409e-10
-            },
-            {
               "t": "GMM",
               "n": "GLOBAL MOFY AI LIMITED",
               "cusip": "G3937M205",
@@ -119751,15 +119740,15 @@
               "w": 1.337387370697409e-10
             },
             {
-              "t": "PERF",
-              "n": "PERFECT CORP",
-              "cusip": "G7006A109",
+              "t": "OXLC",
+              "n": "OXFORD LANE CAP CORP",
+              "cusip": "691543847",
               "ticker_status": "resolved",
-              "asset_class": "CL A ORD SHS",
+              "asset_class": "COM",
               "security_type": "SH",
-              "s": 5,
-              "v": 8,
-              "w": 1.1887887739532525e-10
+              "s": 1,
+              "v": 9,
+              "w": 1.337387370697409e-10
             },
             {
               "t": "ACB",
@@ -119784,6 +119773,17 @@
               "w": 1.1887887739532525e-10
             },
             {
+              "t": "PERF",
+              "n": "PERFECT CORP",
+              "cusip": "G7006A109",
+              "ticker_status": "resolved",
+              "asset_class": "CL A ORD SHS",
+              "security_type": "SH",
+              "s": 5,
+              "v": 8,
+              "w": 1.1887887739532525e-10
+            },
+            {
               "t": "33733U108",
               "n": "FIRST TR SR FLTG RATE INCOME",
               "cusip": "33733U108",
@@ -119793,6 +119793,17 @@
               "s": 1,
               "v": 8,
               "w": 1.1887887739532525e-10
+            },
+            {
+              "t": "ZH",
+              "n": "ZHIHU INC",
+              "cusip": "98955N207",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORED ADS",
+              "security_type": "SH",
+              "s": 2,
+              "v": 6,
+              "w": 8.915915804649395e-11
             },
             {
               "t": "ANY",
@@ -119817,17 +119828,6 @@
               "w": 8.915915804649395e-11
             },
             {
-              "t": "ZH",
-              "n": "ZHIHU INC",
-              "cusip": "98955N207",
-              "ticker_status": "resolved",
-              "asset_class": "SPONSORED ADS",
-              "security_type": "SH",
-              "s": 2,
-              "v": 6,
-              "w": 8.915915804649395e-11
-            },
-            {
               "t": "46132X101",
               "n": "INVESCO MUNI INCOME OPP TRST",
               "cusip": "46132X101",
@@ -119839,17 +119839,6 @@
               "w": 7.429929837207829e-11
             },
             {
-              "t": "XXII",
-              "n": "22ND CENTY GROUP INC",
-              "cusip": "90137F707",
-              "ticker_status": "resolved",
-              "asset_class": "COM",
-              "security_type": "SH",
-              "s": 1,
-              "v": 4,
-              "w": 5.943943869766263e-11
-            },
-            {
               "t": "BTTC",
               "n": "BLACK TITAN CORP",
               "cusip": "G1156E102",
@@ -119857,6 +119846,17 @@
               "asset_class": "ORD SHS",
               "security_type": "SH",
               "s": 6,
+              "v": 4,
+              "w": 5.943943869766263e-11
+            },
+            {
+              "t": "NNDM",
+              "n": "NANO DIMENSION LTD",
+              "cusip": "63008G203",
+              "ticker_status": "resolved",
+              "asset_class": "SPONSORD ADS NEW",
+              "security_type": "SH",
+              "s": 3,
               "v": 4,
               "w": 5.943943869766263e-11
             },
@@ -119872,13 +119872,13 @@
               "w": 5.943943869766263e-11
             },
             {
-              "t": "NNDM",
-              "n": "NANO DIMENSION LTD",
-              "cusip": "63008G203",
+              "t": "XXII",
+              "n": "22ND CENTY GROUP INC",
+              "cusip": "90137F707",
               "ticker_status": "resolved",
-              "asset_class": "SPONSORD ADS NEW",
+              "asset_class": "COM",
               "security_type": "SH",
-              "s": 3,
+              "s": 1,
               "v": 4,
               "w": 5.943943869766263e-11
             },
@@ -119916,17 +119916,6 @@
               "w": 2.971971934883131e-11
             },
             {
-              "t": "GAU",
-              "n": "GALIANO GOLD INC",
-              "cusip": "36352H100",
-              "ticker_status": "resolved",
-              "asset_class": "COM",
-              "security_type": "SH",
-              "s": 1,
-              "v": 2,
-              "w": 2.971971934883131e-11
-            },
-            {
               "t": "YOLO",
               "n": "ADVISORSHARES TR",
               "cusip": "00768Y495",
@@ -119938,11 +119927,22 @@
               "w": 2.971971934883131e-11
             },
             {
-              "t": "PMCB",
-              "n": "PHARMACYTE BIOTECH INC",
-              "cusip": "71715X203",
+              "t": "GAU",
+              "n": "GALIANO GOLD INC",
+              "cusip": "36352H100",
               "ticker_status": "resolved",
-              "asset_class": "COM NEW",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 1,
+              "v": 2,
+              "w": 2.971971934883131e-11
+            },
+            {
+              "t": "KUST",
+              "n": "KUSTOM ENTERTAINMENT INC",
+              "cusip": "25382T606",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
               "security_type": "SH",
               "s": 1,
               "v": 1,
@@ -119960,11 +119960,11 @@
               "w": 1.4859859674415657e-11
             },
             {
-              "t": "KUST",
-              "n": "KUSTOM ENTERTAINMENT INC",
-              "cusip": "25382T606",
+              "t": "PMCB",
+              "n": "PHARMACYTE BIOTECH INC",
+              "cusip": "71715X203",
               "ticker_status": "resolved",
-              "asset_class": "COM",
+              "asset_class": "COM NEW",
               "security_type": "SH",
               "s": 1,
               "v": 1,
@@ -180150,17 +180150,6 @@
               "w": 8.367211809078862e-08
             },
             {
-              "t": "BTC",
-              "n": "GRAYSCALE BITCOIN MINI TR ET",
-              "cusip": "389930207",
-              "ticker_status": "resolved",
-              "asset_class": "SHS NEW",
-              "security_type": "SH",
-              "s": 159,
-              "v": 4768,
-              "w": 8.330521174710381e-08
-            },
-            {
               "t": "87911J103",
               "n": "ABRDN HEALTHCARE INVESTORS",
               "cusip": "87911J103",
@@ -180168,6 +180157,17 @@
               "asset_class": "SH BEN INT",
               "security_type": "SH",
               "s": 268,
+              "v": 4768,
+              "w": 8.330521174710381e-08
+            },
+            {
+              "t": "BTC",
+              "n": "GRAYSCALE BITCOIN MINI TR ET",
+              "cusip": "389930207",
+              "ticker_status": "resolved",
+              "asset_class": "SHS NEW",
+              "security_type": "SH",
+              "s": 159,
               "v": 4768,
               "w": 8.330521174710381e-08
             },
@@ -182317,6 +182317,17 @@
               "w": 2.2713249847154982e-10
             },
             {
+              "t": "GENVR",
+              "n": "GEN DIGITAL INC",
+              "cusip": "668771116",
+              "ticker_status": "resolved",
+              "asset_class": "RIGHT 99/99/9999",
+              "security_type": "SH",
+              "s": 23,
+              "v": 10,
+              "w": 1.747173065165768e-10
+            },
+            {
               "t": "OXLC",
               "n": "OXFORD LANE CAP CORP",
               "cusip": "691543847",
@@ -182339,13 +182350,13 @@
               "w": 1.747173065165768e-10
             },
             {
-              "t": "GENVR",
-              "n": "GEN DIGITAL INC",
-              "cusip": "668771116",
+              "t": "PGX",
+              "n": "INVESCO EXCH TRADED FD TR II",
+              "cusip": "46138E511",
               "ticker_status": "resolved",
-              "asset_class": "RIGHT 99/99/9999",
+              "asset_class": "PFD ETF",
               "security_type": "SH",
-              "s": 23,
+              "s": 1,
               "v": 10,
               "w": 1.747173065165768e-10
             },
@@ -182357,17 +182368,6 @@
               "asset_class": "COM NEW",
               "security_type": "SH",
               "s": 9,
-              "v": 10,
-              "w": 1.747173065165768e-10
-            },
-            {
-              "t": "PGX",
-              "n": "INVESCO EXCH TRADED FD TR II",
-              "cusip": "46138E511",
-              "ticker_status": "resolved",
-              "asset_class": "PFD ETF",
-              "security_type": "SH",
-              "s": 1,
               "v": 10,
               "w": 1.747173065165768e-10
             },
@@ -182471,17 +182471,6 @@
               "w": 5.241519195497304e-11
             },
             {
-              "t": "BNBX",
-              "n": "BNB PLUS CORP",
-              "cusip": "03815U607",
-              "ticker_status": "resolved",
-              "asset_class": "COM NEW",
-              "security_type": "SH",
-              "s": 4,
-              "v": 3,
-              "w": 5.241519195497304e-11
-            },
-            {
               "t": "ANY",
               "n": "SPHERE 3D CORP NEW",
               "cusip": "84841L506",
@@ -182489,6 +182478,17 @@
               "asset_class": "COM SHS",
               "security_type": "SH",
               "s": 2,
+              "v": 3,
+              "w": 5.241519195497304e-11
+            },
+            {
+              "t": "BNBX",
+              "n": "BNB PLUS CORP",
+              "cusip": "03815U607",
+              "ticker_status": "resolved",
+              "asset_class": "COM NEW",
+              "security_type": "SH",
+              "s": 4,
               "v": 3,
               "w": 5.241519195497304e-11
             },
@@ -182592,17 +182592,6 @@
               "w": 0.0
             },
             {
-              "t": "092667112",
-              "n": "STRATA CRITICAL MEDICAL INC",
-              "cusip": "092667112",
-              "ticker_status": "unresolved",
-              "asset_class": "*W EXP 05/07/202",
-              "security_type": "SH",
-              "s": 50,
-              "v": 0,
-              "w": 0.0
-            },
-            {
               "t": "395330509",
               "n": "GREENLANE HLDGS INC",
               "cusip": "395330509",
@@ -182621,6 +182610,17 @@
               "asset_class": "CL A",
               "security_type": "SH",
               "s": 1,
+              "v": 0,
+              "w": 0.0
+            },
+            {
+              "t": "092667112",
+              "n": "STRATA CRITICAL MEDICAL INC",
+              "cusip": "092667112",
+              "ticker_status": "unresolved",
+              "asset_class": "*W EXP 05/07/202",
+              "security_type": "SH",
+              "s": 50,
               "v": 0,
               "w": 0.0
             }
@@ -242971,17 +242971,6 @@
               "w": 1.2507716084033691e-09
             },
             {
-              "t": "G7396L111",
-              "n": "JIADE LIMITED",
-              "cusip": "G7396L111",
-              "ticker_status": "unresolved",
-              "asset_class": "SHS CL A",
-              "security_type": "SH",
-              "s": 80,
-              "v": 65,
-              "w": 1.0986507371110675e-09
-            },
-            {
               "t": "G8437Q101",
               "n": "STAR FASHION CULTURE HLDGS L",
               "cusip": "G8437Q101",
@@ -242989,6 +242978,17 @@
               "asset_class": "SHS CL A",
               "security_type": "SH",
               "s": 650,
+              "v": 65,
+              "w": 1.0986507371110675e-09
+            },
+            {
+              "t": "G7396L111",
+              "n": "JIADE LIMITED",
+              "cusip": "G7396L111",
+              "ticker_status": "unresolved",
+              "asset_class": "SHS CL A",
+              "security_type": "SH",
+              "s": 80,
               "v": 65,
               "w": 1.0986507371110675e-09
             },
@@ -243081,17 +243081,6 @@
               "w": 7.098973993640744e-10
             },
             {
-              "t": "SSO",
-              "n": "PROSHARES TR",
-              "cusip": "74347R107",
-              "ticker_status": "resolved",
-              "asset_class": "PSHS ULT SP 500",
-              "security_type": "SH",
-              "s": 1,
-              "v": 41,
-              "w": 6.929950803315964e-10
-            },
-            {
               "t": "G3104J100",
               "n": "EPICQUEST EDUCATN GRP INTL L",
               "cusip": "G3104J100",
@@ -243099,6 +243088,17 @@
               "asset_class": "COM",
               "security_type": "SH",
               "s": 184,
+              "v": 41,
+              "w": 6.929950803315964e-10
+            },
+            {
+              "t": "SSO",
+              "n": "PROSHARES TR",
+              "cusip": "74347R107",
+              "ticker_status": "resolved",
+              "asset_class": "PSHS ULT SP 500",
+              "security_type": "SH",
+              "s": 1,
               "v": 41,
               "w": 6.929950803315964e-10
             },
@@ -243411,17 +243411,6 @@
               "w": 6.760927612991184e-11
             },
             {
-              "t": "47010C888",
-              "n": "JAGUAR HEALTH INC",
-              "cusip": "47010C888",
-              "ticker_status": "unresolved",
-              "asset_class": "COM",
-              "security_type": "SH",
-              "s": 4,
-              "v": 4,
-              "w": 6.760927612991184e-11
-            },
-            {
               "t": "GURE",
               "n": "GULF RES INC",
               "cusip": "40251W507",
@@ -243444,6 +243433,17 @@
               "w": 6.760927612991184e-11
             },
             {
+              "t": "47010C888",
+              "n": "JAGUAR HEALTH INC",
+              "cusip": "47010C888",
+              "ticker_status": "unresolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 4,
+              "v": 4,
+              "w": 6.760927612991184e-11
+            },
+            {
               "t": "90137F509",
               "n": "22ND CENTY GROUP INC",
               "cusip": "90137F509",
@@ -243455,22 +243455,22 @@
               "w": 5.0706957097433876e-11
             },
             {
-              "t": "395330509",
-              "n": "GREENLANE HLDGS INC",
-              "cusip": "395330509",
-              "ticker_status": "unresolved",
-              "asset_class": "CL A NEW",
+              "t": "GAU",
+              "n": "GALIANO GOLD INC",
+              "cusip": "36352H100",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
               "security_type": "SH",
               "s": 1,
               "v": 2,
               "w": 3.380463806495592e-11
             },
             {
-              "t": "GAU",
-              "n": "GALIANO GOLD INC",
-              "cusip": "36352H100",
-              "ticker_status": "resolved",
-              "asset_class": "COM",
+              "t": "395330509",
+              "n": "GREENLANE HLDGS INC",
+              "cusip": "395330509",
+              "ticker_status": "unresolved",
+              "asset_class": "CL A NEW",
               "security_type": "SH",
               "s": 1,
               "v": 2,
@@ -243486,17 +243486,6 @@
               "s": 1,
               "v": 2,
               "w": 3.380463806495592e-11
-            },
-            {
-              "t": "YDKG",
-              "n": "YUEDA DIGITAL HOLDING",
-              "cusip": "G0137L110",
-              "ticker_status": "resolved",
-              "asset_class": "ORD USD 4 CL A",
-              "security_type": "SH",
-              "s": 1,
-              "v": 1,
-              "w": 1.690231903247796e-11
             },
             {
               "t": "PMCB",
@@ -243515,6 +243504,17 @@
               "cusip": "72303P503",
               "ticker_status": "resolved",
               "asset_class": "COM NEW",
+              "security_type": "SH",
+              "s": 1,
+              "v": 1,
+              "w": 1.690231903247796e-11
+            },
+            {
+              "t": "YDKG",
+              "n": "YUEDA DIGITAL HOLDING",
+              "cusip": "G0137L110",
+              "ticker_status": "resolved",
+              "asset_class": "ORD USD 4 CL A",
               "security_type": "SH",
               "s": 1,
               "v": 1,
@@ -363148,17 +363148,6 @@
               "w": 4.3686375609744556e-07
             },
             {
-              "t": "DCBO",
-              "n": "DOCEBO INC",
-              "cusip": "25609L105",
-              "ticker_status": "resolved",
-              "asset_class": "COM",
-              "security_type": "SH",
-              "s": 1287,
-              "v": 29666,
-              "w": 4.3680485973666396e-07
-            },
-            {
               "t": "MAMO",
               "n": "MASSIMO GROUP",
               "cusip": "57628N101",
@@ -363166,6 +363155,17 @@
               "asset_class": "COM",
               "security_type": "SH",
               "s": 29666,
+              "v": 29666,
+              "w": 4.3680485973666396e-07
+            },
+            {
+              "t": "DCBO",
+              "n": "DOCEBO INC",
+              "cusip": "25609L105",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 1287,
               "v": 29666,
               "w": 4.3680485973666396e-07
             },
@@ -365942,17 +365942,6 @@
               "w": 2.9786834465289257e-08
             },
             {
-              "t": "ONCY",
-              "n": "ONCOLYTICS BIOTECH INC",
-              "cusip": "68237V103",
-              "ticker_status": "resolved",
-              "asset_class": "COM NEW",
-              "security_type": "SH",
-              "s": 3000,
-              "v": 2005,
-              "w": 2.9521800841772102e-08
-            },
-            {
               "t": "AUID",
               "n": "AUTHID INC",
               "cusip": "46264C305",
@@ -365960,6 +365949,17 @@
               "asset_class": "COM",
               "security_type": "SH",
               "s": 5272,
+              "v": 2005,
+              "w": 2.9521800841772102e-08
+            },
+            {
+              "t": "ONCY",
+              "n": "ONCOLYTICS BIOTECH INC",
+              "cusip": "68237V103",
+              "ticker_status": "resolved",
+              "asset_class": "COM NEW",
+              "security_type": "SH",
+              "s": 3000,
               "v": 2005,
               "w": 2.9521800841772102e-08
             },
@@ -366635,17 +366635,6 @@
               "w": 3.622126188067799e-09
             },
             {
-              "t": "DTST",
-              "n": "DATA STORAGE CORP",
-              "cusip": "23786R201",
-              "ticker_status": "resolved",
-              "asset_class": "COM NEW",
-              "security_type": "SH",
-              "s": 69,
-              "v": 237,
-              "w": 3.4896093763092206e-09
-            },
-            {
               "t": "IRS",
               "n": "IRSA INVERSIONES Y REP S A",
               "cusip": "450047303",
@@ -366653,6 +366642,17 @@
               "asset_class": "SPON GDS ECH 10",
               "security_type": "SH",
               "s": 17,
+              "v": 237,
+              "w": 3.4896093763092206e-09
+            },
+            {
+              "t": "DTST",
+              "n": "DATA STORAGE CORP",
+              "cusip": "23786R201",
+              "ticker_status": "resolved",
+              "asset_class": "COM NEW",
+              "security_type": "SH",
+              "s": 69,
               "v": 237,
               "w": 3.4896093763092206e-09
             },
@@ -366987,22 +366987,22 @@
               "w": 5.30067247034312e-10
             },
             {
-              "t": "HYMB",
-              "n": "SPDR SERIES TRUST",
-              "cusip": "78464A284",
+              "t": "VNLA",
+              "n": "JANUS DETROIT STR TR",
+              "cusip": "47103U886",
               "ticker_status": "resolved",
-              "asset_class": "ST NUVE HIGH ETF",
+              "asset_class": "HENDRSN SHRT ETF",
               "security_type": "SH",
               "s": 1,
               "v": 35,
               "w": 5.153431568389145e-10
             },
             {
-              "t": "VNLA",
-              "n": "JANUS DETROIT STR TR",
-              "cusip": "47103U886",
+              "t": "HYMB",
+              "n": "SPDR SERIES TRUST",
+              "cusip": "78464A284",
               "ticker_status": "resolved",
-              "asset_class": "HENDRSN SHRT ETF",
+              "asset_class": "ST NUVE HIGH ETF",
               "security_type": "SH",
               "s": 1,
               "v": 35,
@@ -367042,17 +367042,6 @@
               "w": 4.2699861566652917e-10
             },
             {
-              "t": "BBAR",
-              "n": "BANCO BBVA ARGENTINA S A",
-              "cusip": "058934100",
-              "ticker_status": "resolved",
-              "asset_class": "SPONSORED ADS",
-              "security_type": "SH",
-              "s": 2,
-              "v": 28,
-              "w": 4.1227452547113153e-10
-            },
-            {
               "t": "89147L886",
               "n": "TORTOISE ENERGY INFRSTRCTR C",
               "cusip": "89147L886",
@@ -367064,15 +367053,15 @@
               "w": 4.1227452547113153e-10
             },
             {
-              "t": "EARN",
-              "n": "ELLINGTON CREDIT COMPANY",
-              "cusip": "288578107",
+              "t": "BBAR",
+              "n": "BANCO BBVA ARGENTINA S A",
+              "cusip": "058934100",
               "ticker_status": "resolved",
-              "asset_class": "COM SHS BEN INT",
+              "asset_class": "SPONSORED ADS",
               "security_type": "SH",
-              "s": 7,
-              "v": 27,
-              "w": 3.97550435275734e-10
+              "s": 2,
+              "v": 28,
+              "w": 4.1227452547113153e-10
             },
             {
               "t": "ENSC",
@@ -367082,6 +367071,17 @@
               "asset_class": "COM NEW",
               "security_type": "SH",
               "s": 65,
+              "v": 27,
+              "w": 3.97550435275734e-10
+            },
+            {
+              "t": "EARN",
+              "n": "ELLINGTON CREDIT COMPANY",
+              "cusip": "288578107",
+              "ticker_status": "resolved",
+              "asset_class": "COM SHS BEN INT",
+              "security_type": "SH",
+              "s": 7,
               "v": 27,
               "w": 3.97550435275734e-10
             },
@@ -367108,17 +367108,6 @@
               "w": 3.5337816468954135e-10
             },
             {
-              "t": "CMCT",
-              "n": "CREATIVE MEDIA  CMNTY TR",
-              "cusip": "12564W219",
-              "ticker_status": "resolved",
-              "asset_class": "COM",
-              "security_type": "SH",
-              "s": 8,
-              "v": 23,
-              "w": 3.386540744941438e-10
-            },
-            {
               "t": "CHIQ",
               "n": "GLOBAL X FDS",
               "cusip": "37950E408",
@@ -367126,6 +367115,17 @@
               "asset_class": "MSCI CHINA CNSMR",
               "security_type": "SH",
               "s": 1,
+              "v": 23,
+              "w": 3.386540744941438e-10
+            },
+            {
+              "t": "CMCT",
+              "n": "CREATIVE MEDIA  CMNTY TR",
+              "cusip": "12564W219",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 8,
               "v": 23,
               "w": 3.386540744941438e-10
             },
@@ -367240,17 +367240,6 @@
               "w": 1.7668908234477068e-10
             },
             {
-              "t": "CVR",
-              "n": "CHICAGO RIVET  MACH CO",
-              "cusip": "168088102",
-              "ticker_status": "resolved",
-              "asset_class": "COM",
-              "security_type": "SH",
-              "s": 1,
-              "v": 11,
-              "w": 1.6196499214937312e-10
-            },
-            {
               "t": "MTVA",
               "n": "METAVIA INC",
               "cusip": "64132R503",
@@ -367258,6 +367247,17 @@
               "asset_class": "COM USD0.001",
               "security_type": "SH",
               "s": 7,
+              "v": 11,
+              "w": 1.6196499214937312e-10
+            },
+            {
+              "t": "CVR",
+              "n": "CHICAGO RIVET  MACH CO",
+              "cusip": "168088102",
+              "ticker_status": "resolved",
+              "asset_class": "COM",
+              "security_type": "SH",
+              "s": 1,
               "v": 11,
               "w": 1.6196499214937312e-10
             },
@@ -367328,17 +367328,6 @@
               "w": 1.0306863136778288e-10
             },
             {
-              "t": "DRK",
-              "n": "DARKHORSE TECHNOLOGIES INC",
-              "cusip": "236918108",
-              "ticker_status": "resolved",
-              "asset_class": "COM SHS",
-              "security_type": "SH",
-              "s": 2,
-              "v": 6,
-              "w": 8.834454117238534e-11
-            },
-            {
               "t": "GHI",
               "n": "GREYSTONE HOUSING IMPACT INV",
               "cusip": "02364V206",
@@ -367346,6 +367335,17 @@
               "asset_class": "BEN UNIT CTF",
               "security_type": "SH",
               "s": 1,
+              "v": 6,
+              "w": 8.834454117238534e-11
+            },
+            {
+              "t": "DRK",
+              "n": "DARKHORSE TECHNOLOGIES INC",
+              "cusip": "236918108",
+              "ticker_status": "resolved",
+              "asset_class": "COM SHS",
+              "security_type": "SH",
+              "s": 2,
               "v": 6,
               "w": 8.834454117238534e-11
             },
@@ -367372,13 +367372,13 @@
               "w": 5.889636078159023e-11
             },
             {
-              "t": "BTTC",
-              "n": "BLACK TITAN CORP",
-              "cusip": "G1156E102",
+              "t": "GURE",
+              "n": "GULF RES INC",
+              "cusip": "40251W507",
               "ticker_status": "resolved",
-              "asset_class": "ORD SHS",
+              "asset_class": "COM",
               "security_type": "SH",
-              "s": 6,
+              "s": 1,
               "v": 3,
               "w": 4.417227058619267e-11
             },
@@ -367394,13 +367394,13 @@
               "w": 4.417227058619267e-11
             },
             {
-              "t": "GURE",
-              "n": "GULF RES INC",
-              "cusip": "40251W507",
+              "t": "BTTC",
+              "n": "BLACK TITAN CORP",
+              "cusip": "G1156E102",
               "ticker_status": "resolved",
-              "asset_class": "COM",
+              "asset_class": "ORD SHS",
               "security_type": "SH",
-              "s": 1,
+              "s": 6,
               "v": 3,
               "w": 4.417227058619267e-11
             },
@@ -367412,17 +367412,6 @@
               "asset_class": "COM",
               "security_type": "SH",
               "s": 2,
-              "v": 2,
-              "w": 2.944818039079512e-11
-            },
-            {
-              "t": "DRCT",
-              "n": "DIRECT DIGITAL HOLDINGS INC",
-              "cusip": "25461T303",
-              "ticker_status": "resolved",
-              "asset_class": "CL A NEW",
-              "security_type": "SH",
-              "s": 1,
               "v": 2,
               "w": 2.944818039079512e-11
             },
@@ -367443,6 +367432,17 @@
               "cusip": "72303P503",
               "ticker_status": "resolved",
               "asset_class": "COM NEW",
+              "security_type": "SH",
+              "s": 1,
+              "v": 2,
+              "w": 2.944818039079512e-11
+            },
+            {
+              "t": "DRCT",
+              "n": "DIRECT DIGITAL HOLDINGS INC",
+              "cusip": "25461T303",
+              "ticker_status": "resolved",
+              "asset_class": "CL A NEW",
               "security_type": "SH",
               "s": 1,
               "v": 2,
@@ -418214,6 +418214,6 @@
       "data_issues": {}
     }
   },
-  "generated": "2026-11-18",
+  "generated": "2026-11-19",
   "source": "SEC EDGAR · OpenBB SEC parser (reconciled filings); legacy snapshots labelled"
 }
