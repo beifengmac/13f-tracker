@@ -166,3 +166,9 @@ export function securityTypeLabel(holding: Pick<Holding, 'security_type' | 'asse
   if (holding.security_type !== 'PRN') return '';
   return /CONV/i.test(holding.asset_class ?? '') ? '可转债' : '债券';
 }
+
+/** UI reporting periods include notices; holdings comparison periods do not. */
+export function getReportingQuarterKeys(fund: Fund): string[] {
+  return [...new Set([...Object.keys(fund.quarters), ...Object.keys(fund.notices ?? {})])]
+    .sort((a, b) => quarterOrdinal(a) - quarterOrdinal(b));
+}

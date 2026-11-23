@@ -418211,9 +418211,31 @@
           ]
         }
       },
-      "data_issues": {}
+      "data_issues": {},
+      "notices": {
+        "Q3 2026": {
+          "form": "13F-NT",
+          "period_ending": "2026-09-30",
+          "filing_date": "2026-11-17",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/949509/000119312526464327/0001193125-26-464327-index.html",
+          "reporting_managers": [
+            {
+              "name": "Brookfield Corp",
+              "file_number": "028-14349"
+            },
+            {
+              "name": "Russell Investments Group, Ltd.",
+              "file_number": "028-17598"
+            },
+            {
+              "name": "Hartree Partners, LP",
+              "file_number": "028-17875"
+            }
+          ]
+        }
+      }
     }
   },
-  "generated": "2026-11-20",
+  "generated": "2026-11-23",
   "source": "SEC EDGAR · OpenBB SEC parser (reconciled filings); legacy snapshots labelled"
 }

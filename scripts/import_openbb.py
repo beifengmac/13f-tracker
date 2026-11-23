@@ -51,7 +51,7 @@ def filing_list(cik):
     rows = []
     for batch in batches:
         for i, form in enumerate(batch['form']):
-            if form in ('13F-HR', '13F-HR/A') and batch['reportDate'][i] >= '2013-06-30':
+            if form in ('13F-HR', '13F-HR/A', '13F-NT', '13F-NT/A') and batch['reportDate'][i] >= '2013-06-30':
                 rows.append({k: batch[k][i] for k in ('form', 'reportDate', 'filingDate', 'accessionNumber')})
     return sorted(rows, key=lambda r: (r['reportDate'], r['filingDate'], r['accessionNumber']), reverse=True)
 
@@ -59,6 +59,27 @@ def filing_list(cik):
 def metadata(text, key):
     match = re.search(r'<(?:\w+:)?' + key + r'[^>]*>(.*?)</(?:\w+:)?' + key + '>', text, re.S | re.I)
     return match.group(1).strip() if match else None
+
+
+def parse_notice(text, filing, source_url):
+    """Notices identify reporting managers; they are never empty portfolios."""
+    documents = re.findall(r'<XML>(.*?)</XML>', text, re.S)
+    root = ET.fromstring(documents[0].strip())
+    def value(element, tag):
+        return next((e.text.strip() for e in element.iter()
+                     if e.tag.split('}')[-1] == tag and e.text), '')
+    if value(root, 'submissionType') not in ('13F-NT', '13F-NT/A'):
+        raise ValueError('Notice submission type mismatch')
+    period = datetime.strptime(value(root, 'periodOfReport'), '%m-%d-%Y').date().isoformat()
+    if period != filing['reportDate']:
+        raise ValueError('Notice period mismatch')
+    managers = [{'name': value(e, 'name'), 'file_number': value(e, 'form13FFileNumber')}
+                for e in root.iter() if e.tag.split('}')[-1] == 'otherManager']
+    if not managers or any(not m['name'] for m in managers):
+        raise ValueError('Notice has no named reporting managers')
+    return {'form': filing['form'], 'period_ending': period,
+            'filing_date': filing['filingDate'], 'source_url': source_url,
+            'reporting_managers': managers}
 
 
 async def parse(text, filing, mapping):
@@ -145,6 +166,13 @@ async def run(args):
                 base = f'https://www.sec.gov/Archives/edgar/data/{int(fund["cik"])}/{accession.replace("-", "")}'
                 text = fetch(f'{base}/{accession}.txt')
                 source_urls = [f'{base}/{accession}-index.html']
+                if f['form'].startswith('13F-NT'):
+                    notice = parse_notice(text, f, source_urls[0])
+                    fund.setdefault('notices', {})[label] = notice
+                    fund['quarters'].pop(label, None)
+                    fund['data_issues'].pop(label, None)
+                    print(f'{fid} {label}: {f["form"]}, reported by other managers', flush=True)
+                    continue
                 if f['form'].endswith('/A') and metadata(text, 'amendmentType') == 'NEW HOLDINGS':
                     chain = []
                     for previous in candidates:
@@ -180,6 +208,7 @@ async def run(args):
                 q['source_url'] = source_urls[-1]
                 q['source_urls'] = source_urls
                 fund['quarters'][label] = q
+                fund.get('notices', {}).pop(label, None)
                 fund['data_issues'].pop(label, None)
                 print(f'{fid} {label}: {len(q["holdings"])} securities, reconciled', flush=True)
             except Exception as exc:

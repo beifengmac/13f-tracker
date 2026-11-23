@@ -2,8 +2,9 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import rawData from '../data.json';
 import type { Data, Fund } from '../types';
-import { fmtValue, fmtPct, getAllQuarterKeys, comparablePrevious, mergeGoogleClasses } from '../utils';
+import { fmtValue, fmtPct, getReportingQuarterKeys, quarterOrdinal, comparablePrevious, mergeGoogleClasses } from '../utils';
 import { moves, weightDistance, notableMoves, actionNames } from '../analysis';
+import FilingNotice from './FilingNotice';
 import ActionBadge from './ActionBadge';
 import MarketInsights from './MarketInsights';
 
@@ -49,7 +50,7 @@ function buildTickerTape(quarter: string): string[] {
 }
 
 export default function Dashboard() {
-  const allQuarters = useMemo(() => getAllQuarterKeys(data.funds), []);
+  const allQuarters = useMemo(() => [...new Set(Object.values(data.funds).flatMap(getReportingQuarterKeys))].sort((a,b) => quarterOrdinal(a)-quarterOrdinal(b)), []);
   const [quarter, setQuarter] = useState(allQuarters[allQuarters.length - 1]);
   const [search, setSearch] = useState('');
 
@@ -68,12 +69,15 @@ export default function Dashboard() {
           || c.fund.manager_en.toLowerCase().includes(s);
       });
 
-    if (cards.length === 0) return null;
+    const noticeIds = ids.filter(id => data.funds[id].notices?.[quarter] &&
+      (!search || [data.funds[id].name_cn, data.funds[id].name_en, data.funds[id].manager, data.funds[id].manager_en].some(s => s.toLowerCase().includes(search.toLowerCase()))));
+    if (cards.length === 0 && noticeIds.length === 0) return null;
 
     return (
       <section className="mb-8">
         <h2 className="mb-4 text-lg font-semibold text-gray-700 dark:text-gray-300">{label}</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {noticeIds.map(id => <FilingNotice key={id} id={id} fund={data.funds[id]} quarter={quarter} compact />)}
           {cards.map(c => {
             const aumChange = c.prevTotal != null ? ((c.total - c.prevTotal) / c.prevTotal) * 100 : null;
             return (

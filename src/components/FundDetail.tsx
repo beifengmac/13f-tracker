@@ -4,8 +4,9 @@ import { ResponsiveContainer, AreaChart, Area, BarChart, Bar, XAxis, YAxis, Tool
 
 import rawData from '../data.json';
 import type { Data, Holding, Action, SortKey, SortDir } from '../types';
-import { fmtValue, fmtShares, fmtPct, getQuarterKeys, comparablePrevious, getAction, getShareChange, mergeGoogleClasses, inferSector, tickerStatusLabel, securityTypeLabel } from '../utils';
+import { fmtValue, fmtShares, fmtPct, getQuarterKeys, getReportingQuarterKeys, comparablePrevious, getAction, getShareChange, mergeGoogleClasses, inferSector, tickerStatusLabel, securityTypeLabel } from '../utils';
 import { generateFundAnalysis } from '../analysis';
+import FilingNotice from './FilingNotice';
 import DeepReport from './DeepReport';
 import ActionBadge from './ActionBadge';
 
@@ -27,7 +28,8 @@ export default function FundDetail() {
   const fund = id ? data.funds[id] : undefined;
 
   const quarters = useMemo(() => (fund ? getQuarterKeys(fund) : []), [fund]);
-  const selectedQ = quarters.includes(params.get('quarter') ?? '') ? params.get('quarter')! : quarters.at(-1) ?? '';
+  const reportingQuarters = fund ? getReportingQuarterKeys(fund) : [];
+  const selectedQ = reportingQuarters.includes(params.get('quarter') ?? '') ? params.get('quarter')! : reportingQuarters.at(-1) ?? '';
   const setSelectedQ = (q: string) => setParams({ quarter: q });
   const [sortKey, setSortKey] = useState<SortKey>('v');
   const [sortDir, setSortDir] = useState<SortDir>('desc');
@@ -177,6 +179,11 @@ export default function FundDetail() {
     );
   }
 
+  if (fund.notices?.[selectedQ]) return <div>
+    <Link to="/" className="mb-4 inline-block text-blue-500">← Dashboard</Link>
+    <div className="mb-4"><select aria-label="报告季度" value={selectedQ} onChange={e => setSelectedQ(e.target.value)} className="rounded border p-2 dark:bg-gray-900">{reportingQuarters.map(q => <option key={q}>{q}</option>)}</select></div>
+    <FilingNotice id={id!} fund={fund} quarter={selectedQ} />
+  </div>;
   const q = fund.quarters[selectedQ];
   const currentHoldingCount = rows.filter(r => r.action !== 'cleared').length;
   const concentration = rows.slice(0, 10).reduce((s, r) => s + r.w, 0);
@@ -217,7 +224,7 @@ export default function FundDetail() {
               onChange={e => setSelectedQ(e.target.value)}
               className="mb-2 rounded-lg border border-gray-200 px-2 py-1 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-white"
             >
-              {quarters.map(q2 => <option key={q2} value={q2}>{q2}</option>)}
+              {reportingQuarters.map(q2 => <option key={q2} value={q2}>{q2}</option>)}
             </select>
             <div className="font-mono text-3xl font-bold text-gray-900 dark:text-white">{fmtValue(q?.total ?? 0)}</div>
             {q?.value_unit_inferred && <p className="text-xs text-amber-600">金额单位为推断值，待独立核验</p>}

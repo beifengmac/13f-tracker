@@ -87,3 +87,7 @@ OpenBB 使用 AGPLv3，见 [OpenBB LICENSE](https://github.com/OpenBB-finance/Op
 `/usr/local/bin/python3.12 scripts/serve_preview.py` 固定绑定 `127.0.0.1:8890`。本机 LaunchAgent `com.beifeng.13f-tracker` 保持服务常驻；重新 `npm run build` 即更新预览。端口已登记在工作区 `LOCAL_PORTS.md`。前端提供浏览器打印/保存 PDF；无需服务端上传报告。
 
 本轮交付为可复算的确定性分析，不包含 LLM 自动长文、真实交易还原或未接入的基本面估值。它们不使用占位数据冒充已实现功能。
+
+## 由其他机构申报的季度
+
+自动更新支持 13F-NT / 13F-NT/A 通知，并将其与持仓快照分开保存。首页保留机构卡片，展示通知季度、代报机构、提交日期和 SEC 原文；详情页可切回历史持仓。通知不等于零持仓，不生成本季清仓或买卖变化，也不会把代报机构的全部组合并入原基金。后续同季度改报 13F-HR 时，核对成功后恢复持仓展示。

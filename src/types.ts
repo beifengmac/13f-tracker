@@ -27,7 +27,16 @@ export interface Quarter {
   warnings?: string[];
 }
 
+export interface FilingNotice {
+  form: string;
+  period_ending: string;
+  filing_date: string;
+  source_url: string;
+  reporting_managers: { name: string; file_number: string }[];
+}
+
 export interface Fund {
+  notices?: Record<string, FilingNotice>;
   name_en: string;
   name_cn: string;
   manager: string;

@@ -8,6 +8,11 @@ path = Path(__file__).resolve().parents[1] / 'src/data.json'
 data = json.loads(path.read_text())
 quarters = rows = 0
 for fid, fund in data['funds'].items():
+    for label, notice in fund.get('notices', {}).items():
+        assert label not in fund['quarters'], (fid, label, 'notice must not be an empty portfolio')
+        assert notice['form'] in ('13F-NT', '13F-NT/A')
+        assert notice['reporting_managers'] and all(m['name'] for m in notice['reporting_managers'])
+        assert notice['source_url'].startswith('https://www.sec.gov/Archives/')
     for label, quarter in fund['quarters'].items():
         holdings = quarter['holdings']
         assert len({h['t'] for h in holdings}) == len(holdings), (fid,label,'duplicate ticker')
